@@ -29,15 +29,11 @@ header {
   height: auto;
   margin-top: 70px;
   margin-left: 110px;
-  background-image: url("src/assets/UKF_long 1 (1).svg");
+  background-image: url("src/assets/UKF_long 1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   transition: background-image 0.3s ease;
-}
-
-.UKF-logo:hover {
-  background-image: url("src/assets/UKF_long 1.svg");
 }
 
 /* Навигационная панель */
