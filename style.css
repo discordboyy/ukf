@@ -116,7 +116,7 @@ header {
 .events-section {
   width: 1500.92px;
   height: 600px;
-  margin-left: 354px;
+  margin-left: 504px;
 }
 .events-footer {
   padding: 20.83px;
@@ -370,6 +370,7 @@ header {
   width: 1300px;
 }
 .membership-section {
+  margin-top: 100px;
   width: 1920px;
   height: 940px;
 }
@@ -401,13 +402,26 @@ header {
 }
 .membership-email {
   color: #f3b910;
-  text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 41.75px;
-  line-height: 145.89%;
-  font-weight: 400;
+  text-decoration: none; /* убираем стандартное подчёркивание ссылки */
+  cursor: pointer;
+}
+
+.line {
   text-decoration: underline;
-  position: relative;
+}
+
+.dog {
+  margin: 0 -10px;
+}
+
+/* 🚫 Запрет выделения */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .membership-note {
   color: #103279;
@@ -679,7 +693,7 @@ header {
   height: 1143px;
   position: absolute;
   left: 0px;
-  top: 90.08px;
+  top: 58px;
   overflow: hidden;
 }
 .testimonials-icon {
@@ -774,7 +788,7 @@ header {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 94px;
-  line-height: 122.35%;
+  line-height: 60px;
   font-weight: 600;
   margin-left: 218.55px;
 }
