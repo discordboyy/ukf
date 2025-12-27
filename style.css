@@ -64,7 +64,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.333px;
+  font-size: 33.33px;
   font-weight: 400;
   position: relative;
 }
@@ -115,7 +115,7 @@ header {
 }
 .events-section {
   width: 1500.92px;
-  height: 1000px;
+  height: 600px;
   margin-left: 354px;
 }
 .events-footer {
@@ -147,14 +147,14 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.146385192871094px;
+  font-size: 50px;
   font-weight: 600;
   position: relative;
 }
 .show-more-icon {
   flex-shrink: 0;
-  width: 79.17px;
-  height: 79.17px;
+  width: 59.375px;
+  height: 59.375px;
   position: relative;
   overflow: visible;
 }
@@ -167,6 +167,7 @@ header {
   justify-content: flex-start;
   width: 1197.92px;
   margin-top: 87px;
+  height: 400px;
 }
 .frame-14 {
   display: flex;
@@ -198,7 +199,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -208,7 +209,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -235,7 +236,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.146385192871094px;
+  font-size: 50px;
   line-height: 63.11%;
   font-weight: 600;
   text-decoration: underline;
@@ -246,7 +247,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 31.37112045288086px;
+  font-size: 31px;
   font-weight: 400;
   position: relative;
   width: 766.67px;
@@ -281,7 +282,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -291,7 +292,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -318,7 +319,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.146385192871094px;
+  font-size: 50px;
   font-weight: 600;
   text-decoration: underline;
   position: relative;
@@ -329,7 +330,7 @@ header {
   color: #f3b910;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -339,7 +340,7 @@ header {
   color: #f3b910;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 43.452083587646484px;
+  font-size: 43px;
   line-height: 63.11%;
   letter-spacing: -0.07em;
   font-weight: 600;
@@ -349,7 +350,7 @@ header {
   color: #f3b910;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.146385192871094px;
+  font-size: 50px;
   line-height: 63.11%;
   font-weight: 600;
   text-decoration: underline;
@@ -360,7 +361,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 95.888916015625px;
+  font-size: 95px;
   line-height: 63.11%;
   letter-spacing: -0.01em;
   font-weight: 600;
@@ -392,7 +393,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 41.753360748291016px;
+  font-size: 41.75px;
   line-height: 147.56%;
   font-weight: 400;
   position: relative;
@@ -402,7 +403,7 @@ header {
   color: #f3b910;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 41.750003814697266px;
+  font-size: 41.75px;
   line-height: 145.89%;
   font-weight: 400;
   text-decoration: underline;
@@ -412,7 +413,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 41.750003814697266px;
+  font-size: 41.75px;
   line-height: 145.89%;
   font-weight: 400;
   position: relative;
@@ -422,7 +423,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 95.888916015625px;
+  font-size: 95px;
   line-height: 63.11%;
   letter-spacing: -0.01em;
   font-weight: 600;
@@ -432,27 +433,27 @@ header {
 }
 .hero-section {
   width: 1920px;
-  height: 563px;
-  left: 0px;
-  top: 0px;
-  overflow: hidden;
+  height: 263px;
 }
 .hero-content {
   width: 968.75px;
   height: 120.83px;
-  position: absolute;
-  left: 724.8px;
-  top: 513.08px;
+  display: flex;
+  margin-left: 800px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateX(-10px); /* move slightly to the left */
+  }
 }
 .hero-description {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 49.96828842163086px;
+  font-size: 49px;
   line-height: 122.35%;
   font-weight: 600;
   text-decoration: underline;
-  position: absolute;
   right: 3.01%;
   left: 0%;
   width: 96.99%;
@@ -461,12 +462,10 @@ header {
   height: 100.97%;
 }
 .hero-accent {
-  width: 39.58px;
-  height: 39.58px;
-  position: absolute;
-  left: 968.75px;
-  top: 50px;
-  transform: translate(-29.69px, -36.93px);
+  width: 59.375px;
+  height: 59.375px;
+  margin-left: -190px;
+  margin-top: 20px;
   overflow: visible;
 }
 
@@ -500,7 +499,7 @@ header {
 
 .membership-fee-text {
   position: absolute;
-  top: 535px;     /* y позиции текста в холдере */
+  top: 605px;     /* y позиции текста в холдере */
   left: 178.97px; /* x позиции текста в холдере */
   width: 625px;    /* ширина текста */
   font-family: "Funnel Sans", sans-serif;
@@ -707,7 +706,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 51.36183166503906px;
+  font-size: 51.36px;
   line-height: 113.46%;
   letter-spacing: -0.01em;
   font-weight: 600;
@@ -718,7 +717,7 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.582672119140625px;
+  font-size: 50.58px;
   line-height: 122.35%;
   font-weight: 600;
   font-style: italic;
@@ -739,7 +738,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 48.95097351074219px;
+  font-size: 48.95px;
   line-height: 119.85%;
   letter-spacing: -0.01em;
   font-weight: 700;
@@ -750,7 +749,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 48.95097351074219px;
+  font-size: 48.95px;
   line-height: 122.35%;
   font-weight: 800;
   font-style: italic;
@@ -774,7 +773,7 @@ header {
   color: #f2e3dc;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 94.31244659423828px;
+  font-size: 94px;
   line-height: 122.35%;
   font-weight: 600;
   margin-left: 218.55px;
@@ -818,17 +817,26 @@ header {
   position: absolute;
   left: 231px;
   top: 0px;
-  margin-top: 2px;
+  margin-top: 15px;
 }
 
 .samarbeidspartner-carousel-container {
   background: #cfcfcf;
   width: 100%;
   height: 627px;
-  position: absolute;
   left: 0;
   top: 73.66px;
   overflow: hidden;
+  position: relative;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 20px));
+    }
 }
 
 .samarbeidspartner-carousel .slick-slide {
@@ -839,6 +847,8 @@ header {
 
 .samarbeidspartner-carousel {
   display: flex;
+  animation: scroll 60s linear infinite;
+  width: max-content;
   flex-direction: row;
   gap: 87px;
   align-items: center;
@@ -866,11 +876,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 200px;
+  margin-right: 60px;
+}
+
+.samarbeidspartner-carousel-container:hover .samarbeidspartner-carousel {
+    animation-play-state: paused;
 }
 
 .carousel-item img {
   object-fit: contain;  /* логотип не искажается */
+}
+
+.carousel-item:hover {
+    opacity: 0.8;
 }
 
 
@@ -930,12 +948,17 @@ header {
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateX(-10px); /* move slightly to the left */
+  }
 }
 .contact-link-name {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.384002685546875px;
+  font-size: 33.38px;
   line-height: 122.35%;
   font-weight: 300;
   position: relative;
@@ -944,7 +967,7 @@ header {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.07399368286133px;
+  font-size: 33.07px;
   line-height: 145.89%;
   font-weight: 400;
   text-decoration: underline;
@@ -954,8 +977,8 @@ header {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 75.50609588623047px;
-  line-height: 50px;
+  font-size: 75.5px;
+  line-height: 45px;
   font-weight: 600;
   margin-left: 378px;
 }
@@ -980,6 +1003,7 @@ header {
   height: 425px;
   position: relative;
   overflow: hidden;
+  margin-top: -5px;
 }
 .about-container {
   display: flex;
@@ -1005,7 +1029,7 @@ header {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 30.840776443481445px;
+  font-size: 30.84px;
   line-height: 154.29%;
   font-weight: 400;
   position: relative;
@@ -1033,7 +1057,7 @@ header {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.612979888916016px;
+  font-size: 33.61px;
   line-height: 154.29%;
   font-weight: 600;
   position: relative;
@@ -1043,7 +1067,7 @@ header {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 30.840776443481445px;
+  font-size: 30.84px;
   line-height: 138.8%;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -1057,3 +1081,60 @@ header {
   position: relative;
   overflow: hidden;
 }
+
+.nav-item { font-size: 26.66px; }        /* 33.33 × 0.8 */
+.lang { font-size: 26.67px; }            /* 33.333 × 0.8 */
+
+.show-more-text { font-size: 40px; }      /* 50 × 0.8 */
+
+._13-03-2026 { font-size: 34.4px; }       /* 43 × 0.8 */
+.stathelle { font-size: 34.4px; }
+
+.lag-din-egen-motanka-dukke { font-size: 40px; }
+.motanka-er-en-tradisjonell-tekstildukke-laget-uten-s-m-kun-ved-snurring-og-knyting-denne-eldgamle-h-ndverkstradisjonen-finnes {
+  font-size: 24.8px;                      /* 31 × 0.8 */
+}
+
+._28-02-2026 { font-size: 34.4px; }
+.oslo { font-size: 34.4px; }
+
+.blokktrykk-og-broderi { font-size: 40px; }
+
+._27-04-2026 { font-size: 34.4px; }
+.oslo2 { font-size: 34.4px; }
+
+.akvarellverksted { font-size: 40px; }
+
+.events-title { font-size: 76px; }        /* 95 × 0.8 */
+
+.membership-text { font-size: 33.4px; }   /* 41.75 × 0.8 */
+.membership-email { font-size: 33.4px; }
+.membership-note { font-size: 33.4px; }
+
+
+.membership-fee-text { font-size: 39.97px; } /* 49.96 × 0.8 */
+
+.hero-description { font-size: 39.2px; }  /* 49 × 0.8 */
+
+.event-date { font-size: 34.76px; }       /* 43.45 × 0.8 */
+.event-title { font-size: 40.11px; }      /* 50.14 × 0.8 */
+.event-description { font-size: 25.1px; } /* 31.37 × 0.8 */
+
+.testimonial-text { font-size: 41.09px; }     /* 51.36 × 0.8 */
+.testimonial-author { font-size: 40.46px; }   /* 50.58 × 0.8 */
+
+.testimonial-text2 { font-size: 39.16px; }    /* 48.95 × 0.8 */
+.testimonial-author2 { font-size: 39.16px; }
+
+.testimonials-title { font-size: 75.2px; }    /* 94 × 0.8 */
+
+.samarbeidspartner-title { font-size: 60.4px; } /* 75.5 × 0.8 */
+
+.contact-link-name { font-size: 26.7px; }   /* 33.38 × 0.8 */
+.contact-email { font-size: 26.46px; }      /* 33.07 × 0.8 */
+.contact-title { font-size: 60.4px; }       /* 75.5 × 0.8 */
+
+.about-description { font-size: 24.67px; }  /* 30.84 × 0.8 */
+
+.kontonummer { font-size: 26.89px; }        /* 33.61 × 0.8 */
+.about-details-text { font-size: 24.67px; } /* 30.84 × 0.8 */

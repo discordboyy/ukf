@@ -28,56 +28,7 @@
     </header>
 
     <div class="page-membership">
-        <div class="hero-section">
-            <div class="hero-content">
-            <div
-                class="hero-description">
-                Den ukrainske kunstforening samler
-                <br />
-                og fremmer ukrainske kunstnere i Norge
-            </div>
-            <img class="hero-accent" src="src/assets/Polygon 2.svg"/>
-            </div>
-        </div>
-
-        <div class="membership-section">
-            <div class="membership-fee">
-                <img
-                    class="membership-fee-icon"
-                    src="src/assets/polygon-side.svg"
-                    alt="membership-fee-icon"
-                />
-
-                <p class="membership-fee-text">
-                    Medlemskontingenten fastsettes av årsmøtet og er per
-                    <span class="highlight">2026</span>
-                    på kr
-                    <span class="highlight amount">350</span>
-                    per år
-                </p>
-            </div>
-
-            <div class="membership-howto">
-                <div class="membership-title">HVORDAN <br>BLI MEDLEM?</div>
-                <div class="membership-description">
-                    <div
-                    class="membership-text"
-                    >
-                    Foreningen verdsetter engasjerte<br> medlemmer som aktivt bidrar til å
-                    realisere foreningens formål. Ønsker du å bli medlem, send en søknad
-                    med din motivasjon og/eller beskrivelse av kunstnerisk praksis til
-                    </div>
-                    <div class="membership-email">
-                    ua.kunstforening@gmail.com.
-                    </div>
-                    <div class="membership-note">
-                    Styret vurderer søknader fortløpende.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="events-section">
+                <div class="events-section">
             <div class="events-title">
             PLANLAGTE AKTIVITETER<br>/ ANNONSER:
             </div>
@@ -161,6 +112,55 @@
                     <div class="show-more-text">vis flere</div>
                     <img class="show-more-icon" src="src/assets/Polygon 3.svg" />
                 </div>
+            </div>
+        </div>
+
+        <div class="membership-section">
+            <div class="membership-fee">
+                <img
+                    class="membership-fee-icon"
+                    src="src/assets/polygon-side.svg"
+                    alt="membership-fee-icon"
+                />
+
+                <p class="membership-fee-text">
+                    Medlemskontingenten fastsettes av årsmøtet og er per
+                    <span class="highlight">2026</span>
+                    på kr
+                    <span class="highlight amount">350</span>
+                    per år
+                </p>
+            </div>
+
+            <div class="membership-howto">
+                <div class="membership-title">HVORDAN <br>BLI MEDLEM?</div>
+                <div class="membership-description">
+                    <div
+                    class="membership-text"
+                    >
+                    Foreningen verdsetter engasjerte<br> medlemmer som aktivt bidrar til å
+                    realisere foreningens formål. Ønsker du å bli medlem, send en søknad
+                    med din motivasjon og/eller beskrivelse av kunstnerisk praksis til
+                    </div>
+                    <div class="membership-email">
+                    ua.kunstforening@gmail.com.
+                    </div>
+                    <div class="membership-note">
+                    Styret vurderer søknader fortløpende.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-content">
+            <div
+                class="hero-description">
+                Den ukrainske kunstforening samler
+                <br />
+                og fremmer ukrainske kunstnere i Norge
+            </div>
+            <img class="hero-accent" src="src/assets/Polygon 3.svg"/>
             </div>
         </div>
 
@@ -273,18 +273,18 @@
     </div>
 
     <script>
-    $(document).ready(function(){
-    $('.samarbeidspartner-carousel').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 30000,
-        infinite: true,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        variableWidth: true // ключ!
-    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('.samarbeidspartner-carousel');
+        const items = carousel.innerHTML;
+        
+        // Дублируем содержимое для бесконечного эффекта
+        carousel.innerHTML = items + items;
+        
+        // Рассчитываем ширину всех элементов
+        const totalWidth = carousel.scrollWidth / 2;
+        
+        // Устанавливаем CSS переменную для анимации
+        document.documentElement.style.setProperty('--carousel-width', `-${totalWidth}px`);
     });
     </script>
 
