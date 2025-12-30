@@ -18,7 +18,7 @@ body {
 
 /* Основной контейнер */
 header {
-  height: 423px;
+  height: 483px;
   position: relative;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@ header {
   width: 236px;
   aspect-ratio: 236 / 302.69;
   height: auto;
-  margin-top: 70px;
+  margin-top: 160px;
   margin-left: 110px;
   background-image: url("src/assets/UKF_long 1.svg");
   background-repeat: no-repeat;
@@ -67,6 +67,8 @@ header {
   font-size: 33.33px;
   font-weight: 400;
   position: relative;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Секция выбора языка */
@@ -125,7 +127,7 @@ header {
   gap: 20.83px;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 965.188px;
+  margin-left: 780px;
 }
 .show-more {
   display: flex;
@@ -138,6 +140,7 @@ header {
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 
   &:hover {
     transform: translateX(-10px); /* move slightly to the left */
@@ -499,7 +502,7 @@ header {
 .membership-fee {
   position: absolute;
   left: 0px;       /* x = 0 */
-  top: 864px;     /* y = -104 */
+  top: 914px;     /* y = -104 */
   width: 937px;    /* ширина контейнера */
   height: 1312px;  /* высота контейнера */
   pointer-events: none; /* блок не мешает кликам */
@@ -818,7 +821,7 @@ header {
 .samarbeidspartner-section {
   height: 700.66px;
   position: relative;
-  margin-top: -75px;
+  margin-top: -115px;
 }
 
 .samarbeidspartner-title {
@@ -984,8 +987,27 @@ header {
   font-size: 33.07px;
   line-height: 145.89%;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none; /* убираем стандартное подчёркивание ссылки */
+  cursor: pointer;
   position: relative;
+}
+
+/* подчёркиваем только текст */
+.contact-email .line {
+  text-decoration: underline;
+}
+
+/* оформление @ */
+.contact-email .dog {
+  margin: 0 -8px; /* можно подрегулировать */
+}
+
+/* 🚫 запрет выделения */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .contact-title {
   color: #f1262c;
@@ -1094,6 +1116,12 @@ header {
   height: 336px;
   position: relative;
   overflow: hidden;
+}
+.about-logo-image {
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .nav-item { font-size: 26.66px; }        /* 33.33 × 0.8 */
