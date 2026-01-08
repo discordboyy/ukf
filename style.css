@@ -6,6 +6,10 @@ header * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Funnel Sans", sans-serif;
 }
