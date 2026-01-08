@@ -980,6 +980,7 @@ header {
   margin-top: -73px;
   height: 190px;
   position: relative;
+  cursor: default;
 }
 .contact-content {
   background: #f1262c;
@@ -1001,6 +1002,7 @@ header {
   width: 1565px;
   position: relative;
   margin: auto;
+  cursor: pointer;
 }
 .contact-link-icon {
   flex-shrink: 0;
@@ -1092,6 +1094,7 @@ header {
   position: relative;
   overflow: hidden;
   margin-top: -5px;
+  cursor: default;
 }
 .about-container {
   display: flex;
@@ -1124,31 +1127,43 @@ header {
   position: relative;
   width: 553px;
 }
-.about-details {
-  flex-shrink: 0;
-  width: 553px;
-  height: 336px;
+
+.ua-kunstforening-gmail-com {
+  color: #ffffff;
+  text-align: center;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 33.07399368286133px;
+  line-height: 145.89%;
+  font-weight: 400;
+  text-decoration: underline;
   position: relative;
-  overflow: hidden;
+  align-self: stretch;
 }
-.about-details-content {
+
+.about-details {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  width: 553px;
-  position: absolute;
-  left: 0px;
-  top: 69px;
+  flex-shrink: 0;
+  position: relative;
+}
+.about-details-content {
+  color: #ffffff;
+  text-align: center;
+  font-family: "FunnelSans-Medium", sans-serif;
+  font-size: 33.01500701904297px;
+  font-weight: 500;
+  position: relative;
+  align-self: stretch;
 }
 .kontonummer {
   color: #ffffff;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.61px;
-  line-height: 154.29%;
-  font-weight: 600;
+  text-align: center;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 33.01500701904297px;
+  font-weight: 400;
   position: relative;
   align-self: stretch;
 }
