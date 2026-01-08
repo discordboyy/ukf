@@ -1,0 +1,127 @@
+.frame-50,
+.frame-50 * {
+  box-sizing: border-box;
+}
+.frame-50 {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+}
+.frame-46 {
+  flex-shrink: 0;
+  width: 740px;
+  height: 923px;
+  position: relative;
+}
+.vector-1 {
+  width: 740px;
+  height: 837.5px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.vi-tilbyr-kurs-innen-ulike-kunstneriske-fag-og-materialer-blant-annet-tekstil-akvarell-tre-og-glass {
+  color: #ffffff;
+  text-align: left;
+  font-family: "FunnelSans-Medium", sans-serif;
+  font-size: 35.59140396118164px;
+  line-height: 147.56%;
+  font-weight: 500;
+  position: absolute;
+  left: 76.5px;
+  top: 240px;
+  width: 548.22px;
+}
+.frame-49 {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 760px;
+  position: relative;
+}
+.frame-45 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.kursets-varighet-og-niv-kan-tilpasses-etter-behov-og-vi-kan-ogs-arrangere-flere-verkstedsstasjoner-samtidig-for-ta-imot-st-rre-grupper {
+  color: #37528b;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 33.0521354675293px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.dette-er-en-inspirerende-og-sosial-m-te-styrke-samholdet-p-perfekt-for-teambuilding-vennegjenger-eller-kolleger-som-nsker-en-kreativ-opplevelse-sammen-vi-kommer-gjerne-til-deres-kontor-eller-lokale-og-forvandler-det-til-et-levende-kreativt-rom-fullt-av-farger-id-er-og-skaperglede-vi-snakker-norsk-ukrainsk-og-engelsk {
+  color: #37528b;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 33.0521354675293px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.ta-gjerne-kontakt-med-oss-for-bestille-et-skreddersydd-opplegg {
+  color: #37528b;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 33.0521354675293px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-48 {
+  flex-shrink: 0;
+  width: 441px;
+  height: 219.39px;
+  position: relative;
+}
+.romber-knapp-1 {
+  width: 441px;
+  height: 219.39px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.frame-47 {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 51px;
+  position: absolute;
+  left: 58px;
+  top: 83.67px;
+}
+.kontakt-oss {
+  color: #0b2d74;
+  text-align: left;
+  font-family: "FunnelSans-Bold", sans-serif;
+  font-size: 50.10060501098633px;
+  font-weight: 700;
+  position: relative;
+  width: 270px;
+  height: 76px;
+}
+.pile-full-bla-1 {
+  flex-shrink: 0;
+  width: 35px;
+  height: 40.51px;
+  position: relative;
+  overflow: visible;
+}
