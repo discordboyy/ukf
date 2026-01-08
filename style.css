@@ -120,11 +120,13 @@ header {
   overflow: visible;
 }
 .events-section {
-  width: 1500.92px;
+  width: auto;
   height: 600px;
   margin-left: 504px;
+
 }
 .events-footer {
+  width: 220px;
   padding: 20.83px;
   display: flex;
   flex-direction: column;
@@ -374,12 +376,12 @@ header {
   font-weight: 600;
   margin-left: 20.83px;
   top: 0px;
-  width: 1300px;
+  width: 900px;
 }
 .membership-section {
   margin-top: 100px;
-  width: 1920px;
-  height: 940px;
+  width: auto;
+  height: 840px;
 }
 .membership-howto {
   width: 1047.92px;
@@ -453,14 +455,14 @@ header {
   width: 676.67px;
 }
 .hero-section {
-  width: 1920px;
-  height: 263px;
+  height: 363px;
 }
 .hero-content {
   width: 968.75px;
   height: 120.83px;
   display: flex;
   margin-left: 800px;
+  margin-top: -100px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -478,8 +480,6 @@ header {
   right: 3.01%;
   left: 0%;
   width: 96.99%;
-  bottom: -0.97%;
-  top: 0%;
   height: 100.97%;
 }
 .hero-accent {
@@ -691,7 +691,7 @@ header {
 
 
 .testimonials-section {
-  height: 1233.08px;
+  height: 1000px;
   position: relative;
 }
 .testimonials-list {
@@ -871,7 +871,7 @@ header {
 }
 
 .samarbeidspartner-section {
-  height: 700.66px;
+  height: 500.66px;
   position: relative;
   margin-top: -115px;
 }
@@ -892,7 +892,7 @@ header {
 .samarbeidspartner-carousel-container {
   background: #cfcfcf;
   width: 100%;
-  height: 627px;
+  height: 427px;
   left: 0;
   top: 73.66px;
   overflow: hidden;
@@ -923,7 +923,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   height: 295.81px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .samarbeidspartner-carousel {
@@ -1082,7 +1082,7 @@ header {
 
 .about-section {
   background: #f3b910;
-  padding: 40px 180px 34px 180px;
+  padding: 40px 0px 34px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1103,6 +1103,7 @@ header {
   flex-shrink: 0;
   position: relative;
   width: 1560px;
+  margin: auto;
 }
 .about-content {
   display: flex;
