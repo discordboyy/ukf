@@ -1,4 +1,4 @@
-// src/scripts/script.js
+// src/scripts/testimonials.js
 document.querySelectorAll('.event-card').forEach(card => {
   card.addEventListener('click', () => {
     document

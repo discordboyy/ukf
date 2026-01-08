@@ -1,3 +1,4 @@
+// src/scripts/main.js
 async function loadTemplates() {
   const response = await fetch("src/assets/components/components.html");
   const html = await response.text();
