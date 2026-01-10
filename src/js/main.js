@@ -26,3 +26,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   mountComponent("contact-component", "contact-root");
   mountComponent("about-component", "about-root");
 });
+
+fetch("src/assets/components/components.html")
+  .then(response => response.text())
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, "text/html");
+
+    function loadComponent(templateId, targetId) {
+      const template = doc.getElementById(templateId);
+      const target = document.getElementById(targetId);
+
+      if (template && target) {
+        target.appendChild(template.content.cloneNode(true));
+      }
+    }
+
+    loadComponent("header-component", "header");
+    loadComponent("contact-component", "contact");
+    loadComponent("about-component", "about");
+  });

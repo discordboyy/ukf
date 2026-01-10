@@ -86,44 +86,48 @@
 }
 .frame-48 {
   flex-shrink: 0;
-  width: 441px;
-  height: 219.39px;
+  width: 330.75px;        /* 441 * 0.75 */
+  height: 164.54px;      /* 219.39 * 0.75 */
   position: relative;
 }
+
 .romber-knapp-1 {
-  width: 441px;
-  height: 219.39px;
+  width: 330.75px;
+  height: 164.54px;
   position: absolute;
   left: 0px;
   top: 0px;
   overflow: visible;
 }
+
 .frame-47 {
   display: flex;
   flex-direction: row;
-  gap: 28px;
+  gap: 21px;              /* 28 * 0.75 */
   align-items: center;
   justify-content: flex-start;
-  height: 51px;
+  height: 38.25px;        /* 51 * 0.75 */
   position: absolute;
-  left: 58px;
-  top: 83.67px;
+  left: 43.5px;           /* 58 * 0.75 */
+  top: 62.75px;           /* 83.67 * 0.75 */
 }
+
 .kontakt-oss {
   color: #0b2d74;
   text-align: left;
   font-family: "FunnelSans-Bold", sans-serif;
-  font-size: 46px;
+  font-size: 34.5px;      /* 46 * 0.75 */
   font-weight: 700;
   position: relative;
   width: auto;
   height: auto;
-  padding-bottom: 5px;
+  padding-bottom: 3.75px; /* 5 * 0.75 */
 }
+
 .pile-full-bla-1 {
   flex-shrink: 0;
-  width: 35px;
-  height: 40.51px;
+  width: 26.25px;         /* 35 * 0.75 */
+  height: 30.38px;        /* 40.51 * 0.75 */
   position: relative;
   overflow: visible;
 }
