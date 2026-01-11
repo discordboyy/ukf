@@ -108,7 +108,7 @@
         </div>
 
         <div class="membership-section">
-            <div class="membership-fee">
+            <div class="membership-fee scroll-animate">
                 <img
                     class="membership-fee-icon"
                     src="src/assets/polygon-side.svg"
@@ -232,6 +232,22 @@
         
         // Устанавливаем CSS переменную для анимации
         document.documentElement.style.setProperty('--carousel-width', `-${totalWidth}px`);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollBlocks = document.querySelectorAll(".scroll-animate");
+
+        function checkScrollBlocks() {
+            scrollBlocks.forEach(block => {
+                const rect = block.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.75) {
+                    block.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkScrollBlocks);
+        checkScrollBlocks(); // Проверка при загрузке страницы
     });
     </script>
 

@@ -19,52 +19,62 @@
 <body>
     <div id="header"></div>
 
-    <div class="frame-50">
-        <div class="frame-46">
-            <img class="vector-1" src="src/assets/kurs/Vector 1.svg" />
-            <div
-            class="vi-tilbyr-kurs-innen-ulike-kunstneriske-fag-og-materialer-blant-annet-tekstil-akvarell-tre-og-glass"
-            >
-            Vi tilbyr kurs innen ulike kunstneriske fag og materialer - blant annet
-            tekstil, akvarell, tre og glass.
+    <div class="course-offer-section">
+        <div class="course-intro scroll-animate">
+            <img class="course-intro-icon" src="src/assets/kurs/Vector 1.svg" />
+            <div class="course-intro-text">
+                Vi tilbyr kurs innen ulike kunstneriske fag og materialer - blant annet
+                tekstil, akvarell, tre og glass.
             </div>
         </div>
-        <div class="frame-49">
-            <div class="frame-45">
-            <div
-                class="kursets-varighet-og-niv-kan-tilpasses-etter-behov-og-vi-kan-ogs-arrangere-flere-verkstedsstasjoner-samtidig-for-ta-imot-st-rre-grupper"
-            >
-                Kursets varighet og nivå kan tilpasses etter behov, og vi kan også
-                arrangere flere verkstedsstasjoner samtidig for å ta imot større
-                grupper.
+        <div class="course-details">
+            <div class="course-description">
+                <div class="course-duration-and-level">
+                    Kursets varighet og nivå kan tilpasses etter behov, og vi kan også
+                    arrangere flere verkstedsstasjoner samtidig for å ta imot større
+                    grupper.
+                </div>
+                <div class="course-social-experience">
+                    Dette er en inspirerende og sosial måte å styrke samholdet på - perfekt
+                    for teambuilding, vennegjenger eller kolleger som ønsker en kreativ
+                    opplevelse sammen. Vi kommer gjerne til deres kontor eller lokale og
+                    forvandler det til et levende, kreativt rom - fullt av farger, idéer og
+                    skaperglede. Vi snakker norsk, ukrainsk og engelsk.
+                </div>
+                <div class="course-contact-invitation">
+                    Ta gjerne kontakt med oss for å bestille et skreddersydd opplegg!
+                </div>
             </div>
-            <div
-                class="dette-er-en-inspirerende-og-sosial-m-te-styrke-samholdet-p-perfekt-for-teambuilding-vennegjenger-eller-kolleger-som-nsker-en-kreativ-opplevelse-sammen-vi-kommer-gjerne-til-deres-kontor-eller-lokale-og-forvandler-det-til-et-levende-kreativt-rom-fullt-av-farger-id-er-og-skaperglede-vi-snakker-norsk-ukrainsk-og-engelsk"
-            >
-                Dette er en inspirerende og sosial måte å styrke samholdet på - perfekt
-                for teambuilding, vennegjenger eller kolleger som ønsker en kreativ
-                opplevelse sammen. Vi kommer gjerne til deres kontor eller lokale og
-                forvandler det til et levende, kreativt rom - fullt av farger, idéer og
-                skaperglede. Vi snakker norsk, ukrainsk og engelsk.
-            </div>
-            <div
-                class="ta-gjerne-kontakt-med-oss-for-bestille-et-skreddersydd-opplegg"
-            >
-                Ta gjerne kontakt med oss for å bestille et skreddersydd opplegg!
-            </div>
-            </div>
-            <div class="frame-48">
-            <img class="romber-knapp-1" src="src/assets/kurs/romber_knapp.svg" />
-            <div class="frame-47">
-                <div class="kontakt-oss">Kontakt oss</div>
-                <img class="pile-full-bla-1" src="src/assets/kurs/pile_full_bla.svg" />
-            </div>
+            <div class="course-contact">
+                <img class="course-contact-icon" src="src/assets/kurs/romber_knapp.svg" />
+                <div class="course-contact-button">
+                    <div class="contact-text">Kontakt oss</div>
+                    <img class="contact-arrow-icon" src="src/assets/kurs/pile_full_bla.svg" />
+                </div>
             </div>
         </div>
     </div>
 
     <div id="contact-root"></div>
     <div id="about-root"></div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollBlocks = document.querySelectorAll(".scroll-animate");
+
+        function checkScrollBlocks() {
+            scrollBlocks.forEach(block => {
+                const rect = block.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.75) {
+                    block.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkScrollBlocks);
+        checkScrollBlocks(); // Проверка при загрузке страницы
+    });
+    </script>
 
 </body>
 </html>

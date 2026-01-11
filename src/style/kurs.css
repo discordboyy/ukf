@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-.frame-50 {
+/* Общие настройки */
+header,
+header * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.course-offer-section {
   display: flex;
   flex-direction: row;
   gap: 29px;
@@ -11,13 +22,15 @@
   margin-bottom: 200px;
   cursor: default;
 }
-.frame-46 {
+
+.course-intro {
   flex-shrink: 0;
   width: 740px;
   height: 923px;
   position: relative;
 }
-.vector-1 {
+
+.course-intro-icon {
   width: 740px;
   height: 837.5px;
   position: absolute;
@@ -25,10 +38,11 @@
   top: 0px;
   overflow: visible;
 }
-.vi-tilbyr-kurs-innen-ulike-kunstneriske-fag-og-materialer-blant-annet-tekstil-akvarell-tre-og-glass {
+
+.course-intro-text {
   color: #ffffff;
   text-align: left;
-  font-family: "FunnelSans-Medium", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 35.59140396118164px;
   line-height: 147.56%;
   font-weight: 500;
@@ -37,7 +51,8 @@
   top: 240px;
   width: 548.22px;
 }
-.frame-49 {
+
+.course-details {
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -47,7 +62,8 @@
   width: 760px;
   position: relative;
 }
-.frame-45 {
+
+.course-description {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -57,41 +73,35 @@
   flex-shrink: 0;
   position: relative;
 }
-.kursets-varighet-og-niv-kan-tilpasses-etter-behov-og-vi-kan-ogs-arrangere-flere-verkstedsstasjoner-samtidig-for-ta-imot-st-rre-grupper {
+
+.course-duration-and-level,
+.course-social-experience,
+.course-contact-invitation {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.0521354675293px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
-}
-.dette-er-en-inspirerende-og-sosial-m-te-styrke-samholdet-p-perfekt-for-teambuilding-vennegjenger-eller-kolleger-som-nsker-en-kreativ-opplevelse-sammen-vi-kommer-gjerne-til-deres-kontor-eller-lokale-og-forvandler-det-til-et-levende-kreativt-rom-fullt-av-farger-id-er-og-skaperglede-vi-snakker-norsk-ukrainsk-og-engelsk {
-  color: #37528b;
-  text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 33.0521354675293px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.ta-gjerne-kontakt-med-oss-for-bestille-et-skreddersydd-opplegg {
-  color: #37528b;
-  text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 33.0521354675293px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.frame-48 {
-  flex-shrink: 0;
-  width: 330.75px;        /* 441 * 0.75 */
-  height: 164.54px;      /* 219.39 * 0.75 */
-  position: relative;
 }
 
-.romber-knapp-1 {
+.course-contact {
+  flex-shrink: 0;
+  width: 330.75px;
+  height: 164.54px;
+  position: relative;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateX(-10px); /* move slightly to the left */
+  }
+}
+
+.course-contact-icon {
   width: 330.75px;
   height: 164.54px;
   position: absolute;
@@ -100,34 +110,46 @@
   overflow: visible;
 }
 
-.frame-47 {
+.course-contact-button {
   display: flex;
   flex-direction: row;
-  gap: 21px;              /* 28 * 0.75 */
+  gap: 21px;
   align-items: center;
   justify-content: flex-start;
-  height: 38.25px;        /* 51 * 0.75 */
+  height: 38.25px;
   position: absolute;
-  left: 43.5px;           /* 58 * 0.75 */
-  top: 62.75px;           /* 83.67 * 0.75 */
+  left: 43.5px;
+  top: 62.75px;
 }
 
-.kontakt-oss {
+.contact-text {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
-  font-size: 34.5px;      /* 46 * 0.75 */
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 34.5px;
   font-weight: 700;
   position: relative;
   width: auto;
   height: auto;
-  padding-bottom: 3.75px; /* 5 * 0.75 */
+  padding-bottom: 3.75px;
 }
 
-.pile-full-bla-1 {
+.contact-arrow-icon {
   flex-shrink: 0;
-  width: 26.25px;         /* 35 * 0.75 */
-  height: 30.38px;        /* 40.51 * 0.75 */
+  width: 26.25px;
+  height: 30.38px;
   position: relative;
   overflow: visible;
+}
+
+
+.scroll-animate {
+  opacity: 1;
+  transform: translateX(-500px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }

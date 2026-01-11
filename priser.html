@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Priser Ukrainsk Kunstforening</title>
   <link rel="stylesheet" href="src/style/style.css" />
-  <link rel="stylesheet" href="src/style/kurs copy.css">
+  <link rel="stylesheet" href="src/style/priser.css">
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -34,7 +34,7 @@
             <div class="workshop-intro-section">
             <div class="workshop-intro-wrapper">
                 <div class="workshop-intro-top">
-                    <div class="workshop-intro-main">
+                    <div class="workshop-intro-main scroll-animate">
                         <img class="workshop-intro-decor-icon" src="src/assets/side_element_trekant (1).svg"/>
                         <div class="workshop-intro-title">
                         Opplev mestring, skaperglede og fellesskap!
@@ -214,6 +214,24 @@
 
     <div id="contact-root"></div>
     <div id="about-root"></div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollBlocks = document.querySelectorAll(".scroll-animate");
+
+        function checkScrollBlocks() {
+            scrollBlocks.forEach(block => {
+                const rect = block.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.75) {
+                    block.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", checkScrollBlocks);
+        checkScrollBlocks(); // Проверка при загрузке страницы
+    });
+    </script>
 
 </body>
 </html>

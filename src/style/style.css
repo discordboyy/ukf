@@ -1247,3 +1247,15 @@ header {
 
 .kontonummer { font-size: 26.89px; }        /* 33.61 × 0.8 */
 .about-details-text { font-size: 24.67px; } /* 30.84 × 0.8 */
+
+
+.scroll-animate {
+  opacity: 1;
+  transform: translateX(-500px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}

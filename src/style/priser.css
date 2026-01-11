@@ -10,7 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+* {
+  cursor: default;
+}
 
 .pricing-section {
   display: flex;
@@ -581,6 +583,14 @@ html {
   text-decoration: underline;
   position: relative;
   align-self: stretch;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateX(-10px); /* move slightly to the left */
+  }
 }
 .contact-additional-text-wrapper {
   display: flex;
@@ -609,4 +619,16 @@ html {
   font-weight: 400;
   position: relative;
   align-self: stretch;
+}
+
+
+.scroll-animate {
+  opacity: 1;
+  transform: translateX(-500px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }
