@@ -435,16 +435,24 @@
   text-transform: uppercase;
   position: relative;
 }
-.frame-82 {
-  margin: -75px 0 0 0;
+.frame-82, .frame-83, .frame-84 {
+  margin: -85px 0 0 0;
   align-self: stretch;
   flex-shrink: 0;
-  height: 831px;
   position: relative;
+}
+.frame-82 {
+  height: 831px;
+}
+.frame-83 {
+  height: 801px;
+}
+.frame-84 {
+  height: 1081px;
 }
 .frame-642 {
   background: #ffffff;
-  width: 1920px;
+  width: auto;
   height: 756px;
   position: absolute;
   left: 0px;
@@ -457,9 +465,8 @@
   gap: 164px;
   align-items: center;
   justify-content: flex-start;
-  position: absolute;
-  left: 378px;
-  top: 159px;
+  margin-left: 378px;
+  margin-top: 159px;
 }
 .frame-79 {
   display: flex;
@@ -587,6 +594,7 @@
   text-transform: uppercase;
   position: relative;
   align-self: stretch;
+  margin-top: -2px;
 }
 ._1-instrukt-r-perfekt-for-mindre-grupper-og-teambuilding-i-intime-rammer {
   color: #0b2d74;
@@ -596,13 +604,6 @@
   font-weight: 700;
   position: relative;
   align-self: stretch;
-}
-.frame-83 {
-  margin: -75px 0 0 0;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 801px;
-  position: relative;
 }
 .frame-643 {
   background: #f2b80c;
@@ -664,6 +665,7 @@
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
+  margin-top: 5px;
 }
 ._1-instrukt-r-1-assistent-anbefales-for-skoler-bedrifter-og-st-rre-samlinger {
   color: #0b2d74;
@@ -671,13 +673,6 @@
   font-family: "FunnelSans-Bold", sans-serif;
   font-size: 37.439476013183594px;
   font-weight: 700;
-  position: relative;
-}
-.frame-84 {
-  margin: -75px 0 0 0;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 1081px;
   position: relative;
 }
 .st-rre-grupper-over-15-personer {
@@ -690,6 +685,7 @@
   position: absolute;
   left: 378px;
   top: 0px;
+  margin-top: 6px;
 }
 .frame-91 {
   background: #ffffff;
