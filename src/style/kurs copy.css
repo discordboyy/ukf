@@ -1,15 +1,25 @@
-.frame-97,
-.frame-97 * {
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Общие настройки */
+header,
+header * {
   box-sizing: border-box;
 }
-.frame-97 {
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.pricing-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
 }
-.frame-96 {
+.pricing-section-wrapper {
   background: #ffffff;
   align-self: stretch;
   flex-shrink: 0;
@@ -17,7 +27,7 @@
   position: relative;
   overflow: hidden;
 }
-.frame-94 {
+.workshop-intro-section {
   background: #f2b80c;
   width: 100%;
   height: 1636px;
@@ -26,7 +36,7 @@
   top: 218px;
   overflow: hidden;
 }
-.frame-95 {
+.workshop-intro-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,7 +46,7 @@
   left: 0px;
   top: 0px;
 }
-.frame-93 {
+.workshop-intro-top {
   display: flex;
   flex-direction: row;
   gap: 79px;
@@ -46,13 +56,13 @@
   flex-shrink: 0;
   position: relative;
 }
-.frame-92 {
+.workshop-intro-main {
   flex-shrink: 0;
   width: 685.96px;
   height: 916px;
   position: relative;
 }
-.side-element-trekant-1-1 {
+.workshop-intro-decor-icon {
   width: 685.96px;
   height: 916px;
   position: absolute;
@@ -60,10 +70,10 @@
   top: 0px;
   overflow: visible;
 }
-.opplev-mestring-skaperglede-og-fellesskap {
+.workshop-intro-title {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 50.10060501098633px;
   line-height: 118.71%;
   font-weight: 700;
@@ -72,7 +82,7 @@
   top: 382px;
   width: 423px;
 }
-.frame-75 {
+.workshop-intro-description {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -83,260 +93,108 @@
   height: 426px;
   position: relative;
 }
-.v-re-workshops-gir-deltakerne-en-unik-mulighet-til-utforske-materialer-l-re-nye-teknikker-og-skape-noe-helt-eget {
+.workshop-intro-paragraph-1 {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
-.enten-du-planlegger-et-bedriftsarrangement-en-teambuilding-en-vennegjengsamling-eller-et-kreativt-opplegg-for-elever-tilpasser-vi-workshopene-etter-deres-behov-alltid-med-fokus-p-kvalitet-l-ring-og-gode-opplevelser {
+.workshop-intro-paragraph-2 {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
-.barn-under-10-r-deltar-gratis-sammen-med-en-voksen-og-regnes-som-en-plass {
+.workshop-intro-paragraph-3 {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 700;
   position: relative;
   align-self: stretch;
 }
-.frame-942 {
-  margin: -154px 0 0 0;
+.workshop-included-section {
+  margin-top: -154px;
   align-self: stretch;
   flex-shrink: 0;
   height: 537px;
   position: relative;
 }
-.frame-74 {
+
+.workshop-content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 67px;
   align-items: flex-start;
-  justify-content: flex-start;
   width: 1015px;
   position: absolute;
   left: 378px;
-  top: 0px;
+  top: 0;
 }
-.frame-73 {
+
+.workshop-features {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: flex-start;
-  justify-content: flex-start;
   align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
 }
-.dette-f-r-dere-i-alle-workshops {
+
+.workshop-section-title {
   color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
-  font-size: 37.439476013183594px;
+  font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
-  position: relative;
+  font-size: 37.44px;
+  text-align: left;
   align-self: stretch;
+  margin: 0;
 }
-.frame-60 {
+
+.workshop-feature-list {
   display: flex;
   flex-direction: column;
   gap: 17px;
-  align-items: flex-start;
-  justify-content: flex-start;
   align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
 }
-.frame-58 {
+
+.workshop-feature {
   display: flex;
   flex-direction: row;
-  gap: 43px;
   align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 37px;
-  position: relative;
+  gap: 43px;
 }
-.rombe-2 {
+
+.workshop-feature-icon {
   flex-shrink: 0;
   width: 25px;
   height: 16.71px;
-  position: relative;
   overflow: visible;
 }
-.alt-er-inkludert-i-prisen {
+
+.workshop-feature-title {
   color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
+  font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
-  position: relative;
+  font-size: 37.2px;
+  margin: 0;
 }
-.frame-67 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-22 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.profesjonell-instrukt-r-og-assistent-ved-st-rre-grupper {
+
+.workshop-prices-note {
   color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-68 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-23 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.alt-materiell-og-utstyr {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-69 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-24 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.forberedelser-til-kurset {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-70 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-25 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.transport-frakt {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-71 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-26 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.administrasjon-og-organisering {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-72 {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rombe-27 {
-  flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
-  position: relative;
-  overflow: visible;
-}
-.trygg-st-ttende-og-inspirerende-kursledelse {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.19807434082031px;
-  font-weight: 600;
-  position: relative;
-}
-.alle-priser-er-inkl-mva {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
-  font-size: 37.439476013183594px;
+  font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
-  position: relative;
+  font-size: 37.44px;
   align-self: stretch;
+  margin: 0;
 }
-.frame-66 {
+
+.pricing-header {
   display: flex;
   flex-direction: row;
   gap: 31px;
@@ -347,7 +205,7 @@
   justify-content: flex-start;
   z-index: 100;
 }
-.frame-64 {
+.pricing-header-image {
   flex-shrink: 0;
   width: 97px;
   height: 252px;
@@ -389,25 +247,25 @@
   transform: translate(0px, -47.86px);
   overflow: visible;
 }
-.frame-65 {
+.pricing-header-text {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 24px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
 }
-.priser {
+.pricing-title {
   color: #f1262c;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 94.37132263183594px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
-.frame-6333 {
+.pricing-subtitle-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -416,41 +274,41 @@
   flex-shrink: 0;
   position: relative;
 }
-.kreative-workshops-for {
+.pricing-subtitle-main {
   color: #f2b80c;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
-.sm-og-store-grupper {
+.pricing-subtitle-detail {
   margin: -15px 0 0 0;
   color: #ffffff;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
 }
-.frame-82, .frame-83, .frame-84 {
-  margin: -85px 0 0 0;
+.pricing-group-small, .pricing-group-medium, .pricing-group-large {
+  margin: -90px 0 0 0;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
 }
-.frame-82 {
+.pricing-group-small {
   height: 831px;
 }
-.frame-83 {
+.pricing-group-medium {
   height: 801px;
 }
-.frame-84 {
+.pricing-group-large {
   height: 1081px;
 }
-.frame-642 {
+.pricing-group-wrapper {
   background: #ffffff;
   width: auto;
   height: 756px;
@@ -459,7 +317,7 @@
   top: 75px;
   overflow: hidden;
 }
-.frame-81 {
+.pricing-table {
   display: flex;
   flex-direction: row;
   gap: 164px;
@@ -468,7 +326,7 @@
   margin-left: 378px;
   margin-top: 159px;
 }
-.frame-79 {
+.pricing-duration {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -478,16 +336,16 @@
   width: 239px;
   position: relative;
 }
-.varighet {
+.pricing-duration-title {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 37.439476013183594px;
   font-weight: 600;
   position: relative;
   align-self: stretch;
 }
-.frame-76 {
+.pricing-duration-options {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -497,34 +355,17 @@
   flex-shrink: 0;
   position: relative;
 }
-._2-timer {
+.duration-hours {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 74.98497009277344px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
-._3-timer {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-._4-timer {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.frame-78 {
+
+.pricing-price {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -533,15 +374,15 @@
   flex-shrink: 0;
   position: relative;
 }
-.pris-inkl-mva {
+.price-title {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 37.439476013183594px;
   font-weight: 600;
   position: relative;
 }
-.frame-77 {
+.pricing-price-values {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -550,31 +391,15 @@
   flex-shrink: 0;
   position: relative;
 }
-._6-600 {
+.price {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 74.98497009277344px;
   font-weight: 600;
   position: relative;
 }
-._7-600 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 600;
-  position: relative;
-}
-._8-600 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-80 {
+.pricing-group-description {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -585,10 +410,10 @@
   left: 378px;
   top: 0px;
 }
-.grupper-opptil-8-personer {
+.group-size-title {
   color: #ffffff;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
@@ -596,16 +421,16 @@
   align-self: stretch;
   margin-top: -2px;
 }
-._1-instrukt-r-perfekt-for-mindre-grupper-og-teambuilding-i-intime-rammer {
+.group-additional-info {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 37.439476013183594px;
   font-weight: 700;
   position: relative;
   align-self: stretch;
 }
-.frame-643 {
+.pricing-group-wrapper-second {
   background: #f2b80c;
   width: 100%;
   height: 839px;
@@ -614,40 +439,8 @@
   top: 75px;
   overflow: hidden;
 }
-.pris-inkl-mva2 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 37.439476013183594px;
-  font-weight: 600;
-  position: relative;
-  align-self: stretch;
-}
-._8-300 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 600;
-  position: relative;
-}
-._9-700 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 600;
-  position: relative;
-}
-._11-000 {
-  color: #0b2d74;
-  text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 74.98497009277344px;
-  font-weight: 600;
-  position: relative;
-}
-.frame-802 {
+
+.pricing-group-description-second {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -657,37 +450,37 @@
   left: 378px;
   top: 0px;
 }
-.grupper-opptil-15-personer {
+.group-size-title-second {
   color: #f2b80c;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
-  margin-top: 5px;
+  margin-top: -1px;
 }
-._1-instrukt-r-1-assistent-anbefales-for-skoler-bedrifter-og-st-rre-samlinger {
+.group-additional-info-second {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 37.439476013183594px;
   font-weight: 700;
   position: relative;
 }
-.st-rre-grupper-over-15-personer {
+.group-size-title {
   color: #ffffff;
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: absolute;
   left: 378px;
   top: 0px;
-  margin-top: 6px;
+  margin-top: 1px;
 }
-.frame-91 {
+.pricing-group-wrapper {
   background: #ffffff;
   width: 100%;
   height: 1005px;
@@ -696,14 +489,14 @@
   top: 76px;
   overflow: hidden;
 }
-.frame-90 {
+.pricing-group-large-content {
   width: 1303px;
   height: 703px;
   position: absolute;
   left: 367px;
   top: 60px;
 }
-.frame-85 {
+.pricing-group-large-description {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -715,44 +508,44 @@
   left: 11px;
   top: 0px;
 }
-.ved-st-rre-grupper-setter-vi-sammen-flere-workshops-som-gjennomf-res-samtidig-for-eksempel {
+.large-group-paragraph-1 {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
   flex: 1;
 }
-.tekstil-akvarell-glassgravering {
+.large-group-example-courses {
   color: #0b2d74;
   text-align: right;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 600;
   position: relative;
   width: 553px;
 }
-.dette-gir-en-variert-sosial-og-inspirerende-opplevelse-der-deltakerne-kan-velge-sin-kreative-retning {
+.large-group-paragraph-2 {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
-.pris-og-opplegg-tilpasses-etter-antall-deltakere-varighet-og-nsket-kombinasjon-av-kurs {
+.large-group-paragraph-3 {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
-.frame-89 {
+.large-group-contact {
   display: flex;
   flex-direction: row;
   gap: 100px;
@@ -762,49 +555,13 @@
   left: 0px;
   top: 428px;
 }
-.frame-88 {
+.large-group-contact-image {
   flex-shrink: 0;
   width: 298px;
   height: 275px;
   position: relative;
 }
-.rombe-12 {
-  width: 141.59px;
-  height: 94.66px;
-  position: absolute;
-  left: 208.59px;
-  top: 82px;
-  transform: translate(-141.59px, 0px);
-  overflow: visible;
-}
-.rombe-29 {
-  width: 69.71px;
-  height: 46.6px;
-  position: absolute;
-  left: 69.71px;
-  top: 89px;
-  transform: translate(-69.71px, 0px);
-  overflow: visible;
-}
-.rombe-32 {
-  width: 69.71px;
-  height: 46.6px;
-  position: absolute;
-  left: 139.71px;
-  top: 172px;
-  transform: translate(-69.71px, 0px);
-  overflow: visible;
-}
-.rombe-42 {
-  width: 69.71px;
-  height: 46.6px;
-  position: absolute;
-  left: 297.71px;
-  top: 135px;
-  transform: translate(-69.71px, 0px);
-  overflow: visible;
-}
-.frame-87 {
+.large-group-contact-text {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -814,10 +571,10 @@
   width: 905px;
   position: relative;
 }
-.ta-kontakt-for-et-skreddersydd-opplegg {
+.contact-main-text {
   color: #0b2d74;
   text-align: left;
-  font-family: "FunnelSans-Bold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 50.10060501098633px;
   line-height: 118.71%;
   font-weight: 700;
@@ -838,7 +595,7 @@
 .vi-hjelper-gjerne-med-finne-den-perfekte-workshopl-sningen-for-deres-gruppe {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
@@ -847,7 +604,7 @@
 .ta-kontakt-for-et-uforpliktende-tilbud-vi-tilpasser-b-de-innhold-varighet-og-niv {
   color: #37528b;
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
