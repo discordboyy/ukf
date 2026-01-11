@@ -468,7 +468,7 @@ html {
   font-weight: 700;
   position: relative;
 }
-.group-size-title {
+.group-size-title-third {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
@@ -582,7 +582,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.frame-86 {
+.contact-additional-text-wrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -592,7 +592,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.vi-hjelper-gjerne-med-finne-den-perfekte-workshopl-sningen-for-deres-gruppe {
+.contact-paragraph-1 {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
@@ -601,7 +601,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.ta-kontakt-for-et-uforpliktende-tilbud-vi-tilpasser-b-de-innhold-varighet-og-niv {
+.contact-paragraph-2 {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
