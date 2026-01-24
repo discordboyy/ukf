@@ -308,6 +308,9 @@ html {
   flex-shrink: 0;
   position: relative;
 }
+.course-card-accent.red {
+  gap: 135px;
+}
 .course-body {
   display: flex; /* заменяем inline-flex на flex */
   flex-direction: row;
@@ -323,7 +326,7 @@ html {
   align-items: flex-start;
   width: 335px;
 }
-.what-included {
+.course-includes {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -331,11 +334,10 @@ html {
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  height: 210px;
+  height: auto;
   position: relative;
 }
-.hva-er-inkludert {
-  color: var(--blue-color);
+.course-includes-title {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -343,10 +345,8 @@ html {
   position: relative;
   align-self: stretch;
   cursor: default;
-  
 }
-.what-included-text {
-  color: var(--blue-color);
+.course-includes-description {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -355,6 +355,13 @@ html {
   align-self: stretch;
   cursor: default;
 }
+.course-includes-title.red, .course-includes-description.red {
+  color: var(--red-color);
+}
+.course-includes-title.blue, .course-includes-description.blue {
+  color: var(--blue-color);
+}
+
 .price-href {
   flex-shrink: 0;
   width: 214px;
@@ -403,15 +410,14 @@ html {
   position: relative;
   overflow: visible;
 }
-.duration {
+.course-duration {
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: flex-start;
   width: 263px; /* или фиксированная ширина, если нужно */
 }
-.anbefalt-varighet {
-  color: var(--blue-color);
+.course-duration-label {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -420,8 +426,7 @@ html {
   align-self: stretch;
   cursor: default;
 }
-.duration-text {
-  color: var(--blue-color);
+.course-duration-value {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -430,6 +435,13 @@ html {
   align-self: stretch;
   cursor: default;
 }
+.course-duration-label.red, .course-duration-value.red {
+  color: var(--red-color);
+}
+.course-duration-label.blue, .course-duration-value.blue {
+  color: var(--blue-color);
+}
+
 .frame-542 {
   display: flex;
   flex-direction: column;
@@ -562,7 +574,6 @@ html {
   position: relative;
 }
 .age-group-label {
-  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -580,6 +591,15 @@ html {
   position: relative;
   align-self: stretch;
   cursor: default;
+}
+.age-group-label.blue, .age-group-description.blue {
+  color: var(--blue-color);
+}
+.age-group-label.red, .age-group-description.red {
+  color: var(--red-color);
+}
+.age-group-label.yellow, .age-group-description.yellow {
+  color: var(--yellow-color);
 }
 .course-toggle-open {
   display: flex;
