@@ -242,7 +242,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.course-summary-description red {
+.course-summary-description.red {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
