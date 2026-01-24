@@ -362,6 +362,9 @@ html {
 .course-includes-title.blue, .course-includes-description.blue {
   color: var(--blue-color);
 }
+.course-includes-title.yellow, .course-includes-description.yellow {
+  color: var(--yellow-color);
+}
 
 .price-href {
   flex-shrink: 0;
@@ -442,6 +445,9 @@ html {
 .course-duration-label.blue, .course-duration-value.blue {
   color: var(--blue-color);
 }
+.course-duration-label.yellow, .course-duration-value.yellow {
+  color: var(--yellow-color);
+}
 
 .frame-542 {
   display: flex;
@@ -474,7 +480,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.course-body2 {
+.course-body.blue ,.course-body.red ,.course-body.yellow {
   display: flex;
   flex-direction: column;
   gap: 62px;
@@ -484,6 +490,9 @@ html {
   width: 600px;
   position: relative;
   justify-content: space-between;
+}
+.course-body.yellow {
+  gap: 152px;
 }
 .skills {
   display: flex;
@@ -537,6 +546,9 @@ html {
 }
 .skill-item.red {
   height: 87px;
+}
+.skill-item.yellow {
+  height: 77px;
 }
 .rombe-item-blue, .rombe-item-red, .rombe-item-yellow {
   flex-shrink: 0;
