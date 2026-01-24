@@ -10,6 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --blue-color: #103279;
+  --red-color: #f1262c;
+  --yellow-color: #f2b80c;
+}
+
 .course-offer-section {
   display: flex;
   flex-direction: row;
@@ -185,7 +191,7 @@ html {
   margin-bottom: 200px;
 }
 .kurs {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 94.37132263183594px;
@@ -243,7 +249,7 @@ html {
   position: relative;
 }
 .course-summary-description.red {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
@@ -270,10 +276,21 @@ html {
   position: relative;
 }
 .utvide.red {
-  color: #f1262c;
+  color: var(--red-color);
+  transition: transform 0.3s ease;
 }
+/* текст по умолчанию */
+.course-card .utvide::before {
+    content: "utvide";
+}
+
+/* когда карточка открыта */
+.course-card.is-open .utvide::before {
+    content: "kollapse";
+}
+
 .utvide.yellow {
-  color: #f2b80c;
+  color: var(--yellow-color);
 }
 .rombe {
   flex-shrink: 0;
@@ -282,7 +299,7 @@ html {
   position: relative;
   overflow: visible;
 }
-.frame-105 {
+.course-card-accent {
   display: flex;
   flex-direction: column;
   gap: 65px;
@@ -318,7 +335,7 @@ html {
   position: relative;
 }
 .hva-er-inkludert {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -329,7 +346,7 @@ html {
   
 }
 .what-included-text {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -394,7 +411,7 @@ html {
   width: 263px; /* или фиксированная ширина, если нужно */
 }
 .anbefalt-varighet {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -404,7 +421,7 @@ html {
   cursor: default;
 }
 .duration-text {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -424,7 +441,7 @@ html {
   height: auto;
   position: relative;
 }
-.frame-522 {
+.course-body-holder {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -432,7 +449,7 @@ html {
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  height: 479px;
+  height: auto;
   position: relative;
 }
 .course-summary-description.blue {
@@ -465,8 +482,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.hva-l-rer-du {
-  color: #103279;
+.skills-title {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -475,6 +491,16 @@ html {
   align-self: stretch;
   cursor: default;
 }
+.skills-title.blue {
+  color: var(--blue-color);
+}
+.skills-title.red {
+  color: var(--red-color);
+}
+.skills-title.yellow {
+  color: var(--yellow-color);
+}
+
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -496,15 +522,17 @@ html {
   height: 37px;
   position: relative;
 }
-.rombe-item-blue {
+.skill-item.red {
+  height: 87px;
+}
+.rombe-item-blue, .rombe-item-red, .rombe-item-yellow {
   flex-shrink: 0;
   width: 25px;
   height: 16.71px;
   position: relative;
   overflow: visible;
 }
-.skill-item-text-blue {
-  color: #103279;
+.skill-item-text-blue, .skill-item-text-red, .skill-item-text-yellow {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -514,7 +542,16 @@ html {
   height: 47px;
   cursor: default;
 }
-.frame-57 {
+.skill-item-text-blue {
+  color: var(--blue-color);
+}
+.skill-item-text-red {
+  color: var(--red-color);
+}
+.skill-item-text-yellow {
+  color: var(--yellow-color);
+}
+.age-group {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -524,8 +561,8 @@ html {
   height: 84px;
   position: relative;
 }
-.passer-for {
-  color: #103279;
+.age-group-label {
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.763999938964844px;
@@ -534,8 +571,8 @@ html {
   align-self: stretch;
   cursor: default;
 }
-.barn-fra-10-r-og-voksne {
-  color: #103279;
+.age-group-description {
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.349998474121094px;
@@ -558,7 +595,7 @@ html {
   cursor: pointer;
 }
 .kollapse {
-  color: #103279;
+  color: var(--blue-color);
   text-align: right;
   font-family: "Funnel Sans", sans-serif;
   font-size: 30.480146408081055px;
@@ -586,16 +623,16 @@ html {
   align-self: stretch;
 }
 .course-title.red {
-  color: #f1262c;
+  color: var(--red-color);
 }
 .course-title.blue {
-  color: #103279;
+  color: var(--blue-color);
 }
 .course-title.yellow {
-  color: #f2b80c;
+  color: var(--yellow-color);
 }
 .course-summary-description.yellow {
-  color: #f2b80c;
+  color: var(--yellow-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.3488655090332px;
