@@ -724,3 +724,155 @@ html {
 .course-card.is-open .rombe-13 {
   transform: rotate(90deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.filters-reset {
+  color: #0b2d74;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  align-self: stretch;
+  text-align: right;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.filters-container {
+  display: flex;
+  gap: 179px;
+  align-items: flex-end;
+}
+
+.filters-main {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 469px;
+  justify-content: space-between;
+}
+
+.filters-sub-main {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 163px;
+}
+
+.filters-sub {
+  display: flex;
+  gap: 42px;
+  width: 623px;
+  justify-content: space-between;
+}
+
+.filters-sub-column {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  width: 310px;
+}
+
+/* Скрываем стандартный чекбокс */
+.filter-item input[type="checkbox"] {
+  display: none;
+}
+
+
+/* Квадрат для чекбокса */
+.filter-label.blue::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 29px;
+  border: var(--blue-color) 4px solid;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* Состояние checked для синих фильтров */
+.filter-item input[type="checkbox"]:checked + .filter-label.blue::before {
+  background: var(--blue-color);
+}
+
+/* Цвет текста */
+.filter-label.blue {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 400;
+  font-size: 41px;
+  color: var(--blue-color);
+}
+
+
+.filter-label.red {
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 700;
+  font-size: 41px;
+  color: var(--red-color)
+}
+
+
+
+
+/* Общий стиль для всех фильтров */
+.filter-item {
+  display: flex;
+  flex-direction: row;   /* иконка слева, текст справа */
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Скрываем стандартный чекбокс */
+.filter-item input[type="checkbox"] {
+  display: none;
+}
+
+/* Для красных фильтров используем изображение */
+.filter-label.red::before {
+  content: '';
+  display: inline-block;
+
+  width: 39px;
+  height: 29px;
+
+  background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
+
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.filter-item input[type="checkbox"]:checked + .filter-label.red::before {
+  transform: rotate(90deg);
+}
+
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-item.all, .filter-item.wood{
+  align-self: flex-start;
+}

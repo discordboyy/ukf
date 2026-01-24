@@ -10,6 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="src/js/main.js" defer></script>
+  <script src="src/js/kurs.js" defer></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,8 +58,53 @@
 
     <div class="frame-108">
         <div class="kurs">Kurs</div>
+
+        <div class="filters">
+            <!-- Кнопка сброса -->
+            <button type="button" class="filters-reset">nullstill</button>
+
+            <div class="filters-container">
+                <!-- Основные категории -->
+                <div class="filters-main">
+                    <label class="filter-item all">
+                        <input type="checkbox" class="filter-checkbox" value="all" />
+                        <span class="filter-label blue">Vis alt</span>
+                    </label>
+
+                    <div class="filters-sub-main">
+                        <label class="filter-item tekstil">
+                            <input type="checkbox" class="filter-checkbox" value="tekstil" />
+                            <span class="filter-label blue">Tekstil</span>
+                        </label>
+                        <label class="filter-item glass">
+                            <input type="checkbox" class="filter-checkbox" value="glass" />
+                            <span class="filter-label blue">Glass</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Подкатегории -->
+                <div class="filters-sub">
+                    <div class="filters-sub-column">
+                        <label class="filter-item visual-art">
+                            <input type="checkbox" class="filter-checkbox" value="visuell-kunst" />
+                            <span class="filter-label red">Visuell Kunst</span>
+                        </label>
+                        <label class="filter-item christmas">
+                            <input type="checkbox" class="filter-checkbox" value="julverksted" />
+                            <span class="filter-label red">Julverksted</span>
+                        </label>
+                    </div>
+                    <label class="filter-item wood">
+                        <input type="checkbox" class="filter-checkbox" value="tre" />
+                        <span class="filter-label red">Tre</span>
+                    </label>
+                </div>
+            </div>
+        </div>  
+
         <div class="frame-107">
-            <div class="course-card">
+            <div class="course-card" data-category="visuell-kunst">
                 <div class="course-card-accent red">
                     <div class="rectangle-2"></div>
                     <div class="course-body">
@@ -140,7 +186,7 @@
                 </div>
             </div>
 
-            <div class="course-card">
+            <div class="course-card" data-category="tekstil">
                 <div class="course-card-accent blue">
                     <div class="rectangle-2"></div>
                     <div class="course-body">
@@ -210,7 +256,7 @@
                 </div>
             </div>
 
-            <div class="course-card">
+            <div class="course-card" data-category="glass">
                 <div class="course-card-accent yellow">
                     <div class="rectangle-2"></div>
                     <div class="course-body">
