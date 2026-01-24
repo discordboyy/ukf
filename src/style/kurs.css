@@ -604,6 +604,13 @@ html {
   align-self: stretch;
 }
 
+.rombe {
+  transition: transform 0.3s ease; /* чтобы красиво вращалось */
+}
+
+.course-card.is-open .rombe {
+    transform: rotate(90deg);
+}
 
 
 

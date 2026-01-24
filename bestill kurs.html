@@ -190,13 +190,19 @@
         checkScrollBlocks(); // Проверка при загрузке страницы
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".course-toggle, .course-toggle-open").forEach(btn => {
-        btn.addEventListener("click", () => {
-        const card = btn.closest(".course-card");
-        card.classList.toggle("is-open");
+    // Course card toggle functionality with exclusive open state
+    document.querySelectorAll('.course-toggle').forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const currentCard = toggle.closest('.course-card');
+
+            document.querySelectorAll('.course-card').forEach(card => {
+                if (card !== currentCard) {
+                    card.classList.remove('is-open');
+                }
+            });
+
+            currentCard.classList.toggle('is-open');
         });
-    });
     });
     </script>
 
