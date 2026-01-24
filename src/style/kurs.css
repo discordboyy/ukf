@@ -279,18 +279,19 @@ html {
   color: var(--red-color);
   transition: transform 0.3s ease;
 }
-/* текст по умолчанию */
+.utvide.blue {
+  color: var(--blue-color);
+  transition: transform 0.3s ease;
+}
+.utvide.yellow {
+  color: var(--yellow-color);
+}
 .course-card .utvide::before {
     content: "utvide";
 }
-
 /* когда карточка открыта */
 .course-card.is-open .utvide::before {
     content: "kollapse";
-}
-
-.utvide.yellow {
-  color: var(--yellow-color);
 }
 .rombe {
   flex-shrink: 0;
