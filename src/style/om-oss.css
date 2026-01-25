@@ -583,3 +583,18 @@ html {
 .board-member-description--narrow {
   width: 397px;
 }
+
+
+
+
+
+.scroll-animate {
+  opacity: 1;
+  transform: translateX(-500px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
