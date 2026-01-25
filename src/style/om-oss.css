@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --red-color: #f1262c;
+  --blue-color: #103279;
+  --yellow-color: #f3b910;
+}
+
+/* Общие настройки */
+header,
+header * {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  cursor: default;
+}
+
+
+.about-section-forening {
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  width: 1731.25px;
+  margin-bottom: 275px;
+}
+.about-content-forening {
+  display: flex;
+  flex-direction: column;
+  gap: 122px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.about-intro-text-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 1630px;
+  position: relative;
+}
+.about-intro-text-forening {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 41.926177978515625px;
+  line-height: 122.35%;
+  font-weight: 600;
+  position: relative;
+  width: 867px;
+}
+.about-description-forening {
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.about-header {
+  flex-shrink: 0;
+  width: 861px;
+  height: 433px;
+  position: relative;
+}
+.about-header-icon {
+  width: 861.5px;
+  height: 630.5px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.om-oss {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 93.23500061035156px;
+  font-weight: 600;
+  position: absolute;
+  left: 380px;
+  top: 137.5px;
+}
+.about-description-text-forening {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 782px;
+  position: relative;
+}
+.about-mission {
+  color: #103279;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.20355224609375px;
+  line-height: 122.35%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.about-activities-part {
+  color: #103279;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.20355224609375px;
+  line-height: 122.35%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.about-activities-part--highlight {
+  font-family: "Funnel Sans", sans-serif;
+  font-style: italic;
+}
+.about-impact {
+  color: #103279;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.20355224609375px;
+  line-height: 122.35%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.about-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1613px;
+  position: relative;
+}
+.timeline-events {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.timeline-item-forening {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.timeline-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 39.13px;
+  position: relative;
+  overflow: visible;
+}
+.event-content-forening {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.event-date-forening {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 30.87347984313965px;
+  line-height: 122.35%;
+  font-weight: 600;
+  position: relative;
+}
+.event-title-forening {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.20355224609375px;
+  line-height: 122.35%;
+  font-weight: 400;
+  position: relative;
+
+}
+
+
+
+
+.membership-section-forening {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1353px;
+  position: relative;
+}
+.membership-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 69px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 494px;
+  position: relative;
+}
+.membership-title-forening {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 76.65929412841797px;
+  line-height: 63.11%;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+.membership-fee-info-forening {
+  color: #f12727;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 41.80513381958008px;
+  line-height: 103.8%;
+  letter-spacing: 0undefined;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+
+.membership-fee-info-forening-text-highlight {
+  letter-spacing: -0.26em;
+}
+.membership-details-forening {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 770px;
+  position: relative;
+}
+.membership-value-text-forening {
+  color: #103279;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.28069305419922px;
+  line-height: 132.13%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.membership-application {
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.28069305419922px;
+  line-height: 130.37%;
+  font-weight: 400;
+  position: relative;
+  width: 770px;
+}
+.membership-application-text {
+  color: #103279;
+}
+.membership-application-email {
+  color: #f3b910;
+  text-decoration: underline;
+}
+.membership-application-note {
+  color: #103279;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 33.27801513671875px;
+  line-height: 145.89%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+
+
+
+
+
+
+
+.frame-133,
+.frame-133 * {
+  box-sizing: border-box;
+}
+.frame-133 {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin: auto;
+  max-width: 1506px;
+  margin-bottom: 275px;
+}
+.stypet {
+  color: #f1262c;
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 76.65929412841797px;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+.frame-132 {
+  display: flex;
+  flex-direction: row;
+  gap: 151px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-129 {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.rectangle-4 {
+  background: #d9d9d9;
+  flex-shrink: 0;
+  width: 384px;
+  height: 384px;
+  position: relative;
+}
+.frame-128 {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-127 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.julia-favoritova {
+  color: #f12727;
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 33.78771209716797px;
+  font-weight: 600;
+  position: relative;
+}
+.styreleder {
+  color: #f12727;
+  text-align: left;
+  font-family: "FunnelSans-Italic", sans-serif;
+  font-size: 33.14208984375px;
+  font-weight: 400;
+  font-style: italic;
+  position: relative;
+}
+.kunstner-entrepren-r-og-kulturprosjektleder-som-kom-til-norge-fra-ukraina-i-2022-hun-er-prosjektleder-for-sitt-eget-initiativ-favoritt-art-workshop-hvor-hun-leder-kurs-i-trearbeid-og-glassgravering-for-deltakere-fra-6-til-99-r-prosjektet-forener-og-inspirerer-mennesker-gjennom-kreativ-og-teknisk-utvikling {
+  color: #f22828;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 24.975147247314453px;
+  line-height: 115.92%;
+  font-weight: 400;
+  position: relative;
+  width: 423px;
+}
+.katya-bukhantsova {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 33.78771209716797px;
+  font-weight: 600;
+  position: relative;
+}
+.nestleder {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-Italic", sans-serif;
+  font-size: 33.14208984375px;
+  font-weight: 400;
+  font-style: italic;
+  position: relative;
+}
+.kunsth-ndverker-og-designer-fra-ukraina-med-spesialisering-i-mixed-media-teknikker-innen-tekstilkunst-inkludert-kunsthekling-gjenbruk-redesign-og-broderi-hun-formidler-ukrainske-h-ndverkstradisjoner-i-norge-og-underviser-i-kreative-fag-i-tillegg-har-hun-solid-erfaring-i-prosjektelese-og-er-daglig-leder-og-p-driver-i-organisasjoen-relove-som-arrangerer-gratis-aktiviteter-for-barn-og-unge-i-oslo {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 24.975147247314453px;
+  line-height: 115.92%;
+  font-weight: 400;
+  position: relative;
+  width: 397px;
+}
+.anna-lubchenko {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 33.78771209716797px;
+  font-weight: 600;
+  position: relative;
+}
+.styremedlem {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-Italic", sans-serif;
+  font-size: 33.14208984375px;
+  font-weight: 400;
+  font-style: italic;
+  position: relative;
+}
+.kunstner-og-grafisk-designer-fra-ukraina-bosatt-i-norge-siden-2022-hun-er-utdannet-ved-kunstakademiet-i-kyiv-og-arbeider-med-akvarellmaling-tekstilkunst-og-redesign-anna-er-medlem-av-national-union-of-artists-of-ukraine-nuau-for-tiden-tar-hun-praktisk-pedagogisk-utdanning-i-kunst-og-h-ndverk-ved-h-gskolen-i-stfold {
+  color: #103279;
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 24.975147247314453px;
+  line-height: 116.76%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  width: 397px;
+}
+.board-section,
+.board-section * {
+  box-sizing: border-box;
+}
+.board-section {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin: auto;
+  max-width: 1506px;
+  margin-bottom: 275px;
+}
+.board-title {
+  color: #f1262c;
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 76.65929412841797px;
+  font-weight: 600;
+  position: relative;
+  align-self: stretch;
+}
+.board-members {
+  display: flex;
+  flex-direction: row;
+  gap: 151px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.board-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.board-member-image {
+  background: #d9d9d9;
+  flex-shrink: 0;
+  width: 384px;
+  height: 384px;
+  position: relative;
+}
+.board-member-content {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.board-member-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.board-member-name {
+  text-align: left;
+  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-size: 33.78771209716797px;
+  font-weight: 600;
+  position: relative;
+}
+.board-member-name--red {
+  color: #f12727;
+}
+.board-member-name--blue {
+  color: #103279;
+}
+.board-member-role {
+  text-align: left;
+  font-family: "FunnelSans-Italic", sans-serif;
+  font-size: 33.14208984375px;
+  font-weight: 400;
+  font-style: italic;
+  position: relative;
+}
+.board-member-role--red {
+  color: #f12727;
+}
+.board-member-role--blue {
+  color: #103279;
+}
+.board-member-description {
+  text-align: left;
+  font-family: "FunnelSans-Regular", sans-serif;
+  font-size: 24.975147247314453px;
+  line-height: 115.92%;
+  font-weight: 400;
+  position: relative;
+}
+.board-member-description--red {
+  color: #f22828;
+}
+.board-member-description--blue {
+  color: #103279;
+}
+.board-member-description--wide {
+  width: 423px;
+}
+.board-member-description--narrow {
+  width: 397px;
+}
