@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+:root {
+  --red-color: #f1262c;
+  --blue-color: #103279;
+  --yellow-color: #f3b910;
+}
+
 /* Общие настройки */
 header,
 header * {

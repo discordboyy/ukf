@@ -1,4 +1,11 @@
 /* Общие настройки */
+
+:root {
+  --red-color: #f1262c;
+  --blue-color: #103279;
+  --yellow-color: #f3b910;
+}
+
 header,
 header * {
   box-sizing: border-box;
