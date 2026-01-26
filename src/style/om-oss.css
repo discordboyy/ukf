@@ -474,7 +474,8 @@ html {
 .board-section {
   display: flex;
   flex-direction: column;
-  gap: 90px;
+  /* gap: 90px; ORIGINALE GAP*/
+  gap: 60px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;

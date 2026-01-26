@@ -188,7 +188,8 @@ html {
 .frame-108 {
   display: flex;
   flex-direction: column;
-  gap: 93px;
+  /* gap: 93px; ORIGINAL GAP */
+  gap: 30px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
@@ -749,6 +750,7 @@ html {
   gap: 42px;
   align-items: flex-end;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .filters-reset {
