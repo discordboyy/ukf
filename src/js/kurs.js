@@ -57,3 +57,69 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCards();
   });
 });
+
+
+
+
+
+
+// Модалка для карусели изображений
+let modalImages = [];
+let modalIndex = 0;
+let touchStartX = 0;
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const modalClose = document.getElementById("modalClose");
+const modalPrev = document.getElementById("modalPrev");
+const modalNext = document.getElementById("modalNext");
+
+// Открытие модалки
+document.querySelectorAll(".carousel-preview").forEach(preview => {
+    preview.addEventListener("click", () => {
+        modalImages = JSON.parse(preview.dataset.images);
+        modalIndex = 0;
+        modalImg.src = modalImages[modalIndex];
+        modal.classList.add("show");
+        document.body.style.overflow = "hidden";
+    });
+});
+
+// Закрытие
+function closeModal() {
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+}
+
+modalClose.addEventListener("click", closeModal);
+modal.addEventListener("click", e => {
+    if (e.target === modal) closeModal();
+});
+
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeModal();
+});
+
+// Показ картинки
+function showModalImage(index) {
+    modalIndex = (index + modalImages.length) % modalImages.length;
+    modalImg.src = modalImages[modalIndex];
+}
+
+// Навигация
+modalPrev.addEventListener("click", () => showModalImage(modalIndex - 1));
+modalNext.addEventListener("click", () => showModalImage(modalIndex + 1));
+
+// Свайпы
+modalImg.addEventListener("touchstart", e => {
+    touchStartX = e.touches[0].clientX;
+});
+
+modalImg.addEventListener("touchend", e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+        diff > 0
+            ? showModalImage(modalIndex + 1)
+            : showModalImage(modalIndex - 1);
+    }
+});
