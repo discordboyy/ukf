@@ -191,11 +191,11 @@ html {
   display: flex;
   flex-direction: column;
   /* gap: 93px; ORIGINAL GAP */
-  gap: 30px;
+  gap: 22.5px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  width: 1367px;
+  width: 1025px;
   margin: auto;
   margin-bottom: 200px;
 }
@@ -203,7 +203,7 @@ html {
   color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 94.37132263183594px;
+  font-size: 70.78px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
@@ -212,7 +212,7 @@ html {
 .frame-107 {
   display: flex;
   flex-direction: column;
-  gap: 79px;
+  gap: 59.25px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -222,7 +222,7 @@ html {
 .course-card {
   display: flex;
   flex-direction: row;
-  gap: 65px;
+  gap: 48.75px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -232,36 +232,38 @@ html {
 .rectangle-2 {
   background: #d9d9d9;
   flex-shrink: 0;
-  width: 702px;
-  height: 703px;
+  width: 526.5px;
+  height: 527.25px;
   position: relative;
 }
 .frame-54 {
   display: flex;
   flex-direction: column;
-  gap: 70px;
   align-items: flex-end;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 600px;
-  height: 547px;
   position: relative;
+
+  width: 450px;
+  height: 410.25px;
+  gap: 52.5px;
 }
 .frame-52 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 22.5px;
 }
 .course-summary-description.red {
   color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
+  font-size: 25.011649px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -269,18 +271,19 @@ html {
 .course-toggle {
   display: flex;
   flex-direction: row;
-  gap: 12px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 217px;
   position: relative;
   cursor: pointer;
+
+  gap: 9px;
+  width: 162.75px;
 }
 .utvide {
   text-align: right;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 30.480146408081055px;
+  font-size: 22.86px;
   font-weight: 700;
   position: relative;
 }
@@ -304,27 +307,27 @@ html {
 }
 .rombe {
   flex-shrink: 0;
-  width: 41px;
-  height: 32.09px;
+  width: 30.75px;
+  height: 24.0675px;
   position: relative;
   overflow: visible;
 }
 .course-card-accent {
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 48.75px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
 }
 .course-card-accent.red {
-  gap: 135px;
+  gap: 101.25px;
 }
 .course-body {
   display: flex; /* заменяем inline-flex на flex */
   flex-direction: row;
-  gap: 50px;
+  gap: 37.5px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap; /* запрещаем перенос элементов */
@@ -332,9 +335,10 @@ html {
 .frame-101 {
   display: flex;
   flex-direction: column;
-  gap: 45px;
   align-items: flex-start;
-  width: 335px;
+
+  gap: 33.75px;
+  width: 251.25px;
 }
 .course-includes {
   display: flex;
@@ -350,7 +354,7 @@ html {
 .course-includes-title {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.763999938964844px;
+  font-size: 25.32299995px;
   font-weight: 500;
   position: relative;
   align-self: stretch;
@@ -359,7 +363,7 @@ html {
 .course-includes-description {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.349998474121094px;
+  font-size: 25.012498px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -377,8 +381,8 @@ html {
 
 .price-href {
   flex-shrink: 0;
-  width: 214px;
-  height: 127.76px;
+  width: 160.5px;
+  height: 95.82px;
   position: relative;
 
   cursor: pointer;
@@ -386,12 +390,13 @@ html {
   text-decoration: none;
 
   &:hover {
-    transform: translateX(10px); /* move slightly to the left */
+    transform: translateX(7.5px); /* move slightly to the left */
   }
 }
 .romber-knapp-2-2-1 {
-  width: 214px;
-  height: 127.76px;
+  width: 160.5px;
+  height: 95.82px;
+
   position: absolute;
   left: 0px;
   top: 0px;
@@ -400,26 +405,29 @@ html {
 .frame-47 {
   display: flex;
   flex-direction: row;
-  gap: 15px;
   align-items: center;
   justify-content: flex-start;
-  height: 32.1px;
   position: absolute;
-  left: 43px;
-  top: 45.83px;
+
+  gap: 11.25px;
+  height: 24.075px;
+  left: 32.25px;
+  top: 34.3725px;
 }
 .pris {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 31.537944793701172px;
+  font-size: 23.6534586px;
   font-weight: 700;
   position: relative;
 }
 .pile-full-bla-1 {
   flex-shrink: 0;
-  width: 35px;
-  height: 40.51px;
+
+  width: 26.25px;
+  height: 30.3825px;
+
   position: relative;
   overflow: visible;
 }
@@ -428,12 +436,13 @@ html {
   flex-direction: column;
   gap: 0px;
   align-items: flex-start;
-  width: 263px; /* или фиксированная ширина, если нужно */
+
+  width: 197.25px; /* или фиксированная ширина, если нужно */
 }
 .course-duration-label {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.763999938964844px;
+  font-size: 25.32299995px;
   font-weight: 500;
   position: relative;
   align-self: stretch;
@@ -442,7 +451,7 @@ html {
 .course-duration-value {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.349998474121094px;
+  font-size: 25.012498px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -464,27 +473,31 @@ html {
   align-items: flex-end;
   justify-content: space-between;
   flex-shrink: 0;
-  width: 600px;
-  gap: 50px;
   height: auto;
   position: relative;
+
+  width: 450px;
+  gap: 37.5px;
 }
 .course-body-holder {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   height: auto;
   position: relative;
+
+  gap: 22.5px;
 }
 .course-summary-description.blue {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
+
+  font-size: 25.011649px;
+
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -496,27 +509,34 @@ html {
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 600px;
   position: relative;
   justify-content: space-between;
+
+  gap: 46.5px;
+  width: 450px;
 }
 .course-body.yellow {
-  gap: 152px;
+
+  gap: 114px;
+
 }
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   align-items: flex-start;
   justify-content: flex-end;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 4.5px;
 }
 .skills-title {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.763999938964844px;
+
+  font-size: 25.32299995px;
+
   font-weight: 500;
   position: relative;
   align-self: stretch;
@@ -535,46 +555,50 @@ html {
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 3px;
 }
 .skill-item {
   display: flex;
   flex-direction: row;
-  gap: 20px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
-  height: 37px;
   position: relative;
+
+  gap: 15px;
+  height: 27.75px;
 }
 .skill-item.red {
-  height: 87px;
+  height: 65.25px;
 }
 .skill-item.yellow {
-  height: 77px;
+  height: 57.75px;
 }
 .rombe-item-blue, .rombe-item-red, .rombe-item-yellow {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
   position: relative;
   overflow: visible;
+
+  width: 18.75px;
+  height: 12.5325px;
 }
 .skill-item-text-blue, .skill-item-text-red, .skill-item-text-yellow {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.349998474121094px;
   font-weight: 400;
   position: relative;
-  width: 541px;
-  height: 47px;
   cursor: default;
+
+  font-size: 25.012498px;
+  width: 405.75px;
+  height: 35.25px;
 }
 .skill-item-text-blue {
   color: var(--blue-color);
@@ -591,14 +615,15 @@ html {
   align-items: flex-end;
   justify-content: space-between;
   flex-shrink: 0;
-  width: 387px;
-  height: 84px;
   position: relative;
+
+  width: 290.25px;
+  height: 63px;
 }
 .age-group-label {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.763999938964844px;
+  font-size: 25.32299995px;
   font-weight: 500;
   position: relative;
   align-self: stretch;
@@ -608,7 +633,7 @@ html {
   color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.349998474121094px;
+  font-size: 25.012498px;
   font-weight: 500;
   position: relative;
   align-self: stretch;
@@ -626,43 +651,46 @@ html {
 .course-toggle-open {
   display: flex;
   flex-direction: row;
-  gap: 17px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  margin-top: 220px;
-  width: 215px;
-  height: 35px;
   position: relative;
   cursor: pointer;
+
+  gap: 12.75px;
+  margin-top: 165px;
+  width: 161.25px;
+  height: 26.25px;
 }
 .kollapse {
   color: var(--blue-color);
   text-align: right;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 30.480146408081055px;
+  font-size: 22.86px;
   font-weight: 500;
   position: relative;
 }
 .frame-543 {
   display: flex;
   flex-direction: column;
-  gap: 70px;
   align-items: flex-end;
   justify-content: flex-start;
   flex-shrink: 0;
   width: 600px;
   position: relative;
+
+  gap: 52.5px;
 }
 .course-title {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.146385192871094px;
-  line-height: 63.11%;
   font-weight: 600;
   text-decoration: underline;
   position: relative;
   align-self: stretch;
+
+  font-size: 37.6097889px;
+  line-height: 63.11%;
 }
 .course-title.red {
   color: var(--red-color);
@@ -677,7 +705,7 @@ html {
   color: var(--yellow-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
+  font-size: 25.011649px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -749,16 +777,16 @@ html {
 .filters {
   display: flex;
   flex-direction: column;
-  gap: 42px;
   align-items: flex-end;
   position: relative;
-  margin-bottom: 40px;
+  gap: 31.5px;
+  margin-bottom: 30px;
 }
 
 .filters-reset {
   color: #0b2d74;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 29px;
+  font-size: 21.75px;
   font-weight: 400;
   align-self: stretch;
   text-align: right;
@@ -769,37 +797,37 @@ html {
 
 .filters-container {
   display: flex;
-  gap: 179px;
+  gap: 134.25px;
   align-items: flex-end;
 }
 
 .filters-main {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  width: 469px;
+  gap: 15px;
+  width: 351.75px;
   justify-content: space-between;
 }
 
 .filters-sub-main {
   display: flex;
   flex-direction: column;
-  gap: 42px;
-  width: 163px;
+  gap: 31.5px;
+  width: 122.25px;
 }
 
 .filters-sub {
   display: flex;
-  gap: 42px;
-  width: 623px;
+  gap: 31.5px;
+  width: 467.25px;
   justify-content: space-between;
 }
 
 .filters-sub-column {
   display: flex;
   flex-direction: column;
-  gap: 42px;
-  width: 310px;
+  gap: 31.5px;
+  width: 232.5px;
 }
 
 /* Скрываем стандартный чекбокс */
@@ -817,11 +845,11 @@ html {
 .filter-label.blue::before {
   content: '';
   display: inline-block;
-  width: 30px;
-  height: 29px;
-  border: var(--blue-color) 4px solid;
+  width: 22.5px;
+  height: 21.75px;
+  border: var(--blue-color) 3px solid;
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 7.5px;
 }
 
 /* Состояние checked для синих фильтров */
@@ -833,7 +861,7 @@ html {
 .filter-label.blue {
   font-family: "Funnel Sans", sans-serif;
   font-weight: 400;
-  font-size: 41px;
+  font-size: 30.75px;
   color: var(--blue-color);
 }
 
@@ -841,7 +869,7 @@ html {
 .filter-label.red {
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
-  font-size: 41px;
+  font-size: 30.75px;
   color: var(--red-color)
 }
 
@@ -853,7 +881,7 @@ html {
   display: flex;
   flex-direction: row;   /* иконка слева, текст справа */
   align-items: center;
-  gap: 5px;
+  gap: 3.75px;
   cursor: pointer;
   position: relative;
 
@@ -873,8 +901,8 @@ html {
   content: '';
   display: inline-block;
 
-  width: 39px;
-  height: 29px;
+  width: 29.25px;
+  height: 21.75px;
 
   background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
   background: url("../assets/kurs/rombe-empty.svg") center / 100% 100% no-repeat;
@@ -893,7 +921,7 @@ html {
 .filter-label {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3.75px;
 }
 
 .filter-item.all, .filter-item.wood{
@@ -950,22 +978,22 @@ html {
 }
 
 .nav img {
-    width: 80px;
-    pointer-events: none;
+  width: 60px;
+  pointer-events: none;
 }
 
 .nav.prev { left: var(--navbuttons-space); }
 .nav.next { right: var(--navbuttons-space); }
 
 .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 65px;
-    cursor: pointer;
-    color: white;
+  position: absolute;
+  top: 15px;
+  right: 22.5px;
+  font-size: 48.75px;
+  cursor: pointer;
+  color: white;
 
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
