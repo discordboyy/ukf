@@ -635,8 +635,8 @@ html {
   width: 1569px;
   height: 337px;
   position: absolute;
-  left: 201px;
-  top: 111px;
+  margin-left: 201px;
+  margin-top: 81px;
   overflow: hidden;
 }
 .frame-14 {
@@ -653,11 +653,22 @@ html {
   left: 0px;
   top: 29px;
 }
+#logo-PARTNERE {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#logo-PARTNERE:hover {
+  opacity: 0.7;
+}
+
+
 .logo-1 {
   flex-shrink: 0;
   width: 240px;
   height: 91px;
   position: relative;
+  cursor: pointer;
 }
 .logo-1-img {
   height: auto;
@@ -665,6 +676,7 @@ html {
   left: 0px;
   margin-top: 4px;
   overflow: visible;
+  cursor: pointer;
 }
 .logo-2 {
   flex-shrink: 0;
@@ -677,12 +689,18 @@ html {
   position: relative;
   overflow: visible;
   margin: auto;
+  cursor: pointer;
 }
 .logo-3 {
   flex-shrink: 0;
   width: 424.22px;
   height: 90.91px;
   position: relative;
+}
+.logo-3-img {
+  height: auto;
+  overflow: visible;
+  cursor: pointer;
 }
 
 .logo-4 {
@@ -697,6 +715,7 @@ html {
   left: -0.13px;
   top: 7px;
   overflow: visible;
+  cursor: pointer;
 }
 .logo-5 {
   flex-shrink: 0;
@@ -708,6 +727,7 @@ html {
 .logo-5-img {
   position: absolute;
   object-fit: cover;
+  cursor: pointer;
 }
 .logo-6 {
   flex-shrink: 0;
@@ -718,6 +738,7 @@ html {
 }
 .logo-6-img {
   overflow: visible;
+  cursor: pointer;
 }
 .logo-7 {
   flex-shrink: 0;
@@ -730,6 +751,7 @@ html {
   object-fit: cover;
   aspect-ratio: 446/167.68;
   margin-top: 20px;
+  cursor: pointer;
 }
 .logo-8 {
   flex-shrink: 0;
@@ -740,6 +762,7 @@ html {
 }
 .logo-8-img {
   object-fit: cover;
+  cursor: pointer;
 }
 .logo-9 {
   flex-shrink: 0;
@@ -750,6 +773,7 @@ html {
 }
 .logo-9-img {
   object-fit: cover;
+  cursor: pointer;
 }
 .samarbeidspartner-title {
   color: #cfcfcf;
