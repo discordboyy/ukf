@@ -805,6 +805,11 @@ html {
 /* Скрываем стандартный чекбокс */
 .filter-item input[type="checkbox"] {
   display: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  user-select: none;
 }
 
 
@@ -851,6 +856,11 @@ html {
   gap: 5px;
   cursor: pointer;
   position: relative;
+
+  -webkit-user-select: none; /* Chrome, Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;          /* Современные браузеры */
 }
 
 /* Скрываем стандартный чекбокс */
@@ -867,13 +877,16 @@ html {
   height: 29px;
 
   background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
+  background: url("../assets/kurs/rombe-empty.svg") center / 100% 100% no-repeat;
 
   flex-shrink: 0;
   transition: transform 0.3s ease;
+
+  user-select: none;
 }
 
 .filter-item input[type="checkbox"]:checked + .filter-label.red::before {
-  transform: rotate(90deg);
+  background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
 }
 
 
