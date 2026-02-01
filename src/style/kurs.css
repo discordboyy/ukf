@@ -5,7 +5,7 @@
   --blue-color: #103279;
   --yellow-color: #f3b910;
 
-  --navbuttons-space: 200px;
+  --navbuttons-space: 10vw;
 }
 
 /* Общие настройки */
@@ -959,7 +959,7 @@ html {
     background: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
-    z-index: 2000;
+    z-index: 10;
 }
 
 .modal.show {
@@ -973,23 +973,38 @@ html {
 
 .nav {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    height: 100vh;              /* ВСЯ высота экрана */
+    width: calc(60px + var(--navbuttons-space));
     cursor: pointer;
     z-index: 10;
 
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    display: flex;
+    align-items: center;        /* вертикальный центр */
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
+/* Иконка */
 .nav img {
-  width: 60px;
-  pointer-events: none;
+    width: 60px;
+    pointer-events: none;
 }
 
-.nav.prev { left: var(--navbuttons-space); }
-.nav.next { right: var(--navbuttons-space); }
+/* Левая кнопка */
+.nav.prev {
+    left: 0;
+    justify-content: flex-start;
+    padding-left: var(--navbuttons-space);
+}
+/* Правая кнопка */
+.nav.next {
+    right: 0;
+    justify-content: flex-end;
+    padding-right: var(--navbuttons-space);
+}
 
 .close {
   position: absolute;
@@ -998,6 +1013,7 @@ html {
   font-size: 48.75px;
   cursor: pointer;
   color: white;
+  z-index: 11;
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
