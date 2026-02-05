@@ -58,29 +58,6 @@ header {
   top: 104.17px;
 }
 
-/* Секция с пунктами меню */
-.nav-items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  width: 1085.42px;
-  position: relative;
-}
-
-/* Пункты меню */
-.nav-item {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.33px;
-  font-weight: 400;
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 /* Секция выбора языка */
 .language-selector {
   display: flex;
@@ -1197,7 +1174,7 @@ header {
   display: block;
 }
 
-.nav-item { font-size: 26.66px; }        /* 33.33 × 0.8 */
+
 .lang { font-size: 26.67px; }            /* 33.333 × 0.8 */
 
 .show-more-text { font-size: 40px; }      /* 50 × 0.8 */
@@ -1264,4 +1241,10 @@ header {
 .scroll-animate.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.nav-item.active {
+  font-weight: 800;
+  /* text-decoration: underline; */
+  color: #000; /* или нужный цвет */
 }

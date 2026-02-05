@@ -1,4 +1,6 @@
-// src/scripts/main.js
+// src/js/main.js
+console.log("MAIN.JS LOADED");
+
 async function loadTemplates() {
   const response = await fetch("src/assets/components/components.html");
   const html = await response.text();
@@ -43,6 +45,26 @@ fetch("src/assets/components/components.html")
     }
 
     loadComponent("header-component", "header");
+    setActiveNavItem();
     loadComponent("contact-component", "contact");
     loadComponent("about-component", "about");
   });
+
+
+function setActiveNavItem() {
+  const currentPage = decodeURIComponent(
+    window.location.pathname.split("/").pop()
+  );
+
+  document.querySelectorAll(".nav-item").forEach(link => {
+    const href = link.getAttribute("href");
+
+    // сначала УБИРАЕМ active у всех
+    link.classList.remove("active");
+
+    // потом добавляем нужному
+    if (href === currentPage) {
+      link.classList.add("active");
+    }
+  });
+}

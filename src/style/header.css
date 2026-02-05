@@ -79,3 +79,11 @@ header {
   cursor: pointer;
   text-decoration: none;
 }
+
+.nav-item { font-size: 26.66px; }        /* 33.33 × 0.8 */
+
+.nav-item.active {
+  font-weight: 600;
+  color: #103279;
+  /* text-decoration: underline; */
+}
