@@ -518,12 +518,16 @@ html {
   position: relative;
   justify-content: space-between;
 
-  gap: 57px;
+  gap: 50px;
   width: 450px;
 }
+.course-body.blue {
+  gap: 45px;
+}
+
 .course-body.yellow {
 
-  gap: 114px;
+  gap: 122px;
 
 }
 .skills {
@@ -824,7 +828,7 @@ html {
 
 .filters-sub {
   display: flex;
-  gap: 31.5px;
+  gap: 15px;
   width: 467.25px;
   justify-content: space-between;
 }
@@ -833,7 +837,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 31.5px;
-  width: 232.5px;
+  width: 242.5px;
 }
 
 /* Скрываем стандартный чекбокс */
