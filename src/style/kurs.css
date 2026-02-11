@@ -851,9 +851,9 @@ html {
 .filter-label.blue::before {
   content: '';
   display: inline-block;
-  width: 22.5px;
-  height: 21.75px;
-  border: var(--blue-color) 3px solid;
+  width: 22.05px;
+  height: 21.315px;
+  border: var(--blue-color) 3.8px solid;
   flex-shrink: 0;
   margin-right: 7.5px;
 }
@@ -907,8 +907,8 @@ html {
   content: '';
   display: inline-block;
 
-  width: 33.78375px;
-  height: 25.12125px;
+  width: 40.8783375px;
+  height: 30.3967125px;
 
   background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
   background: url("../assets/kurs/rombe-empty.svg") center / 100% 100% no-repeat;
