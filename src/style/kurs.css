@@ -518,7 +518,7 @@ html {
   position: relative;
   justify-content: space-between;
 
-  gap: 46.5px;
+  gap: 57px;
   width: 450px;
 }
 .course-body.yellow {
@@ -907,8 +907,8 @@ html {
   content: '';
   display: inline-block;
 
-  width: 29.25px;
-  height: 21.75px;
+  width: 33.78375px;
+  height: 25.12125px;
 
   background: url("../assets/rombe-red.svg") center / 100% 100% no-repeat;
   background: url("../assets/kurs/rombe-empty.svg") center / 100% 100% no-repeat;
@@ -917,6 +917,7 @@ html {
   transition: transform 0.3s ease;
 
   user-select: none;
+  margin-right: 7.5px;
 }
 
 .filter-item input[type="checkbox"]:checked + .filter-label.red::before {
