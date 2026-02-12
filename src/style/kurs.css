@@ -27,26 +27,26 @@ html {
 .course-offer-section {
   display: flex;
   flex-direction: row;
-  gap: 29px;
+  gap: 60px;
   align-items: flex-end;
   justify-content: flex-start;
   position: relative;
-  margin-top: 120px;
-  width: 1200px;
-  margin-bottom: 200px;
+  margin-top: 108px;
+  width: 1080px;
+  margin-bottom: 180px;
   cursor: default;
 }
 
 .course-intro {
   flex-shrink: 0;
-  width: 740px;
-  height: 923px;
+  width: 666px;
+  height: 830.7px;
   position: relative;
 }
 
 .course-intro-icon {
-  width: 740px;
-  height: 837.5px;
+  width: 666px;
+  height: 753.75px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -57,30 +57,30 @@ html {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 35.59140396118164px;
+  font-size: 32.03226356506348px;
   line-height: 147.56%;
   font-weight: 500;
   position: absolute;
-  left: 76.5px;
-  top: 240px;
-  width: 548.22px;
+  left: 68.85px;
+  top: 216px;
+  width: 493.398px;
 }
 
 .course-details {
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 86.4px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 760px;
+  width: 684px;
   position: relative;
 }
 
 .course-description {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 27px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -94,7 +94,7 @@ html {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.0521354675293px;
+  font-size: 29.74692192077637px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -102,8 +102,8 @@ html {
 
 .course-contact {
   flex-shrink: 0;
-  width: 330.75px;
-  height: 164.54px;
+  width: 297.675px;
+  height: 148.086px;
   position: relative;
 
   cursor: pointer;
@@ -111,13 +111,13 @@ html {
   text-decoration: none;
 
   &:hover {
-    transform: translateX(-10px); /* move slightly to the left */
+    transform: translateX(-9px);
   }
 }
 
 .course-contact-icon {
-  width: 330.75px;
-  height: 164.54px;
+  width: 297.675px;
+  height: 148.086px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -127,35 +127,34 @@ html {
 .course-contact-button {
   display: flex;
   flex-direction: row;
-  gap: 21px;
+  gap: 18.9px;
   align-items: center;
   justify-content: flex-start;
-  height: 38.25px;
+  height: 34.425px;
   position: absolute;
-  left: 43.5px;
-  top: 62.75px;
+  left: 39.15px;
+  top: 56.475px;
 }
 
 .contact-text {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 34.5px;
+  font-size: 31.05px;
   font-weight: 700;
   position: relative;
   width: auto;
   height: auto;
-  padding-bottom: 3.75px;
+  padding-bottom: 3.375px;
 }
 
 .contact-arrow-icon {
   flex-shrink: 0;
-  width: 26.25px;
-  height: 30.38px;
+  width: 23.625px;
+  height: 27.342px;
   position: relative;
   overflow: visible;
 }
-
 
 .scroll-animate {
   opacity: 1;
@@ -187,7 +186,7 @@ html {
 
 
 
-.frame-108 {
+.kurs-section-container {
   display: flex;
   flex-direction: column;
   /* gap: 93px; ORIGINAL GAP */
