@@ -187,26 +187,6 @@ header {
   margin-top: 15.63px;
   width: 222px;
 }
-._13-03-2026 {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
-.stathelle {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
 .polygon-1 {
   width: 6.31%;
   height: 55.8%;
@@ -224,26 +204,7 @@ header {
   left: 389.58px;
   top: 11.46px;
 }
-.lag-din-egen-motanka-dukke {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 50px;
-  line-height: 63.11%;
-  font-weight: 600;
-  text-decoration: underline;
-  position: relative;
-  align-self: stretch;
-}
-.motanka-er-en-tradisjonell-tekstildukke-laget-uten-s-m-kun-ved-snurring-og-knyting-denne-eldgamle-h-ndverkstradisjonen-finnes {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 31px;
-  font-weight: 400;
-  position: relative;
-  width: 766.67px;
-}
+
 .frame-13 {
   display: flex;
   flex-direction: column;
@@ -270,26 +231,6 @@ header {
   margin-top: 13.54px;
   width: auto;
 }
-._28-02-2026 {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
-.oslo {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
 .polygon-12, .polygon-13 {
   width: 105.21px;
   height: auto;
@@ -307,48 +248,6 @@ header {
   top: 9.38px;
   width: 550px;
 }
-.blokktrykk-og-broderi {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  text-decoration: underline;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-}
-._27-04-2026 {
-  color: #f3b910;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
-.oslo2 {
-  color: #f3b910;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 43px;
-  line-height: 63.11%;
-  letter-spacing: -0.07em;
-  font-weight: 600;
-  position: relative;
-}
-.akvarellverksted {
-  color: #f3b910;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 50px;
-  line-height: 63.11%;
-  font-weight: 600;
-  text-decoration: underline;
-  position: relative;
-  align-self: stretch;
-}
 .events-title {
   color: #f1262c;
   text-align: left;
@@ -361,17 +260,78 @@ header {
   top: 0px;
   width: 900px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .membership-section {
-  margin-top: 100px;
+  margin-top: 90px;   /* 100 × 0.9 */
   width: auto;
-  height: 840px;
+  height: 756px;      /* 840 × 0.9 */
 }
+
+.membership-fee {
+  position: absolute;
+  left: 0px;       /* x = 0 */
+  top: 914px;     /* y = -104 */
+  width: 937px;    /* ширина контейнера */
+  height: 1312px;  /* высота контейнера */
+  pointer-events: none; /* блок не мешает кликам */
+}
+
+.membership-fee-icon {
+  width: 90%;
+  height: 90%;
+  display: block;
+}
+
+.membership-fee-text {
+  position: absolute;
+  top: 544.5px;         /* 605 × 0.9 */
+  left: 161.07px;       /* 178.97 × 0.9 */
+  width: 562.5px;       /* 625 × 0.9 */
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 44.96px;   /* 49.96 × 0.9 */
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.membership-fee-text .highlight {
+  font-weight: 500;
+}
+
+.membership-fee-text .amount {
+  letter-spacing: -5%;
+}
+
 .membership-howto {
-  width: 1047.92px;
-  height: 606.25px;
-  margin-left: 756.05px;
-  margin-top: 166.42px;
+  width: 943.13px;       /* 1047.92 × 0.9 */
+  height: 545.63px;      /* 606.25 × 0.9 */
+  margin-left: 680.45px; /* 756.05 × 0.9 */
+  margin-top: 149.78px;  /* 166.42 × 0.9 */
 }
+.membership-title {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 85.5px;       /* 95 × 0.9 */
+  line-height: 66.8%;      /* 63.11% × 0.9 */
+  letter-spacing: -0.009em; /* -0.01 × 0.9 */
+  font-weight: 600;
+  left: 0px;               /* 0 × 0.9 = 0, остаётся 0 */
+  top: 0px;                /* тоже остаётся 0 */
+  width: 609px;            /* 676.67 × 0.9 */
+}
+
 .membership-description {
   display: flex;
   flex-direction: column;
@@ -425,33 +385,24 @@ header {
   position: relative;
   align-self: stretch;
 }
-.membership-title {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 95px;
-  line-height: 63.11%;
-  letter-spacing: -0.01em;
-  font-weight: 600;
-  left: 0px;
-  top: 0px;
-  width: 676.67px;
-}
+
+
 .hero-section {
   height: 363px;
 }
 .hero-content {
-  width: 968.75px;
-  height: 120.83px;
+  width: 871.88px;       /* 968.75 × 0.9 */
+  height: 108.75px;      /* 120.83 × 0.9 */
   display: flex;
-  margin-left: 800px;
-  margin-top: -100px;
+  margin-left: 720px;    /* 800 × 0.9 */
+  margin-top: -90px;     /* -100 × 0.9 */
   transition: all 0.3s ease;
 
   &:hover {
-    transform: translateX(-10px); /* move slightly to the left */
+    transform: translateX(-9px); /* -10 × 0.9 */
   }
 }
+
 .hero-description {
   color: #f1262c;
   text-align: left;
@@ -486,40 +437,6 @@ header {
 
 
 
-.membership-fee {
-  position: absolute;
-  left: 0px;       /* x = 0 */
-  top: 914px;     /* y = -104 */
-  width: 937px;    /* ширина контейнера */
-  height: 1312px;  /* высота контейнера */
-  pointer-events: none; /* блок не мешает кликам */
-}
-
-.membership-fee-icon {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.membership-fee-text {
-  position: absolute;
-  top: 605px;     /* y позиции текста в холдере */
-  left: 178.97px; /* x позиции текста в холдере */
-  width: 625px;    /* ширина текста */
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 49.96px;
-  color: #ffffff;
-  font-weight: 500;
-  margin: 0;
-}
-
-.membership-fee-text .highlight {
-  font-weight: 500;
-}
-
-.membership-fee-text .amount {
-  letter-spacing: -5%;
-}
 
 
 
@@ -1179,34 +1096,16 @@ header {
 
 .show-more-text { font-size: 40px; }      /* 50 × 0.8 */
 
-._13-03-2026 { font-size: 34.4px; }       /* 43 × 0.8 */
-.stathelle { font-size: 34.4px; }
-
-.lag-din-egen-motanka-dukke { font-size: 40px; }
-.motanka-er-en-tradisjonell-tekstildukke-laget-uten-s-m-kun-ved-snurring-og-knyting-denne-eldgamle-h-ndverkstradisjonen-finnes {
-  font-size: 24.8px;                      /* 31 × 0.8 */
-}
-
-._28-02-2026 { font-size: 34.4px; }
-.oslo { font-size: 34.4px; }
-
-.blokktrykk-og-broderi { font-size: 40px; }
-
-._27-04-2026 { font-size: 34.4px; }
-.oslo2 { font-size: 34.4px; }
-
-.akvarellverksted { font-size: 40px; }
 
 .events-title { font-size: 76px; }        /* 95 × 0.8 */
 
-.membership-text { font-size: 33.4px; }   /* 41.75 × 0.8 */
-.membership-email { font-size: 33.4px; }
-.membership-note { font-size: 33.4px; }
+.membership-text { font-size: 30.06px; }   /* 33.4 × 0.9 */
+.membership-email { font-size: 30.06px; }
+.membership-note { font-size: 30.06px; }
 
+.membership-fee-text { font-size: 35.97px; } /* 39.97 × 0.9 */
 
-.membership-fee-text { font-size: 39.97px; } /* 49.96 × 0.8 */
-
-.hero-description { font-size: 39.2px; }  /* 49 × 0.8 */
+.hero-description { font-size: 35.28px; }  /* 39.2 × 0.9 */
 
 .event-date { font-size: 34.76px; }       /* 43.45 × 0.8 */
 .event-title { font-size: 40.11px; }      /* 50.14 × 0.8 */

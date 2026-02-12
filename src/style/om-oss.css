@@ -24,17 +24,17 @@ html {
 .about-section-forening {
   display: flex;
   flex-direction: column;
-  gap: 139px;
+  gap: 125.1px;
   align-items: flex-end;
   justify-content: flex-start;
   position: relative;
-  width: 1731.25px;
-  margin-bottom: 275px;
+  width: 1558.125px;
+  margin-bottom: 247.5px;
 }
 .about-content-forening {
   display: flex;
   flex-direction: column;
-  gap: 122px;
+  gap: 109.8px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -44,7 +44,7 @@ html {
 .about-intro {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 28.8px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -54,27 +54,27 @@ html {
 .about-intro-text-container {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 9px;
   align-items: center;
   justify-content: flex-end;
   flex-shrink: 0;
-  width: 1630px;
+  width: 1467px;
   position: relative;
 }
 .about-intro-text-forening {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 41.926177978515625px;
-  line-height: 122.35%;
+  font-size: 37.73356018066406px;
+  line-height: 110.115%;
   font-weight: 600;
   position: relative;
-  width: 867px;
+  width: 780.3px;
 }
 .about-description-forening {
   display: flex;
   flex-direction: row;
-  gap: 88px;
+  gap: 79.2px;
   align-items: flex-end;
   justify-content: flex-start;
   align-self: stretch;
@@ -83,13 +83,13 @@ html {
 }
 .about-header {
   flex-shrink: 0;
-  width: 861px;
-  height: 433px;
+  width: 774.9px;
+  height: 389.7px;
   position: relative;
 }
 .about-header-icon {
-  width: 861.5px;
-  height: 630.5px;
+  width: 775.35px;
+  height: 567.45px;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -99,38 +99,30 @@ html {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 93.23500061035156px;
+  font-size: 83.91150054931641px;
   font-weight: 600;
   position: absolute;
-  left: 380px;
-  top: 137.5px;
+  left: 342px;
+  top: 123.75px;
 }
 .about-description-text-forening {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 26.1px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 782px;
+  width: 703.8px;
   position: relative;
 }
-.about-mission {
+.about-mission,
+.about-activities-part,
+.about-impact {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.20355224609375px;
-  line-height: 122.35%;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
-.about-activities-part {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.20355224609375px;
-  line-height: 122.35%;
+  font-size: 29.883197021484376px;
+  line-height: 110.115%;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -139,30 +131,20 @@ html {
   font-family: "Funnel Sans", sans-serif;
   font-style: italic;
 }
-.about-impact {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.20355224609375px;
-  line-height: 122.35%;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
 .about-timeline {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 9px;
   align-items: flex-end;
   justify-content: center;
   flex-shrink: 0;
-  width: 1613px;
+  width: 1451.7px;
   position: relative;
 }
 .timeline-events {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4.5px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -171,7 +153,7 @@ html {
 .timeline-item-forening {
   display: flex;
   flex-direction: row;
-  gap: 28px;
+  gap: 25.2px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -179,15 +161,15 @@ html {
 }
 .timeline-icon {
   flex-shrink: 0;
-  width: 50px;
-  height: 39.13px;
+  width: 45px;
+  height: 35.217px;
   position: relative;
   overflow: visible;
 }
 .event-content-forening {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 21.6px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -197,8 +179,8 @@ html {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 30.87347984313965px;
-  line-height: 122.35%;
+  font-size: 27.786131858825686px;
+  line-height: 110.115%;
   font-weight: 600;
   position: relative;
 }
@@ -206,43 +188,39 @@ html {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.20355224609375px;
-  line-height: 122.35%;
+  font-size: 29.883197021484376px;
+  line-height: 110.115%;
   font-weight: 400;
   position: relative;
-
 }
-
-
-
 
 .membership-section-forening {
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 72px;
   align-items: flex-end;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1353px;
+  width: 1217.7px;
   position: relative;
 }
 .membership-intro {
   display: flex;
   flex-direction: column;
-  gap: 69px;
+  gap: 62.1px;
   align-items: flex-end;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 494px;
+  width: 444.6px;
   position: relative;
 }
 .membership-title-forening {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 76.65929412841797px;
-  line-height: 63.11%;
-  letter-spacing: -0.01em;
+  font-size: 68.99336471557618px;
+  line-height: 56.799%;
+  letter-spacing: -0.009em;
   font-weight: 600;
   position: relative;
   align-self: stretch;
@@ -251,45 +229,40 @@ html {
   color: #f12727;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 41.80513381958008px;
-  line-height: 103.8%;
+  font-size: 37.62462043762207px;
+  line-height: 93.42%;
   letter-spacing: 0undefined;
   font-weight: 600;
   position: relative;
   align-self: stretch;
 }
-
 .membership-fee-info-forening-text-highlight {
-  letter-spacing: -0.26em;
+  letter-spacing: -0.234em;
 }
 .membership-details-forening {
   display: flex;
   flex-direction: column;
-  gap: 21px;
+  gap: 18.9px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 770px;
+  width: 693px;
   position: relative;
 }
-.membership-value-text-forening {
+.membership-value-text-forening,
+.membership-application {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.28069305419922px;
-  line-height: 132.13%;
+  font-size: 29.9526237487793px;
+  line-height: 118.917%;
   font-weight: 400;
   position: relative;
   align-self: stretch;
 }
 .membership-application {
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.28069305419922px;
-  line-height: 130.37%;
-  font-weight: 400;
-  position: relative;
-  width: 770px;
+  width: 693px;
+  line-height: 117.333%;
 }
 .membership-application-text {
   color: #103279;
@@ -302,8 +275,8 @@ html {
   color: #103279;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.27801513671875px;
-  line-height: 145.89%;
+  font-size: 29.950213623046875px;
+  line-height: 131.301%;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -316,157 +289,10 @@ html {
 
 
 
-.frame-133,
-.frame-133 * {
-  box-sizing: border-box;
-}
-.frame-133 {
-  display: flex;
-  flex-direction: column;
-  gap: 90px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  margin: auto;
-  max-width: 1506px;
-  margin-bottom: 275px;
-}
-.stypet {
-  color: #f1262c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 76.65929412841797px;
-  font-weight: 600;
-  position: relative;
-  align-self: stretch;
-}
-.frame-132 {
-  display: flex;
-  flex-direction: row;
-  gap: 151px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-129 {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.rectangle-4 {
-  background: #d9d9d9;
-  flex-shrink: 0;
-  width: 384px;
-  height: 384px;
-  position: relative;
-}
-.frame-128 {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-127 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.julia-favoritova {
-  color: #f12727;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.78771209716797px;
-  font-weight: 600;
-  position: relative;
-}
-.styreleder {
-  color: #f12727;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.14208984375px;
-  font-weight: 400;
-  font-style: italic;
-  position: relative;
-}
-.kunstner-entrepren-r-og-kulturprosjektleder-som-kom-til-norge-fra-ukraina-i-2022-hun-er-prosjektleder-for-sitt-eget-initiativ-favoritt-art-workshop-hvor-hun-leder-kurs-i-trearbeid-og-glassgravering-for-deltakere-fra-6-til-99-r-prosjektet-forener-og-inspirerer-mennesker-gjennom-kreativ-og-teknisk-utvikling {
-  color: #f22828;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 24.975147247314453px;
-  line-height: 115.92%;
-  font-weight: 400;
-  position: relative;
-  width: 423px;
-}
-.katya-bukhantsova {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.78771209716797px;
-  font-weight: 600;
-  position: relative;
-}
-.nestleder {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.14208984375px;
-  font-weight: 400;
-  font-style: italic;
-  position: relative;
-}
-.kunsth-ndverker-og-designer-fra-ukraina-med-spesialisering-i-mixed-media-teknikker-innen-tekstilkunst-inkludert-kunsthekling-gjenbruk-redesign-og-broderi-hun-formidler-ukrainske-h-ndverkstradisjoner-i-norge-og-underviser-i-kreative-fag-i-tillegg-har-hun-solid-erfaring-i-prosjektelese-og-er-daglig-leder-og-p-driver-i-organisasjoen-relove-som-arrangerer-gratis-aktiviteter-for-barn-og-unge-i-oslo {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 24.975147247314453px;
-  line-height: 115.92%;
-  font-weight: 400;
-  position: relative;
-  width: 397px;
-}
-.anna-lubchenko {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.78771209716797px;
-  font-weight: 600;
-  position: relative;
-}
-.styremedlem {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.14208984375px;
-  font-weight: 400;
-  font-style: italic;
-  position: relative;
-}
-.kunstner-og-grafisk-designer-fra-ukraina-bosatt-i-norge-siden-2022-hun-er-utdannet-ved-kunstakademiet-i-kyiv-og-arbeider-med-akvarellmaling-tekstilkunst-og-redesign-anna-er-medlem-av-national-union-of-artists-of-ukraine-nuau-for-tiden-tar-hun-praktisk-pedagogisk-utdanning-i-kunst-og-h-ndverk-ved-h-gskolen-i-stfold {
-  color: #103279;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 24.975147247314453px;
-  line-height: 116.76%;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-  width: 397px;
-}
+
+
+
+
 .board-section,
 .board-section * {
   box-sizing: border-box;
@@ -474,59 +300,64 @@ html {
 .board-section {
   display: flex;
   flex-direction: column;
-  /* gap: 90px; ORIGINALE GAP*/
-  gap: 60px;
+  gap: 48.2px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
   margin: auto;
-  max-width: 1506px;
-  margin-bottom: 275px;
+  max-width: 1210px;
+  margin-bottom: 221.1px;
 }
+
 .board-title {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 76.65929412841797px;
+  font-size: 61.6px;
   font-weight: 600;
   position: relative;
   align-self: stretch;
 }
+
 .board-members {
   display: flex;
   flex-direction: row;
-  gap: 151px;
+  gap: 121.4px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
 }
+
 .board-member-card {
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 21.7px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
 }
+
 .board-member-image {
   flex-shrink: 0;
-  width: 384px;
-  height: 384px;
+  width: 308.7px;
+  height: 308.7px;
   position: relative;
 }
+
 .board-member-content {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 18.5px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
 }
+
 .board-member-header {
   display: flex;
   flex-direction: column;
@@ -536,52 +367,63 @@ html {
   flex-shrink: 0;
   position: relative;
 }
+
 .board-member-name {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.78771209716797px;
+  font-size: 27.2px;
   font-weight: 600;
   position: relative;
 }
+
 .board-member-name--red {
   color: #f12727;
 }
+
 .board-member-name--blue {
   color: #103279;
 }
+
 .board-member-role {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.14208984375px;
+  font-size: 26.6px;
   font-weight: 400;
   font-style: italic;
   position: relative;
 }
+
 .board-member-role--red {
   color: #f12727;
 }
+
 .board-member-role--blue {
   color: #103279;
 }
+
 .board-member-description {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 24.975147247314453px;
+  font-size: 20.1px;
   line-height: 115.92%;
   font-weight: 400;
   position: relative;
 }
+
 .board-member-description--red {
   color: #f22828;
 }
+
 .board-member-description--blue {
   color: #103279;
 }
+
 .board-member-description--wide {
-  width: 423px;
+  width: 340.1px;
 }
+
 .board-member-description--narrow {
-  width: 397px;
+  width: 319.2px;
 }
 
 
