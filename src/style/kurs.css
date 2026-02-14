@@ -944,16 +944,6 @@ html {
 
 
 
-.carousel-preview {
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.carousel-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Modal */
 .modal {
@@ -963,52 +953,78 @@ html {
     background: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .modal.show {
     display: flex;
 }
 
+/* Картинка в модалке */
 .modal img {
     max-width: 90%;
     max-height: 80%;
+    object-fit: contain;
+    z-index: 10;
+    position: relative;
 }
 
+/* Закрытие */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* Навигация */
 .nav {
     position: absolute;
-    top: 0;
-    height: 100vh;              /* ВСЯ высота экрана */
-    width: calc(60px + var(--navbuttons-space));
-    cursor: pointer;
-    z-index: 10;
-
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
     display: flex;
-    align-items: center;        /* вертикальный центр */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 15;
+    opacity: 0;             /* по умолчанию невидимы */
+    transition: opacity 0.3s;
+}
 
+.modal:hover .nav {
+    opacity: 1;             /* при hover показываем */
+}
+
+.nav img {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+/* Левая стрелка */
+.nav.prev {
+    left: 20px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-/* Иконка */
-.nav img {
-    width: 60px;
-    pointer-events: none;
+/* Правая стрелка */
+.nav.next {
+    right: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* Левая кнопка */
-.nav.prev {
-    left: 0;
-    justify-content: flex-start;
-    padding-left: var(--navbuttons-space);
-}
-/* Правая кнопка */
-.nav.next {
-    right: 0;
-    justify-content: flex-end;
-    padding-right: var(--navbuttons-space);
-}
+
 
 .close {
   position: absolute;
@@ -1023,3 +1039,58 @@ html {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+
+
+
+
+/* Мини-карусель внутри карточки */
+.carousel-preview {
+    position: relative; /* обязательно для позиционирования стрелок */
+    cursor: pointer;
+    overflow: hidden;
+    height: 527.250; /* подогнать под карточку */
+    width: 526.5px;
+}
+
+.carousel-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* изображение полностью заполняет контейнер, возможна обрезка */
+    object-position: center; /* центрируем по центру */
+}
+
+/* Slick arrows hover */
+.carousel-preview .slick-prev,
+.carousel-preview .slick-next {
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4); /* полупрозрачный фон */
+    color: white;
+    border: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 5; /* ниже, чем модалка */
+    cursor: pointer;
+    
+}
+
+.carousel-preview .slick-prev { left: 10px; }
+.carousel-preview .slick-next { right: 10px; }
+
+.carousel-preview:hover .slick-prev,
+.carousel-preview:hover .slick-next {
+    opacity: 1;
+}
+
+
+
+
