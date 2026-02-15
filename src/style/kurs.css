@@ -517,16 +517,14 @@ html {
   position: relative;
   justify-content: space-between;
 
-  gap: 50px;
+  gap: 55px;
   width: 450px;
 }
-.course-body.blue {
-  gap: 45px;
-}
+
 
 .course-body.yellow {
 
-  gap: 122px;
+  gap: 130px;
 
 }
 .skills {
