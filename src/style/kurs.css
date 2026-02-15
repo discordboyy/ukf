@@ -360,7 +360,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -448,7 +448,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -544,7 +544,7 @@ html {
 
   font-size: 25.32299995px;
 
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -631,7 +631,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -641,7 +641,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.012498px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -978,26 +978,24 @@ html {
     z-index: 20;
 }
 
-/* Навигация */
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
-    background: rgba(0,0,0,0.4);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 15;
-    opacity: 0;             /* по умолчанию невидимы */
-    transition: opacity 0.3s;
-}
-
 .modal:hover .nav {
     opacity: 1;             /* при hover показываем */
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    height: 100vh;              /* ВСЯ высота экрана */
+    width: calc(60px + var(--navbuttons-space));
+    cursor: pointer;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;        /* вертикальный центр */
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .nav img {
@@ -1008,18 +1006,28 @@ html {
 
 /* Левая стрелка */
 .nav.prev {
+    z-index: 10;
     left: 20px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    left: 0;
+    justify-content: flex-start;
+    padding-left: var(--navbuttons-space);
 }
 
 /* Правая стрелка */
 .nav.next {
+    z-index: 10;
     right: 20px;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    right: 0;
+    justify-content: flex-end;
+    padding-right: var(--navbuttons-space);
 }
 
 
