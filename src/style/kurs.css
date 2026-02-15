@@ -854,7 +854,7 @@ html {
   display: inline-block;
   width: 22.05px;
   height: 21.315px;
-  border: var(--blue-color) 3.8px solid;
+  border: var(--blue-color) 4px solid;
   flex-shrink: 0;
   margin-right: 7.5px;
 }
