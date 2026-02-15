@@ -64,9 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Модалка для карусели изображений
+let currentPreview = null;
 let modalImages = [];
 let modalIndex = 0;
 let touchStartX = 0;
+
+let startX = 0;
+let startY = 0;
+let isDragging = false;
 
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImage");
@@ -103,13 +108,34 @@ document.querySelectorAll('.carousel-preview').forEach(preview => {
     });
 
     preview.querySelectorAll('img').forEach(img => {
-        img.addEventListener('click', () => {
+
+        img.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+            startY = e.clientY;
+            isDragging = false;
+        });
+
+        img.addEventListener('mousemove', (e) => {
+            if (Math.abs(e.clientX - startX) > 10 || Math.abs(e.clientY - startY) > 10) {
+                isDragging = true;
+            }
+        });
+
+        img.addEventListener('click', (e) => {
+
+            if (isDragging) {
+                e.preventDefault();
+                return; // если это drag — ничего не делаем
+            }
+
+            currentPreview = preview;
             modalImages = images;
             modalIndex = parseInt(img.dataset.index);
             modalImg.src = modalImages[modalIndex];
             modal.classList.add("show");
             document.body.style.overflow = "hidden";
         });
+
     });
 });
 
@@ -117,6 +143,11 @@ document.querySelectorAll('.carousel-preview').forEach(preview => {
 function closeModal() {
     modal.classList.remove("show");
     document.body.style.overflow = "";
+
+    // синхронизация с мини-каруселью
+    if (currentPreview) {
+        $(currentPreview).slick('slickGoTo', modalIndex);
+    }
 }
 
 modalClose.addEventListener("click", closeModal);
