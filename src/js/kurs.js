@@ -64,9 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Модалка для карусели изображений
+let currentPreview = null;
 let modalImages = [];
 let modalIndex = 0;
 let touchStartX = 0;
+
+let startX = 0;
+let startY = 0;
+let isDragging = false;
 
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImage");
@@ -74,14 +79,63 @@ const modalClose = document.getElementById("modalClose");
 const modalPrev = document.getElementById("modalPrev");
 const modalNext = document.getElementById("modalNext");
 
-// Открытие модалки
-document.querySelectorAll(".carousel-preview").forEach(preview => {
-    preview.addEventListener("click", () => {
-        modalImages = JSON.parse(preview.dataset.images);
-        modalIndex = 0;
-        modalImg.src = modalImages[modalIndex];
-        modal.classList.add("show");
-        document.body.style.overflow = "hidden";
+// Мини-карусели с hover-стрелками
+document.querySelectorAll('.carousel-preview').forEach(preview => {
+    const images = JSON.parse(preview.dataset.images);
+    preview.innerHTML = '';
+
+    images.forEach((src, index) => {
+        const slide = document.createElement('div');
+        slide.classList.add('slide');
+
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = '';
+        img.dataset.index = index;
+
+        slide.appendChild(img);
+        preview.appendChild(slide);
+    });
+
+    $(preview).slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true, // стрелки будут, но через CSS покажем их только на hover
+        prevArrow: '<button class="slick-prev">&#10094;</button>',
+        nextArrow: '<button class="slick-next">&#10095;</button>',
+        dots: false
+    });
+
+    preview.querySelectorAll('img').forEach(img => {
+
+        img.addEventListener('mousedown', (e) => {
+            startX = e.clientX;
+            startY = e.clientY;
+            isDragging = false;
+        });
+
+        img.addEventListener('mousemove', (e) => {
+            if (Math.abs(e.clientX - startX) > 10 || Math.abs(e.clientY - startY) > 10) {
+                isDragging = true;
+            }
+        });
+
+        img.addEventListener('click', (e) => {
+
+            if (isDragging) {
+                e.preventDefault();
+                return; // если это drag — ничего не делаем
+            }
+
+            currentPreview = preview;
+            modalImages = images;
+            modalIndex = parseInt(img.dataset.index);
+            modalImg.src = modalImages[modalIndex];
+            modal.classList.add("show");
+            document.body.style.overflow = "hidden";
+        });
+
     });
 });
 
@@ -89,6 +143,11 @@ document.querySelectorAll(".carousel-preview").forEach(preview => {
 function closeModal() {
     modal.classList.remove("show");
     document.body.style.overflow = "";
+
+    // синхронизация с мини-каруселью
+    if (currentPreview) {
+        $(currentPreview).slick('slickGoTo', modalIndex);
+    }
 }
 
 modalClose.addEventListener("click", closeModal);
@@ -122,4 +181,22 @@ modalImg.addEventListener("touchend", e => {
             ? showModalImage(modalIndex + 1)
             : showModalImage(modalIndex - 1);
     }
+});
+
+$(document).ready(function() {
+  // Перебираем каждый слайд и устанавливаем ширину и высоту
+  $('.carousel-preview .slick-slide').each(function() {
+    $(this).css({
+      'width': '526.5px',     // фиксированная ширина слайда
+      'height': '527.25px'    // фиксированная высота слайда
+    });
+  });
+
+  // Теперь для изображений внутри слайдов
+  $('.carousel-preview img').each(function() {
+    $(this).css({
+      'object-fit': 'cover', // изображение полностью заполняет контейнер, возможна обрезка
+      'object-position': 'center' // центрируем изображение
+    });
+  });
 });

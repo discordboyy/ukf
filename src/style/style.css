@@ -26,26 +26,6 @@ body {
   font-family: "Funnel Sans", sans-serif;
 }
 
-/* Основной контейнер */
-header {
-  height: 483px;
-  position: relative;
-  overflow: hidden;
-}
-
-.UKF-logo {
-  width: 236px;
-  aspect-ratio: 236 / 302.69;
-  height: auto;
-  margin-top: 160px;
-  margin-left: 110px;
-  background-image: url("src/assets/UKF_long 1.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  transition: background-image 0.3s ease;
-}
-
 /* Навигационная панель */
 .nav-bar {
   display: flex;

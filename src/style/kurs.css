@@ -360,7 +360,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -448,7 +448,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -517,16 +517,14 @@ html {
   position: relative;
   justify-content: space-between;
 
-  gap: 50px;
+  gap: 55px;
   width: 450px;
 }
-.course-body.blue {
-  gap: 45px;
-}
+
 
 .course-body.yellow {
 
-  gap: 122px;
+  gap: 130px;
 
 }
 .skills {
@@ -546,7 +544,7 @@ html {
 
   font-size: 25.32299995px;
 
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -633,7 +631,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.32299995px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -643,7 +641,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 25.012498px;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   align-self: stretch;
   cursor: default;
@@ -944,16 +942,6 @@ html {
 
 
 
-.carousel-preview {
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.carousel-preview img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Modal */
 .modal {
@@ -963,16 +951,35 @@ html {
     background: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .modal.show {
     display: flex;
 }
 
+/* Картинка в модалке */
 .modal img {
     max-width: 90%;
     max-height: 80%;
+    object-fit: contain;
+    z-index: 10;
+    position: relative;
+}
+
+/* Закрытие */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.modal:hover .nav {
+    opacity: 1;             /* при hover показываем */
 }
 
 .nav {
@@ -991,24 +998,39 @@ html {
     user-select: none;
 }
 
-/* Иконка */
 .nav img {
-    width: 60px;
+    width: 30px;
+    height: 30px;
     pointer-events: none;
 }
 
-/* Левая кнопка */
+/* Левая стрелка */
 .nav.prev {
+    z-index: 10;
+    left: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     left: 0;
     justify-content: flex-start;
     padding-left: var(--navbuttons-space);
 }
-/* Правая кнопка */
+
+/* Правая стрелка */
 .nav.next {
+    z-index: 10;
+    right: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     right: 0;
     justify-content: flex-end;
     padding-right: var(--navbuttons-space);
 }
+
+
 
 .close {
   position: absolute;
@@ -1023,3 +1045,58 @@ html {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+
+
+
+
+/* Мини-карусель внутри карточки */
+.carousel-preview {
+    position: relative; /* обязательно для позиционирования стрелок */
+    cursor: pointer;
+    overflow: hidden;
+    height: 527.250; /* подогнать под карточку */
+    width: 526.5px;
+}
+
+.carousel-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* изображение полностью заполняет контейнер, возможна обрезка */
+    object-position: center; /* центрируем по центру */
+}
+
+/* Slick arrows hover */
+.carousel-preview .slick-prev,
+.carousel-preview .slick-next {
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4); /* полупрозрачный фон */
+    color: white;
+    border: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 5; /* ниже, чем модалка */
+    cursor: pointer;
+    
+}
+
+.carousel-preview .slick-prev { left: 10px; }
+.carousel-preview .slick-next { right: 10px; }
+
+.carousel-preview:hover .slick-prev,
+.carousel-preview:hover .slick-next {
+    opacity: 1;
+}
+
+
+
+
