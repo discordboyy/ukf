@@ -88,12 +88,30 @@ header {
   /* text-decoration: underline; */
 }
 
-@media screen and (max-width: 1800px) {
+@media (max-width: 1200px) {
 
   header {
-    transform: scale(0.625);
-    transform-origin: top left;
+    height: 302px; /* 483 × 0.625 */
+  }
+
+  .UKF-logo {
+    width: 93px; /* 148.68 × 0.625 */
+    margin-top: 75px; /* 120 × 0.625 */
+    margin-left: 69px; /* 110 × 0.625 */
+  }
+
+  .nav-bar {
+    gap: 63.8px; /* 102.08 × 0.625 */
+    left: 281px; /* 449.8 × 0.625 */
+    top: 65px; /* 104.17 × 0.625 */
+  }
+
+  .nav-items {
+    width: 678px; /* 1085.42 × 0.625 */
+  }
+
+  .nav-item {
+    font-size: 16.66px; /* 26.66 × 0.625 */
   }
 
 }
-
