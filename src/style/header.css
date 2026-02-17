@@ -91,7 +91,7 @@ header {
 @media (max-width: 1500px) {
 
   header {
-    transform: scale(0.625);
+    transform: scale(0.7);
     transform-origin: top left;
   }
 
