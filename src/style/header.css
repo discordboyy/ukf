@@ -88,7 +88,7 @@ header {
   /* text-decoration: underline; */
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1800px) {
 
   header {
     transform: scale(0.625);
