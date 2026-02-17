@@ -87,3 +87,13 @@ header {
   color: #103279;
   /* text-decoration: underline; */
 }
+
+@media (max-width: 1200px) {
+
+  header {
+    transform: scale(0.625);
+    transform-origin: top left;
+  }
+
+}
+
