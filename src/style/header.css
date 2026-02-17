@@ -95,4 +95,8 @@ header {
     transform-origin: top left;
   }
 
+  #header {
+    height: 338.1px;
+  }
+
 }
