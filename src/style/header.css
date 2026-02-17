@@ -93,6 +93,7 @@ header {
   header {
     transform: scale(0.7);
     transform-origin: top left;
+    width: 100%;
   }
 
   #header {
