@@ -1137,4 +1137,8 @@ body {
     margin-top: -400px;
     width: calc(100% / 300); 
   }
+
+  .membership-fee {
+    top: 424px;
+  }
 }
