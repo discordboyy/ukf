@@ -1,0 +1,178 @@
+.frame-20,
+.frame-20 * {
+  box-sizing: border-box;
+}
+.frame-20 {
+  height: 727px;
+  position: relative;
+}
+.frame-148 {
+  background: #f2e3dc;
+  width: 1920px;
+  height: 634px;
+  position: absolute;
+  left: 0px;
+  top: 93px;
+  overflow: hidden;
+}
+.frame-149 {
+  width: 1920px;
+  height: 634px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.reviews {
+  display: flex;
+  flex-direction: row;
+  gap: 239px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 57px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 482px;
+  position: relative;
+}
+
+.review:first-child {
+  gap: 52px;
+  justify-content: flex-end;
+}
+
+.review:last-child {
+  gap: 58px;
+  justify-content: flex-start;
+  width: 500px;
+}
+
+.review-text {
+  color: #f1262c;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 31.131559371948242px;
+  line-height: 167%;
+  font-weight: 600;
+  position: relative;
+  width: 418px;
+}
+
+.review:first-child .review-author {
+  color: #f1262c;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 30.659292221069336px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.review:last-child .review-text {
+  color: #103279;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 28.94131088256836px;
+  line-height: 171.46%;
+  font-weight: 700;
+  width: auto;
+}
+
+.review-signature {
+  letter-spacing: 0.01em;
+}
+
+.review-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  width: 357px;
+}
+
+.review:last-child .review-author {
+  color: #103279;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 30.65889549255371px;
+  line-height: 122.35%;
+  font-weight: 800;
+  font-style: italic;
+
+  margin: 0;
+}
+
+.review-slogan {
+  color: #103279;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 30.65999984741211px;
+  line-height: 122.35%;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.tilbakemeldinger {
+  color: #f2e3dc;
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 94.31244659423828px;
+  line-height: 122.35%;
+  font-weight: 600;
+  position: absolute;
+  left: 218.55px;
+  top: 0px;
+}
+
+
+.scroll-testimonials-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1830px;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 2;
+  margin: auto;
+  margin-top: 400px; /* margin-top: 500px; */
+}
+.polygon-arrow-left {
+  flex-shrink: 0;
+  width: 60px;
+  height: 69px;
+  position: relative;
+  overflow: visible;
+}
+.polygon-arrow-right {
+  flex-shrink: 0;
+  width: 60px;
+  height: 69px;
+  position: relative;
+  overflow: visible;
+}
+
+
+
+
+.review {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.review-text,
+.review-author,
+.review-signature,
+.review-slogan {
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}

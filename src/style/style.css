@@ -679,33 +679,6 @@ body {
   font-weight: 600;
   margin-left: 218.55px;
 }
-.scroll-testimonials-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  max-width: 1830px;
-  padding-left: 50px;
-  padding-right: 50px;
-  z-index: 2;
-  margin: auto;
-  margin-top: 400px; /* margin-top: 500px; */
-}
-.polygon-arrow-left {
-  flex-shrink: 0;
-  width: 60px;
-  height: 69px;
-  position: relative;
-  overflow: visible;
-}
-.polygon-arrow-right {
-  flex-shrink: 0;
-  width: 60px;
-  height: 69px;
-  position: relative;
-  overflow: visible;
-}
 .testimonial-text, .testimonial-text2,
 .testimonial-author, .testimonial-author2 {
     transition: opacity 0.5s ease;
