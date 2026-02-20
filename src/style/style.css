@@ -634,7 +634,7 @@ body {
   animation: scroll 60s linear infinite;
   width: max-content;
   flex-direction: row;
-  gap: 87px;
+  gap: 60px;
   align-items: center;
   justify-content: flex-start;
   height: 295.81px;
@@ -660,7 +660,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 .samarbeidspartner-carousel-container:hover .samarbeidspartner-carousel {
