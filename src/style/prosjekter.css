@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-.frame-156 {
+.project-section {
   display: flex;
   flex-direction: column;
   gap: 43px;
@@ -18,7 +18,7 @@ body {
   justify-content: flex-start;
   position: relative;
 }
-.frame-154 {
+.project-container {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -28,7 +28,7 @@ body {
   width: 1140px;
   position: relative;
 }
-.frame-153 {
+.project-icon {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -40,7 +40,7 @@ body {
   position: relative;
   overflow: visible;
 }
-.frame-151 {
+.project-content {
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -50,7 +50,7 @@ body {
   flex-shrink: 0;
   position: relative;
 }
-.frame-149 {
+.project-header {
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -60,7 +60,7 @@ body {
   width: 713px;
   position: relative;
 }
-.september-2025-sentralen-oslo {
+.project-meta {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
@@ -73,7 +73,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-.glassgravering-verksted {
+.project-title {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
@@ -87,7 +87,7 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
-.frame-150 {
+.project-description-block {
   display: flex;
   flex-direction: row;
   gap: 42px;
@@ -97,14 +97,14 @@ body {
   flex-shrink: 0;
   position: relative;
 }
-.rectangle-5 {
+.project-image-placeholder {
   background: #d9d9d9;
   flex-shrink: 0;
   width: 344px;
   height: 344px;
   position: relative;
 }
-.rundt-70-deltakere-bes-kte-v-rt-glassgraveringsverksted-med-under-h-ndverksdagen-p-sentralen-oslo-glassgravering-er-en-spennende-teknikk-der-vi-brukte-elektroverkt-y-og-diamanttilbeh-r-for-lage-egne-m-nstre-alle-graverte-sitt-helt-unike-design-p-et-syltet-yglass-perfekt-som-lysholder {
+.project-descriptio {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 32.483917236328125px;
@@ -115,11 +115,11 @@ body {
   align-self: stretch;
   width: 752px;
 }
-.rundt-70-deltakere-bes-kte-v-rt-glassgraveringsverksted-med-under-h-ndverksdagen-p-sentralen-oslo-glassgravering-er-en-spennende-teknikk-der-vi-brukte-elektroverkt-y-og-diamanttilbeh-r-for-lage-egne-m-nstre-alle-graverte-sitt-helt-unike-design-p-et-syltet-yglass-perfekt-som-lysholder-span {
+.text-highlight {
   color: #f1262c;
   font-family: "Funnel Sans", sans-serif;
 }
-.rundt-70-deltakere-bes-kte-v-rt-glassgraveringsverksted-med-under-h-ndverksdagen-p-sentralen-oslo-glassgravering-er-en-spennende-teknikk-der-vi-brukte-elektroverkt-y-og-diamanttilbeh-r-for-lage-egne-m-nstre-alle-graverte-sitt-helt-unike-design-p-et-syltet-yglass-perfekt-som-lysholder-span2 {
+.text-accent {
   color: #0b2d74;
   font-family: "Funnel Sans", sans-serif;
   font-style: italic;
