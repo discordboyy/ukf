@@ -126,14 +126,14 @@ body {
   font-family: "Funnel Sans", sans-serif;
   font-style: italic;
 }
-.frame-155 {
+.project-slider {
   height: 756px;
   position: relative;
   margin-bottom: 100px;
   background: white;
 }
 
-.frame-152 {
+.slider-viewport {
   width: 1140px;
   height: 756px;
   margin: auto;
