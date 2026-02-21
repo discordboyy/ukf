@@ -105,6 +105,7 @@ body {
   width: 344px;
   height: 344px;
   position: relative;
+  object-fit: cover;
 }
 .project-descriptio {
   text-align: left;
