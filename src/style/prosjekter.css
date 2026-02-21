@@ -173,6 +173,21 @@ body {
 .slide.active::after {
   background: rgba(0,0,0,0);
 }
+
+.slide-double {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* можешь менять */
+}
+
+.slide-double img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .scroll-testimonials-list {
   display: flex;
   flex-direction: row;
