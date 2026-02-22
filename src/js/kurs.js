@@ -17,14 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(cb => cb.value);
 
     if (activeCategories.length === 0) {
-      // показываем все карточки
       cards.forEach(card => (card.style.display = ""));
       return;
     }
 
     cards.forEach(card => {
-      const category = card.dataset.category;
-      card.style.display = activeCategories.includes(category) ? "" : "none";
+      const cardCategories = card.dataset.category.split(" ");
+
+      const matches = activeCategories.some(cat =>
+        cardCategories.includes(cat)
+      );
+
+      card.style.display = matches ? "" : "none";
     });
   }
 
