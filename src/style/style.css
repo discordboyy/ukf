@@ -718,6 +718,7 @@ body {
   position: relative;
   margin: auto;
   cursor: pointer;
+  text-decoration: none;
 }
 .contact-link-icon {
   flex-shrink: 0;
@@ -735,6 +736,7 @@ body {
   flex-shrink: 0;
   position: relative;
   transition: all 0.3s ease;
+  text-decoration: none;
 
   &:hover {
     transform: translateX(-10px); /* move slightly to the left */
