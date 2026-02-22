@@ -750,6 +750,7 @@ body {
   line-height: 122.35%;
   font-weight: 300;
   position: relative;
+  text-decoration: none;
 }
 .contact-email {
   color: #ffffff;
