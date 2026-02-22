@@ -98,16 +98,24 @@ document.querySelectorAll('.carousel-preview').forEach(preview => {
     });
 
     $(preview).slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true, // стрелки будут, но через CSS покажем их только на hover
-        prevArrow: '<button class="slick-prev">&#10094;</button>',
-        nextArrow: '<button class="slick-next">&#10095;</button>',
-        dots: false
-    });
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: `
+          <button class="slick-prev">
+              <img src="src/assets/nav-left.svg" alt="Prev">
+          </button>
+      `,
+      nextArrow: `
+          <button class="slick-next">
+              <img src="src/assets/nav-right.svg" alt="Next">
+          </button>
+      `,
+      dots: false
+  });
 
-    preview.querySelectorAll('img').forEach(img => {
+    preview.querySelectorAll('.slide img').forEach(img => {
 
         img.addEventListener('mousedown', (e) => {
             startX = e.clientX;
