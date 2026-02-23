@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 .frame-149 {
-  width: 1920px;
+  max-width: 1920px;
   height: 634px;
   position: absolute;
   left: 0px;

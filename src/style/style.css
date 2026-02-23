@@ -967,7 +967,29 @@ body {
 
 
 
+@media (max-width: 1800px) {
+  .page-membership {
+    scale: 0.9; 
+    margin-top: -100px;
+    width: calc(100% / 300); 
+  }
 
+  .membership-fee {
+    top: 454px;
+  }
+
+  .reviews {
+    scale: 0.9; 
+  }
+}
+
+@media (max-width: 1700px) {
+  .page-membership {
+    scale: 0.8; 
+    margin-top: -250px;
+    width: calc(100% / 300); 
+  }
+}
 
 @media (max-width: 1500px) {
 
