@@ -6,11 +6,6 @@
   --yellow-color: #f3b910;
 }
 
-header,
-header * {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -86,6 +81,22 @@ header {
   font-weight: 600;
   color: #103279;
   /* text-decoration: underline; */
+}
+
+@media (max-width: 1700px) {
+  header {
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: calc(100% / 0.9);
+  }
+
+  #header {
+    height: 434.7px;
+  }
+
+  #header-component {
+    height: 434.7px;
+  }
 }
 
 @media (max-width: 1500px) {
