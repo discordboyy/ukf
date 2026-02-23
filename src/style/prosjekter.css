@@ -13,7 +13,7 @@ body {
 .project-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
   justify-content: flex-start;
   position: relative;
@@ -21,12 +21,13 @@ body {
 .project-container {
   display: flex;
   flex-direction: column;
-  gap: 28px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1140px;
   position: relative;
+
+  gap: 22.4px;
+  width: 912px;
 }
 .project-icon {
   display: flex;
@@ -35,51 +36,53 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 72.57px;
-  margin-left: -40px;
   height: auto;
   position: relative;
   overflow: visible;
+
+  width: 58.056px;
+  margin-left: -32px;
 }
 .project-content {
   display: flex;
   flex-direction: column;
-  gap: 60px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 48px;
 }
 .project-header {
   display: flex;
   flex-direction: column;
-  gap: 36px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 713px;
   position: relative;
+
+  gap: 28.8px;
+  width: 570.4px;
 }
 .project-meta {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 48.72587203979492px;
-  line-height: 38.88px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  font-size: 38.98px;
+  line-height: 31.104px;
 }
 .project-title {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 49.9458122253418px;
-  line-height: 39.85px;
   font-weight: 600;
   text-decoration: underline;
   position: relative;
@@ -88,35 +91,41 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin: 0;
+
+  font-size: 39.96px;
+  line-height: 31.88px;
 }
 .project-description-block {
   display: flex;
   flex-direction: row;
-  gap: 42px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 33.6px;
 }
 .project-image-placeholder {
   background: #d9d9d9;
   flex-shrink: 0;
-  width: 344px;
-  height: 344px;
   position: relative;
   object-fit: cover;
+
+  width: 275.2px;
+  height: 275.2px;
 }
 .project-descriptio {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 32.483917236328125px;
-  line-height: 42px;
-  letter-spacing: 0.01em;
   font-weight: 400;
   position: relative;
   align-self: stretch;
-  width: 752px;
+
+  font-size: 25.99px;
+  line-height: 33.6px;
+  letter-spacing: 0.008em;
+  width: 601.6px;
 }
 .text-highlight {
   color: #f1262c;
@@ -128,65 +137,63 @@ body {
   font-style: italic;
 }
 .project-slider {
-  height: 756px;
   position: relative;
-  margin-bottom: 100px;
   background: white;
+  height: 604.8px; /* как у тебя */
+  margin-bottom: 80px;
 }
 
 .slider-viewport {
-  width: 1140px;
-  height: 756px;
+  position: relative;
   margin: auto;
+  width: 912px; /* ширина видимой области */
+  height: 604.8px;
+  overflow: visible; /* показываем соседние слайды */
+}
+
+.slides .slide {
   position: relative;
-  overflow: visible;
+  min-width: 912px; /* ширина одного слайда */
+  height: 604.8px;  /* фиксированная высота */
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-  height: 100%;
-  gap: 60px;
-}
-
-.slide {
-  min-width: 1140px;
-  height: 756px;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.slide img {
+.slides .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* cover как сейчас */
 }
 
-/* Затемнение */
-.slide::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  transition: 0.3s;
-}
-
-.slide.active::after {
-  background: rgba(0,0,0,0);
-}
-
-.slide-double {
-  width: 100%;
-  height: 100%;
+.slides .slide-double {
   display: flex;
-  justify-content: space-between;
-  gap: 40px; /* можешь менять */
+  gap: 32px; /* gap между картинками внутри слайда */
+  height: 100%;
 }
 
-.slide-double img {
+.slides .slide-double img {
   width: 50%;
   height: 100%;
   object-fit: cover;
+}
+
+.slick-slide {
+  margin-right: 48px; /* gap между слайдами */
+}
+
+.slick-list {
+  overflow: visible !important; /* показываем соседние слайды */
+}
+
+.slides .slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* затемнение для боковых слайдов */
+  transition: 0.3s;
+  pointer-events: none; /* чтобы не мешало клику */
+}
+
+.slides .slick-center::after {
+  background: rgba(0,0,0,0); /* активный слайд без затемнения */
 }
 
 .scroll-testimonials-list {
@@ -194,21 +201,31 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1812px;
   position: absolute;
   left: 50%;
   translate: -50% -50%;
   top: 50%;
   pointer-events: none; /* важно */
+
+  width: 1449.6px;
 }
 
 .polygon-arrow-left,
 .polygon-arrow-right {
   flex-shrink: 0;
-  width: 54.78px;
-  height: 63px;
   position: relative;
   overflow: visible;
   cursor: pointer;
   pointer-events: auto; /* чтобы клик работал */
+
+  width: 43.824px;
+  height: 50.4px;
 }
+
+
+
+
+
+
+
+
