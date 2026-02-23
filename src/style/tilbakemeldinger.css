@@ -1,14 +1,11 @@
-.frame-20,
-.frame-20 * {
-  box-sizing: border-box;
-}
+
 .frame-20 {
   height: 727px;
   position: relative;
 }
 .frame-148 {
   background: #f2e3dc;
-  width: 1920px;
+  max-width: 1920px;
   height: 634px;
   position: absolute;
   left: 0px;
@@ -182,4 +179,73 @@
 
 .fade-in {
   opacity: 1;
+}
+
+
+@media (max-width: 1280px) {
+  .frame-20 {
+    height: 450px;
+    margin-top: -300px;
+  }
+
+  .frame-149 {
+    max-width: 1280px;
+  }
+
+  .frame-148 {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .reviews {
+    gap: 120px;
+    top: 40px;
+  }
+
+  .review {
+    height: auto;
+  }
+
+  .review-text {
+    font-size: 24px;
+    width: 350px;
+  }
+
+  .review:last-child .review-text {
+    font-size: 22px;
+  }
+
+  .review:first-child .review-author,
+  .review:last-child .review-author,
+  .review-slogan {
+    font-size: 24px;
+  }
+
+  .review-footer {
+    width: 100%;
+  }
+
+  .testimonials-title {
+    font-size: 52px;
+    margin-left: 100px;
+  }
+
+  .testimonials-list {
+    height: auto;
+    padding-bottom: 120px;
+    top: 40px;
+  }
+
+  .scroll-testimonials-list {
+    margin-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .polygon-arrow-left,
+  .polygon-arrow-right {
+    width: 45px;
+    height: 52px;
+  }
+
 }
