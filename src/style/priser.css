@@ -31,247 +31,253 @@ html {
   background: #ffffff;
   align-self: stretch;
   flex-shrink: 0;
-  height: 1872px;
+  height: 1497.6px;
   position: relative;
   overflow: hidden;
 }
 .workshop-intro-section {
   background: #f2b80c;
   width: 100%;
-  height: 1636px;
   position: absolute;
   left: 0px;
-  top: 218px;
   overflow: hidden;
+
+  height: 1308.8px;
+  top: 174.4px;
 }
 .workshop-intro-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1703px;
   position: absolute;
   left: 0px;
   top: 0px;
+
+  max-width: 1600px;
 }
 .workshop-intro-top {
   display: flex;
   flex-direction: row;
-  gap: 79px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 170px;
 }
 .workshop-intro-main {
   flex-shrink: 0;
-  width: 685.96px;
-  height: 916px;
   position: relative;
+
+  width: 548.768px;
+  height: 732.8px;
 }
 .workshop-intro-decor-icon {
-  width: 685.96px;
-  height: 916px;
   position: absolute;
   left: 0px;
   top: 0px;
   overflow: visible;
+
+  width: 548.768px;
+  height: 732.8px;
 }
 .workshop-intro-title {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 50.10060501098633px;
-  line-height: 118.71%;
   font-weight: 700;
   position: absolute;
-  left: 86px;
-  top: 382px;
-  width: 423px;
+
+  font-size: 40.08px;
+  line-height: 94.97%;
+  left: 68.8px;
+  top: 305.6px;
+  width: 338.4px;
 }
 .workshop-intro-description {
   display: flex;
   flex-direction: column;
-  gap: 26px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 938px;
-  height: 426px;
   position: relative;
+
+  gap: 20.8px;
+  width: 750.4px;
+  height: 340.8px;
 }
-.workshop-intro-paragraph-1 {
+.workshop-intro-paragraph-1, .workshop-intro-paragraph-2 {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
-}
-.workshop-intro-paragraph-2 {
-  color: #37528b;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
+
+  font-size: 26.6791px;
 }
 .workshop-intro-paragraph-3 {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
   font-weight: 700;
   position: relative;
   align-self: stretch;
+
+  font-size: 26.6791px;
 }
 .workshop-included-section {
-  margin-top: -154px;
   align-self: stretch;
   flex-shrink: 0;
-  height: 537px;
   position: relative;
+
+  height: 429.6px;
+  margin-top: -123.2px;
 }
 
 .workshop-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 67px;
   align-items: flex-start;
-  width: 1015px;
   position: absolute;
-  left: 378px;
   top: 0;
+
+  gap: 53.6px;
+  width: 912px;
+  left: 402.4px;
 }
 
 .workshop-features {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   align-self: stretch;
+
+  gap: 12px;
 }
 
 .workshop-section-title {
   color: #0b2d74;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
-  font-size: 37.44px;
   text-align: left;
   align-self: stretch;
   margin: 0;
+
+  font-size: 29.952px;
 }
 
 .workshop-feature-list {
   display: flex;
   flex-direction: column;
-  gap: 17px;
   align-self: stretch;
+
+  gap: 13.6px;
 }
 
 .workshop-feature {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 43px;
+  
+  gap: 34.4px;
 }
 
 .workshop-feature-icon {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
   overflow: visible;
+
+  width: 20px;
+  height: 13.368px;
 }
 
 .workshop-feature-title {
   color: #0b2d74;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
-  font-size: 37.2px;
   margin: 0;
+
+  font-size: 29.76px;
 }
 
 .workshop-prices-note {
   color: #0b2d74;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
-  font-size: 37.44px;
   align-self: stretch;
   margin: 0;
+
+  font-size: 29.952px;
 }
 
 .pricing-header {
   display: flex;
   flex-direction: row;
-  gap: 31px;
   position: absolute;
-  left: 245px;
   top: 0px;
   align-items: flex-end;
   justify-content: flex-start;
   z-index: 100;
+
+  gap: 24.8px;
+  left: 196px;
 }
 .pricing-header-image {
   flex-shrink: 0;
-  width: 97px;
-  height: 252px;
   position: relative;
+
+  width: 77.6px;
+  height: 201.6px;
 }
 .rombe-1 {
-  width: 97.22px;
-  height: 65px;
   position: absolute;
   left: 0px;
-  top: 145.22px;
-  transform: translate(0px, -97.22px);
   overflow: visible;
+
+  width: 77.776px;
+  height: 52px;
+  top: 116.176px;
+  transform: translate(0px, -77.776px);
 }
-.rombe-28 {
+.rombe-28, .rombe-3, .rombe-4 {
   width: 47.86px;
   height: 32px;
   position: absolute;
+  overflow: visible;
+  transform: translate(0px, -38.288px);
+}
+.rombe-28{
   left: 33px;
   top: 47.86px;
-  transform: translate(0px, -47.86px);
-  overflow: visible;
 }
 .rombe-3 {
-  width: 47.86px;
-  height: 32px;
-  position: absolute;
   left: 65px;
   top: 144.86px;
-  transform: translate(0px, -47.86px);
-  overflow: visible;
 }
 .rombe-4 {
-  width: 47.86px;
-  height: 32px;
-  position: absolute;
   left: 42px;
   top: 212.86px;
-  transform: translate(0px, -47.86px);
-  overflow: visible;
 }
 .pricing-header-text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+
+  gap: 20px;
 }
 .pricing-title {
   color: #f1262c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 94.37132263183594px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
+
+  font-size: 75.497px;
 }
 .pricing-subtitle-wrapper {
   display: flex;
@@ -282,302 +288,318 @@ html {
   flex-shrink: 0;
   position: relative;
 }
+.pricing-subtitle-main, .pricing-subtitle-detail {
+  text-align: left;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+
+  font-size: 60.5803px;
+}
 .pricing-subtitle-main {
   color: #f2b80c;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 75.72537994384766px;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
+  margin: 2px 0 0 0;
 }
 .pricing-subtitle-detail {
-  margin: -15px 0 0 0;
   color: #ffffff;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 75.72537994384766px;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: relative;
+
+  margin: -12px 0 0 0;
 }
 .pricing-group-small, .pricing-group-medium, .pricing-group-large {
-  margin: -90px 0 0 0;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  margin: -72px 0 0 0;
 }
 .pricing-group-small {
-  height: 831px;
+  height: 664.8px;
 }
 .pricing-group-medium {
-  height: 801px;
+  height: 640.8px;
 }
 .pricing-group-large {
-  height: 1081px;
+  height: 864.8px;
 }
 .pricing-group-wrapper {
   background: #ffffff;
   width: auto;
-  height: 756px;
   position: absolute;
   left: 0px;
-  top: 75px;
   overflow: hidden;
+
+  height: 604.8px;
+  top: 60px;
 }
 .pricing-table {
   display: flex;
   flex-direction: row;
-  gap: 164px;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 378px;
-  margin-top: 159px;
+
+  gap: 131.2px;
+  margin-left: 402.4px;
+  margin-top: 127.2px;
 }
 .pricing-duration {
   display: flex;
   flex-direction: column;
-  gap: 26px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 239px;
   position: relative;
+
+  gap: 20.8px;
+  width: 191.2px;
 }
 .pricing-duration-title {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 37.439476013183594px;
   font-weight: 600;
   position: relative;
   align-self: stretch;
+
+  font-size: 29.9516px;
 }
 .pricing-duration-options {
   display: flex;
   flex-direction: column;
-  gap: 14px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 11.2px;
 }
 .duration-hours {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 74.98497009277344px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
+
+  font-size: 59.988px;
 }
 
 .pricing-price {
   display: flex;
   flex-direction: column;
-  gap: 26px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+
+  gap: 20.8px;
 }
 .price-title {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 37.439476013183594px;
   font-weight: 600;
   position: relative;
+
+  font-size: 29.9516px;
 }
 .pricing-price-values {
   display: flex;
   flex-direction: column;
-  gap: 14px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+
+  gap: 11.2px;
 }
 .price {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 74.98497009277344px;
   font-weight: 600;
   position: relative;
+
+  font-size: 59.988px;
 }
 .pricing-group-description {
   display: flex;
   flex-direction: column;
-  gap: 7px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1264px;
   position: absolute;
-  left: 378px;
+
+  gap: 5.6px;
+  width: 1011.2px;
+  left: 402.4px;
   top: 0px;
 }
 .group-size-title {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
   align-self: stretch;
   margin-top: -2px;
+
+  font-size: 60.5803px;
 }
 .group-additional-info {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 37.439476013183594px;
   font-weight: 700;
   position: relative;
   align-self: stretch;
+
+  font-size: 29.9516px;
 }
 .pricing-group-wrapper-second {
   background: #f2b80c;
-  width: 100%;
-  height: 839px;
   position: absolute;
   left: 0px;
-  top: 75px;
   overflow: hidden;
+
+  width: 100%;
+  height: 671.2px;
+  top: 60px;
 }
 
 .pricing-group-description-second {
   display: flex;
   flex-direction: column;
-  gap: 7px;
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  left: 378px;
+
+  gap: 5.6px;
+  left: 402.4px;
   top: 0px;
 }
 .group-size-title-second {
   color: #f2b80c;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
   margin-top: -0px;
+
+  font-size: 60.5803px;
 }
 .group-additional-info-second {
   color: #0b2d74;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 37.439476013183594px;
   font-weight: 700;
   position: relative;
+
+  font-size: 29.9516px;
 }
 .group-size-title-third {
   color: #ffffff;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 75.72537994384766px;
   font-weight: 600;
   text-transform: uppercase;
   position: absolute;
-  left: 378px;
+
+  font-size: 60.5803px;
+  left: 402.4px;
   top: 0px;
-  margin-top: 1px;
+  margin-top: 0.8px;
 }
 .pricing-group-wrapper {
   background: #ffffff;
   width: 100%;
-  height: 1005px;
   position: absolute;
-  left: 0px;
-  top: 76px;
   overflow: hidden;
+
+  height: 804px;
+  left: 0px;
+  top: 60.8px;
 }
 .pricing-group-large-content {
-  width: 1303px;
-  height: 703px;
   position: absolute;
-  left: 367px;
-  top: 60px;
+
+  width: 1042.4px;
+  height: 562.4px;
+  left: 393.6px;
+  top: 48px;
 }
 .pricing-group-large-description {
   display: flex;
   flex-direction: column;
-  gap: 27px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 938px;
-  height: 375px;
   position: absolute;
-  left: 11px;
+
+  gap: 21.6px;
+  width: 750.4px;
+  height: 300px;
+  left: 8.8px;
   top: 0px;
 }
-.large-group-paragraph-1 {
+/* Общие стили для всех параграфов */
+.large-group-paragraph-1,
+.large-group-paragraph-2,
+.large-group-paragraph-3 {
   color: #37528b;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
+  font-size: 26.68px; /* можно округлить */
   font-weight: 400;
   position: relative;
   align-self: stretch;
   flex: 1;
 }
+
+/* Если нужно сохранить уникальность первого параграфа */
+.large-group-paragraph-1 {
+  /* flex: 1; уже включено, можно оставить или удалить */
+}
+
+/* Второй параграф отличается цветом и выравниванием текста */
 .large-group-example-courses {
   color: #0b2d74;
   text-align: right;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
   font-weight: 600;
-  position: relative;
   width: 553px;
-}
-.large-group-paragraph-2 {
-  color: #37528b;
-  text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
-  font-weight: 400;
+  font-size: 26.68px;
   position: relative;
-  align-self: stretch;
-}
-.large-group-paragraph-3 {
-  color: #37528b;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
 }
 .large-group-contact {
   display: flex;
   flex-direction: row;
-  gap: 100px;
   align-items: center;
   justify-content: flex-start;
   position: absolute;
   left: 0px;
-  top: 428px;
+
+  gap: 80px;
+  top: 342.4px;
 }
 .large-group-contact-image {
   flex-shrink: 0;
-  width: 298px;
-  height: 275px;
   position: relative;
+
+  width: 238.4px;
+  height: 220px;
 }
 .large-group-contact-text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 905px;
   position: relative;
+
+  gap: 19.2px;
+  width: 724px;
 }
 .contact-main-text {
   color: #0b2d74;
@@ -595,36 +617,30 @@ html {
   text-decoration: none;
 
   &:hover {
-    transform: translateX(-10px); /* move slightly to the left */
+    transform: translateX(-8px); /* move slightly to the left */
   }
 }
 .contact-additional-text-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+
+  gap: 19.2px;
 }
-.contact-paragraph-1 {
-  color: #37528b;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
-}
+/* Загальні стилі для контактних параграфів */
+.contact-paragraph-1,
 .contact-paragraph-2 {
-  color: #37528b;
-  text-align: left;
-  font-family: "Funnel Sans", sans-serif;
-  font-size: 33.3488655090332px;
-  font-weight: 400;
-  position: relative;
-  align-self: stretch;
+  color: #37528b; /* колір тексту */
+  text-align: left; /* вирівнювання тексту по лівому краю */
+  font-family: "Funnel Sans", sans-serif; /* шрифт */
+  font-size: 26.68px; /* розмір шрифту */
+  font-weight: 400; /* товщина шрифту */
+  position: relative; /* відносне позиціонування */
+  align-self: stretch; /* розтягування по контейнеру */
 }
 
 
