@@ -219,7 +219,7 @@ html {
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 68.99336471557618px;
-  line-height: 56.799%;
+  line-height: 64.799%;
   letter-spacing: -0.009em;
   font-weight: 600;
   position: relative;
@@ -626,4 +626,13 @@ html {
   position: absolute;
   left: 375px;
   top: -13px;
+}
+
+
+
+@media (max-width: 1800px) {
+  .frame-15, .board-section, .about-section-forening, .membership-section-forening {
+    zoom: 0.9375;
+  }
+
 }
