@@ -115,8 +115,8 @@
   color: #f2e3dc;
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
-  font-size: 75.5px;
-  line-height: 80%;
+  font-size: 75.2px;
+  line-height: 82%;
   font-weight: 600;
   margin-left: 218.55px;
 }
@@ -182,10 +182,34 @@
 }
 
 
+
+@media (max-width: 1800px) {
+  .frame-20 {
+    zoom: 0.9375;
+  }
+}
+
+@media (max-width: 1600px) {
+  .frame-20 {
+    zoom: 0.8333;
+  }
+}
+
+@media (max-width: 1500px) {
+  .frame-20 {
+    zoom: 0.78125;
+    margin-top: -300px;
+  }
+
+  .testimonials-title {
+    line-height: 86%;
+  }
+}
+
 @media (max-width: 1280px) {
   .frame-20 {
     height: 450px;
-    margin-top: -300px;
+    margin-top: -400px;
   }
 
   .frame-149 {

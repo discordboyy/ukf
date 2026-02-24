@@ -17,6 +17,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  padding: 0px 0px 80px;
 }
 .project-container {
   display: flex;
@@ -229,3 +230,16 @@ body {
 
 
 
+/* @media (max-width: 1800px) {
+  body {
+    transform: scale(0.9375);
+    transform-origin: top center;
+  }
+} */
+
+
+@media (max-width: 1600px) {
+  .project-section {
+    zoom: 0.8333;
+  }
+}

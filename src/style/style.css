@@ -928,8 +928,6 @@ body {
 
 .testimonial-author { font-size: 40.46px; }   /* 50.58 × 0.8 */
 
-.testimonials-title { font-size: 75.2px; }    /* 94 × 0.8 */
-
 .samarbeidspartner-title { font-size: 60.4px; } /* 75.5 × 0.8 */
 
 .contact-link-name { font-size: 26.7px; }   /* 33.38 × 0.8 */
@@ -976,6 +974,11 @@ body {
   .reviews {
     scale: 0.9; 
   }
+
+  .samarbeidspartner-section, #contact-root, .about-section {
+    zoom: 0.9375;
+  }
+
 }
 
 @media (max-width: 1700px) {
@@ -983,6 +986,18 @@ body {
     scale: 0.8; 
     margin-top: -250px;
     width: calc(100% / 300); 
+  }
+  
+  .about-content {
+    width: 74%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .samarbeidspartner-section,
+  #contact-root,
+  .about-section{
+    zoom: 0.8333;
   }
 }
 
@@ -1008,6 +1023,30 @@ body {
 
   .testimonial-author {
     font-size: 30.348px;
+  }
+
+
+
+
+  .samarbeidspartner-section,
+  #contact-root,
+  .about-section{
+    zoom: 0.78125;
+  }
+
+  .contact-links {
+    width: 1200px;
+    padding: 0 20px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .about-description {
+    width: 460px;
+  }
+
+  .about-content {
+    width: 75%;
   }
 }
 
@@ -1061,7 +1100,7 @@ body {
 
   .contact-links {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     padding: 0 40px;
     flex-wrap: wrap;
     gap: 30px;
@@ -1089,14 +1128,8 @@ body {
 
 
 
-  .about-section {
-    height: 200px;
-  }
 
-  .about-container {
-    scale: 0.6; 
-    width: calc(100% / 0.6); 
-    margin-left: -21%;
-    margin-top: -80px;
+  .about-section {
+    zoom: 0.6667;
   }
 }
