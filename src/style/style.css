@@ -1050,6 +1050,14 @@ body {
   }
 }
 
+@media (max-width: 1400px) {
+  .samarbeidspartner-section,
+  #contact-root,
+  .about-section {
+    zoom: 0.729;
+  }
+}
+
 @media (max-width: 1280px) {
 
   .samarbeidspartner-section {

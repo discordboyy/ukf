@@ -1140,6 +1140,12 @@ html {
   }
 }
 
+@media (max-width: 1400px) {
+  .course-offer-section, .kurs-section-container {
+    zoom: 0.729;
+  }
+}
+
 @media (max-width: 1280px) {
   .course-offer-section, .kurs-section-container {
     zoom: 0.6667;

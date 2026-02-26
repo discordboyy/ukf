@@ -238,8 +238,32 @@ body {
 } */
 
 
+@media (max-width: 1800px) {
+  .project-section {
+    zoom: 0.9375;
+  }
+}
+
 @media (max-width: 1600px) {
   .project-section {
     zoom: 0.8333;
+  }
+}
+
+@media (max-width: 1500px) {
+  .project-section {
+    zoom: 0.78125;
+  }
+}
+
+@media (max-width: 1400px) {
+  .project-section {
+    zoom: 0.729;
+  }
+}
+
+@media (max-width: 1280px) {
+  .project-section {
+    zoom: 0.6666;
   }
 }

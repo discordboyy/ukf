@@ -668,6 +668,18 @@ html {
   }
 }
 
+@media (max-width: 1500px) {
+  .pricing-section {
+    zoom: 0.78125;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pricing-section {
+    zoom: 0.729;
+  }
+}
+
 @media (max-width: 1280px) {
   .pricing-section {
     zoom: 0.6666;
