@@ -1119,3 +1119,29 @@ html {
 }
 
 
+
+
+
+@media (max-width: 1800px) {
+  .course-offer-section, .kurs-section-container {
+    zoom: 0.9375;
+  }
+}
+
+@media (max-width: 1600px) {
+  .course-offer-section, .kurs-section-container {
+    zoom: 0.8333;
+  }
+}
+
+@media (max-width: 1500px) {
+  .course-offer-section, .kurs-section-container {
+    zoom: 0.78125;
+  }
+}
+
+@media (max-width: 1280px) {
+  .course-offer-section, .kurs-section-container {
+    zoom: 0.6667;
+  }
+}
