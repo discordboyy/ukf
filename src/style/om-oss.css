@@ -634,5 +634,22 @@ html {
   .frame-15, .board-section, .about-section-forening, .membership-section-forening {
     zoom: 0.9375;
   }
+}
 
+@media (max-width: 1600px) {
+  .frame-15, .board-section, .about-section-forening, .membership-section-forening {
+    zoom: 0.8333;
+  }
+}
+
+@media (max-width: 1500px) {
+  .frame-15, .board-section, .about-section-forening, .membership-section-forening {
+    zoom: 0.78125;
+  }
+}
+
+@media (max-width: 1280px) {
+  .frame-15, .board-section, .about-section-forening, .membership-section-forening {
+    zoom: 0.6667;
+  }
 }
