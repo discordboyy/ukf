@@ -267,3 +267,15 @@ body {
     zoom: 0.6666;
   }
 }
+
+@media (max-width: 1100px) {
+  .project-section {
+    zoom: 0.5729;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-section {
+    zoom: 0.5208;
+  }
+}

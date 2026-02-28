@@ -659,6 +659,10 @@ body {
   margin-right: 0px;
 }
 
+#Oslo-Kommune, #Akershus, #Verdensfolk, #Sentralen {
+  margin-top: -20px; /* поднимаем логотип Oslo Kommune */
+}
+
 .samarbeidspartner-carousel-container:hover .samarbeidspartner-carousel {
     animation-play-state: paused;
 }

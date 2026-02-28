@@ -685,3 +685,15 @@ html {
     zoom: 0.6666;
   }
 }
+
+@media (max-width: 1100px) {
+  .pricing-section {
+    zoom: 0.5729;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pricing-section {
+    zoom: 0.5208;
+  }
+}

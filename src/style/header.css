@@ -115,3 +115,54 @@ header {
     height: 338.1px;
   }
 }
+
+@media (max-width: 1280px) {
+
+  header {
+    transform: scale(0.6);
+    transform-origin: top left;
+    width: calc(100% / 0.6);
+  }
+
+  #header {
+    height: 289.8px;
+  }
+
+  #header-component {
+    height: 289.8px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  header {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: calc(100% / 0.5);
+  }
+
+  #header {
+    height: 241.5px;
+  }
+
+  #header-component {
+    height: 241.5px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  header {
+    transform: scale(0.4);
+    transform-origin: top left;
+    width: calc(100% / 0.4);
+  }
+
+  #header {
+    height: 193.2px;
+  }
+
+  #header-component {
+    height: 193.2px;
+  }
+}

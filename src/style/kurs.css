@@ -1151,3 +1151,17 @@ html {
     zoom: 0.6667;
   }
 }
+
+@media (max-width: 1100px) {
+  .course-offer-section,
+  .kurs-section-container {
+    zoom: 0.5729;
+  }
+}
+
+@media (max-width: 1000px) {
+  .course-offer-section,
+  .kurs-section-container {
+    zoom: 0.5208;
+  }
+}
