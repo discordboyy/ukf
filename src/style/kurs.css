@@ -512,6 +512,12 @@ html {
 #glasslysholder-card-css {
   gap: 126px;
 }
+#glasslysholder-course-body-css {
+  gap: 58px;
+}
+#farsdag-course-body-css {
+  gap: 40px;
+}
 
 .course-body-holder {
   display: flex;
