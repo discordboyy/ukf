@@ -484,6 +484,35 @@ html {
   width: 450px;
   gap: 37.5px;
 }
+#motanka-dukke-css {
+  gap: 0px;
+}
+#motanka-course-body-css {
+  gap: 10px;
+}
+#motanka-dukke-card-css {
+  gap: 118px;
+}
+#motanka-group-css, #age-group-smykker-css, #age-group-smykker-css, #glasslysholder-age-group-css {
+  height: auto;
+}
+#smykker-skill-item-css .skill-item-text-blue {
+  height: 40px;
+}
+#smykker-skill-item-css {
+  height: 80px;
+  margin-top: -20px;
+}
+#smykker-course-body-css {
+  gap: 84px;
+}
+#skjerf-course-body-css {
+  gap: 84px;
+}
+#glasslysholder-card-css {
+  gap: 126px;
+}
+
 .course-body-holder {
   display: flex;
   flex-direction: column;
