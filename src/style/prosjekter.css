@@ -46,7 +46,7 @@ body {
 }
 .project-icon.blue {
   width: 110px;
-  margin-left: -72px;
+  margin-left: -72px; 
 }
 .project-content {
   display: flex;
