@@ -1145,3 +1145,23 @@ body {
     zoom: 0.6667;
   }
 }
+
+@media (max-width: 1100px) {
+  .page-membership {
+    zoom: 0.8;
+  }
+
+  .about-section {
+    zoom: 0.6;
+  }
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    zoom: 0.5;
+  }
+}
