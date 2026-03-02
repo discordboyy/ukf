@@ -7,7 +7,7 @@
 } 
 
 /* Общие настройки */
-header,
+header,f
 header * {
   box-sizing: border-box;
 }
@@ -29,7 +29,7 @@ html {
   justify-content: flex-start;
   position: relative;
   width: 1558.125px;
-  margin-bottom: 247.5px;
+  margin-bottom: 150px;
 }
 .about-content-forening {
   display: flex;
