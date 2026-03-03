@@ -116,19 +116,23 @@
 
 
 
+
 .frame-172 {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  gap: 31.61px;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 100px;
   margin-bottom: 200px;
 }
 .frame-170 {
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  gap: 34.86px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
@@ -138,7 +142,7 @@
 .frame-167 {
   display: flex;
   flex-direction: row;
-  gap: 31px;
+  gap: 25.13px;
   align-items: flex-start;
   justify-content: center;
   flex-shrink: 0;
@@ -146,24 +150,24 @@
 }
 .rectangle-7 {
   flex-shrink: 0;
-  width: 355px;
-  height: 356px;
+  width: 287.78px;
+  height: 288.59px;
   position: relative;
 }
 .frame-166 {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 9.73px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 758px;
+  width: 614.46px;
   position: relative;
 }
 .frame-165 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8.11px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -174,7 +178,7 @@
   color: #103279;
   text-align: left;
   font-family: "FunnelSans-SemiBold", sans-serif;
-  font-size: 50.038875579833984px;
+  font-size: 40.56349563598633px;
   font-weight: 600;
   text-decoration: underline;
   position: relative;
@@ -183,7 +187,7 @@
 .frame-164 {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12.97px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -194,7 +198,7 @@
   color: #103279;
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 50.01430892944336px;
+  font-size: 40.5435791015625px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -203,7 +207,7 @@
   color: #103279;
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
-  font-size: 50.01430892944336px;
+  font-size: 40.5435791015625px;
   font-weight: 400;
   position: relative;
   align-self: stretch;
@@ -211,7 +215,7 @@
 .frame-163 {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 12.16px;
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
@@ -219,10 +223,10 @@
 }
 .frame-161 {
   background: #103279;
-  padding: 14px 12px 14px 12px;
+  padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 8.11px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -230,8 +234,8 @@
 }
 .rombe-2 {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
+  width: 20.27px;
+  height: 13.55px;
   position: relative;
   overflow: visible;
 }
@@ -239,16 +243,16 @@
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 31.47176170349121px;
+  font-size: 25.512256622314453px;
   font-weight: 700;
   position: relative;
 }
 .frame-162 {
   background: #103279;
-  padding: 14px 12px 14px 12px;
+  padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 8.11px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -256,8 +260,8 @@
 }
 .rombe-22 {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
+  width: 20.27px;
+  height: 13.55px;
   position: relative;
   overflow: visible;
 }
@@ -265,15 +269,15 @@
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 31.47176170349121px;
+  font-size: 25.512256622314453px;
   font-weight: 700;
   position: relative;
 }
 .frame-1632 {
-  padding: 14px 12px 14px 12px;
+  padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 8.11px;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -283,14 +287,14 @@
   color: #103279;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
-  font-size: 31.47176170349121px;
+  font-size: 25.512256622314453px;
   font-weight: 700;
   position: relative;
 }
 .frame-169 {
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 28.37px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
@@ -300,21 +304,21 @@
 .rectangle-8 {
   background: #d9d9d9;
   flex-shrink: 0;
-  width: 772px;
-  height: 772px;
+  width: 625.81px;
+  height: 625.81px;
   position: relative;
 }
 .rectangle-9 {
   background: #d9d9d9;
   flex-shrink: 0;
-  width: 772px;
-  height: 772px;
+  width: 625.81px;
+  height: 625.81px;
   position: relative;
 }
 .frame-171 {
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  gap: 34.86px;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
@@ -323,15 +327,15 @@
 }
 .rombe-23 {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
+  width: 20.27px;
+  height: 13.55px;
   position: relative;
   overflow: visible;
 }
 .rombe-24 {
   flex-shrink: 0;
-  width: 25px;
-  height: 16.71px;
+  width: 20.27px;
+  height: 13.55px;
   position: relative;
   overflow: visible;
 }
