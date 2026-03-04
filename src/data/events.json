@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Juleverksted Motanka-engel",
+    "date": "Fredag, 14. november",
+    "place": "Gamle Munch, Tøyengata 53, Oslo",
+    "price": "400kr",
+    "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
+    "readMoreLink": "#",
+    "registrationLink": "#"
+  },
+  {
+    "title": "Påskeverksted for barn",
+    "date": "Lørdag, 12. april",
+    "place": "Gamle Munch, Tøyengata 53, Oslo",
+    "price": "350kr",
+    "images": [
+      "src/assets/hva-skjer/event2-1.jpg",
+      "src/assets/hva-skjer/event2-2.jpg"
+    ],
+    "readMoreLink": "#",
+    "registrationLink": "#"
+  }
+]
