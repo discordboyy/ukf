@@ -65,7 +65,7 @@ header {
 
 /* Пункты меню */
 .nav-item {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.33px;
@@ -79,7 +79,7 @@ header {
 
 .nav-item.active {
   font-weight: 600;
-  color: #103279;
+  color: var(--blue-color);
   /* text-decoration: underline; */
 }
 

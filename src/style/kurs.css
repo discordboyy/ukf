@@ -8,6 +8,10 @@
   --navbuttons-space: 10vw;
 }
 
+:root {
+  --yellow-color: #f2b80c;
+}
+
 /* Общие настройки */
 header,
 header * {
@@ -16,12 +20,6 @@ header * {
 
 html {
   scroll-behavior: smooth;
-}
-
-:root {
-  --blue-color: #103279;
-  --red-color: #f1262c;
-  --yellow-color: #f2b80c;
 }
 
 .course-offer-section {
@@ -1128,7 +1126,7 @@ html {
     border-radius: 50%;
     z-index: 5; /* ниже, чем модалка */
     cursor: pointer;
-    
+
 }
 
 .carousel-preview .slick-prev { left: 10px; }

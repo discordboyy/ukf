@@ -4,8 +4,8 @@
   --red-color: #f1262c;
   --blue-color: #103279;
   --yellow-color: #f3b910;
-}  
- 
+}
+
 /* Общие настройки */
 header,f
 header * {
@@ -62,7 +62,7 @@ html {
   position: relative;
 }
 .about-intro-text-forening {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 37.73356018066406px;
@@ -118,7 +118,7 @@ html {
 .about-mission,
 .about-activities-part,
 .about-impact {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 29.883197021484376px;
@@ -176,7 +176,7 @@ html {
   position: relative;
 }
 .event-date-forening {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 27.786131858825686px;
@@ -185,7 +185,7 @@ html {
   position: relative;
 }
 .event-title-forening {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 29.883197021484376px;
@@ -215,7 +215,7 @@ html {
   position: relative;
 }
 .membership-title-forening {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 68.99336471557618px;
@@ -226,7 +226,7 @@ html {
   align-self: stretch;
 }
 .membership-fee-info-forening {
-  color: #f12727;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 37.62462043762207px;
@@ -251,7 +251,7 @@ html {
 }
 .membership-value-text-forening,
 .membership-application {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 29.9526237487793px;
@@ -265,14 +265,14 @@ html {
   line-height: 117.333%;
 }
 .membership-application-text {
-  color: #103279;
+  color: var(--blue-color);
 }
 .membership-application-email {
-  color: #f3b910;
+  color: var(--yellow-color);
   text-decoration: underline;
 }
 .membership-application-note {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 29.950213623046875px;
@@ -310,7 +310,7 @@ html {
 }
 
 .board-title {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 61.6px;
@@ -381,7 +381,7 @@ html {
 }
 
 .board-member-name--blue {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .board-member-role {
@@ -398,7 +398,7 @@ html {
 }
 
 .board-member-role--blue {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .board-member-description {
@@ -415,7 +415,7 @@ html {
 }
 
 .board-member-description--blue {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .board-member-description--wide {
