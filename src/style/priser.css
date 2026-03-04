@@ -6,12 +6,6 @@
   --yellow-color: #f3b910;
 }
 
-/* Общие настройки */
-header,
-header * {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -180,7 +174,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
   gap: 34.4px;
 }
 
@@ -270,7 +264,7 @@ html {
   gap: 20px;
 }
 .pricing-title {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
