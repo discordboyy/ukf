@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --red-color: #f1262c;
+  --blue-color: #103279;
+  --yellow-color: #f3b910;
+}
 
 .frame-20 {
   height: 727px;
@@ -52,7 +59,7 @@
 }
 
 .review-text {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 31.131559371948242px;
@@ -63,7 +70,7 @@
 }
 
 .review:first-child .review-author {
-  color: #f1262c;
+  color: var(--red-color);
   font-family: "Funnel Sans", sans-serif;
   font-size: 30.659292221069336px;
   font-weight: 600;
@@ -71,7 +78,7 @@
 }
 
 .review:last-child .review-text {
-  color: #103279;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-size: 28.94131088256836px;
   line-height: 171.46%;
@@ -91,7 +98,7 @@
 }
 
 .review:last-child .review-author {
-  color: #103279;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-size: 30.65889549255371px;
   line-height: 122.35%;
@@ -102,7 +109,7 @@
 }
 
 .review-slogan {
-  color: #103279;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-size: 30.65999984741211px;
   line-height: 122.35%;
