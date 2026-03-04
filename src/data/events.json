@@ -1,34 +1,13 @@
 [
   {
-    "title": "Juleverksted Motanka-engel",
-    "date": "Fredag, 14. november",
-    "place": "Gamle Munch, Tøyengata 53, Oslo",
-    "price": "400kr",
-    "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
-    ],
-    "readMoreLink": "#",
-    "registrationLink": "#"
-  },
-  {
-    "title": "Påskeverksted for barn",
-    "date": "Lørdag, 12. april",
-    "place": "Gamle Munch, Tøyengata 53, Oslo",
-    "price": "350kr",
-    "images": [
-      "src/assets/hva-skjer/event2-1.jpg",
-      "src/assets/hva-skjer/event2-2.jpg"
-    ],
-    "readMoreLink": "#",
-    "registrationLink": "#"
-  },
-  {
     "title": "Verksted: botanisk akvarellmaling",
     "date": "5. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "images": [],
+        "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985"
   },
@@ -37,7 +16,10 @@
     "date": "12. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "images": [],
+        "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/454917806",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/454917806"
   },
@@ -46,7 +28,10 @@
     "date": "19. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "images": [],
+        "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/153754059",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/153754059"
   },
@@ -55,7 +40,10 @@
     "date": "26. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "images": [],
+        "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/1776896944",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/1776896944"
   },
@@ -64,7 +52,10 @@
     "date": "29. mars 2026, kl. 12:00-16:00",
     "place": "Sentralen, Øvre Slottsgate 3, Oslo",
     "price": "Gratis",
-    "images": [],
+        "images": [
+      "src/assets/hva-skjer/event1-1.jpg",
+      "src/assets/hva-skjer/event1-2.jpg"
+    ],
     "readMoreLink": "https://fb.me/e/48CV8dLPK",
     "registrationLink": "https://fb.me/e/48CV8dLPK"
   }
