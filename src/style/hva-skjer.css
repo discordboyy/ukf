@@ -132,7 +132,7 @@ html {
 
 
 
-.frame-172 {
+.upcoming-events-section {
   display: flex;
   flex-direction: column;
   gap: 31.61px;
@@ -144,7 +144,7 @@ html {
   margin-top: 100px;
   margin-bottom: 200px;
 }
-.frame-170 {
+.event-content-holder {
   display: flex;
   flex-direction: column;
   gap: 34.86px;
@@ -154,7 +154,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.frame-167 {
+.event-content-section {
   display: flex;
   flex-direction: row;
   gap: 25.13px;
@@ -163,13 +163,13 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.rectangle-7 {
+.event-icon {
   flex-shrink: 0;
   width: 287.78px;
   height: 288.59px;
   position: relative;
 }
-.frame-166 {
+.event-content {
   display: flex;
   flex-direction: column;
   gap: 9.73px;
@@ -179,7 +179,7 @@ html {
   width: 614.46px;
   position: relative;
 }
-.frame-165 {
+.event-info-section {
   display: flex;
   flex-direction: column;
   gap: 8.11px;
@@ -189,7 +189,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.juleverksted-motanka-engel {
+.event-info-title {
   color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-SemiBold", sans-serif;
@@ -199,7 +199,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.frame-164 {
+.event-info-main {
   display: flex;
   flex-direction: column;
   gap: 12.97px;
@@ -209,7 +209,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.fredag-14-november {
+.event-info-time {
   color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
@@ -218,7 +218,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.gamle-munch-t-yengata-53-oslo {
+.event-info-place {
   color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
@@ -227,7 +227,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.frame-163 {
+.event-info-links {
   display: flex;
   flex-direction: row;
   gap: 12.16px;
@@ -246,6 +246,7 @@ html {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  text-decoration: none;
 }
 .rombe-2 {
   flex-shrink: 0;
@@ -261,6 +262,7 @@ html {
   font-size: 25.512256622314453px;
   font-weight: 700;
   position: relative;
+  text-decoration: none;
 }
 .link-registration {
   background: var(--blue-color);
@@ -272,6 +274,7 @@ html {
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  text-decoration: none;
 }
 .rombe-22 {
   flex-shrink: 0;
@@ -287,6 +290,7 @@ html {
   font-size: 25.512256622314453px;
   font-weight: 700;
   position: relative;
+  text-decoration: none;
 }
 .event-price {
   padding: 11.35px 9.73px 11.35px 9.73px;
@@ -323,16 +327,6 @@ html {
   height: 625.81px;
   position: relative;
 }
-.frame-171 {
-  display: flex;
-  flex-direction: column;
-  gap: 34.86px;
-  align-items: center;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
 .rombe-23 {
   flex-shrink: 0;
   width: 20.27px;
@@ -354,43 +348,43 @@ html {
 
 
 @media (max-width: 1800px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.9375;
   }
 }
 
 @media (max-width: 1600px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.8333;
   }
 }
 
 @media (max-width: 1500px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.78125;
   }
 }
 
 @media (max-width: 1400px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.729;
   }
 }
 
 @media (max-width: 1280px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.6666;
   }
 }
 
 @media (max-width: 1100px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.5729;
   }
 }
 
 @media (max-width: 1000px) {
-  .frame-168, .frame-172 {
+  .frame-168, .upcoming-events-section {
     zoom: 0.5208;
   }
 }
