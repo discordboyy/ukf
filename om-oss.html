@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="src/style/style.css" />
   <link rel="stylesheet" href="src/style/om-oss.css">
   <link rel="icon" type="image/svg" href="src/assets/32x32_icon.svg" sizes="32x32">
-  
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="src/js/scroll-animation.js" defer></script>
   <script src="src/js/main.js" defer></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -228,24 +229,6 @@
 
     <div id="contact-root"></div>
     <div id="about-root"></div>
-
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const scrollBlocks = document.querySelectorAll(".scroll-animate");
-
-        function checkScrollBlocks() {
-            scrollBlocks.forEach(block => {
-                const rect = block.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.75) {
-                    block.classList.add("show");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", checkScrollBlocks);
-        checkScrollBlocks(); // Проверка при загрузке страницы
-    });
-    </script>
 
 </body>
 </html>

@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="src/style/style.css" />
   <link rel="stylesheet" href="src/style/kurs.css">
   <link rel="icon" type="image/svg" href="src/assets/32x32_icon.svg" sizes="32x32">
-  
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="src/js/scroll-animation.js" defer></script>
   <script src="src/js/main.js" defer></script>
   <script src="src/js/kurs.js" defer></script>
 
@@ -102,7 +103,7 @@
                     </label>
                 </div>
             </div>
-        </div>  
+        </div>
 
         <div class="frame-107">
             <div class="course-card" data-category="visuell-kunst">
@@ -278,7 +279,7 @@
                                 <div class="skill-item red2">
                                     <img class="rombe-item-red" src="src/assets/rombe-red.svg" />
                                     <div class="skill-item-text-red">
-                                        Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og limpistol 
+                                        Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og limpistol
                                     </div>
                                 </div>
                             </div>
@@ -775,22 +776,6 @@
 
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const scrollBlocks = document.querySelectorAll(".scroll-animate");
-
-        function checkScrollBlocks() {
-            scrollBlocks.forEach(block => {
-                const rect = block.getBoundingClientRect();
-                if (rect.top < window.innerHeight * 0.75) {
-                    block.classList.add("show");
-                }
-            });
-        }
-
-        window.addEventListener("scroll", checkScrollBlocks);
-        checkScrollBlocks(); // Проверка при загрузке страницы
-    });
-
     // Course card toggle functionality with exclusive open state
     document.querySelectorAll('.course-toggle').forEach(toggle => {
         toggle.addEventListener('click', () => {
