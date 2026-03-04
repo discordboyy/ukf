@@ -10,9 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const eventHTML = `
                 <div class="event-content-holder">
                     <div class="event-content-section">
-                        <div class="event-icon">
-                          <img src="${event.icon}" alt="Event icon">
-                        </div>
+                        <img class="event-icon" src="${event.icon}" alt="Event icon">
                         <div class="event-content">
                             <div class="event-info-section">
                                 <div class="event-info-title">

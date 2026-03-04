@@ -4,7 +4,7 @@
     "date": "5. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "icon": "src/assets/hva-skjer/icons/akvarell.svg",
+    "icon": "src/assets/hva-skjer/icons/botanisk.png",
     "images": [
       "src/assets/hva-skjer/event1-1.jpg",
       "src/assets/hva-skjer/event1-2.jpg"
@@ -17,7 +17,7 @@
     "date": "12. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "icon": "src/assets/hva-skjer/icons/akvarell.svg",
+    "icon": "src/assets/hva-skjer/icons/treskjearing.png",
     "images": [
       "src/assets/hva-skjer/event1-1.jpg",
       "src/assets/hva-skjer/event1-2.jpg"
@@ -30,7 +30,7 @@
     "date": "19. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "icon": "src/assets/hva-skjer/icons/akvarell.svg",
+    "icon": "src/assets/hva-skjer/icons/ullkuler.png",
     "images": [
       "src/assets/hva-skjer/event1-1.jpg",
       "src/assets/hva-skjer/event1-2.jpg"
@@ -43,7 +43,7 @@
     "date": "26. mars 2026, kl. 16:00-18:00",
     "place": "Lørenskog Bibliotek",
     "price": "Gratis",
-    "icon": "src/assets/hva-skjer/icons/akvarell.svg",
+    "icon": "src/assets/hva-skjer/icons/tradisjonell-eggemaling.png",
     "images": [
       "src/assets/hva-skjer/event1-1.jpg",
       "src/assets/hva-skjer/event1-2.jpg"
@@ -56,7 +56,7 @@
     "date": "29. mars 2026, kl. 12:00-16:00",
     "place": "Sentralen, Øvre Slottsgate 3, Oslo",
     "price": "Gratis",
-    "icon": "src/assets/hva-skjer/icons/akvarell.svg",
+    "icon": "src/assets/hva-skjer/icons/farge-ullkuler.png",
     "images": [
       "src/assets/hva-skjer/event1-1.jpg",
       "src/assets/hva-skjer/event1-2.jpg"
