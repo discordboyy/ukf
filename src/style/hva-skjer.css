@@ -153,6 +153,7 @@ html {
   align-self: stretch;
   flex-shrink: 0;
   position: relative;
+  margin-bottom: 50px;
 }
 .event-content-section {
   display: flex;
