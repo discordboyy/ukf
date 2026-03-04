@@ -81,7 +81,7 @@ html {
   }
 }
 .alle-planlagte-aktiviteter {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif; /* шрифт */
   font-size: 49.96828842163086px;
@@ -101,7 +101,7 @@ html {
   position: relative;
 }
 .calendar {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif; /* шрифт */
   font-size: 49.96828842163086px;
@@ -196,7 +196,7 @@ html {
   position: relative;
 }
 .juleverksted-motanka-engel {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-SemiBold", sans-serif;
   font-size: 40.56349563598633px;
@@ -216,7 +216,7 @@ html {
   position: relative;
 }
 .fredag-14-november {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
   font-size: 40.5435791015625px;
@@ -225,7 +225,7 @@ html {
   align-self: stretch;
 }
 .gamle-munch-t-yengata-53-oslo {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "FunnelSans-Regular", sans-serif;
   font-size: 40.5435791015625px;
@@ -243,7 +243,7 @@ html {
   position: relative;
 }
 .frame-161 {
-  background: #103279;
+  background: var(--blue-color);
   padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
@@ -269,7 +269,7 @@ html {
   position: relative;
 }
 .frame-162 {
-  background: #103279;
+  background: var(--blue-color);
   padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
@@ -305,7 +305,7 @@ html {
   position: relative;
 }
 ._400-kr {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
   font-size: 25.512256622314453px;
