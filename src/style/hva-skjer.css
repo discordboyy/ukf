@@ -6,12 +6,6 @@
   --yellow-color: #f3b910;
 }
 
-/* Общие настройки */
-header,
-header * {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
