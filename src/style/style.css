@@ -57,7 +57,7 @@ body {
 }
 
 .lang.no {
-  color: #f1262c;
+  color: var(--red-color);
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -66,7 +66,7 @@ body {
 
 .lang.eng,
 .lang.ukr {
-  color: #103279;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-weight: 400;
 }
@@ -116,7 +116,7 @@ body {
   }
 }
 .show-more-text {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 50px;
@@ -229,7 +229,7 @@ body {
   width: 550px;
 }
 .events-title {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 95px;
@@ -300,7 +300,7 @@ body {
   margin-top: 149.78px;  /* 166.42 × 0.9 */
 }
 .membership-title {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 85.5px;       /* 95 × 0.9 */
@@ -323,7 +323,7 @@ body {
   margin-top: 51px;
 }
 .membership-text {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 41.75px;
@@ -333,7 +333,7 @@ body {
   align-self: stretch;
 }
 .membership-email {
-  color: #f3b910;
+  color: var(--yellow-color);
   font-family: "Funnel Sans", sans-serif;
   font-size: 41.75px;
   text-decoration: none; /* убираем стандартное подчёркивание ссылки */
@@ -356,7 +356,7 @@ body {
   -ms-user-select: none;
 }
 .membership-note {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 41.75px;
@@ -384,7 +384,7 @@ body {
 }
 
 .hero-description {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 49px;
@@ -455,49 +455,49 @@ body {
 /* --- EVENT DATE --- */
 .event-date.red,
 .event-date.red * {
-  color: #f1262c;
+  color: var(--red-color);
 }
 
 .event-date.blue,
 .event-date.blue * {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .event-date.yellow,
 .event-date.yellow * {
-  color: #F3B910;
+  color: var(--yellow-color);
 }
 
 /* --- EVENT TITLE --- */
 .event-card.red .event-title,
 .event-card.red .event-title * {
-  color: #f1262c;
+  color: var(--red-color);
 }
 
 .event-card.blue .event-title,
 .event-card.blue .event-title * {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .event-card.yellow .event-title,
 .event-card.yellow .event-title * {
-  color: #F3B910;
+  color: var(--yellow-color);
 }
 
 /* --- EVENT DESCRIPTION --- */
 .event-card.red .event-description,
 .event-card.red .event-description * {
-  color: #f1262c;
+  color: var(--red-color);
 }
 
 .event-card.blue .event-description,
 .event-card.blue .event-description * {
-  color: #103279;
+  color: var(--blue-color);
 }
 
 .event-card.yellow .event-description,
 .event-card.yellow .event-description * {
-  color: #F3B910;
+  color: var(--yellow-color);
 }
 
 
@@ -698,14 +698,14 @@ body {
   cursor: default;
 }
 .contact-content {
-  background: #f1262c;
+  background: var(--red-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   height: 142px;
-  
+
   overflow: hidden;
 }
 .contact-links {
@@ -782,7 +782,7 @@ body {
   -ms-user-select: none;
 }
 .contact-title {
-  color: #f1262c;
+  color: var(--red-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 60.4px;
@@ -801,7 +801,7 @@ body {
 
 
 .about-section {
-  background: #f3b910;
+  background: var(--yellow-color);
   padding: 40px 0px 34px;
   display: flex;
   flex-direction: column;
@@ -836,7 +836,7 @@ body {
   position: relative;
 }
 .about-description {
-  color: #103279;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 30.84px;
@@ -966,9 +966,9 @@ body {
 
 @media (max-width: 1800px) {
   .page-membership {
-    scale: 0.9; 
+    scale: 0.9;
     margin-top: -100px;
-    width: calc(100% / 300); 
+    width: calc(100% / 300);
   }
 
   .membership-fee {
@@ -976,7 +976,7 @@ body {
   }
 
   .reviews {
-    scale: 0.9; 
+    scale: 0.9;
   }
 
   .samarbeidspartner-section, #contact-root, .about-section {
@@ -987,11 +987,11 @@ body {
 
 @media (max-width: 1700px) {
   .page-membership {
-    scale: 0.8; 
+    scale: 0.8;
     margin-top: -250px;
-    width: calc(100% / 300); 
+    width: calc(100% / 300);
   }
-  
+
   .about-content {
     width: 74%;
   }
@@ -1008,9 +1008,9 @@ body {
 @media (max-width: 1500px) {
 
   .page-membership {
-    scale: 0.6; 
+    scale: 0.6;
     margin-top: -400px;
-    width: calc(100% / 300); 
+    width: calc(100% / 300);
   }
 
   .membership-fee {
@@ -1020,7 +1020,7 @@ body {
   .testimonial-text2, .testimonial-author2 {
     font-size: 23.496px;
   }
-  
+
   .testimonial-text {
     font-size: 24.654px;
   }
@@ -1051,7 +1051,7 @@ body {
 
   .about-content {
     width: 75%;
-  } 
+  }
 }
 
 @media (max-width: 1400px) {
