@@ -346,7 +346,7 @@
 
 
 @media (max-width: 1800px) {
-  .frame-168, .frame-172 {
+  .frame-168, .frame-172 { 
     zoom: 0.9375;
   }
 }
