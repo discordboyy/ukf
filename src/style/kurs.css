@@ -519,6 +519,15 @@ html {
 #farsdag-course-body-css {
   gap: 40px;
 }
+#nissefjes-skill-item-css {
+  height: 35px;
+}
+#nissefjes-course-body-css {
+  gap: 120px;
+}
+#nissefjes-card-css {
+  gap: 26px;
+}
 
 .course-body-holder {
   display: flex;
