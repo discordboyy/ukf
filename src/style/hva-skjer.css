@@ -306,7 +306,7 @@ html {
   font-weight: 700;
   position: relative;
 }
-.frame-169 {
+.event-imgs-gallery {
   display: flex;
   flex-direction: row;
   gap: 28.37px;
@@ -316,14 +316,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.rectangle-8 {
-  background: #d9d9d9;
-  flex-shrink: 0;
-  width: 625.81px;
-  height: 625.81px;
-  position: relative;
-}
-.rectangle-9 {
+.event-gallery-img {
   background: #d9d9d9;
   flex-shrink: 0;
   width: 625.81px;
