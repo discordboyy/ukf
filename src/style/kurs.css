@@ -491,6 +491,9 @@ html {
 #motanka-dukke-card-css {
   gap: 118px;
 }
+#motanka-engel-card-css {
+  gap: 194px;
+}
 #motanka-group-css, #age-group-smykker-css, #age-group-smykker-css, #glasslysholder-age-group-css {
   height: auto;
 }
