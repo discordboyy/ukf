@@ -236,7 +236,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.frame-161 {
+.link-find-out-more {
   background: var(--blue-color);
   padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
@@ -254,7 +254,7 @@ html {
   position: relative;
   overflow: visible;
 }
-.event-p-fb {
+.link-text-more {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -262,7 +262,7 @@ html {
   font-weight: 700;
   position: relative;
 }
-.frame-162 {
+.link-registration {
   background: var(--blue-color);
   padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
@@ -280,7 +280,7 @@ html {
   position: relative;
   overflow: visible;
 }
-.p-melding {
+.link-registration-text {
   color: #ffffff;
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -288,7 +288,7 @@ html {
   font-weight: 700;
   position: relative;
 }
-.frame-1632 {
+.event-price {
   padding: 11.35px 9.73px 11.35px 9.73px;
   display: flex;
   flex-direction: row;
@@ -298,7 +298,7 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-._400-kr {
+.event-price-text {
   color: var(--blue-color);
   text-align: left;
   font-family: "Inter-Bold", sans-serif;
@@ -361,7 +361,7 @@ html {
 
 
 @media (max-width: 1800px) {
-  .frame-168, .frame-172 {  
+  .frame-168, .frame-172 {
     zoom: 0.9375;
   }
 }
