@@ -206,7 +206,7 @@ html {
   position: relative;
   align-self: stretch;
 }
-.frame-107 {
+.course-cards-container {
   display: flex;
   flex-direction: column;
   gap: 59.25px;
