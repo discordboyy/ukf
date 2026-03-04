@@ -193,7 +193,7 @@ html {
 .event-info-title {
   color: var(--blue-color);
   text-align: left;
-  font-family: "FunnelSans-SemiBold", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 40.56349563598633px;
   font-weight: 600;
   text-decoration: underline;
@@ -213,7 +213,7 @@ html {
 .event-info-time {
   color: var(--blue-color);
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 40.5435791015625px;
   font-weight: 400;
   position: relative;
@@ -222,7 +222,7 @@ html {
 .event-info-place {
   color: var(--blue-color);
   text-align: left;
-  font-family: "FunnelSans-Regular", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 40.5435791015625px;
   font-weight: 400;
   position: relative;
