@@ -4,6 +4,8 @@
   --red-color: #f1262c;
   --blue-color: #103279;
   --yellow-color: #f3b910;
+
+  --font-family: "Funnel Sans", sans-serif;
 }
 
 .frame-20 {
@@ -61,7 +63,7 @@
 .review-text {
   color: var(--red-color);
   text-align: left;
-  font-family: "Funnel Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 31.131559371948242px;
   line-height: 167%;
   font-weight: 600;
@@ -71,7 +73,7 @@
 
 .review:first-child .review-author {
   color: var(--red-color);
-  font-family: "Funnel Sans", sans-serif;
+  font-family:  var(--font-family);
   font-size: 30.659292221069336px;
   font-weight: 600;
   font-style: italic;
@@ -79,7 +81,7 @@
 
 .review:last-child .review-text {
   color: var(--blue-color);
-  font-family: "Funnel Sans", sans-serif;
+  font-family:  var(--font-family);
   font-size: 28.94131088256836px;
   line-height: 171.46%;
   font-weight: 700;
@@ -99,7 +101,7 @@
 
 .review:last-child .review-author {
   color: var(--blue-color);
-  font-family: "Funnel Sans", sans-serif;
+  font-family:  var(--font-family);
   font-size: 30.65889549255371px;
   line-height: 122.35%;
   font-weight: 800;
@@ -110,7 +112,7 @@
 
 .review-slogan {
   color: var(--blue-color);
-  font-family: "Funnel Sans", sans-serif;
+  font-family:  var(--font-family);
   font-size: 30.65999984741211px;
   line-height: 122.35%;
   font-weight: 700;
@@ -121,7 +123,7 @@
 .testimonials-title {
   color: #f2e3dc;
   text-align: left;
-  font-family: "Funnel Sans", sans-serif;
+  font-family:  var(--font-family);
   font-size: 75.2px;
   line-height: 82%;
   font-weight: 600;
