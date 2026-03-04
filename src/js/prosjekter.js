@@ -1,15 +1,23 @@
-$(document).ready(function() {
-  $(".slides").slick({
-    infinite: true,           // бесконечный цикл
-    slidesToShow: 1,          // один слайд за раз
-    slidesToScroll: 1,        // один слайд листаем
-    arrows: true,             // включаем стрелки
-    prevArrow: $(".polygon-arrow-left"),
-    nextArrow: $(".polygon-arrow-right"),
-    dots: false,              // точки отключены
-    speed: 600,
-    cssEase: 'ease',
-    centerMode: true,         // центрируем активный слайд
-    variableWidth: true,      // учитываем разные ширины слайдов (для gap)
+$(document).ready(function () {
+  $(".project-slider").each(function () {
+
+    const $slider = $(this).find(".slides");
+    const $prev = $(this).find(".polygon-arrow-left");
+    const $next = $(this).find(".polygon-arrow-right");
+
+    $slider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $prev,
+      nextArrow: $next,
+      dots: false,
+      speed: 600,
+      cssEase: "ease",
+      centerMode: true,
+      variableWidth: true,
+    });
+
   });
 });
