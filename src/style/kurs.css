@@ -760,6 +760,12 @@ html {
 .course-title.yellow {
   color: var(--yellow-color);
 }
+#glassgravering-juleverksted-card-css {
+  max-height: 100%  ;
+}
+#glassgravering-juleverksted-course-title-css {
+  line-height: 100%;
+}
 .course-summary-description.yellow {
   color: var(--yellow-color);
   text-align: left;
@@ -821,7 +827,9 @@ html {
   transform: rotate(90deg);
 }
 
-
+.course-card.is-open #glassgravering-juleverksted-course-body-css {
+  margin-top: 214px;
+}
 
 
 
