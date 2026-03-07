@@ -6,8 +6,6 @@
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/botanisk.png",
     "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
     ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985"
@@ -19,8 +17,6 @@
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/treskjearing.png",
     "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
     ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/454917806",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/454917806"
@@ -32,8 +28,6 @@
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/ullkuler.png",
     "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
     ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/153754059",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/153754059"
@@ -45,21 +39,17 @@
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/tradisjonell-eggemaling.png",
     "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
     ],
     "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/1776896944",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/1776896944"
   },
   {
-    "title": "Lek med farger og fiber - lag nøkkelring av ullkuler",
+    "title": "Lek med farger og fiber og lag nøkkelring av ullkuler",
     "date": "29. mars 2026, kl. 12:00-16:00",
     "place": "Sentralen, Øvre Slottsgate 3, Oslo",
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/farge-ullkuler.png",
     "images": [
-      "src/assets/hva-skjer/event1-1.jpg",
-      "src/assets/hva-skjer/event1-2.jpg"
     ],
     "readMoreLink": "https://fb.me/e/48CV8dLPK",
     "registrationLink": "https://fb.me/e/48CV8dLPK"

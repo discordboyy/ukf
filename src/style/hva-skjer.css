@@ -203,7 +203,7 @@ html {
 .event-info-main {
   display: flex;
   flex-direction: column;
-  gap: 12.97px;
+  gap: 0px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
