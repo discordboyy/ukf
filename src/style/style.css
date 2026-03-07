@@ -1173,7 +1173,6 @@ body {
   }
 
   .page-membership {
-    zoom: 0.6;
     margin-top: -560px;
   }
 
@@ -1184,9 +1183,13 @@ body {
   .events-list-wrapper {
     padding: 20.83px;
     gap: 20.83px;
-    width: 600px;
+    width: 900px;
     margin-top: 87px;
     height: auto;
+  }
+
+  .events {
+    zoom: 1.4;
   }
 
   .event-content {
@@ -1204,7 +1207,14 @@ body {
   }
 
   .events-footer {
-    margin-left: 600px;
+    margin-left: 90vw;
+  }
+
+  /* ROW */
+  .event-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
 
@@ -1213,22 +1223,25 @@ body {
   }
 
   .membership-fee {
-    top: 524px;
+    top: 924px;
   }
 
   .membership-howto {
+    zoom: 1.1;
     margin-left: 100px; /* 756.05 × 0.9 */
-    margin-top: 1200.78px;  /* 166.42 × 0.9 */
+    margin-top: 1500.78px;  /* 166.42 × 0.9 */
   }
 
   .membership-description {
+    zoom: 1.1;
     margin-left: 0px;
     margin-top: 51px;
   }
 
   .hero-content {
+    zoom: 1.1;
     margin-left: 100px;    /* 800 × 0.9 */
-    margin-top: -270px;     /* -100 × 0.9 */ 
+    margin-top: -200px;     /* -100 × 0.9 */ 
   }
 } 
 
