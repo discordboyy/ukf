@@ -237,9 +237,10 @@ html {
   flex-shrink: 0;
   position: relative;
 }
-.link-find-out-more {
+.link-find-out-more,
+.link-registration {
   background: var(--blue-color);
-  padding: 11.35px 9.73px 11.35px 9.73px;
+  padding: 11.35px 9.73px;
   display: flex;
   flex-direction: row;
   gap: 8.11px;
@@ -248,6 +249,26 @@ html {
   flex-shrink: 0;
   position: relative;
   text-decoration: none;
+
+  /* анімація */
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* Hover ефект */
+.link-find-out-more:hover,
+.link-registration:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Натискання */
+.link-find-out-more:active,
+.link-registration:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  filter: brightness(0.95);
 }
 .rombe-2 {
   flex-shrink: 0;
@@ -262,18 +283,6 @@ html {
   font-family: "Inter-Bold", sans-serif;
   font-size: 25.512256622314453px;
   font-weight: 700;
-  position: relative;
-  text-decoration: none;
-}
-.link-registration {
-  background: var(--blue-color);
-  padding: 11.35px 9.73px 11.35px 9.73px;
-  display: flex;
-  flex-direction: row;
-  gap: 8.11px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
   position: relative;
   text-decoration: none;
 }
