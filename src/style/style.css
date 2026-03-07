@@ -1163,6 +1163,57 @@ body {
   .about-section {
     zoom: 0.5;
   }
+
+  .contact-section {
+    height: auto;
+    margin-top: -60px;
+  }
+
+  .contact-content {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .contact-links {
+    width: 100%;
+    max-width: 90%;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .contact-link-name,
+  .contact-email {
+    font-size: 24px;
+  }
+
+  .contact-title {
+    font-size: 52px;
+    margin-left: 120px;
+    line-height: 70%;
+  }
+
+  .contact-link-icon {
+    width: 18px;
+    height: 22px;
+  }
+
+  .event-content {
+    width: 50%;
+  }
+
+  .membership-description {
+    width: 500px;
+  }
+
+  .events-list-wrapper {
+    width: 900px;
+  }
+
+  .membership-howto {
+    width: 700px;
+  }
 }
 
 @media (max-width: 768px) { /* планшеты и телефоны */
@@ -1229,6 +1280,7 @@ body {
   .membership-howto {
     zoom: 1.1;
     margin-left: 100px; /* 756.05 × 0.9 */
+    width: 943.13px;
     margin-top: 1500.78px;  /* 166.42 × 0.9 */
   }
 
@@ -1236,12 +1288,18 @@ body {
     zoom: 1.1;
     margin-left: 0px;
     margin-top: 51px;
+    width: 130vw;
   }
 
   .hero-content {
     zoom: 1.1;
     margin-left: 100px;    /* 800 × 0.9 */
-    margin-top: -200px;     /* -100 × 0.9 */ 
+    margin-top: -26vw;     /* -100 × 0.9 */ 
+  }
+
+  .membership-fee-text {
+    zoom: 1.1;
+    top: 500px; 
   }
 } 
 
