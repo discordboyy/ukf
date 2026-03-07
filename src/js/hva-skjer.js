@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                             </div>
                             <div class="event-info-links">
-                                <a href="${event.readMoreLink}" class="link-find-out-more">
+                                <a href="${event.readMoreLink}" class="link-find-out-more" target="_blank" rel="noopener noreferrer">
                                     <div class="link-text-more">Finn ut mer</div>
                                 </a>
-                                <a href="${event.registrationLink}" class="link-registration">
+                                <a href="${event.registrationLink}" class="link-registration" target="_blank" rel="noopener noreferrer">
                                     <div class="link-registration-text">Påmelding</div>
                                 </a>
                                 <div class="event-price">
