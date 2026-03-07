@@ -86,7 +86,6 @@ body {
   width: auto;
   height: 600px;
   margin-left: 504px;
-
 }
 .events-footer {
   width: 220px;
@@ -1165,3 +1164,76 @@ body {
     zoom: 0.5;
   }
 }
+
+@media (max-width: 768px) { /* планшеты и телефоны */
+  .events-section {
+    width: auto;
+    height: 600px;
+    margin-left: 80px;
+  }
+
+  .page-membership {
+    zoom: 0.6;
+    margin-top: -560px;
+  }
+
+  .about-section {
+    zoom: 0.5;
+  }
+
+  .events-list-wrapper {
+    padding: 20.83px;
+    gap: 20.83px;
+    width: 600px;
+    margin-top: 87px;
+    height: auto;
+  }
+
+  .event-content {
+    width: 550px;
+  }
+
+  /* POLYGON */
+  .event-polygon {
+    margin: 0 40px;
+  }
+
+  .event-card {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .events-footer {
+    margin-left: 600px;
+  }
+
+
+  .membership-section {
+    margin-top: 90px;   /* 100 × 0.9 */
+  }
+
+  .membership-fee {
+    top: 524px;
+  }
+
+  .membership-howto {
+    margin-left: 100px; /* 756.05 × 0.9 */
+    margin-top: 1200.78px;  /* 166.42 × 0.9 */
+  }
+
+  .membership-description {
+    margin-left: 0px;
+    margin-top: 51px;
+  }
+
+  .hero-content {
+    margin-left: 100px;    /* 800 × 0.9 */
+    margin-top: -270px;     /* -100 × 0.9 */
+  }
+} 
+
+@media (max-width: 480px) {
+
+ }   /* телефоны */
+
+@media (max-width: 400px) { }   /* маленькие телефоны */
