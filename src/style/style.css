@@ -1216,6 +1216,30 @@ body {
   }
 }
 
+@media (max-width: 850px) {
+  .about-container {
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-section {
+    height: auto;
+  }
+
+  .about-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+  }
+
+  .about-description, .about-details, .about-logo {
+    margin: auto;
+  }
+}
+
 @media (max-width: 768px) { /* планшеты и телефоны */
   .events-section {
     width: auto;
