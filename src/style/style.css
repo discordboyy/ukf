@@ -1331,8 +1331,12 @@ body {
   }
 } 
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* телефоны */
+  .about-description br {
+    display: none;
+  }
+}
 
- }   /* телефоны */
+@media (max-width: 400px) { /* маленькие телефоны */
 
-@media (max-width: 400px) { }   /* маленькие телефоны */
+}

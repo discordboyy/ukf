@@ -1218,3 +1218,13 @@ html {
     zoom: 0.5208;
   }
 }
+
+@media (max-width: 768px) { /* планшеты и телефоны */ 
+  .course-offer-section {
+    flex-wrap: wrap;
+  }
+
+  .course-details {
+    margin-left: 18vw;
+  }
+}
