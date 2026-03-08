@@ -1325,6 +1325,10 @@ body {
     zoom: 1.1;
     top: 500px; 
   }
+
+  .frame-20 {
+    display: none;
+  }
 } 
 
 @media (max-width: 480px) {
