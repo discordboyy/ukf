@@ -1220,7 +1220,7 @@ body {
   .about-container {
     width: 50%;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
   }
 
   .about-section {
