@@ -1218,7 +1218,7 @@ body {
 
 @media (max-width: 850px) {
   .about-container {
-    width: 50%;
+    width: 80%;
     justify-content: space-between;
     flex-wrap: wrap; 
     gap: 40px;
