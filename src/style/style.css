@@ -1369,12 +1369,17 @@ body {
     margin-top: 80px;
     zoom: 0.7;
   }
-} 
 
-@media (max-width: 480px) { /* телефоны */
+  .about-details-content, .about-details, .kontonummer {
+    width: 100%;
+  }
+
   .about-description br {
     display: none;
   }
+} 
+
+@media (max-width: 480px) { /* телефоны */
 
   .hero-content {
     zoom: 1;
