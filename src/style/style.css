@@ -1401,6 +1401,20 @@ body {
     zoom: 1;
     margin-left: 110px;
   }
+
+  .events-list-wrapper {
+    width: 90%;
+  }
+
+  .event-content {
+    width: 500px
+  }
+}
+
+@media (max-width: 440px) {
+  .event-content {
+    width: 460px
+  }
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
