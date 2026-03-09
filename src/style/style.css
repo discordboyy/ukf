@@ -1407,7 +1407,7 @@ body {
   }
 
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: scroll; /* прокрутка есть */
     scrollbar-width: none; /* Firefox */
   }
@@ -1415,6 +1415,10 @@ body {
   /* Chrome, Safari, Edge */
   body::-webkit-scrollbar:vertical {
     width: 0;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 }
 
