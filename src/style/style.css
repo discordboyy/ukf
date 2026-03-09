@@ -1393,6 +1393,18 @@ body {
   .membership-fee {
     left: -60px;
   }
+
+  .hero-content {
+    width: 700px;
+  }
+
+  .hero-description br {
+    display: none;
+  }
+
+  .hero-accent {
+    margin-left: 2px;
+  }
 }
 
 @media (max-width: 480px) { /* телефоны */
@@ -1400,6 +1412,7 @@ body {
   .hero-content {
     zoom: 1;
     margin-left: 110px;
+    width: 680px;
   }
 
   .events-list-wrapper {
@@ -1409,14 +1422,30 @@ body {
   .event-content {
     width: 500px
   }
+
+
 }
 
 @media (max-width: 440px) {
   .event-content {
     width: 460px
   }
+
+  .hero-content {
+    width: 620px;
+  }
+
+  .hero-description {
+    width: 490px;
+  }
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
 
+}
+
+@media (max-width: 390px) {
+  .hero-content {
+    margin-top: 2px;
+  }
 }
