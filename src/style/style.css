@@ -1438,6 +1438,14 @@ body {
   .hero-description {
     width: 490px;
   }
+
+  .contact-links {
+    padding: 0;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
