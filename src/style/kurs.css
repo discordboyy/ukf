@@ -1233,15 +1233,15 @@ html {
     left: 50px;
     top: 196px;
   }
+
+  .course-offer-section {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .course-details {
     margin-left: 60px;
-  }
-
-  .course-offer-section {
-    gap: 10px;
   }
 }
 
