@@ -1306,6 +1306,7 @@ body {
     margin-left: 100px; /* 756.05 × 0.9 */
     width: 943.13px;
     margin-top: 1500.78px;  /* 166.42 × 0.9 */
+    width: 80%;
   }
 
   .membership-description {
@@ -1325,10 +1326,33 @@ body {
     zoom: 1.2;
     top: 460px;
     left: 80px; 
+
   }
 
   .frame-20 {
     display: none;
+  }
+
+  .hero-description {
+    width: auto;
+  }
+
+  .hero-accent {
+    margin-left: 15px;
+  }
+
+  .samarbeidspartner-section {
+    margin-top: -800px;
+  }
+
+  .samarbeidspartner-title {
+    left: 10px;
+    margin-top: 24px;
+    zoom: 0.8;
+  }
+
+  .samarbeidspartner-carousel {
+    zoom: 0.7;
   }
 } 
 
