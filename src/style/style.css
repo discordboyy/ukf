@@ -753,7 +753,7 @@ body {
 }
 .contact-email {
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-family: "Funnel Sans", sans-serif;
   font-size: 33.07px;
   line-height: 145.89%;
@@ -1221,6 +1221,7 @@ body {
     width: 50%;
     justify-content: space-between;
     flex-wrap: wrap; 
+    gap: 40px;
   }
 
   .about-section {
@@ -1233,6 +1234,11 @@ body {
     align-items: center;
     width: 100%;
     gap: 60px;
+    zoom: 1.4;
+  }
+
+  .about-description, .about-details-content, .kontonummer, .contact-email {
+    text-align: center;
   }
 
   .about-description, .about-details, .about-logo {
