@@ -1423,7 +1423,9 @@ body {
     width: 500px
   }
 
-
+  .membership-fee {
+    top: 1060px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -1449,7 +1451,9 @@ body {
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
-
+  .membership-howto, .hero-content {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 390px) {
