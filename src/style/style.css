@@ -1357,6 +1357,14 @@ body {
     zoom: 0.8;
   }
 
+  .samarbeidspartner-carousel-container {
+    height: 290px;
+  }
+
+  .contact-title {
+    zoom: 0.8;
+  }
+
   .samarbeidspartner-carousel {
     margin-top: 80px;
     zoom: 0.7;
