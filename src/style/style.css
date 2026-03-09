@@ -1405,6 +1405,17 @@ body {
   .hero-accent {
     margin-left: 2px;
   }
+
+  body {
+    overflow-x: auto;
+    overflow-y: scroll; /* прокрутка есть */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Chrome, Safari, Edge */
+  body::-webkit-scrollbar:vertical {
+    width: 0;
+  }
 }
 
 @media (max-width: 480px) { /* телефоны */
@@ -1443,10 +1454,6 @@ body {
 
   .contact-links {
     padding: 0;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 }
 
