@@ -457,6 +457,10 @@ html {
   .upcoming-events-section {
     zoom: 0.4;
   }
+
+  .event-info-links {
+    zoom: 1.1;
+  }
 }
 
 @media (max-width: 400px) {
