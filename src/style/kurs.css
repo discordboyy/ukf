@@ -1227,4 +1227,36 @@ html {
   .course-details {
     margin-left: 18vw;
   }
+
+  .course-intro-text {
+    zoom: 1.1;
+    left: 50px;
+    top: 196px;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-details {
+    margin-left: 60px;
+  }
+
+  .course-offer-section {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .course-details {
+    width: 580px;
+  }
+}
+
+@media (max-width: 370px) {
+  .course-offer-section {
+    gap: 10px;
+  }
+
+  .course-details {
+    width: 520px;
+  }
 }
