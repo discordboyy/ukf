@@ -1305,6 +1305,7 @@ body {
 
   .membership-fee {
     top: 924px;
+    left: -20px;
   }
 
   .membership-howto {
@@ -1387,6 +1388,10 @@ body {
 
   .events-title br {
     display: none;
+  }
+
+  .membership-fee {
+    left: -60px;
   }
 }
 
