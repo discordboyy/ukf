@@ -691,3 +691,9 @@ html {
     zoom: 0.5208;
   }
 }
+
+@media (max-width: 860px) {
+  .workshop-content-wrapper {
+    left: 250px;
+  }
+}
