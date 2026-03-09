@@ -1379,6 +1379,17 @@ body {
   }
 } 
 
+@media (max-width: 530px) {
+  .events-title {
+    width: 80%;
+    line-height: 68%;
+  }
+
+  .events-title br {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) { /* телефоны */
 
   .hero-content {
