@@ -1322,8 +1322,9 @@ body {
   }
 
   .membership-fee-text {
-    zoom: 1.1;
-    top: 500px; 
+    zoom: 1.2;
+    top: 460px;
+    left: 80px; 
   }
 
   .frame-20 {
@@ -1334,6 +1335,10 @@ body {
 @media (max-width: 480px) { /* телефоны */
   .about-description br {
     display: none;
+  }
+
+  .hero-content {
+    zoom: 1;
   }
 }
 
