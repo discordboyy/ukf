@@ -447,10 +447,20 @@ html {
   .event-content {
     width: auto;
   }
+
+  .frame-157 {
+    zoom: 0.9;
+  }
 }
 
 @media (max-width: 450px) {
   .upcoming-events-section {
     zoom: 0.4;
+  }
+}
+
+@media (max-width: 400px) {
+  .frame-157 {
+    zoom: 0.8;
   }
 }
