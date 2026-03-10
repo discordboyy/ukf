@@ -812,4 +812,12 @@ html {
   .pricing-group-description, .pricing-group-description-second {
     width: 77%;
   }
+
+  .pricing-header {
+    top: 15px;
+  }
+
+  .pricing-header-text {
+    zoom: 0.9;
+  }
 }
