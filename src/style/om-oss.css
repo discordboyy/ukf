@@ -655,7 +655,7 @@ html {
 }
 
 @media (max-width: 1280px) {
-  .frame-15, .board-section, .about-section-forening, .membership-section-forening {
+  .frame-15, .board-section, .about-section-forening {
     zoom: 0.6667;
   }
 
@@ -667,8 +667,7 @@ html {
 @media (max-width: 1100px) {
   .frame-15,
   .board-section,
-  .about-section-forening,
-  .membership-section-forening {
+  .about-section-forening {
     zoom: 0.5729;
   }
 }
@@ -676,8 +675,62 @@ html {
 @media (max-width: 1000px) {
   .frame-15,
   .board-section,
-  .about-section-forening,
-  .membership-section-forening {
+  .about-section-forening {
     zoom: 0.5208;
+  }
+}
+
+@media (max-width: 850px) {
+  .membership-section-forening {
+
+  }
+
+  .about-description-forening {
+    flex-wrap: wrap;
+    gap: 200px;
+  }
+
+  .about-description-text-forening {
+    margin-left: 100px;
+  }
+
+  .about-section-forening, .about-timeline, .about-intro-text-container {
+    width: 1070px;
+  }
+}
+
+@media (max-width: 700px) {
+  .board-members {
+    gap: 110px;
+  }
+}
+
+@media (max-width: 650px) {
+  .board-members {
+    justify-content: space-between;
+    display: inline-flex;
+    gap: 10px;
+  }
+
+  .board-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-members {
+    justify-content: unset;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .board-section {
+    width: 90%;
+  }
+
+  .board-member-card {
+    zoom: 2;
+    margin: auto;
   }
 }
