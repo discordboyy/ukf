@@ -845,7 +845,23 @@ html {
 }
 
 @media (max-width: 450px) {
-  .large-group-contact, .large-group-contact-text {
-    width: 70%;
+  .large-group-contact {
+    width: 80%;
+  }
+
+  .large-group-contact-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing-group-large {
+    height: 1300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pricing-group-large {
+    height: 1400px;
   }
 }
