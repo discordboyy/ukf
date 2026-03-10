@@ -484,6 +484,10 @@ html {
 
   font-size: 60.5803px;
 }
+.mobile-text, .mobile-text-2 {
+  display: none;
+}
+
 .group-additional-info-second {
   color: #0b2d74;
   text-align: left;
@@ -693,7 +697,93 @@ html {
 }
 
 @media (max-width: 860px) {
-  .workshop-content-wrapper {
+  .workshop-content-wrapper, .pricing-group-description, .pricing-group-description-second, .group-size-title-third, .pricing-group-large-content {
     left: 250px;
+  }
+
+  .pricing-table {
+    margin-left: 250px;
+  }
+
+  .workshop-intro-top {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workshop-intro-top {
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .workshop-intro-description {
+    margin-left: 100px;
+    margin-top: -40px;
+  }
+
+  .workshop-intro-section {
+    height: 1980px;
+  }
+
+  .workshop-included-section {
+    margin-top: 0;
+  }
+
+  .pricing-section-wrapper {
+    height: 1980px;
+  }
+
+  .workshop-content-wrapper {
+    top: 80px;
+  }
+
+  .workshop-content-wrapper, .pricing-group-description, .pricing-group-description-second, .group-size-title-third, .pricing-group-large-content {
+    left: 100px;
+  }
+
+  .pricing-table {
+    margin-left: 100px;
+  }
+
+  .group-size-title {
+    margin-top: 1px;
+  }
+}
+
+@media (max-width: 680px) {
+  .desktop-text-2 {
+    display: none;
+  }
+
+  .mobile-text-2 {
+    display: inline;
+  }
+
+  .large-group-contact {
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pricing-group-large {
+    height: 1200px;
+  }
+
+  .pricing-group-wrapper {
+    height: 1200px;
+  }
+}
+
+@media (max-width: 620px) {
+  .pricing-group-description, .pricing-group-description-second {
+    width: 80%;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
   }
 }
