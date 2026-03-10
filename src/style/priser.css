@@ -484,7 +484,7 @@ html {
 
   font-size: 60.5803px;
 }
-.mobile-text, .mobile-text-2 {
+.mobile-text, .mobile-text-2, .mobile-text-3 {
   display: none;
 }
 
@@ -819,6 +819,14 @@ html {
 
   .pricing-header-text {
     zoom: 0.9;
+  }
+
+  .desktop-text-3 {
+    display: none;
+  }
+
+  .mobile-text-3 {
+    display: inline;
   }
 }
 
