@@ -821,3 +821,23 @@ html {
     zoom: 0.9;
   }
 }
+
+@media (max-width: 500px) {
+  .pricing-group-large-content {
+    width: 80%;
+  }
+
+  .large-group-example-courses {
+    text-align: center;
+  }
+
+  .pricing-group-large-description {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .large-group-contact, .large-group-contact-text {
+    width: 70%;
+  }
+}
