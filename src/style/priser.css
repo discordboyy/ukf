@@ -786,4 +786,30 @@ html {
   .mobile-text {
     display: inline;
   }
+
+  .pricing-header {
+    left: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .workshop-content-wrapper {
+    width: 80%;
+  }
+
+  .workshop-intro-description {
+    width: 70%;
+  }
+
+  .workshop-included-section {
+    margin-top: 10%;
+  }
+
+  .pricing-section-wrapper {
+    height: 2070px;
+  }
+
+  .pricing-group-description, .pricing-group-description-second {
+    width: 77%;
+  }
 }
