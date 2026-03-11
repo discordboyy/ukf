@@ -301,3 +301,40 @@ body {
     zoom: 0.5208;
   }
 }
+
+@media (max-width: 900px) {
+  .scroll-testimonials-list {
+    width: 1300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-testimonials-list {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 678px) {
+  .scroll-testimonials-list {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .project-container {
+    width: 70%;
+  }
+
+  .project-description-block {
+    align-items: flex-start;
+  }
+
+  .project-descriptio{
+    align-items: start;
+    margin: 0;
+  }
+
+  .project-slider {
+    zoom: 0.7;
+  }
+}
