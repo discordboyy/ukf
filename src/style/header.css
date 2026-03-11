@@ -170,7 +170,11 @@ header {
 @media (max-width: 650px) {
   .nav-items {
     flex-wrap: wrap;
-    width: 150px;
+    width: 250px;
     gap: 10px;
+  }
+
+  .nav-item {
+    zoom: 1.4;
   }
 }
