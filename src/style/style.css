@@ -84,7 +84,7 @@ body {
 }
 .events-section {
   width: auto;
-  height: 600px;
+  height: auto;
   margin-left: 504px;
 }
 .events-footer {
@@ -138,7 +138,7 @@ body {
   justify-content: flex-start;
   width: 1197.92px;
   margin-top: 87px;
-  height: 400px;
+  height: auto;
 }
 .frame-14 {
   display: flex;
@@ -1220,7 +1220,7 @@ body {
   .about-container {
     width: 80%;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 40px;
   }
 
@@ -1304,7 +1304,7 @@ body {
   }
 
   .membership-fee {
-    top: 924px;
+    top: 424px;
     left: -20px;
   }
 
@@ -1312,7 +1312,7 @@ body {
     zoom: 1.1;
     margin-left: 100px; /* 756.05 × 0.9 */
     width: 943.13px;
-    margin-top: 1500.78px;  /* 166.42 × 0.9 */
+    margin-top: 900px;  /* 166.42 × 0.9 */
     width: 80%;
   }
 
@@ -1326,13 +1326,13 @@ body {
   .hero-content {
     zoom: 1.1;
     margin-left: 100px;    /* 800 × 0.9 */
-    margin-top: -26vw;     /* -100 × 0.9 */ 
+    margin-top: -26vw;     /* -100 × 0.9 */
   }
 
   .membership-fee-text {
     zoom: 1.2;
     top: 460px;
-    left: 80px; 
+    left: 80px;
 
   }
 
@@ -1349,7 +1349,7 @@ body {
   }
 
   .samarbeidspartner-section {
-    margin-top: -800px;
+    margin-top: -600px;
   }
 
   .samarbeidspartner-title {
@@ -1378,7 +1378,7 @@ body {
   .about-description br {
     display: none;
   }
-} 
+}
 
 @media (max-width: 530px) {
   .events-title {
@@ -1436,10 +1436,6 @@ body {
 
   .event-content {
     width: 500px
-  }
-
-  .membership-fee {
-    top: 1060px;
   }
 }
 
