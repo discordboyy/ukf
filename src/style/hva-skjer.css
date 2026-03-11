@@ -451,11 +451,9 @@ html {
   .frame-157 {
     zoom: 0.9;
   }
-}
-
-@media (max-width: 450px) {
+  
   .upcoming-events-section {
-    zoom: 0.4;
+    zoom: 0.5;
   }
 
   .event-info-links {
@@ -463,8 +461,17 @@ html {
   }
 }
 
+@media (max-width: 430px) {
+  .upcoming-events-section {
+    zoom: 0.45;
+  }
+}
 @media (max-width: 400px) {
   .frame-157 {
     zoom: 0.8;
+  }
+
+  .upcoming-events-section {
+    zoom: 0.4;
   }
 }
