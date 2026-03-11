@@ -1248,6 +1248,12 @@ html {
   .course-offer-section {
     gap: 10px;
   }
+
+  .slick-prev,
+  .slick-next {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 @media (max-width: 620px) {
