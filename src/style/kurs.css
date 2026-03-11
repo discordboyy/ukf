@@ -335,6 +335,14 @@ html {
   justify-content: flex-start;
   flex-wrap: nowrap; /* запрещаем перенос элементов */
 }
+/* Default: desktop version shown, mobile hidden */
+.course-body.desktop {
+    display: block;
+}
+
+.course-body.mobile {
+    display: none;
+}
 .frame-101 {
   display: flex;
   flex-direction: column;
@@ -867,6 +875,9 @@ html {
   gap: 134.25px;
   align-items: flex-end;
 }
+.filters-container-mobile {
+  display: none;
+}
 
 .filters-main {
   display: flex;
@@ -1219,7 +1230,7 @@ html {
   }
 }
 
-@media (max-width: 768px) { /* планшеты и телефоны */ 
+@media (max-width: 768px) { /* планшеты и телефоны */
   .course-offer-section {
     flex-wrap: wrap;
   }
@@ -1239,15 +1250,187 @@ html {
   }
 }
 
+@media (max-width: 620px) {
+  .kurs-section-container {
+    padding: 0 50px;
+  }
+
+  .course-card {
+    flex-wrap: wrap;
+    max-height: max-content;
+  }
+
+  .course-body.desktop {
+    display: none;
+  }
+
+  .course-body.mobile {
+    display: block;
+  }
+
+  .course-card-accent, #motanka-engel-card-css, #nissefjes-card-css, .course-card-accent.red, #motanka-dukke-card-css {
+    gap: 20px;
+  }
+
+  .course-card.is-open #glassgravering-juleverksted-course-body-css {
+    margin-top: 0;
+  }
+
+  .course-toggle {
+    width: auto;
+  }
+
+  .frame-542 {
+    width: 526.498px;
+  }
+
+  .frame-542 {
+    display: flex;
+    align-items: flex-end; /* default for children */
+  }
+
+  .course-body {
+    align-self: flex-start; /* override */
+  }
+
+  .course-toggle {
+    align-self: flex-end; /* optional since container already does this */
+    zoom: 1.2;
+  }
+
+  .age-group {
+    width: auto;
+  }
+
+  .course-card-accent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-card {
+    zoom: 1.8;
+  }
+
+  .course-offer-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .course-card {
+    zoom: 1.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .filters {
+    width: 100%;
+  }
+
+  .filters-container {
+    gap: unset;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .filters-main {
+    width: auto;
+    gap: unset;
+    justify-content: space-between;
+    width: 35%;
+  }
+
+  .filters-sub {
+    width: auto;
+    gap: unset;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .kurs-section-container {
+    width: auto;
+  }
+}
+
+@media (max-width: 530px) {
+  .course-card {
+    zoom: 1.6;
+  }
+}
+
+@media (max-width: 520px) {
+  .filters-main {
+    width: auto;
+    gap: unset;
+    justify-content: space-between;
+    width: 36%;
+  }
+
+  .filters-sub {
+    width: auto;
+    gap: unset;
+    justify-content: space-between;
+    width: 58%;
+  }
+}
+
+@media (max-width: 505px) {
+  .course-card {
+    zoom: 1.5;
+  }
+}
+
 @media (max-width: 480px) {
   .course-details {
     margin-left: 60px;
+  }
+
+  .course-card {
+    zoom: 1.4;
+  }
+}
+
+@media (max-width: 450px) {
+  .course-card {
+    zoom: 1.3;
+  }
+
+  .filters-container {
+    display: none;
+  }
+
+  .filters-container-mobile {
+    display: inline;
+  }
+
+  .filters-container-mobile {
+    display: flex;              /* Enable flex layout */
+    flex-wrap: wrap;            /* Wrap items to next line */
+    gap: 20px;                  /* Space between items */
+    width: 100%;                /* Fill parent container */
+    justify-content: space-between; /* Spread items evenly */
+  }
+
+  .filters-container-mobile .filter-item {
+    flex: 1 1 calc(33.33% - 10px); /* 3 items per row minus gap */
+    box-sizing: border-box;         /* Include padding/border in width */
+    text-align: center;             /* Optional: center the label */
   }
 }
 
 @media (max-width: 420px) {
   .course-details {
     width: 580px;
+  }
+
+  .course-card {
+    zoom: 1.2;
+  }
+}
+
+@media (max-width: 396px) {
+  .course-card {
+    zoom: 1.1;
   }
 }
 
@@ -1258,5 +1441,9 @@ html {
 
   .course-details {
     width: 520px;
+  }
+
+  .course-card {
+    zoom: 1;
   }
 }
