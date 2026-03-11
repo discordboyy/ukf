@@ -335,6 +335,22 @@ body {
   }
 
   .project-slider {
+    zoom: 0.8;
+  }
+
+  .project-section.last {
+    padding: 0 0 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-slider {
     zoom: 0.7;
+  }
+}
+
+@media (max-width: 440px) {
+  .project-slider {
+    zoom: 0.6;
   }
 }
