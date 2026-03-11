@@ -733,4 +733,39 @@ html {
     zoom: 2;
     margin: auto;
   }
+
+  .about-section-forening, .about-timeline, .about-intro-text-container {
+    width: 870px;
+  }
+
+  .membership-section-forening {
+    left: 170px;
+    flex-wrap: wrap;
+  }
+
+  .membership-intro {
+    zoom: 1.8;
+  }
+
+  .membership-details-forening {
+    zoom: 1.5;
+  }
+
+  .board-title {}
+
+  .board-member-image {
+    margin: auto;
+  }
+
+  .board-member-content {
+    width: 308.7px;
+  }
+
+  .board-member-description {
+    width: auto;
+  }
+
+  .board-members {
+    gap: 100px;
+  }
 }
