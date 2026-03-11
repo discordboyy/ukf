@@ -769,3 +769,13 @@ html {
     gap: 100px;
   }
 }
+
+@media (max-width: 500px) {
+  .about-section-forening, .about-timeline, .about-intro-text-container {
+    width: 820px;
+  }
+
+  .about-description-text-forening {
+    margin-left: 60px;
+  }
+}
