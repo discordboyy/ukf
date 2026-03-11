@@ -1412,7 +1412,7 @@ html {
   }
 
   .filters-container-mobile .filter-item {
-    flex: 1 1 calc(33.33% - 10px); /* 3 items per row minus gap */
+    flex: 1 1 calc(33.33% - 13px); /* 3 items per row minus gap */
     box-sizing: border-box;         /* Include padding/border in width */
     text-align: center;             /* Optional: center the label */
   }
