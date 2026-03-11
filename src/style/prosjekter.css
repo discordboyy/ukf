@@ -347,6 +347,10 @@ body {
   .project-slider {
     zoom: 0.7;
   }
+
+  .project-container {
+    width: 80%;
+  }
 }
 
 @media (max-width: 440px) {
