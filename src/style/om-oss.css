@@ -874,13 +874,18 @@ html {
 
   .frame-2 {
     width: 751.176px;
+    margin-left: 30px;
+  }
+
+  .frame-14 {
+    width: 742.799px;
   }
 }
 
 @media (max-width: 452px) {
   .frame-2 {
     height: 1100px;
-    margin-left: 70px;
+    margin-left: 20px;
   }
 
   .frame-15 {
@@ -941,6 +946,17 @@ html {
 
   .samarbeidspartner-title {
     left: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .frame-2 {
+    width: 600px;
+    margin-left: 70px;
+  }
+
+  .frame-14 {
+    width: 560px;
   }
 }
 
