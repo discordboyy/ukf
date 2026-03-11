@@ -871,6 +871,10 @@ html {
   .about-description-text-forening {
     margin-left: 60px;
   }
+
+  .frame-2 {
+    width: 751.176px;
+  }
 }
 
 @media (max-width: 452px) {
