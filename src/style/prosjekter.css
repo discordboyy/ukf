@@ -310,14 +310,15 @@ body {
 
 @media (max-width: 768px) {
   .scroll-testimonials-list {
-    width: 1200px;
+    display: none;
+  }
+
+  .project-slider {
+    display: none;
   }
 }
 
 @media (max-width: 678px) {
-  .scroll-testimonials-list {
-    display: none;
-  }
 }
 
 @media (max-width: 620px) {
