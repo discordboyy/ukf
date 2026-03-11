@@ -867,6 +867,21 @@ html {
   }
 }
 
+@media (max-width: 452px) {
+  .frame-2 {
+    height: 1100px;
+    margin-left: 70px;
+  }
+
+  .frame-15 {
+    height: 1450px;
+  }
+
+  .frame-3 {
+    height: 1450px;
+  }
+}
+
 @media (max-width: 450px) {
   .about-intro-text-forening {
     width: 600px;
@@ -912,5 +927,9 @@ html {
 
   .membership-application {
     width: 86%;
+  }
+
+  .samarbeidspartner-title {
+    left: 50px;
   }
 }
