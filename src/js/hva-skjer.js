@@ -6,7 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("src/data/events.json")
         .then(response => response.json())
         .then(events => {
-            events.forEach(event => {
+
+            const now = new Date();
+
+            const upcomingEvents = events.filter(event => {
+                const eventDate = new Date(event.startDate);
+                return eventDate >= now;
+            });
+
+            upcomingEvents.forEach(event => {
+
                 const eventHTML = `
                 <div class="event-content-holder">
                     <div class="event-content-section">
@@ -49,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 container.innerHTML += eventHTML;
             });
+
         })
         .catch(error => console.error("Error loading events:", error));
 });
