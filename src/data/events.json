@@ -38,9 +38,9 @@
     "place": "Sentralen, Øvre Slottsgate 3, Oslo",
     "price": "Gratis",
     "icon": "src/assets/hva-skjer/icons/farge-ullkuler.png",
-    "images": [
-    ],
+    "images": [],
     "readMoreLink": "https://fb.me/e/48CV8dLPK",
-    "registrationLink": "https://fb.me/e/48CV8dLPK"
+    "registrationLink": "https://fb.me/e/48CV8dLPK",
+    "registrationText": "Drop-in"
   }
 ]

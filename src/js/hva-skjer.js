@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const eventHTML = `
                 <div class="event-content-holder">
                     <div class="event-content-section">
-                        <img class="event-icon" loading="lazy" src="${event.icon}" alt="Event icon"> 
+                        <img class="event-icon" loading="lazy" src="${event.icon}" alt="Event icon">
                         <div class="event-content">
                             <div class="event-info-section">
                                 <div class="event-info-title">
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <div class="link-text-more">Finn ut mer</div>
                                 </a>
                                 <a href="${event.registrationLink}" class="link-registration" target="_blank" rel="noopener noreferrer">
-                                    <div class="link-registration-text">Påmelding</div>
+                                    <div class="link-registration-text">${event.registrationText || "Påmelding"}</div>
                                 </a>
                                 <div class="event-price">
                                     <div class="event-price-text">${event.price}</div>

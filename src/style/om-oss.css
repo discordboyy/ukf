@@ -634,6 +634,10 @@ html {
   .frame-15, .board-section, .about-section-forening, .membership-section-forening {
     zoom: 0.9375;
   }
+
+  .frame-2 {
+    margin-left: 120px;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -678,6 +682,28 @@ html {
   .about-section-forening {
     zoom: 0.5208;
   }
+
+  .samarbeidspartner-title {
+    top: -8px;
+  }
+}
+
+@media (max-width: 950px) {
+  .frame-14 {
+    width: 150vw;
+  }
+
+  .frame-15 {
+    height: 800px;
+  }
+
+  .frame-3 {
+    height: 800px;
+  }
+
+  .frame-2 {
+    height: 570px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -697,11 +723,49 @@ html {
   .about-section-forening, .about-timeline, .about-intro-text-container {
     width: 1070px;
   }
+
+  .frame-15 {
+    height: 860px;
+  }
+
+  .frame-3 {
+    height: 860px;
+  }
+
+  .frame-2 {
+    height: 610px;
+  }
+}
+
+@media (max-width: 768px){
+  .samarbeidspartner-title {
+    top: 0px;
+    left: 200px;
+  }
+
+  .frame-2 {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 700px) {
   .board-members {
     gap: 110px;
+  }
+}
+
+@media (max-width: 692px) {
+  .frame-2 {
+    height: 800px;
+  }
+
+  .frame-15 {
+    height: 1050px;
+  }
+
+  .frame-3 {
+    height: 1050px;
   }
 }
 
@@ -768,6 +832,29 @@ html {
   .board-members {
     gap: 100px;
   }
+
+  .samarbeidspartner-title {
+    top: -2px;
+  }
+}
+
+@media (max-width: 566px) {
+  .frame-2 {
+    height: 1000px;
+    margin-left: 70px;
+  }
+
+  .frame-15 {
+    height: 1250px;
+  }
+
+  .frame-3 {
+    height: 1250px;
+  }
+
+  .samarbeidspartner-title {
+    left: 130px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -777,5 +864,53 @@ html {
 
   .about-description-text-forening {
     margin-left: 60px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-intro-text-forening {
+    width: 600px;
+  }
+
+  .about-intro-text-container {
+    width: 650px;
+  }
+
+  .about-header {
+    zoom: 0.9;
+  }
+
+  .about-description-text-forening {
+    width: 78%;
+  }
+
+  .event-content-forening {
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 0;
+  }
+
+  .timeline-events {
+    gap: 40px;
+  }
+
+  .about-timeline {
+    width: 530px;
+  }
+
+  .timeline-item-forening {
+    align-items: flex-start;
+  }
+
+  .about-timeline {
+    zoom: 1.2;
+  }
+
+  .membership-details-forening {
+    width: 70%;
+  }
+
+  .membership-application {
+    width: 86%;
   }
 }
