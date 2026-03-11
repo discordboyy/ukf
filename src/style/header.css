@@ -166,3 +166,11 @@ header {
     height: 193.2px;
   }
 }
+
+@media (max-width: 650px) {
+  .nav-items {
+    flex-wrap: wrap;
+    width: 150px;
+    gap: 10px;
+  }
+}
