@@ -1314,6 +1314,18 @@ html {
   .course-offer-section {
     width: 100%;
   }
+
+  .frame-101, .course-duration {
+    width: auto;
+  }
+
+  .course-body.yellow {
+    gap: 50px;
+  }
+
+  .course-body.red2 {
+    gap: 130px;
+  }
 }
 
 @media (max-width: 580px) {
