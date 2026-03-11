@@ -2,8 +2,8 @@
 
 :root {
   --red-color: #f1262c;
-  --blue-color: #103279;
-  --yellow-color: #f3b910;
+  --blue-color: #0b2d74;
+  --yellow-color: #f2b80c;
 }
 
 html {
@@ -30,7 +30,7 @@ html {
   overflow: hidden;
 }
 .workshop-intro-section {
-  background: #f2b80c;
+  background: var(--yellow-color);
   width: 100%;
   position: absolute;
   left: 0px;
@@ -78,7 +78,7 @@ html {
   height: 732.8px;
 }
 .workshop-intro-title {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
@@ -113,7 +113,7 @@ html {
   font-size: 26.6791px;
 }
 .workshop-intro-paragraph-3 {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
@@ -152,7 +152,7 @@ html {
 }
 
 .workshop-section-title {
-  color: #0b2d74;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
   text-align: left;
@@ -187,7 +187,7 @@ html {
 }
 
 .workshop-feature-title {
-  color: #0b2d74;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
   margin: 0;
@@ -196,7 +196,7 @@ html {
 }
 
 .workshop-prices-note {
-  color: #0b2d74;
+  color: var(--blue-color);
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
   align-self: stretch;
@@ -292,7 +292,7 @@ html {
   font-size: 60.5803px;
 }
 .pricing-subtitle-main {
-  color: #f2b80c;
+  color: var(--yellow-color);
   margin: 2px 0 0 0;
 }
 .pricing-subtitle-detail {
@@ -348,7 +348,7 @@ html {
   width: 191.2px;
 }
 .pricing-duration-title {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
@@ -369,7 +369,7 @@ html {
   gap: 11.2px;
 }
 .duration-hours {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 400;
@@ -390,7 +390,7 @@ html {
   gap: 20.8px;
 }
 .price-title {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
@@ -409,7 +409,7 @@ html {
   gap: 11.2px;
 }
 .price {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
@@ -442,7 +442,7 @@ html {
   font-size: 60.5803px;
 }
 .group-additional-info {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
@@ -452,7 +452,7 @@ html {
   font-size: 29.9516px;
 }
 .pricing-group-wrapper-second {
-  background: #f2b80c;
+  background: var(--yellow-color);
   position: absolute;
   left: 0px;
   overflow: hidden;
@@ -474,7 +474,7 @@ html {
   top: 0px;
 }
 .group-size-title-second {
-  color: #f2b80c;
+  color: var(--yellow-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 600;
@@ -489,7 +489,7 @@ html {
 }
 
 .group-additional-info-second {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-weight: 700;
@@ -562,7 +562,7 @@ html {
 
 /* Второй параграф отличается цветом и выравниванием текста */
 .large-group-example-courses {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: right;
   font-weight: 600;
   width: 553px;
@@ -600,7 +600,7 @@ html {
   width: 724px;
 }
 .contact-main-text {
-  color: #0b2d74;
+  color: var(--blue-color);
   text-align: left;
   font-family: "Funnel Sans", sans-serif;
   font-size: 50.10060501098633px;
