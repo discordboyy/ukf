@@ -706,6 +706,12 @@ html {
   }
 }
 
+@media (max-width: 900px) {
+  .frame-2 {
+    width: 150vw;
+  }
+}
+
 @media (max-width: 850px) {
   .membership-section-forening {
 
@@ -931,5 +937,11 @@ html {
 
   .samarbeidspartner-title {
     left: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .samarbeidspartner-title {
+    left: 20px;
   }
 }
