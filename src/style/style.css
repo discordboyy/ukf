@@ -252,18 +252,16 @@ body {
 
 
 .membership-section {
-  margin-top: 90px;   /* 100 × 0.9 */
+  margin-top: -190px;   /* 100 × 0.9 */
   width: auto;
   height: 756px;      /* 840 × 0.9 */
 }
 
 .membership-fee {
-  position: absolute;
-  left: 0px;       /* x = 0 */
-  top: 914px;     /* y = -104 */
   width: 937px;    /* ширина контейнера */
   height: 1312px;  /* высота контейнера */
   pointer-events: none; /* блок не мешает кликам */
+  overflow: visible;
 }
 
 .membership-fee-icon {
@@ -294,9 +292,8 @@ body {
 
 .membership-howto {
   width: 943.13px;       /* 1047.92 × 0.9 */
-  height: 545.63px;      /* 606.25 × 0.9 */
   margin-left: 680.45px; /* 756.05 × 0.9 */
-  margin-top: 149.78px;  /* 166.42 × 0.9 */
+  margin-top: -965px;
 }
 .membership-title {
   color: var(--red-color);
@@ -374,7 +371,7 @@ body {
   height: 108.75px;      /* 120.83 × 0.9 */
   display: flex;
   margin-left: 720px;    /* 800 × 0.9 */
-  margin-top: -90px;     /* -100 × 0.9 */
+  margin-top: 260px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -1204,7 +1201,7 @@ body {
   }
 
   .membership-description {
-    width: 500px;
+    width: 80vw;
   }
 
   .events-list-wrapper {
@@ -1244,6 +1241,14 @@ body {
   .about-description, .about-details, .about-logo {
     margin: auto;
   }
+
+  .hero-content {
+    width: 800px;
+  }
+
+  .hero-accent {
+    margin-left: -120px;
+  }
 }
 
 @media (max-width: 768px) { /* планшеты и телефоны */
@@ -1254,7 +1259,7 @@ body {
   }
 
   .page-membership {
-    margin-top: -530px;
+    margin-top: -540px;
   }
 
   .about-section {
@@ -1298,21 +1303,23 @@ body {
     gap: 20px;
   }
 
+  .events-section {
+    height: auto;
+  }
 
   .membership-section {
-    margin-top: 90px;   /* 100 × 0.9 */
+    margin-top: -30px;   /* 100 × 0.9 */
+    height: auto;
   }
 
   .membership-fee {
-    top: 924px;
-    left: -20px;
   }
 
   .membership-howto {
     zoom: 1.1;
     margin-left: 100px; /* 756.05 × 0.9 */
     width: 943.13px;
-    margin-top: 1400px;  /* 166.42 × 0.9 */
+    margin-top: -80px;  /* 166.42 × 0.9 */
     width: 80%;
   }
 
@@ -1326,7 +1333,7 @@ body {
   .hero-content {
     zoom: 1.1;
     margin-left: 100px;    /* 800 × 0.9 */
-    margin-top: -26vw;     /* -100 × 0.9 */
+    margin-top: 5vw;     /* -100 × 0.9 */
   }
 
   .membership-fee-text {
@@ -1391,7 +1398,7 @@ body {
   }
 
   .membership-fee {
-    left: -60px;
+    margin-left: -60px;
   }
 
   .hero-content {
