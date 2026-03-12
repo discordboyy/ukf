@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <div class="event-imgs-gallery">
                         ${event.images.map(img => `
-                            <div class="event-gallery-img" style="background-image: url('${img}')"></div>
+                            <img class="event-gallery-img" src="${img}" loading="lazy" alt="Event image">
                         `).join("")}
                     </div>
                 </div>
