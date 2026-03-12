@@ -470,8 +470,10 @@ html {
   .frame-157 {
     zoom: 0.8;
   }
+}
 
+@media (max-width: 390px) {
   .upcoming-events-section {
-    zoom: 0.4;
+    zoom: 0.43;
   }
 }
