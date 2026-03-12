@@ -428,6 +428,8 @@ body {
   flex-direction: column;
   gap: 20px;
   margin-bottom: 39.58px;
+
+  transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
 /* ROW */
@@ -439,6 +441,7 @@ body {
 /* DATE */
 .event-date {
   width: auto;
+  max-width: 175.938px;
   display: flex;
   flex-direction: column;
   font-family: "Funnel Sans", sans-serif;
@@ -503,7 +506,8 @@ body {
   height: auto;
   margin: 0 90px;
   flex-shrink: 0;
-  transition: transform 0.4s ease;
+
+  transition: transform 0.7s cubic-bezier(.22,1,.36,1);
 }
 
 .event-card.is-open .event-polygon {
@@ -530,21 +534,30 @@ body {
 .event-body {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease;
+  transition: max-height 0.7s ease;
 }
 
 /* BODY когда открыта карточка */
 .event-card.is-open .event-body {
-  max-height: 500px; /* достаточно для текста */
+  max-height: 400px;
+  transition: max-height 0.6s cubic-bezier(.22,1,.36,1);
 }
 
-/* DESCRIPTION */
 .event-description {
   font-family: "Funnel Sans", sans-serif;
   font-size: 31.37px;
   font-weight: 400;
   line-height: normal;
   color: inherit;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.35s ease;
+}
+
+.event-card.is-open .event-description {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
