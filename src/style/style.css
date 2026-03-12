@@ -1468,6 +1468,10 @@ body {
   .membership-howto, .hero-content {
     margin-left: 50px;
   }
+
+  .page-membership {
+    margin-top: -580px;
+  }
 }
 
 @media (max-width: 390px) {
