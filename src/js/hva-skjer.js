@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const now = new Date();
 
-            const upcomingEvents = events.filter(event => {
+            const upcomingEvents = events
+            .filter(event => {
                 const eventDate = new Date(event.startDate);
                 return eventDate >= now;
-            });
+            })
+            .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
 
             upcomingEvents.forEach(event => {
 
