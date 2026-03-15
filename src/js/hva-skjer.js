@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const now = new Date();
 
-            const upcomingEvents = events
+            const upcomingEvents = events 
             .filter(event => {
                 const eventDate = new Date(event.startDate);
                 return eventDate >= now;
