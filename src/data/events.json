@@ -47,5 +47,30 @@
     "readMoreLink": "https://fb.me/e/48CV8dLPK",
     "registrationLink": "https://fb.me/e/48CV8dLPK",
     "registrationText": "Drop-in"
+  },
+  {
+    "title": "Botanisk akvarellmaling",
+    "date": "5. mars 2026, kl. 16:00–18:00",
+    "startDate": "2026-03-05T16:00:00",
+    "place": "Lørenskog Bibliotek",
+    "price": "Gratis",
+    "description": "Prøv botanisk akvarellmaling og lær å male planter og naturmotiver med akvarell. Verkstedet holdes på Lørenskog bibliotek. Gratis å delta.",
+    "icon": "src/assets/hva-skjer/icons/botanisk-akvarell.png",
+    "images": [],
+    "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985",
+    "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/791431985"
+  },
+  {
+    "title": "Åpning av utstilling “Spor”",
+    "date": "21. mars 2026, kl. 16:00–18:00",
+    "startDate": "2026-03-21T16:00:00",
+    "place": "Bærum Frivilligsentral, Elias Smiths vei 7, Sandvika",
+    "price": "Gratis",
+    "description": "Velkommen til åpningen av utstillingen “Spor”. Arrangementet finner sted på Bærum Frivilligsentral i Sandvika. Gratis og åpent for alle (drop-in).",
+    "icon": "src/assets/hva-skjer/icons/utstilling-spor.png",
+    "images": [],
+    "readMoreLink": "https://fb.me/e/92oy2FYdi",
+    "registrationLink": "https://fb.me/e/92oy2FYdi",
+    "registrationText": "Drop-in"
   }
 ]
