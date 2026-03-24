@@ -1,193 +1,25 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ukrainsk Kunstforening</title>
-  <link rel="stylesheet" href="src/style/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/svg" href="src/assets/32x32_icon.svg" sizes="32x32">
+    <title>Ukrainsk Kunstforening</title>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="src/js/scroll-animation.js" defer></script>
-  <script src="src/js/main.js" defer></script>
-  <script src="src/js/testimonials.js" defer></script>
-  <script src="src/js/events-menu.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="header"></div>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
 
-    <div class="page-membership">
-                <div class="events-section">
-            <div class="events-title">
-            PLANLAGTE AKTIVITETER<br>/ ANNONSER:
-            </div>
-            <div class="events-list-wrapper">
-                <section class="events" id="events-menu">
-                </section>
-            </div>
-            <div class="events-footer">
-                <a href="hva-skjer.html" class="show-more">
-                    <div class="show-more-text">vis flere</div>
-                    <img class="show-more-icon" src="src/assets/Polygon 3.svg" />
-                </a>
-            </div>
-        </div>
+  <body>
+    <!-- React монтируется сюда -->
+    <div id="root"></div>
 
-        <div class="membership-section">
-            <div class="membership-fee scroll-animate">
-                <img
-                    class="membership-fee-icon"
-                    src="src/assets/polygon-side.svg"
-                    alt="membership-fee-icon"
-                />
-
-                <p class="membership-fee-text">
-                    Medlemskontingenten fastsettes av årsmøtet og er per
-                    <span class="highlight">2026</span><br>
-                    på
-                    <span class="highlight amount">350 kr</span>
-                    per år
-                </p>
-            </div>
-
-            <div class="membership-howto">
-                <div class="membership-title">HVORDAN <br>BLI MEDLEM?</div>
-                <div class="membership-description">
-                    <div class="membership-text">
-                    Foreningen verdsetter engasjerte<br> medlemmer som aktivt bidrar til å
-                    realisere foreningens formål. Ønsker du å bli medlem, send en søknad
-                    med din motivasjon og/eller beskrivelse av kunstnerisk praksis til
-                    </div>
-                    <a href="mailto:ua.kunstforening@gmail.com" class="membership-email no-select">
-                        <span class="line">ua.kunstforening</span>
-                        <span class="dog">@</span>
-                        <span class="line">gmail.com</span>
-                    </a>
-                    <div class="membership-note">
-                    Styret vurderer søknader fortløpende.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="hero-section">
-            <div class="hero-content">
-            <div
-                class="hero-description">
-                Den ukrainske kunstforening samler
-                <br />
-                og fremmer ukrainske kunstnere i Norge
-            </div>
-            <img class="hero-accent" src="src/assets/Polygon 3.svg"/>
-            </div>
-        </div>
-
-    </div>
-
-    <link rel="stylesheet" href="src/style/tilbakemeldinger.css">
-    <div class="frame-20">
-        <div class="testimonials-title">TILBAKEMELDINGER</div>
-
-        <div class="testimonials-list">
-            <img class="frame-149" src="src/assets/tilbakemeldinger/background (2).png" />
-
-            <div class="scroll-testimonials-list">
-                <img class="polygon-arrow-left" src="src/assets/Polygon arrow left.svg" />
-                <img class="polygon-arrow-right" src="src/assets/Polygon arrow right.svg" />
-            </div>
-
-            <div class="reviews">
-                <div class="review">
-                    <div class="review-content">
-                        <p class="review-text">
-                            Veldig inspirerende. Anna er veldig flink til å lære bort.
-                            Jeg malte litt aquarell fra før men jeg har lært mye nytt.
-                        </p>
-                        <p class="review-author">Pascale</p>
-                    </div>
-                </div>
-
-                <div class="review">
-                    <div class="review-content">
-                        <p class="review-text">
-                            Величезна подяка майстриням за надану можливість навчитись новому!
-                            <br />
-                            <span class="review-signature">
-                                З повагою до дієвих україночок,
-                            </span>
-                        </p>
-
-                        <div class="review-footer">
-                            <p class="review-author">пані Людмила з Ірпеня.</p>
-                            <p class="review-slogan">Слава Україні!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="samarbeidspartner-section">
-        <div class="samarbeidspartner-title">SAMARBEIDSPARTNERE</div>
-        <div class="samarbeidspartner-carousel-container">
-            <div class="samarbeidspartner-carousel">
-                <a href="#" class="carousel-item">
-                    <img src="src/assets/samarbeidspartner/logo-1.svg" alt="Lorenskog Kommune"/>
-                </a>
-                <a href="https://www.relove.info/" class="carousel-item">
-                    <img src="src/assets/samarbeidspartner/logo-2.svg" alt="Relove"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img src="src/assets/samarbeidspartner/logo-3.svg" alt="Ambassade"/>
-                </a>
-                <a href="https://www.favorittartworkshop.com/" class="carousel-item">
-                    <img src="src/assets/samarbeidspartner/logo-4.svg" alt="Favoritt"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img id="Oslo-Kommune" src="src/assets/samarbeidspartner/logo-5.svg" alt="Oslo Kommune"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img id="Akershus" src="src/assets/samarbeidspartner/logo-6.svg" alt="Akershus"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img src="src/assets/samarbeidspartner/logo-7.svg" alt="Lorenskog Bibliotek"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img id="Verdensfolk" src="src/assets/samarbeidspartner/logo-8.svg" alt="Verdensfolk"/>
-                </a>
-                <a href="#" class="carousel-item">
-                    <img id="Sentralen" src="src/assets/samarbeidspartner/logo-9.svg" alt="Sentralen"/>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact-root"></div>
-    <div id="about-root"></div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('.samarbeidspartner-carousel');
-        const items = carousel.innerHTML;
-
-        // Дублируем содержимое для бесконечного эффекта
-        carousel.innerHTML = items + items;
-
-        // Рассчитываем ширину всех элементов
-        const totalWidth = carousel.scrollWidth / 2;
-
-        // Устанавливаем CSS переменную для анимации
-        document.documentElement.style.setProperty('--carousel-width', `-${totalWidth}px`);
-    });
-    </script>
-
-</body>
+    <!-- главный вход -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
