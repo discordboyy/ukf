@@ -1,4 +1,5 @@
-import "../styles/style.css";
+// scr/components/Footer.jsx
+import "../style/style.css";
 import aboutLogo from "../assets/UKF_about-logo-image.svg";
 import contactIcon from "../assets/contact-link.svg";
 
