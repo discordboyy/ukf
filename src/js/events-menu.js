@@ -1,10 +1,15 @@
 // src/js/events-menu.js
 
+let isInitialized = false;
+
 export function init() {
+    if (isInitialized) return;
+    isInitialized = true;
 
     const container = document.getElementById("events-menu");
+    if (!container) return;
 
-    if (!container) return; // защита
+    container.innerHTML = "";
 
     fetch("src/data/events.json")
         .then(res => res.json())
