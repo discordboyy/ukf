@@ -1,8 +1,10 @@
 // src/js/events-menu.js
 
-document.addEventListener("DOMContentLoaded", function () {
+export function init() {
 
     const container = document.getElementById("events-menu");
+
+    if (!container) return; // защита
 
     fetch("src/data/events.json")
         .then(res => res.json())
@@ -76,8 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(err => console.error("Events loading error:", err));
 
-});
-
+}
 
 function enableEventToggle() {
 
