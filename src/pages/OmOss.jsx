@@ -1,11 +1,22 @@
 // src/pages/OmOss.jsx
-import React from "react";
+import { useEffect } from "react";
 
 // styles
 import "../style/style.css";
 import "../style/om-oss.css";
 
-function OmOss() {
+// JS modules
+import { init as initScrollAnimation } from "../js/scroll-animation";
+import { init as initMain } from "../js/main";
+import { initKurs } from "../js/kurs"; // hvis du også trenger kurs-init
+
+export default function OmOss() {
+  useEffect(() => {
+    initKurs(); // bare hvis nødvendig, ellers fjern
+    initScrollAnimation();
+    initMain();
+  }, []);
+
   return (
     <div> {/* Parent wrapper for hele siden */}
 
@@ -229,5 +240,3 @@ function OmOss() {
     </div>
   );
 }
-
-export default OmOss;

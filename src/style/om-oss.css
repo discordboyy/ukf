@@ -713,9 +713,6 @@ html {
 }
 
 @media (max-width: 850px) {
-  .membership-section-forening {
-
-  }
 
   .about-description-forening {
     flex-wrap: wrap;
@@ -820,8 +817,6 @@ html {
   .membership-details-forening {
     zoom: 1.5;
   }
-
-  .board-title {}
 
   .board-member-image {
     margin: auto;
