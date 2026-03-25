@@ -337,7 +337,7 @@ html {
 }
 /* Default: desktop version shown, mobile hidden */
 .course-body.desktop {
-    display: block;
+    display: flex;
 }
 
 .course-body.mobile {
@@ -1305,7 +1305,7 @@ html {
   }
 
   .age-group {
-    width: auto;
+    width: auto; height: auto;
   }
 
   .course-card-accent {

@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import OmOss from "./pages/OmOss";
 import HvaSkjer from "./pages/HvaSkjer";
+import Kurs from "./pages/Kurs";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/om-oss" element={<OmOss />} />
         <Route path="/hva-skjer" element={<HvaSkjer />} />
+        <Route path="/bestill-kurs" element={<Kurs />} />
       </Routes>
 
       <Footer />

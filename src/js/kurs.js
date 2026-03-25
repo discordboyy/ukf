@@ -1,4 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
+import $ from "jquery";
+import "slick-carousel";
+import "slick-carousel/slick/slick.css";
+
+window.$ = $;
+window.jQuery = $;
+
+let isInitialized = false;
+
+export function initKurs() {
+  if (isInitialized) return;
+  isInitialized = true;
+
   const allCheckbox = document.querySelector(
     '.filter-item.all input[type="checkbox"]'
   );
@@ -8,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ).filter(cb => cb !== allCheckbox);
 
   const cards = document.querySelectorAll(".course-card");
-
   const resetBtn = document.querySelector(".filters-reset");
 
   function updateCards() {
@@ -32,183 +43,150 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* VIS ALT */
-  allCheckbox.addEventListener("change", () => {
+  // VIS ALT
+  allCheckbox?.addEventListener("change", () => {
     if (allCheckbox.checked) {
       categoryCheckboxes.forEach(cb => (cb.checked = true));
     }
     updateCards();
   });
 
-  /* ОСТАЛЬНЫЕ ФИЛЬТРЫ */
+  // FILTERS
   categoryCheckboxes.forEach(cb => {
     cb.addEventListener("change", () => {
-      if (allCheckbox.checked) {
+      if (allCheckbox?.checked) {
         allCheckbox.checked = false;
       }
 
       const allChecked = categoryCheckboxes.every(c => c.checked);
-      allCheckbox.checked = allChecked;
+      if (allCheckbox) allCheckbox.checked = allChecked;
 
       updateCards();
     });
   });
 
-  /* RESET КНОПКА */
-  resetBtn.addEventListener("click", () => {
-    allCheckbox.checked = false;
+  initToggle();     // 👈 LEGG TIL DENNE
+  initCarousel();
+
+  // RESET
+  resetBtn?.addEventListener("click", () => {
+    if (allCheckbox) allCheckbox.checked = false;
     categoryCheckboxes.forEach(cb => (cb.checked = false));
     updateCards();
   });
-});
+
+  initCarousel();
+}
+
+
+function initToggle() {
+  const toggles = document.querySelectorAll('.course-toggle');
+  const cards = document.querySelectorAll('.course-card');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const currentCard = toggle.closest('.course-card');
+
+      cards.forEach(card => {
+        if (card !== currentCard) {
+          card.classList.remove('is-open');
+        }
+      });
+
+      currentCard.classList.toggle('is-open');
+    });
+  });
+}
 
 
 
+function initCarousel() {
+  let currentPreview = null;
+  let modalImages = [];
+  let modalIndex = 0;
+  let touchStartX = 0;
 
+  let startX = 0;
+  let startY = 0;
+  let isDragging = false;
 
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const modalClose = document.getElementById("modalClose");
+  const modalPrev = document.getElementById("modalPrev");
+  const modalNext = document.getElementById("modalNext");
 
-// Модалка для карусели изображений
-let currentPreview = null;
-let modalImages = [];
-let modalIndex = 0;
-let touchStartX = 0;
-
-let startX = 0;
-let startY = 0;
-let isDragging = false;
-
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("modalImage");
-const modalClose = document.getElementById("modalClose");
-const modalPrev = document.getElementById("modalPrev");
-const modalNext = document.getElementById("modalNext");
-
-// Мини-карусели с hover-стрелками
-document.querySelectorAll('.carousel-preview').forEach(preview => {
+  document.querySelectorAll('.carousel-preview').forEach(preview => {
     const images = JSON.parse(preview.dataset.images);
     preview.innerHTML = '';
 
     images.forEach((src, index) => {
-        const slide = document.createElement('div');
-        slide.classList.add('slide');
+      const slide = document.createElement('div');
+      slide.classList.add('slide');
 
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = '';
-        img.dataset.index = index;
+      const img = document.createElement('img');
+      img.src = src;
+      img.dataset.index = index;
 
-        slide.appendChild(img);
-        preview.appendChild(slide);
+      slide.appendChild(img);
+      preview.appendChild(slide);
     });
 
-    $(preview).slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      prevArrow: `
-          <button class="slick-prev">
-              <img src="src/assets/nav-left.svg" alt="Prev">
-          </button>
-      `,
-      nextArrow: `
-          <button class="slick-next">
-              <img src="src/assets/nav-right.svg" alt="Next">
-          </button>
-      `,
-      dots: false
+    let currentIndex = 0;
+    const slides = preview.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.style.display = i === index ? "block" : "none";
+      });
+    }
+
+    showSlide(0);
+
+    // next
+    preview.querySelector('.slick-next')?.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    // prev
+    preview.querySelector('.slick-prev')?.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    preview.querySelectorAll('img').forEach(img => {
+      img.addEventListener('click', () => {
+        currentPreview = preview;
+        modalImages = images;
+        modalIndex = parseInt(img.dataset.index);
+        modalImg.src = modalImages[modalIndex];
+        modal?.classList.add("show");
+        document.body.style.overflow = "hidden";
+      });
+    });
   });
 
-    preview.querySelectorAll('.slide img').forEach(img => {
+  modalClose?.addEventListener("click", closeModal);
+  modal?.addEventListener("click", e => {
+    if (e.target === modal) closeModal();
+  });
 
-        img.addEventListener('mousedown', (e) => {
-            startX = e.clientX;
-            startY = e.clientY;
-            isDragging = false;
-        });
-
-        img.addEventListener('mousemove', (e) => {
-            if (Math.abs(e.clientX - startX) > 10 || Math.abs(e.clientY - startY) > 10) {
-                isDragging = true;
-            }
-        });
-
-        img.addEventListener('click', (e) => {
-
-            if (isDragging) {
-                e.preventDefault();
-                return; // если это drag — ничего не делаем
-            }
-
-            currentPreview = preview;
-            modalImages = images;
-            modalIndex = parseInt(img.dataset.index);
-            modalImg.src = modalImages[modalIndex];
-            modal.classList.add("show");
-            document.body.style.overflow = "hidden";
-        });
-
-    });
-});
-
-// Закрытие
-function closeModal() {
-    modal.classList.remove("show");
+  function closeModal() {
+    modal?.classList.remove("show");
     document.body.style.overflow = "";
 
-    // синхронизация с мини-каруселью
     if (currentPreview) {
-        $(currentPreview).slick('slickGoTo', modalIndex);
     }
-}
+  }
 
-modalClose.addEventListener("click", closeModal);
-modal.addEventListener("click", e => {
-    if (e.target === modal) closeModal();
-});
-
-document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeModal();
-});
-
-// Показ картинки
-function showModalImage(index) {
-    modalIndex = (index + modalImages.length) % modalImages.length;
-    modalImg.src = modalImages[modalIndex];
-}
-
-// Навигация
-modalPrev.addEventListener("click", () => showModalImage(modalIndex - 1));
-modalNext.addEventListener("click", () => showModalImage(modalIndex + 1));
-
-// Свайпы
-modalImg.addEventListener("touchstart", e => {
-    touchStartX = e.touches[0].clientX;
-});
-
-modalImg.addEventListener("touchend", e => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) {
-        diff > 0
-            ? showModalImage(modalIndex + 1)
-            : showModalImage(modalIndex - 1);
-    }
-});
-
-$(document).ready(function() {
-  // Перебираем каждый слайд и устанавливаем ширину и высоту
-  $('.carousel-preview .slick-slide').each(function() {
-    $(this).css({
-      'width': '526.5px',     // фиксированная ширина слайда
-      'height': '527.25px'    // фиксированная высота слайда
-    });
+  modalPrev?.addEventListener("click", () => {
+    modalIndex--;
+    modalImg.src = modalImages[(modalIndex + modalImages.length) % modalImages.length];
   });
 
-  // Теперь для изображений внутри слайдов
-  $('.carousel-preview img').each(function() {
-    $(this).css({
-      'object-fit': 'cover', // изображение полностью заполняет контейнер, возможна обрезка
-      'object-position': 'center' // центрируем изображение
-    });
+  modalNext?.addEventListener("click", () => {
+    modalIndex++;
+    modalImg.src = modalImages[modalIndex % modalImages.length];
   });
-});
+}
