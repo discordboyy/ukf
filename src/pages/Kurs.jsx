@@ -1386,19 +1386,19 @@ export default function Kurs() {
                   <div className="skills">
                     <div className="skills-title red">Hva lærer du</div>
                     <div className="skills-list">
-                      <div className="skill-item red">
+                      <div className="skill-item red" id="nissefjes-item-css">
                         <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                         <div className="skill-item-text-red">Trearbeid med elektriske verktøy</div>
                       </div>
-                      <div className="skill-item red">
+                      <div className="skill-item red" id="nissefjes-item-css">
                         <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                         <div className="skill-item-text-red">Pussing, boring og polering</div>
                       </div>
-                      <div className="skill-item red">
+                      <div className="skill-item red" id="nissefjes-item-css">
                         <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                         <div className="skill-item-text-red">Dekorering: liming og maling</div>
                       </div>
-                      <div className="skill-item red">
+                      <div className="skill-item red" id="nissefjes-item-css">
                         <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                         <div className="skill-item-text-red">
                           Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og slipemaskin
@@ -1407,7 +1407,7 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <div className="age-group">
+                  <div className="age-group" id="nissefjes-age-group">
                     <div className="age-group-label red">Passer for</div>
                     <div className="age-group-description red">
                       Familier, barnegrupper, voksne og alle som ønsker en kreativ og meningsfull juleaktivitet.
@@ -1454,7 +1454,7 @@ export default function Kurs() {
             {/* CARD: Julepynt */}
           <div className="course-card" data-category="tre julverksted">
 
-            <div className="course-card-accent red" id="nissefjes-card-css">
+            <div className="course-card-accent red" id="julepynt-card-css">
 
               <div
                 className="rectangle-2 carousel-preview"
@@ -1508,19 +1508,19 @@ export default function Kurs() {
                 <div className="skills">
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
-                    <div className="skill-item red">
+                    <div className="skill-item red" id="julepynt-item-css">
                       <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                       <div className="skill-item-text-red">Trearbeid med elektriske verktøy</div>
                     </div>
-                    <div className="skill-item red">
+                    <div className="skill-item red" id="julepynt-item-css">
                       <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                       <div className="skill-item-text-red">Pussing, boring og polering</div>
                     </div>
-                    <div className="skill-item red">
+                    <div className="skill-item red" id="julepynt-item-css">
                       <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                       <div className="skill-item-text-red">Dekorering: liming og maling</div>
                     </div>
-                    <div className="skill-item red">
+                    <div className="skill-item red" id="julepynt-item-css">
                       <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
                       <div className="skill-item-text-red">
                         Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og slipemaskin
@@ -1529,7 +1529,7 @@ export default function Kurs() {
                   </div>
                 </div>
 
-                <div className="age-group">
+                <div className="age-group" id="julepynt-age-group">
                   <div className="age-group-label red">Passer for</div>
                   <div className="age-group-description red">
                     Familier, barnegrupper, voksne og alle som ønsker en kreativ og meningsfull juleaktivitet.
@@ -1644,7 +1644,7 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <div className="age-group">
+                  <div className="age-group" id="glassgravering-juleverksted-age-group">
                     <div className="age-group-label red">Passer for</div>
                     <div className="age-group-description red">
                       Familier, barnegrupper, voksne og alle som ønsker en kreativ og meningsfull juleaktivitet.
