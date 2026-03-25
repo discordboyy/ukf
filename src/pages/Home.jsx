@@ -10,7 +10,8 @@
 // • scroll-animation, main, testimonials, and events-menu JS modules must be
 //   ported to /src/js/ as ES modules and imported below (stubs provided).
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import eventsData from '../data/events.json';
 
 // ── Stylesheet imports (replace <link> tags) ──────────────────────────────
 import '../style/style.css';
@@ -28,6 +29,7 @@ import { init as initEventsMenu }      from '../js/events-menu';
 export default function Home() {
 
   // ── Replaces DOMContentLoaded + inline <script> for the carousel ────────
+
   useEffect(() => {
     const carousel = document.querySelector('.samarbeidspartner-carousel');
     if (!carousel) return;
