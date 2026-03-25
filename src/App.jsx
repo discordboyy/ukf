@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import OmOss from "./pages/OmOss";
 import HvaSkjer from "./pages/HvaSkjer";
 import Kurs from "./pages/Kurs";
+import Priser from "./pages/Priser";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/om-oss" element={<OmOss />} />
         <Route path="/hva-skjer" element={<HvaSkjer />} />
         <Route path="/bestill-kurs" element={<Kurs />} />
+        <Route path="/priser" element={<Priser />} />
       </Routes>
 
       <Footer />

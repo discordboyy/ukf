@@ -1,5 +1,6 @@
 // src/pages/Kurs.jsx
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 // styles
 import "../style/style.css";
@@ -194,7 +195,7 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <a href="./priser.html" className="price-href">
+                  <Link to="/priser" className="price-href">
                     <img
                       className="romber-knapp-2-2-1"
                       src="/src/assets/kurs/romber_knapp red.svg"
@@ -208,7 +209,7 @@ export default function Kurs() {
                         alt=""
                       />
                     </div>
-                  </a>
+                  </Link>
 
                 </div>
 
@@ -291,7 +292,7 @@ export default function Kurs() {
                     <div className="course-duration-value red">2 timer</div>
                   </div>
 
-                  <a href="./priser.html" className="price-href">
+                  <Link to="/priser" className="price-href">
                     <img
                       className="romber-knapp-2-2-1"
                       src="/src/assets/kurs/romber_knapp red.svg"
@@ -305,7 +306,7 @@ export default function Kurs() {
                         alt=""
                       />
                     </div>
-                  </a>
+                  </Link>
 
                 </div>
               </div>
@@ -339,7 +340,7 @@ export default function Kurs() {
                                     Alt nødvendig utstyr og materialer. Veiledning fra erfaren instruktør.
                                 </div>
                             </div>
-                            <a href="./priser.html" className="price-href">
+                            <Link to="/priser" className="price-href">
                                 <img
                                     className="romber-knapp-2-2-1"
                                     src="src/assets/kurs/romber_knapp red.svg"
@@ -351,7 +352,7 @@ export default function Kurs() {
                                         src="src/assets/kurs/pile_full_bla 1.svg"
                                     />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="course-duration">
                             <div className="course-duration-label red">Anbefalt varighet</div>
@@ -420,7 +421,7 @@ export default function Kurs() {
                                 <div className="course-duration-label red">Anbefalt varighet</div>
                                 <div className="course-duration-value red">2–3 timer</div>
                             </div>
-                            <a href="./priser.html" className="price-href">
+                            <Link to="/priser" className="price-href">
                                 <img
                                     className="romber-knapp-2-2-1"
                                     src="src/assets/kurs/romber_knapp red.svg"
@@ -432,7 +433,7 @@ export default function Kurs() {
                                         src="src/assets/kurs/pile_full_bla 1.svg"
                                     />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -462,13 +463,13 @@ export default function Kurs() {
                                     Alt nødvendig utstyr og materialer. Veiledning fra erfaren instruktør.
                                 </div>
                             </div>
-                            <a href="./priser.html" className="price-href">
+                            <Link to="/priser" className="price-href">
                                 <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp2 (2).svg" />
                                 <div className="frame-47">
                                     <div className="pris">PRIS</div>
                                     <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div className="course-duration">
                             <div className="course-duration-label blue">Anbefalt varighet</div>
@@ -525,13 +526,13 @@ export default function Kurs() {
                                 <div className="course-duration-label blue">Anbefalt varighet</div>
                                 <div className="course-duration-value blue">2 timer</div>
                             </div>
-                            <a href="./priser.html" className="price-href">
+                            <Link to="/priser" className="price-href">
                                 <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp2 (2).svg" />
                                 <div className="frame-47">
                                     <div className="pris">PRIS</div>
                                     <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" />
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -565,13 +566,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -646,13 +647,13 @@ export default function Kurs() {
                       <div className="course-duration-value blue">3 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -687,13 +688,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -758,13 +759,13 @@ export default function Kurs() {
                       <div className="course-duration-value blue">3 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -796,13 +797,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -865,13 +866,13 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2–2,5 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -910,13 +911,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -975,13 +976,13 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -1018,13 +1019,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -1083,13 +1084,13 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>            <div className="course-card" data-category="visuell-kunst julverksted glass" id="glassgravering-juleverksted-card-css">
 
               <div className="course-card-accent red">
@@ -1116,13 +1117,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -1185,13 +1186,13 @@ export default function Kurs() {
                       <div className="course-duration-value red">2 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -1243,13 +1244,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -1314,13 +1315,13 @@ export default function Kurs() {
                       <div className="course-duration-value red">2 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -1356,13 +1357,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -1432,13 +1433,13 @@ export default function Kurs() {
                       <div className="course-duration-value red">2-3 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -1478,13 +1479,13 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <a href="./priser.html" className="price-href">
+                  <Link to="/priser" className="price-href">
                     <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
                       <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="course-duration">
@@ -1554,13 +1555,13 @@ export default function Kurs() {
                     <div className="course-duration-value red">2-3 timer</div>
                   </div>
 
-                  <a href="./priser.html" className="price-href">
+                  <Link to="/priser" className="price-href">
                     <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
                       <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -1600,13 +1601,13 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="course-duration">
@@ -1669,13 +1670,13 @@ export default function Kurs() {
                       <div className="course-duration-value red">2 timer</div>
                     </div>
 
-                    <a href="./priser.html" className="price-href">
+                    <Link to="/priser" className="price-href">
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
                         <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
