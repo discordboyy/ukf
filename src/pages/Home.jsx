@@ -1,80 +1,113 @@
 // src/pages/Home.jsx
-//
-// Strict 1-to-1 migration of the original index.html <body> content.
-// • All class names are preserved exactly.
-// • All IDs are preserved exactly.
-// • HTML structure and nesting are identical.
-// • <script> inline logic is moved into useEffect hooks.
-// • <link> stylesheet imports are handled via import statements.
-// • jQuery / slick-carousel are replicated with vanilla JS + useEffect.
-// • scroll-animation, main, testimonials, and events-menu JS modules must be
-//   ported to /src/js/ as ES modules and imported below (stubs provided).
-
 import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
-// ── Stylesheet imports (replace <link> tags) ──────────────────────────────
+// ── Stylesheet imports
 import '../style/style.css';
 import '../style/tilbakemeldinger.css';
 
-// ── JS module imports (port your original scripts to ES modules) ──────────
-// Each of these files should export an `init` function (or use a default
-// export) that contains the logic from the original .js file.
+// ── JS module imports
 import { init as initScrollAnimation } from '../js/scroll-animation';
 import { init as initMain }            from '../js/main';
-import { init as initTestimonials }    from '../js/testimonials';
-import { init as initEventsMenu }      from '../js/events-menu';
+import { init as initTestimonials }    from '../js/testimonials'
 
-// ── Component ─────────────────────────────────────────────────────────────
+const COLORS = ["red", "blue", "yellow"];
+const POLYGONS = [
+  "/src/assets/Polygon 1 (5).svg",
+  "/src/assets/Polygon 1 (1).svg",
+  "/src/assets/Polygon 1 (2).svg"
+];
+
 export default function Home() {
-  
-  // ── Replaces DOMContentLoaded + inline <script> for the carousel ────────
+  const [events, setEvents] = useState([]);
+  const [openIndex, setOpenIndex] = useState(null);
 
+  // ── Fetch upcoming events (max 3) ──
   useEffect(() => {
-    const carousel = document.querySelector('.samarbeidspartner-carousel');
-    if (!carousel) return;
-
-    const items = carousel.innerHTML;
-    // Duplicate content for infinite-scroll effect (mirrors original logic)
-    carousel.innerHTML = items + items;
-
-    const totalWidth = carousel.scrollWidth / 2;
-    document.documentElement.style.setProperty(
-      '--carousel-width',
-      `-${totalWidth}px`
-    );
+    fetch("/data/events.json")
+      .then(res => res.json())
+      .then(data => {
+        const now = new Date();
+        const upcoming = data
+          .filter(event => new Date(event.startDate) >= now)
+          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
+          .slice(0, 3); // максимум 3
+        setEvents(upcoming);
+      })
+      .catch(console.error);
   }, []);
 
-  // ── Initialise all ported JS modules after mount ─────────────────────────
+  // ── Carousel duplication
+  useEffect(() => {
+    const carousel = document.querySelector(".samarbeidspartner-carousel");
+    if (!carousel) return;
+    const items = carousel.innerHTML;
+    carousel.innerHTML = items + items;
+    const totalWidth = carousel.scrollWidth / 2;
+    document.documentElement.style.setProperty("--carousel-width", `-${totalWidth}px`);
+  }, []);
+
+  // ── Init other JS modules
   useEffect(() => {
     initScrollAnimation();
     initMain();
     initTestimonials();
-    initEventsMenu();
   }, []);
 
-  // ── JSX – identical structure / nesting to original HTML body ────────────
   return (
     <>
-      {/* ── Events + Membership ─────────────────────────────────────────── */}
+      {/* ── Events + Membership ── */}
       <div className="page-membership">
-
-        {/* Events section */}
-        <div className="events-section">
-          <div className="events-title">
-            PLANLAGTE AKTIVITETER<br />/ ANNONSER:
-          </div>
-          <div className="events-list-wrapper">
-            <section className="events" id="events-menu">
-              {/* Populated by initEventsMenu() */}
-            </section>
-          </div>
-          <div className="events-footer">
-            <a href="hva-skjer.html" className="show-more">
-              <div className="show-more-text">vis flere</div>
-              <img className="show-more-icon" src="/src/assets/Polygon 3.svg" alt="" />
-            </a>
-          </div>
+        {/* ── Events section ── */}
+      <div className="events-section">
+        <div className="events-title">
+          PLANLAGTE AKTIVITETER<br />/ ANNONSER:
         </div>
+        <div className="events-list-wrapper">
+          <section className="events" id="events-menu">
+            {events.map((event, index) => {
+              const color = COLORS[index % COLORS.length];
+              const polygon = POLYGONS[index % POLYGONS.length];
+              const dateObj = new Date(event.startDate);
+              const dateFormatted = dateObj.toLocaleDateString("no-NO").replace(/\./g, "/");
+              const city = event.place.split(",")[0].toUpperCase();
+              const isOpen = openIndex === index;
+
+              return (
+                <div
+                  key={index}
+                  className={`event-card ${color} ${isOpen ? "is-open" : ""}`}
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                >
+                  <div className="event-row">
+                    <div className={`event-date ${color}`}>
+                      <div className="date">{dateFormatted}</div>
+                      <div className="city">{city}</div>
+                    </div>
+                    <img className="event-polygon" src={polygon} alt="polygon" />
+                    <div className="event-content">
+                      <div className={`event-title ${color}`}>{event.title}</div>
+                      <div className="event-body">
+                        <div className="event-description">{event.description}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </section>
+        </div>
+        <div className="events-footer">
+          <Link to="/hva-skjer" className="show-more">
+            <div className="show-more-text">vis flere</div>
+            <img
+              className="show-more-icon"
+              src="/src/assets/Polygon 3.svg"
+              alt=""
+            />
+          </Link>
+        </div>
+      </div>
 
         {/* Membership section */}
         <div className="membership-section">
@@ -88,9 +121,7 @@ export default function Home() {
               Medlemskontingenten fastsettes av årsmøtet og er per{' '}
               <span className="highlight">2026</span>
               <br />
-              på{' '}
-              <span className="highlight amount">350 kr</span>{' '}
-              per år
+              på <span className="highlight amount">350 kr</span> per år
             </p>
           </div>
 
@@ -128,25 +159,17 @@ export default function Home() {
             <img className="hero-accent" src="/src/assets/Polygon 3.svg" alt="" />
           </div>
         </div>
+      </div>
 
-      </div>{/* /page-membership */}
-
-      {/* ── Testimonials ────────────────────────────────────────────────── */}
-      {/*
-        The original page injected tilbakemeldinger.css via a <link> inside
-        the body (unusual but valid). We import it at the top of this file
-        instead – same effect.
-      */}
+      {/* ── Testimonials ── */}
       <div className="frame-20">
         <div className="testimonials-title">TILBAKEMELDINGER</div>
-
         <div className="testimonials-list">
           <img
             className="frame-149"
             src="/src/assets/tilbakemeldinger/background (2).png"
             alt=""
           />
-
           <div className="scroll-testimonials-list">
             <img
               className="polygon-arrow-left"
@@ -159,7 +182,6 @@ export default function Home() {
               alt="neste"
             />
           </div>
-
           <div className="reviews">
             <div className="review">
               <div className="review-content">
@@ -170,7 +192,6 @@ export default function Home() {
                 <p className="review-author">Pascale</p>
               </div>
             </div>
-
             <div className="review">
               <div className="review-content">
                 <p className="review-text">
@@ -180,7 +201,6 @@ export default function Home() {
                     З повагою до дієвих україночок,
                   </span>
                 </p>
-
                 <div className="review-footer">
                   <p className="review-author">пані Людмила з Ірпеня.</p>
                   <p className="review-slogan">Слава Україні!</p>
@@ -188,11 +208,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
-      {/* ── Partners carousel ────────────────────────────────────────────── */}
+      {/* ── Partners carousel ── */}
       <div className="samarbeidspartner-section">
         <div className="samarbeidspartner-title">SAMARBEIDSPARTNERE</div>
         <div className="samarbeidspartner-carousel-container">
