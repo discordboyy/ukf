@@ -1,17 +1,13 @@
 // src/js/hva-skjer.js
 
-let isInitialized = false;
-
 export function initHvaSkjer() {
-  if (isInitialized) return;
-  isInitialized = true;
 
   const container = document.getElementById("events-container");
   if (!container) return;
 
   container.innerHTML = "";
 
-  fetch("/src/data/events.json")
+  fetch("/data/events.json")
     .then(response => response.json())
     .then(events => {
       const now = new Date();

@@ -11,7 +11,7 @@ export function init() {
 
     container.innerHTML = "";
 
-    fetch("src/data/events.json")
+    fetch("/data/events.json")
         .then(res => res.json())
         .then(events => {
 

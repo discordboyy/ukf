@@ -11,7 +11,6 @@
 //   ported to /src/js/ as ES modules and imported below (stubs provided).
 
 import { useEffect, useState } from 'react';
-import eventsData from '../data/events.json';
 
 // ── Stylesheet imports (replace <link> tags) ──────────────────────────────
 import '../style/style.css';
@@ -27,7 +26,7 @@ import { init as initEventsMenu }      from '../js/events-menu';
 
 // ── Component ─────────────────────────────────────────────────────────────
 export default function Home() {
-
+  
   // ── Replaces DOMContentLoaded + inline <script> for the carousel ────────
 
   useEffect(() => {
