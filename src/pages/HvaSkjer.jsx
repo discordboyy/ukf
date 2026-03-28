@@ -15,11 +15,14 @@ export default function HvaSkjer() {
   useEffect(() => {
     fetch("/data/events.json")
       .then(res => res.json())
-      .then(data => setEvents(
-        data
-          .filter(e => new Date(e.startDate) >= new Date())
-          .sort((a,b) => new Date(a.startDate) - new Date(b.startDate))
-      ))
+      .then(data => {
+        const now = new Date();
+        // фильтруем только будущие события
+        const upcomingEvents = data
+          .filter(e => new Date(e.startDate) >= now)
+          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+        setEvents(upcomingEvents);
+      })
       .catch(console.error);
   }, []);
 
