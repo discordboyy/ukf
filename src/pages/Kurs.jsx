@@ -14,6 +14,13 @@ import { initKurs } from "../js/kurs";
 
 export default function Kurs() {
 
+  const $ = window.$;
+
+  $('.carousel-preview').slick({
+    dots: true,
+    arrows: true,
+  });
+
   useEffect(() => {
     initKurs();
     initScrollAnimation();

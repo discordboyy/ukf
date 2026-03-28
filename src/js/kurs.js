@@ -1,9 +1,4 @@
-import $ from "jquery";
-import "slick-carousel";
-import "slick-carousel/slick/slick.css";
-
-window.$ = $;
-window.jQuery = $;
+// ukf\src\js\kurs.js
 
 let isInitialized = false;
 
