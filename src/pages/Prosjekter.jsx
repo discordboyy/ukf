@@ -125,7 +125,7 @@ export default function Prosjekter() {
                     I august 2025 har vi hatt utstilliling i Hentriette Wegners paviljøng i Frognerparken. 
                     Utstilling var supplert med daglige kreative verksteder utendørs, fordelt i temaperioder 
                     akvarellmaling, tekstil, treveksted og glassgravering. Verkstedene var gratis og åpne for alle. <br />
-                    Det er dokumentert
+                    Det er dokumentert{" "}
                   </span>
 
                   <span className="text-accent red">
