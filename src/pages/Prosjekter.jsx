@@ -4,6 +4,16 @@ import "../style/prosjekter.css";
 
 import { useEffect } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "../style/swiper.css";
+
+import { Pagination, Navigation } from "swiper/modules";
+
 export default function Prosjekter() {
   return (
     <>
@@ -45,39 +55,41 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <div className="slider-viewport">
-            <div className="slides">
+          <Swiper
+            slidesPerView="auto"
+            spaceBetween={48}
+            centeredSlides={true}
+            loop={true}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            navigation={true}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
 
-              <div className="slide active">
-                <div className="slide-double">
-                  <img src="src/assets/prosjekter/Sentralen/Glassgravering.PNG" alt="" />
-                  <img src="src/assets/prosjekter/Sentralen/IMG_1729.jpg" alt="" />
-                </div>
+            <SwiperSlide>
+              <div className="slide-double">
+                <img src="src/assets/prosjekter/Sentralen/Glassgravering.PNG" alt="" />
+                <img src="src/assets/prosjekter/Sentralen/IMG_1729.jpg" alt="" />
               </div>
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Sentralen/IMG_1730.jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1730.jpg" alt="" />
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Sentralen/IMG_1740.jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1740.jpg" alt="" />
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Sentralen/IMG_1747.jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1747.jpg" alt="" />
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Sentralen/IMG_1763.jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1763.jpg" alt="" />
+            </SwiperSlide>
 
-            </div>
-          </div>
-
-          <div className="scroll-testimonials-list">
-            <img className="polygon-arrow-left" src="src/assets/prosjekter/Polygon arrow left.svg" alt="" />
-            <img className="polygon-arrow-right" src="src/assets/prosjekter/Polygon arrow right.svg" alt="" />
-          </div>
+          </Swiper>
         </div>
       </div>
 
@@ -132,30 +144,29 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <div className="slider-viewport">
-            <div className="slides">
+          <Swiper
+            slidesPerView="auto"
+            spaceBetween={48}
+            centeredSlides={true}
+            loop={true}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            navigation={true}
+            modules={[Pagination]}
+          >
 
-              <div className="slide active">
-                <img src="src/assets/prosjekter/Frognerparken-2025/img (1).jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img src="src/assets/prosjekter/Frognerparken-2025/img (1).jpg" />
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Frognerparken-2025/img (3).jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img src="src/assets/prosjekter/Frognerparken-2025/img (3).jpg" />
+            </SwiperSlide>
 
-              <div className="slide">
-                <img src="src/assets/prosjekter/Frognerparken-2025/img (4).jpg" alt="" />
-              </div>
+            <SwiperSlide>
+              <img src="src/assets/prosjekter/Frognerparken-2025/img (4).jpg" />
+            </SwiperSlide>
 
-              {/* можно продолжить аналогично остальные слайды */}
-
-            </div>
-          </div>
-
-          <div className="scroll-testimonials-list">
-            <img className="polygon-arrow-left" src="src/assets/prosjekter/Polygon arrow left.svg" alt="" />
-            <img className="polygon-arrow-right" src="src/assets/prosjekter/Polygon arrow right.svg" alt="" />
-          </div>
+          </Swiper>
         </div>
 
       </div>

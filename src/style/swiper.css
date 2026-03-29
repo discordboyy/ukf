@@ -1,0 +1,96 @@
+.project-slider {
+  position: relative;
+  width: 100%;
+  max-width: 912px; /* чтобы слайдер не растягивался больше макета */
+  margin: 0 auto 80px auto;
+  height: 604.8px; /* как у тебя было */
+}
+
+.swiper-slide {
+  height: 100%; /* фиксированная высота */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* как раньше */
+}
+
+.slide-double {
+  display: flex;
+  gap: 32px;
+  height: 100%;
+}
+
+.slide-double img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* старое */
+.slick-slide {
+  margin-right: 48px;
+}
+
+.swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5); /* боковые слайды затемнены */
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.swiper-slide-active::after {
+  background: rgba(0,0,0,0); /* активный слайд без затемнения */
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+
+
+.project-slider {
+  position: relative;
+  width: 100%;
+  max-width: 912px;
+  height: 604.781px; /* точная высота */
+  margin: 0 auto 80px auto;
+}
+
+.swiper {
+  height: 100%; /* важно, чтобы Swiper занимал всю высоту project-slider */
+}
+
+.swiper-wrapper {
+  height: 100%; /* wrapper тоже должен подстраиваться */
+}
+
+.swiper-slide {
+  height: 100%; /* фиксируем высоту каждого слайда */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы изображение растягивалось по высоте слайда */
+}
+
+
+.swiper-pagination {
+  bottom: -30px !important; /* сдвигаем ниже слайдера на 30px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto !important; /* чтобы не было фиксированной ширины */
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  pointer-events: auto;
+}

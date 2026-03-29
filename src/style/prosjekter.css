@@ -160,91 +160,9 @@ body {
 .text-accent.blue {
   color: var(--blue-color);
 }
-.project-slider {
-  position: relative;
-  background: white;
-  height: 604.8px; /* как у тебя */
-  margin-bottom: 80px;
-}
 
-.slider-viewport {
-  position: relative;
-  margin: auto;
-  width: 912px; /* ширина видимой области */
-  height: 604.8px;
-  overflow: visible; /* показываем соседние слайды */
-}
 
-.slides .slide {
-  position: relative;
-  min-width: 912px; /* ширина одного слайда */
-  height: 604.8px;  /* фиксированная высота */
-}
 
-.slides .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* cover как сейчас */
-}
-
-.slides .slide-double {
-  display: flex;
-  gap: 32px; /* gap между картинками внутри слайда */
-  height: 100%;
-}
-
-.slides .slide-double img {
-  width: 50%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slick-slide {
-  margin-right: 48px; /* gap между слайдами */
-}
-
-.slick-list {
-  overflow: visible !important; /* показываем соседние слайды */
-}
-
-.slides .slide::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5); /* затемнение для боковых слайдов */
-  transition: 0.3s;
-  pointer-events: none; /* чтобы не мешало клику */
-}
-
-.slides .slick-center::after {
-  background: rgba(0,0,0,0); /* активный слайд без затемнения */
-}
-
-.scroll-testimonials-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  translate: -50% -50%;
-  top: 50%;
-  pointer-events: none; /* важно */
-
-  width: 1449.6px;
-}
-
-.polygon-arrow-left,
-.polygon-arrow-right {
-  flex-shrink: 0;
-  position: relative;
-  overflow: visible;
-  cursor: pointer;
-  pointer-events: auto; /* чтобы клик работал */
-
-  width: 43.824px;
-  height: 50.4px;
-}
 
 
 
