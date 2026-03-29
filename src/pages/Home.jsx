@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* ── Partners carousel ── */}
       <div className="samarbeidspartner-section">
-        <div className="samarbeidspartner-title">SAMARBEIDSPARTNERE</div>
+        <div className="samarbeidspartner-title-home">SAMARBEIDSPARTNERE</div>
         <div className="samarbeidspartner-carousel-container">
           <div className="samarbeidspartner-carousel">
             <a href="#" className="carousel-item">
