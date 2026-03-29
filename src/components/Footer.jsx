@@ -61,7 +61,7 @@ export default function Footer() {
               <br /><br />
               Ønsker du å motta nyheter om utstillinger, arrangementer og foreningens aktiviteter?
               <br /><br />
-              Abonner på nyhetsbrevet vårt: <a href="">Abonner på nyhetsbrevet</a>
+              Abonner på nyhetsbrevet vårt: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvf9KaLpu9c8vm1SbaFsmBnkkG9aRFt_7Rd7aD3ewpz_y8Fg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Abonner på nyhetsbrevet</a>
             </div>
 
             <div className="about-details">
