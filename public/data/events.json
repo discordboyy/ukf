@@ -72,5 +72,31 @@
     "readMoreLink": "https://fb.me/e/92oy2FYdi",
     "registrationLink": "https://fb.me/e/92oy2FYdi",
     "registrationText": "Drop-in"
+  },
+  {
+    "title": "Åpning av utstilling “Barnas Kunstklubb”",
+    "date": "9. april 2026, kl. 17:00–19:00",
+    "startDate": "2026-04-09T17:00:00",
+    "place": "Lørenskog Bibliotek",
+    "price": "Gratis",
+    "description": "Velkommen til åpningen av utstillingen “Barnas Kunstklubb” på Lørenskog bibliotek. Gratis og åpent for alle (drop-in).",
+    "icon": "src/assets/hva-skjer/icons/default.png",
+    "images": [],
+    "readMoreLink": "https://fb.me/e/9H77Q4QGo",
+    "registrationLink": "https://fb.me/e/9H77Q4QGo",
+    "registrationText": "Drop-in"
+  },
+  {
+    "title": "Lag din egen tote-bag",
+    "date": "25. april 2026, kl. 13:00–15:00",
+    "startDate": "2026-04-25T13:00:00",
+    "place": "Lørenskog Bibliotek",
+    "price": "Gratis",
+    "description": "Bli med på verksted og lag din egen tote-bag. Arrangementet er gratis og fungerer som drop-in.",
+    "icon": "src/assets/hva-skjer/icons/default.png",
+    "images": [],
+    "readMoreLink": "https://fb.me/e/7gSXjYpls",
+    "registrationLink": "https://fb.me/e/7gSXjYpls",
+    "registrationText": "Drop-in"
   }
 ]
