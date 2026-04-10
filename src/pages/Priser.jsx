@@ -29,7 +29,7 @@ export default function Priser() {
 
   // ── JSX – identisk struktur til original HTML body ───────────────
   return (
-    <>
+    <div className="global-holder-container">
 
       <div className="pricing-section">
         <div className="pricing-section-wrapper">
@@ -219,6 +219,6 @@ export default function Priser() {
         </div>
       </div>
 
-    </>
+    </div>
   );
 }

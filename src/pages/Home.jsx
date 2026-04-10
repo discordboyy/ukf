@@ -55,7 +55,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="home-holder-container">
       {/* ── Events + Membership ── */}
       <div className="page-membership">
         {/* ── Events section ── */}
@@ -246,6 +246,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

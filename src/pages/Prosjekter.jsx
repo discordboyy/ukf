@@ -16,7 +16,7 @@ import { Pagination, Navigation } from "swiper/modules";
 
 export default function Prosjekter() {
   return (
-    <>
+    <div className="global-holder-container">
       <div id="header"></div>
 
       <div className="project-section">
@@ -173,6 +173,6 @@ export default function Prosjekter() {
 
       <div id="contact-root"></div>
       <div id="about-root"></div>
-    </>
+    </div>
   );
 }

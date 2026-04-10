@@ -32,7 +32,7 @@ export default function HvaSkjer() {
   }, []);
 
   return (
-    <>
+    <div className="global-holder-container">
       <div className="frame-168">
         <div className="frame-157 scroll-animate">
           <img className="polygon-7" src="/src/assets/hva-skjer/Polygon 6.svg" alt="" />
@@ -77,6 +77,6 @@ export default function HvaSkjer() {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 }

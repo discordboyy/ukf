@@ -18,7 +18,7 @@ export default function OmOss() {
   }, []);
 
   return (
-    <div> {/* Parent wrapper for hele siden */}
+    <div className="global-holder-container"> {/* Parent wrapper for hele siden */}
 
       <div className="about-section-forening">
         <div className="about-content-forening">

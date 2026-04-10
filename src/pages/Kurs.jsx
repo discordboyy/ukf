@@ -28,7 +28,7 @@ export default function Kurs() {
   }, []);
 
   return (
-    <>
+    <div className="global-holder-container">
 
       <div className="course-offer-section">
         <div className="course-intro scroll-animate">
@@ -1713,6 +1713,6 @@ export default function Kurs() {
             <img src="/src/assets/nav-right.svg" alt="Neste" />
         </span>
       </div>
-    </>
+    </div>
   );
 }
