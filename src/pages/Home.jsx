@@ -12,11 +12,32 @@ import { init as initMain }            from '../js/main';
 import { init as initTestimonials }    from '../js/testimonials'
 
 const COLORS = ["red", "blue", "yellow"];
-const POLYGONS = [
-  "/src/assets/Polygon 1 (5).svg",
-  "/src/assets/Polygon 1 (1).svg",
-  "/src/assets/Polygon 1 (2).svg"
-];
+const POLYGONS = [polygon1, polygon2, polygon3];
+
+// ── Image imports ──
+
+// polygons
+import polygon1 from "../assets/Polygon 1 (5).svg";
+import polygon2 from "../assets/Polygon 1 (1).svg";
+import polygon3 from "../assets/Polygon 1 (2).svg";
+import polygonMain from "../assets/Polygon 3.svg";
+import polygonSide from "../assets/polygon-side.svg";
+import polygonArrowLeft from "../assets/Polygon arrow left.svg";
+import polygonArrowRight from "../assets/Polygon arrow right.svg";
+
+// testimonials background
+import testimonialsBg from "../assets/tilbakemeldinger/background (2).png";
+
+// partner logos
+import logo1 from "../assets/samarbeidspartner/logo-1.svg";
+import logo2 from "../assets/samarbeidspartner/logo-2.svg";
+import logo3 from "../assets/samarbeidspartner/logo-3.svg";
+import logo4 from "../assets/samarbeidspartner/logo-4.svg";
+import logo5 from "../assets/samarbeidspartner/logo-5.svg";
+import logo6 from "../assets/samarbeidspartner/logo-6.svg";
+import logo7 from "../assets/samarbeidspartner/logo-7.svg";
+import logo8 from "../assets/samarbeidspartner/logo-8.svg";
+import logo9 from "../assets/samarbeidspartner/logo-9.svg";
 
 export default function Home() {
   const [events, setEvents] = useState([]);
@@ -24,7 +45,7 @@ export default function Home() {
 
   // ── Fetch upcoming events (max 3) ──
   useEffect(() => {
-    fetch("/data/events.json")
+    fetch(`${import.meta.env.BASE_URL}data/events.json`)
       .then(res => res.json())
       .then(data => {
         const now = new Date();
@@ -102,7 +123,7 @@ export default function Home() {
             <div className="show-more-text">vis flere</div>
             <img
               className="show-more-icon"
-              src="/src/assets/Polygon 3.svg"
+              src={polygonMain}
               alt=""
             />
           </Link>
@@ -114,7 +135,7 @@ export default function Home() {
           <div className="membership-fee scroll-animate">
             <img
               className="membership-fee-icon"
-              src="/src/assets/polygon-side.svg"
+              src={polygonSide}
               alt="membership-fee-icon"
             />
             <p className="membership-fee-text">
@@ -156,7 +177,7 @@ export default function Home() {
               <br />
               og fremmer ukrainske kunstnere i Norge
             </div>
-            <img className="hero-accent" src="/src/assets/Polygon 3.svg" alt="" />
+            <img className="hero-accent" src={polygonMain} alt="" />
           </div>
         </div>
       </div>
@@ -167,18 +188,18 @@ export default function Home() {
         <div className="testimonials-list">
           <img
             className="frame-149"
-            src="/src/assets/tilbakemeldinger/background (2).png"
+            src={testimonialsBg}
             alt=""
           />
           <div className="scroll-testimonials-list">
             <img
               className="polygon-arrow-left"
-              src="/src/assets/Polygon arrow left.svg"
+              src={polygonArrowLeft}
               alt="forrige"
             />
             <img
               className="polygon-arrow-right"
-              src="/src/assets/Polygon arrow right.svg"
+              src={polygonArrowRight}
               alt="neste"
             />
           </div>
@@ -217,31 +238,31 @@ export default function Home() {
         <div className="samarbeidspartner-carousel-container">
           <div className="samarbeidspartner-carousel">
             <a href="#" className="carousel-item">
-              <img src="/src/assets/samarbeidspartner/logo-1.svg" alt="Lorenskog Kommune" />
+              <img src={logo1} alt="Lorenskog Kommune" />
             </a>
             <a href="https://www.relove.info/" className="carousel-item">
-              <img src="/src/assets/samarbeidspartner/logo-2.svg" alt="Relove" />
+              <img src={logo2} alt="Relove" />
             </a>
             <a href="#" className="carousel-item">
-              <img src="/src/assets/samarbeidspartner/logo-3.svg" alt="Ambassade" />
+              <img src={logo3} alt="Ambassade" />
             </a>
             <a href="https://www.favorittartworkshop.com/" className="carousel-item">
-              <img src="/src/assets/samarbeidspartner/logo-4.svg" alt="Favoritt" />
+              <img src={logo4} alt="Favoritt" />
             </a>
             <a href="#" className="carousel-item">
-              <img id="Oslo-Kommune" src="/src/assets/samarbeidspartner/logo-5.svg" alt="Oslo Kommune" />
+              <img id="Oslo-Kommune" src={logo5} alt="Oslo Kommune" />
             </a>
             <a href="#" className="carousel-item">
-              <img id="Akershus" src="/src/assets/samarbeidspartner/logo-6.svg" alt="Akershus" />
+              <img id="Akershus" src={logo6} alt="Akershus" />
             </a>
             <a href="#" className="carousel-item">
-              <img src="/src/assets/samarbeidspartner/logo-7.svg" alt="Lorenskog Bibliotek" />
+              <img src={logo7} alt="Lorenskog Bibliotek" />
             </a>
             <a href="#" className="carousel-item">
-              <img id="Verdensfolk" src="/src/assets/samarbeidspartner/logo-8.svg" alt="Verdensfolk" />
+              <img id="Verdensfolk" src={logo8} alt="Verdensfolk" />
             </a>
             <a href="#" className="carousel-item">
-              <img id="Sentralen" src="/src/assets/samarbeidspartner/logo-9.svg" alt="Sentralen" />
+              <img id="Sentralen" src={logo9} alt="Sentralen" />
             </a>
           </div>
         </div>
