@@ -22,7 +22,8 @@ import polygon from "../assets/Polygon 1 (5).svg";
 import romberKnapp2 from "../assets/kurs/romber_knapp2 (2).svg";
 import rombeBlue from "../assets/rombe-blue.svg";
 import romberKnappYellow from "../assets/kurs/romber_knapp yellow.svg";
-
+import polygon1 from "../assets/Polygon 1 (1).svg";
+import polygon2 from "../assets/Polygon 1 (2).svg";
 
 export default function Kurs() {
 
@@ -558,7 +559,7 @@ export default function Kurs() {
 
                     <div className="course-toggle">
                         <div className="utvide blue"></div>
-                        <img className="rombe" src="src/assets/Polygon 1 (1).svg" />
+                        <img className="rombe" src={polygon1} />
                     </div>
                 </div>
             </div>
@@ -679,7 +680,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide blue"></div>
-                  <img className="rombe" src="/src/assets/Polygon 1 (1).svg" alt="" />
+                  <img className="rombe" src={polygon1} alt="" />
                 </div>
 
               </div>
@@ -791,7 +792,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide blue"></div>
-                  <img className="rombe" src="/src/assets/Polygon 1 (1).svg" alt="" />
+                  <img className="rombe" src={polygon1} alt="" />
                 </div>
 
               </div>
@@ -898,7 +899,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide yellow"></div>
-                  <img className="rombe" src="/src/assets/Polygon 1 (2).svg" alt="" />
+                  <img className="rombe" src={polygon2} alt="" />
                 </div>
 
               </div>
@@ -1008,7 +1009,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide yellow"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (2).svg" alt="" />
+                  <img className="rombe" src={polygon2} alt="" />
                 </div>
 
               </div>
@@ -1228,7 +1229,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide yellow"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (2).svg" alt="" />
+                  <img className="rombe" src={polygon2} alt="" />
                 </div>
 
               </div>
