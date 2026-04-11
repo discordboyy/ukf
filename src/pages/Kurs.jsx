@@ -24,6 +24,12 @@ import rombeBlue from "../assets/rombe-blue.svg";
 import romberKnappYellow from "../assets/kurs/romber_knapp yellow.svg";
 import polygon1 from "../assets/Polygon 1 (1).svg";
 import polygon2 from "../assets/Polygon 1 (2).svg";
+import rombeYellow from "../assets/rombe-yellow.svg";
+import navLeft from "../assets/nav-left.svg";
+import navRight from "../assets/nav-right.svg";
+
+// imgs
+
 
 export default function Kurs() {
 
@@ -850,17 +856,17 @@ export default function Kurs() {
                     <div className="skills-list">
 
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="/src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Grunnleggende akvarellteknikk og fargeblanding</div>
                       </div>
 
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="/src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Kreativ bruk av vann og tekstur</div>
                       </div>
 
                       <div className="skill-item yellow" style={{ marginTop: "-40px" }}>
-                        <img className="rombe-item-yellow" src="/src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Lage abstrakte og personlige motiver</div>
                       </div>
 
@@ -964,11 +970,11 @@ export default function Kurs() {
                     <div className="skills-title yellow">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Bruk av elektroverktøy og diamanttilbehør</div>
                       </div>
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Glassgraveringsteknikk</div>
                       </div>
                     </div>
@@ -1072,11 +1078,11 @@ export default function Kurs() {
                     <div className="skills-title yellow">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Bruk av elektroverktøy og diamanttilbehør</div>
                       </div>
                       <div className="skill-item yellow">
-                        <img className="rombe-item-yellow" src="src/assets/rombe-yellow.svg" alt="" />
+                        <img className="rombe-item-yellow" src={rombeYellow} alt="" />
                         <div className="skill-item-text-yellow">Glassgraveringsteknikk</div>
                       </div>
                     </div>
@@ -1718,13 +1724,13 @@ export default function Kurs() {
         <span className="close" id="modalClose">&times;</span>
 
         <span className="nav prev" id="modalPrev">
-            <img src="/src/assets/nav-left.svg" alt="Forrige" />
+            <img src={navLeft} alt="Forrige" />
         </span>
 
         <img id="modalImage" alt="Preview" />
 
         <span className="nav next" id="modalNext">
-            <img src="/src/assets/nav-right.svg" alt="Neste" />
+            <img src={navRight} alt="Neste" />
         </span>
       </div>
     </div>
