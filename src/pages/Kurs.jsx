@@ -11,6 +11,18 @@ import { init as initScrollAnimation } from "../js/scroll-animation";
 import { init as initMain } from "../js/main";
 import { initKurs } from "../js/kurs";
 
+// imports
+import vector1 from "../assets/kurs/Vector 1.svg";
+import romberKnapp from "../assets/kurs/romber_knapp.svg";
+import pileFullBla from "../assets/kurs/pile_full_bla.svg";
+import romberKnappRed from "../assets/kurs/romber_knapp red.svg";
+import pileFullBla1 from "../assets/kurs/pile_full_bla 1.svg";
+import rombeRed from "../assets/rombe-red.svg";
+import polygon from "../assets/Polygon 1 (5).svg";
+import romberKnapp2 from "../assets/kurs/romber_knapp2 (2).svg";
+import rombeBlue from "../assets/rombe-blue.svg";
+import romberKnappYellow from "../assets/kurs/romber_knapp yellow.svg";
+
 
 export default function Kurs() {
 
@@ -34,7 +46,7 @@ export default function Kurs() {
         <div className="course-intro scroll-animate">
           <img
             className="course-intro-icon"
-            src="/src/assets/kurs/Vector 1.svg"
+            src={vector1}
             alt=""
           />
           <div className="course-intro-text">
@@ -69,14 +81,14 @@ export default function Kurs() {
           <a href="#contact-section-id" className="course-contact">
             <img
               className="course-contact-icon"
-              src="/src/assets/kurs/romber_knapp.svg"
+              src={romberKnapp}
               alt=""
             />
             <div className="course-contact-button">
               <div className="contact-text">Kontakt oss</div>
               <img
                 className="contact-arrow-icon"
-                src="/src/assets/kurs/pile_full_bla.svg"
+                src={pileFullBla}
                 alt=""
               />
             </div>
@@ -205,15 +217,15 @@ export default function Kurs() {
                   <Link to="/priser" className="price-href">
                     <img
                       className="romber-knapp-2-2-1"
-                      src="/src/assets/kurs/romber_knapp red.svg"
+                      src={romberKnappRed}
                       alt=""
                     />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
                       <img
                         className="pile-full-bla-1"
-                        src="/src/assets/kurs/pile_full_bla 1.svg"
-                        alt=""
+                        src={pileFullBla1}
+                        alt="Pil"
                       />
                     </div>
                   </Link>
@@ -244,28 +256,28 @@ export default function Kurs() {
                   <div className="skills-list">
 
                     <div className="skill-item red">
-                      <img className="rombe-item-red" src="/src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">
                         Materialkunnskap og bruk av tekstiler
                       </div>
                     </div>
 
                     <div className="skill-item red">
-                      <img className="rombe-item-red" src="/src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">
                         Revers-tenkning som kreativ metode
                       </div>
                     </div>
 
                     <div className="skill-item red">
-                      <img className="rombe-item-red" src="/src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">
                         Ulike teknikker for knuter og sammenføyning
                       </div>
                     </div>
 
                     <div className="skill-item red">
-                      <img className="rombe-item-red" src="/src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">
                         Enkel håndsøm (valgfritt)
                       </div>
@@ -302,15 +314,15 @@ export default function Kurs() {
                   <Link to="/priser" className="price-href">
                     <img
                       className="romber-knapp-2-2-1"
-                      src="/src/assets/kurs/romber_knapp red.svg"
+                      src={romberKnappRed}
                       alt=""
                     />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
                       <img
                         className="pile-full-bla-1"
-                        src="/src/assets/kurs/pile_full_bla 1.svg"
-                        alt=""
+                        src={pileFullBla1}
+                        alt="Pil"
                       />
                     </div>
                   </Link>
@@ -320,7 +332,7 @@ export default function Kurs() {
 
               <div className="course-toggle">
                 <div className="utvide red"></div>
-                <img className="rombe" src="/src/assets/Polygon 1 (5).svg" alt="" />
+                <img className="rombe" src={polygon} alt="" />
               </div>
 
             </div>
@@ -356,7 +368,8 @@ export default function Kurs() {
                                     <div className="pris">PRIS</div>
                                     <img
                                         className="pile-full-bla-1"
-                                        src="src/assets/kurs/pile_full_bla 1.svg"
+                                        src={pileFullBla1}
+                                        alt="Pil"
                                     />
                                 </div>
                             </Link>
@@ -381,25 +394,25 @@ export default function Kurs() {
                             <div className="skills-title red">Hva lærer du</div>
                             <div className="skills-list">
                                 <div className="skill-item red2">
-                                    <img className="rombe-item-red" src="src/assets/rombe-red.svg" />
+                                    <img className="rombe-item-red" src={rombeRed} />
                                     <div className="skill-item-text-red">
                                         Trearbeid med elektriske verktøy
                                     </div>
                                 </div>
                                 <div className="skill-item red2">
-                                    <img className="rombe-item-red" src="src/assets/rombe-red.svg" />
+                                    <img className="rombe-item-red" src={rombeRed} />
                                     <div className="skill-item-text-red">
                                         Pussing, boring og polering
                                     </div>
                                 </div>
                                 <div className="skill-item red2">
-                                    <img className="rombe-item-red" src="src/assets/rombe-red.svg" />
+                                    <img className="rombe-item-red" src={rombeRed} />
                                     <div className="skill-item-text-red">
                                         Dekorering: liming og maling
                                     </div>
                                 </div>
                                 <div className="skill-item red2">
-                                    <img className="rombe-item-red" src="src/assets/rombe-red.svg" />
+                                    <img className="rombe-item-red" src={rombeRed} />
                                     <div className="skill-item-text-red">
                                         Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og limpistol
                                     </div>
@@ -437,7 +450,7 @@ export default function Kurs() {
                                     <div className="pris">PRIS</div>
                                     <img
                                         className="pile-full-bla-1"
-                                        src="src/assets/kurs/pile_full_bla 1.svg"
+                                        src={pileFullBla1}
                                     />
                                 </div>
                             </Link>
@@ -446,7 +459,7 @@ export default function Kurs() {
 
                     <div className="course-toggle">
                         <div className="utvide red"></div>
-                        <img className="rombe" src="src/assets/Polygon 1 (5).svg" />
+                        <img className="rombe" src={polygon} />
                     </div>
                 </div>
             </div>
@@ -471,10 +484,10 @@ export default function Kurs() {
                                 </div>
                             </div>
                             <Link to="/priser" className="price-href">
-                                <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp2 (2).svg" />
+                                <img className="romber-knapp-2-2-1" src={romberKnapp2} />
                                 <div className="frame-47">
                                     <div className="pris">PRIS</div>
-                                    <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" />
+                                    <img className="pile-full-bla-1" src={pileFullBla1} />
                                 </div>
                             </Link>
                         </div>
@@ -497,20 +510,20 @@ export default function Kurs() {
                             <div className="skills-title blue">Hva lærer du</div>
                             <div className="skills-list">
                                 <div className="skill-item">
-                                    <img className="rombe-item-blue" src="src/assets/rombe-blue.svg" />
+                                    <img className="rombe-item-blue" src={rombeBlue} />
                                     <div className="skill-item-text-blue">Grunnleggende håndgrep i hekling
                                     </div>
                                 </div>
                                 <div className="skill-item" id="smykker-skill-item-css">
-                                    <img className="rombe-item-blue" src="src/assets/rombe-blue.svg" />
+                                    <img className="rombe-item-blue" src={rombeBlue} />
                                     <div className="skill-item-text-blue">Den første grunnmasken (luftmaske)</div>
                                 </div>
                                 <div className="skill-item">
-                                    <img className="rombe-item-blue" src="src/assets/rombe-blue.svg" />
+                                    <img className="rombe-item-blue" src={rombeBlue} />
                                     <div className="skill-item-text-blue">Materialkunnskap og trådvalg</div>
                                 </div>
                                 <div className="skill-item">
-                                    <img className="rombe-item-blue" src="src/assets/rombe-blue.svg" />
+                                    <img className="rombe-item-blue" src={rombeBlue} />
                                     <div className="skill-item-text-blue">Hvordan velge riktig heklenål</div>
                                 </div>
                             </div>
@@ -534,10 +547,10 @@ export default function Kurs() {
                                 <div className="course-duration-value blue">2 timer</div>
                             </div>
                             <Link to="/priser" className="price-href">
-                                <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp2 (2).svg" />
+                                <img className="romber-knapp-2-2-1" src={romberKnapp2} />
                                 <div className="frame-47">
                                     <div className="pris">PRIS</div>
-                                    <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" />
+                                    <img className="pile-full-bla-1" src={pileFullBla1} />
                                 </div>
                             </Link>
                         </div>
@@ -574,10 +587,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnapp2} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -605,27 +618,27 @@ export default function Kurs() {
                     <div className="skills-list">
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Grunnleggende håndgrep i hekling</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Luftmaske og fastmaske</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Materialkunnskap og trådvalg</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Hvordan velge riktig heklenål</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Kreative tips for bruk av restegarn</div>
                       </div>
 
@@ -655,10 +668,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnapp2} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -696,10 +709,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnapp2} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -727,17 +740,17 @@ export default function Kurs() {
                     <div className="skills-list">
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Grunnleggende blokktrykk på tekstil</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Enkle broderisting</div>
                       </div>
 
                       <div className="skill-item">
-                        <img className="rombe-item-blue" src="/src/assets/rombe-blue.svg" alt="" />
+                        <img className="rombe-item-blue" src={rombeBlue} alt="" />
                         <div className="skill-item-text-blue">Enkel søm og montering</div>
                       </div>
 
@@ -767,10 +780,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp2 (2).svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnapp2} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -805,10 +818,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -874,10 +887,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="/src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="/src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -919,10 +932,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -984,10 +997,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1027,10 +1040,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1092,10 +1105,10 @@ export default function Kurs() {
                     </div>
 
                     <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp yellow.svg" alt="" />
+                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>            <div className="course-card" data-category="visuell-kunst julverksted glass" id="glassgravering-juleverksted-card-css">
@@ -1128,7 +1141,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1158,11 +1171,11 @@ export default function Kurs() {
                     <div className="skills-title red">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Bruk av elektroverktøy og diamanttilbehør</div>
                       </div>
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Glassgraveringsteknikk</div>
                       </div>
                     </div>
@@ -1197,7 +1210,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1205,7 +1218,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide red"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (5).svg" alt="" />
+                  <img className="rombe" src={polygon} alt="" />
                 </div>
 
               </div>
@@ -1255,7 +1268,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1282,19 +1295,19 @@ export default function Kurs() {
                     <div className="skills-title red">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Materialkunnskap og bruk av tekstiler</div>
                       </div>
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Tradisjonelle teknikker for snurring og knyting</div>
                       </div>
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Estetiske prinsipper i Motanka-tradisjonen</div>
                       </div>
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Kreative variasjoner og symbolikk knyttet til englefiguren</div>
                       </div>
                     </div>
@@ -1326,7 +1339,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1334,7 +1347,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide red"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (5).svg" alt="" />
+                  <img className="rombe" src={polygon} alt="" />
                 </div>
 
               </div>
@@ -1368,7 +1381,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1395,19 +1408,19 @@ export default function Kurs() {
                     <div className="skills-title red">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item red" id="nissefjes-item-css">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Trearbeid med elektriske verktøy</div>
                       </div>
                       <div className="skill-item red" id="nissefjes-item-css">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Pussing, boring og polering</div>
                       </div>
                       <div className="skill-item red" id="nissefjes-item-css">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Dekorering: liming og maling</div>
                       </div>
                       <div className="skill-item red" id="nissefjes-item-css">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">
                           Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og slipemaskin
                         </div>
@@ -1444,7 +1457,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1452,7 +1465,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide red"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (5).svg" alt="" />
+                  <img className="rombe" src={polygon} alt="" />
                 </div>
 
               </div>
@@ -1490,7 +1503,7 @@ export default function Kurs() {
                     <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
-                      <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                      <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                     </div>
                   </Link>
                 </div>
@@ -1517,19 +1530,19 @@ export default function Kurs() {
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
                     <div className="skill-item red" id="julepynt-item-css">
-                      <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">Trearbeid med elektriske verktøy</div>
                     </div>
                     <div className="skill-item red" id="julepynt-item-css">
-                      <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">Pussing, boring og polering</div>
                     </div>
                     <div className="skill-item red" id="julepynt-item-css">
-                      <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">Dekorering: liming og maling</div>
                     </div>
                     <div className="skill-item red" id="julepynt-item-css">
-                      <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                      <img className="rombe-item-red" src={rombeRed} alt="" />
                       <div className="skill-item-text-red">
                         Bruk av elektriske verktøy: kontursag, multimaskin, drillstasjon og slipemaskin
                       </div>
@@ -1566,7 +1579,7 @@ export default function Kurs() {
                     <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                     <div className="frame-47">
                       <div className="pris">PRIS</div>
-                      <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                      <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                     </div>
                   </Link>
                 </div>
@@ -1574,7 +1587,7 @@ export default function Kurs() {
 
               <div className="course-toggle">
                 <div className="utvide red"></div>
-                <img className="rombe" src="src/assets/Polygon 1 (5).svg" alt="" />
+                <img className="rombe" src={polygon} alt="" />
               </div>
 
             </div>
@@ -1612,7 +1625,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1642,11 +1655,11 @@ export default function Kurs() {
                     <div className="skills-title red">Hva lærer du</div>
                     <div className="skills-list">
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Bruk av elektroverktøy og diamanttilbehør</div>
                       </div>
                       <div className="skill-item red">
-                        <img className="rombe-item-red" src="src/assets/rombe-red.svg" alt="" />
+                        <img className="rombe-item-red" src={rombeRed} alt="" />
                         <div className="skill-item-text-red">Glassgraveringsteknikk</div>
                       </div>
                     </div>
@@ -1681,7 +1694,7 @@ export default function Kurs() {
                       <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
                       <div className="frame-47">
                         <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src="src/assets/kurs/pile_full_bla 1.svg" alt="" />
+                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
                       </div>
                     </Link>
                   </div>
@@ -1689,7 +1702,7 @@ export default function Kurs() {
 
                 <div className="course-toggle">
                   <div className="utvide red"></div>
-                  <img className="rombe" src="src/assets/Polygon 1 (5).svg" alt="" />
+                  <img className="rombe" src={polygon} alt="" />
                 </div>
 
               </div>

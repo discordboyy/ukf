@@ -9,11 +9,14 @@ import "../style/hva-skjer.css";
 import { init as initScrollAnimation } from "../js/scroll-animation";
 import { init as initMain } from "../js/main";
 
+// polygons
+import polygon6 from "../assets/hva-skjer/Polygon 6.svg";
+
 export default function HvaSkjer() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("/data/events.json")
+    fetch(`${import.meta.env.BASE_URL}data/events.json`)
       .then(res => res.json())
       .then(data => {
         const now = new Date();
@@ -35,8 +38,8 @@ export default function HvaSkjer() {
     <div className="global-holder-container">
       <div className="frame-168">
         <div className="frame-157 scroll-animate">
-          <img className="polygon-7" src="/src/assets/hva-skjer/Polygon 6.svg" alt="" />
-          <img className="polygon-6" src="/src/assets/hva-skjer/Polygon 6.svg" alt="" />
+          <img className="polygon-7" src={polygon6} alt="" />
+          <img className="polygon-6" src={polygon6} alt="" />
           <div className="hva-skjer">HVA SKJER</div>
         </div>
       </div>
