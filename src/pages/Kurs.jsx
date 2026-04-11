@@ -29,7 +29,49 @@ import navLeft from "../assets/nav-left.svg";
 import navRight from "../assets/nav-right.svg";
 
 // imgs
+import img1 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (1).JPG";
+import img6 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (6).JPG";
+import img7 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (7).JPG";
+import img9 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (9).JPG";
+import img10 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (10).JPG";
+import img11 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (11).JPG";
+import img12 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (12).JPG";
 
+import img2 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (2).jpg";
+import img4 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (4).jpg";
+import img3 from "../assets/kurs bilder/Motanka dukke/motanka-dukke-3.jpg";
+import img5 from "../assets/kurs bilder/Motanka dukke/motanka-dukke-5.jpg";
+
+const images = [
+  img1,
+  img6,
+  img7,
+  img9,
+  img10,
+  img11,
+  img12,
+  img5,
+  img3,
+  img4
+];
+
+import imgSkjerf1 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (1).JPG";
+import imgSkjerf2 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (2).JPG";
+import imgSkjerf3 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (3).JPG";
+
+const skjerfImages = [
+  imgSkjerf3,
+  imgSkjerf1,
+  imgSkjerf2
+];
+
+import imgBlokk1 from "../assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (1).jpg";
+import imgBlokk2 from "../assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (2).jpg";
+
+const blokkImages = [
+  imgBlokk1,
+  imgBlokk2
+];
 
 export default function Kurs() {
 
@@ -196,18 +238,7 @@ export default function Kurs() {
 
               <div
                 className="rectangle-2 carousel-preview"
-                data-images={`[
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (1).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (6).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (7).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (9).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (10).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (11).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (12).JPG",
-                  "/src/assets/kurs bilder/Motanka dukke/motanka-dukke-5.jpg",
-                  "/src/assets/kurs bilder/Motanka dukke/motanka-dukke-3.jpg",
-                  "/src/assets/kurs bilder/Motanka dukke/Motanka dukke (4).jpg"
-                ]`}
+                data-images={JSON.stringify(images)}
               />
 
               <div className="course-body desktop">
@@ -577,11 +608,7 @@ export default function Kurs() {
 
                 <div
                   className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "/src/assets/kurs bilder/Skjerf og pulsvarmere/img (3).JPG",
-                    "/src/assets/kurs bilder/Skjerf og pulsvarmere/img (1).JPG",
-                    "/src/assets/kurs bilder/Skjerf og pulsvarmere/img (2).JPG"
-                  ]`}
+                  data-images={JSON.stringify(skjerfImages)}
                 />
 
                 <div className="course-body desktop">
@@ -700,10 +727,7 @@ export default function Kurs() {
 
                 <div
                   className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "/src/assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (1).jpg",
-                    "/src/assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (2).jpg"
-                  ]`}
+                  data-images={JSON.stringify(blokkImages)}
                 />
 
                 <div className="course-body desktop">
