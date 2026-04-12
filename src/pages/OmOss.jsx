@@ -7,7 +7,6 @@ import "../style/om-oss.css";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
-import { init as initMain } from "../js/main";
 import { initKurs } from "../js/kurs"; // hvis du også trenger kurs-init
 
 export default function OmOss() {

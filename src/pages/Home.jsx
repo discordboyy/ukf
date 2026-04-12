@@ -8,7 +8,6 @@ import '../style/tilbakemeldinger.css';
 
 // ── JS module imports
 import { init as initScrollAnimation } from '../js/scroll-animation';
-import { init as initMain }            from '../js/main';
 import { init as initTestimonials }    from '../js/testimonials'
 
 const COLORS = ["red", "blue", "yellow"];
@@ -71,7 +70,6 @@ export default function Home() {
   // ── Init other JS modules
   useEffect(() => {
     initScrollAnimation();
-    initMain();
     initTestimonials();
   }, []);
 

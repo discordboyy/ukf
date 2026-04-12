@@ -7,7 +7,6 @@ import "../style/hva-skjer.css";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
-import { init as initMain } from "../js/main";
 
 // polygons
 import polygon6 from "../assets/hva-skjer/Polygon 6.svg";

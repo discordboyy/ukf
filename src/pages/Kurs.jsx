@@ -8,7 +8,6 @@ import "../style/kurs.css";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
-import { init as initMain } from "../js/main";
 import { initKurs } from "../js/kurs";
 
 // imports
