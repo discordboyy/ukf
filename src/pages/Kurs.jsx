@@ -11,35 +11,42 @@ import { init as initScrollAnimation } from "../js/scroll-animation";
 import { initKurs } from "../js/kurs";
 
 // imports
-import vector1 from "../assets/kurs/Vector 1.svg";
+import vector1 from "../assets/kurs/Vector-1.svg";
 import romberKnapp from "../assets/kurs/romber_knapp.svg";
 import pileFullBla from "../assets/kurs/pile_full_bla.svg";
-import romberKnappRed from "../assets/kurs/romber_knapp red.svg";
-import pileFullBla1 from "../assets/kurs/pile_full_bla 1.svg";
+import romberKnappRed from "../assets/kurs/romber_knapp-red.svg";
+import pileFullBla1 from "../assets/kurs/pile_full_bla.svg";
 import rombeRed from "../assets/rombe-red.svg";
-import polygon from "../assets/Polygon 1 (5).svg";
-import romberKnapp2 from "../assets/kurs/romber_knapp2 (2).svg";
+import polygon from "../assets/kurs/Polygon-1-5.svg";
+import romberKnapp2 from "../assets/kurs/romber_knapp2-2.svg";
 import rombeBlue from "../assets/rombe-blue.svg";
-import romberKnappYellow from "../assets/kurs/romber_knapp yellow.svg";
-import polygon1 from "../assets/Polygon 1 (1).svg";
-import polygon2 from "../assets/Polygon 1 (2).svg";
+import romberKnappYellow from "../assets/kurs/romber_knapp-yellow.svg";
+import polygon1 from "../assets/kurs/Polygon-1-1.svg";
+import polygon2 from "../assets/kurs/Polygon-1-2.svg";
 import rombeYellow from "../assets/rombe-yellow.svg";
 import navLeft from "../assets/nav-left.svg";
 import navRight from "../assets/nav-right.svg";
 
 // imgs
-import img1 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (1).JPG";
-import img6 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (6).JPG";
-import img7 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (7).JPG";
-import img9 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (9).JPG";
-import img10 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (10).JPG";
-import img11 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (11).JPG";
-import img12 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (12).JPG";
+import img1 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-1.JPG";
+import img6 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-6.JPG";
+import img7 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-7.JPG";
+import img9 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-9.JPG";
+import img10 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-10.JPG";
+import img11 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-11.JPG";
+import img12 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-12.JPG";
 
-import img2 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (2).jpg";
-import img4 from "../assets/kurs bilder/Motanka dukke/Motanka dukke (4).jpg";
-import img3 from "../assets/kurs bilder/Motanka dukke/motanka-dukke-3.jpg";
-import img5 from "../assets/kurs bilder/Motanka dukke/motanka-dukke-5.jpg";
+import img2 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-2.jpg";
+import img4 from "../assets/kurs-bilder/Motanka-dukke/Motanka-dukke-4.jpg";
+import img3 from "../assets/kurs-bilder/Motanka-dukke/motanka-dukke-3.jpg";
+import img5 from "../assets/kurs-bilder/Motanka-dukke/motanka-dukke-5.jpg";
+
+import imgSkjerf1 from "../assets/kurs-bilder/Skjerf-og-pulsvarmere/img-1.JPG";
+import imgSkjerf2 from "../assets/kurs-bilder/Skjerf-og-pulsvarmere/img-2.JPG";
+import imgSkjerf3 from "../assets/kurs-bilder/Skjerf-og-pulsvarmere/img-3.JPG";
+
+import imgBlokk1 from "../assets/kurs-bilder/Blokktrykk-og-broderi/Blokktrykk-og-broderi-1.jpg";
+import imgBlokk2 from "../assets/kurs-bilder/Blokktrykk-og-broderi/Blokktrykk-og-broderi-2.jpg";
 
 const images = [
   img1,
@@ -54,18 +61,11 @@ const images = [
   img4
 ];
 
-import imgSkjerf1 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (1).JPG";
-import imgSkjerf2 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (2).JPG";
-import imgSkjerf3 from "../assets/kurs bilder/Skjerf og pulsvarmere/img (3).JPG";
-
 const skjerfImages = [
   imgSkjerf3,
   imgSkjerf1,
   imgSkjerf2
 ];
-
-import imgBlokk1 from "../assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (1).jpg";
-import imgBlokk2 from "../assets/kurs bilder/Blokktrykk og broderi/Blokktrykk og broderi (2).jpg";
 
 const blokkImages = [
   imgBlokk1,
