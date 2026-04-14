@@ -31,7 +31,7 @@ export default function OmOss() {
               <div className="about-header scroll-animate">
                 <img
                   className="about-header-icon"
-                  src="src/assets/omoss/Vector 2.svg"
+                  src="src/assets/omoss/Vector-2.svg"
                   alt="Om oss ikon"
                 />
                 <div className="om-oss">OM OSS</div>
@@ -141,7 +141,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Julia Favoritova.png"
+              src="src/assets/omoss/Julia-Favoritova.png"
               alt="Julia Favoritova"
             />
             <div className="board-member-content">
@@ -165,7 +165,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Katya Bukhantsova.png"
+              src="src/assets/omoss/Katya-Bukhantsova.png"
               alt="Katya Bukhantsova"
             />
             <div className="board-member-content">
@@ -192,7 +192,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Anna Lubchenko.jpg"
+              src="src/assets/omoss/Anna-Lubchenko.jpg"
               alt="Anna Lubchenko"
             />
             <div className="board-member-content">
