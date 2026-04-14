@@ -155,7 +155,7 @@ export default function Prosjekter() {
           >
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img-2.jpg" />
+              <img src="src/assets/prosjekter/Frognerparken-2025/img-6.jpg" />
             </SwiperSlide>
 
             <SwiperSlide>
@@ -164,6 +164,10 @@ export default function Prosjekter() {
 
             <SwiperSlide>
               <img src="src/assets/prosjekter/Frognerparken-2025/img-4.jpg" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img src="src/assets/prosjekter/Frognerparken-2025/img-5.jpg" />
             </SwiperSlide>
 
           </Swiper>
