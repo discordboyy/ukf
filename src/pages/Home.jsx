@@ -16,13 +16,15 @@ const POLYGONS = [polygon1, polygon2, polygon3];
 // ── Image imports ──
 
 // polygons
-import polygon1 from "../assets/Polygon 1 (5).svg";
-import polygon2 from "../assets/Polygon 1 (1).svg";
-import polygon3 from "../assets/Polygon 1 (2).svg";
-import polygonMain from "../assets/Polygon 3.svg";
+import polygon1 from "../assets/Polygon-1-5.svg";
+import polygon2 from "../assets/Polygon-1-1.svg";
+import polygon3 from "../assets/Polygon-1-2.svg";
+
+import polygonMain from "../assets/Polygon-3.svg";
 import polygonSide from "../assets/polygon-side.svg";
-import polygonArrowLeft from "../assets/Polygon arrow left.svg";
-import polygonArrowRight from "../assets/Polygon arrow right.svg";
+
+import polygonArrowLeft from "../assets/Polygon-arrow-left.svg";
+import polygonArrowRight from "../assets/Polygon-arrow-right.svg";
 
 // testimonials background
 import testimonialsBg from "../assets/tilbakemeldinger/background (2).png";

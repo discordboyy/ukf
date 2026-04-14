@@ -9,7 +9,7 @@ import "../style/hva-skjer.css";
 import { init as initScrollAnimation } from "../js/scroll-animation";
 
 // polygons
-import polygon6 from "../assets/hva-skjer/Polygon 6.svg";
+import polygon6 from "../assets/hva-skjer/Polygon-6.svg";
 
 export default function HvaSkjer() {
   const [events, setEvents] = useState([]);
