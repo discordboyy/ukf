@@ -84,7 +84,6 @@ export default function Kurs() {
   useEffect(() => {
     initKurs();
     initScrollAnimation();
-    initMain();
   }, []);
 
   return (

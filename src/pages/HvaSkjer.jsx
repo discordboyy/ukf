@@ -30,7 +30,6 @@ export default function HvaSkjer() {
 
   useEffect(() => {
     initScrollAnimation();
-    initMain();
   }, []);
 
   return (

@@ -13,7 +13,6 @@ export default function OmOss() {
   useEffect(() => {
     initKurs(); // bare hvis nødvendig, ellers fjern
     initScrollAnimation();
-    initMain();
   }, []);
 
   return (
