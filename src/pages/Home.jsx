@@ -27,7 +27,7 @@ import polygonArrowLeft from "../assets/Polygon-arrow-left.svg";
 import polygonArrowRight from "../assets/Polygon-arrow-right.svg";
 
 // testimonials background
-import testimonialsBg from "../assets/tilbakemeldinger/background (2).png";
+import testimonialsBg from "../assets/tilbakemeldinger/background-2.png";
 
 // partner logos
 import logo1 from "../assets/samarbeidspartner/logo-1.svg";
