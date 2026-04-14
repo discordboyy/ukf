@@ -117,7 +117,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src="src/assets/prosjekter/Frognerparken-2025/img (1).jpg" alt="" />
+              <img className="project-image-placeholder" src="src/assets/prosjekter/Frognerparken-2025/img-1.jpg" alt="" />
 
               <p className="project-descriptio">
                 <span>
@@ -155,15 +155,15 @@ export default function Prosjekter() {
           >
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img (1).jpg" />
+              <img src="src/assets/prosjekter/Frognerparken-2025/img-2.jpg" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img (3).jpg" />
+              <img src="src/assets/prosjekter/Frognerparken-2025/img-3.jpg" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img (4).jpg" />
+              <img src="src/assets/prosjekter/Frognerparken-2025/img-4.jpg" />
             </SwiperSlide>
 
           </Swiper>
