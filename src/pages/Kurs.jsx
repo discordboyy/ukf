@@ -915,13 +915,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -984,13 +981,10 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2–2,5 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>
                 </div>
 
@@ -1019,13 +1013,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -1084,13 +1075,10 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>
                 </div>
 
@@ -1119,13 +1107,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -1184,13 +1169,10 @@ export default function Kurs() {
                       <div className="course-duration-value yellow">2 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src={romberKnappYellow} alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink
+                      buttonImage={romberKnappYellow}
+                      arrowImage={pileFullBla1}
+                    />
                   </div>            <div className="course-card" data-category="visuell-kunst julverksted glass" id="glassgravering-juleverksted-card-css">
 
               <div className="course-card-accent red">
@@ -1220,7 +1202,7 @@ export default function Kurs() {
 
               </div>
 
-            </div>
+              </div>
                 </div>
 
                 <div className="course-toggle">
