@@ -378,13 +378,13 @@ export default function Kurs() {
                 <div className="course-card-accent red">
                     <div className="rectangle-2 carousel-preview"
                         data-images='[
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 1.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 2.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 3.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 4.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 5.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 6.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde 7.jpg"
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-1.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-2.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-3.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-4.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-5.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-6.jpg",
+                            "src/assets/kurs-bilder/Miniatyrby/bilde-7.jpg"
                         ]'>
                     </div>
                     <div className="course-body desktop">
@@ -504,11 +504,11 @@ export default function Kurs() {
                 <div className="course-card-accent blue">
                     <div className="rectangle-2 carousel-preview"
                         data-images='[
-                            "src/assets/kurs-bilder/Smykker/img (1).JPG",
-                            "src/assets/kurs-bilder/Smykker/img (2).JPG",
-                            "src/assets/kurs-bilder/Smykker/img (3).JPG",
-                            "src/assets/kurs-bilder/Smykker/img (4).JPG",
-                            "src/assets/kurs-bilder/Smykker/img (5).JPG"
+                            "src/assets/kurs-bilder/Smykker/img-1.JPG",
+                            "src/assets/kurs-bilder/Smykker/img-2.JPG",
+                            "src/assets/kurs-bilder/Smykker/img-3.JPG",
+                            "src/assets/kurs-bilder/Smykker/img-4.JPG",
+                            "src/assets/kurs-bilder/Smykker/img-5.JPG"
                         ]'>
                     </div>
                     <div className="course-body desktop">
@@ -942,12 +942,12 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder/img (1).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img (2).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img (3).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img (4).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img (5).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img (6).jpg"
+                    "src/assets/kurs-bilder/Glasslysholder/img-1.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder/img-2.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder/img-3.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder/img-4.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder/img-5.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder/img-6.jpg"
                   ]`}
                 />
 
@@ -1052,10 +1052,10 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Farsdag/img (1).JPG",
-                    "src/assets/kurs-bilder/Farsdag/img (2).JPG",
-                    "src/assets/kurs-bilder/Farsdag/img (3).JPG",
-                    "src/assets/kurs-bilder/Farsdag/img (4).JPG"
+                    "src/assets/kurs-bilder/Farsdag/img-1.JPG",
+                    "src/assets/kurs-bilder/Farsdag/img-2.JPG",
+                    "src/assets/kurs-bilder/Farsdag/img-3.JPG",
+                    "src/assets/kurs-bilder/Farsdag/img-4.JPG"
                   ]`}
                 />
 
@@ -1147,12 +1147,12 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (1).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (2).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (3).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (4).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (5).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (6).jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-1.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-2.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-3.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-4.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-5.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-6.jpg",
                     "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (7).jpg"
                   ]`}
                 />
@@ -1272,15 +1272,15 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Motanka engel/img (1).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (2).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (3).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (4).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (5).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (6).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (7).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (8).JPG",
-                    "src/assets/kurs-bilder/Motanka engel/img (9).JPG"
+                    "src/assets/kurs-bilder/Motanka-engel/img-1.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-2.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-3.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-4.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-5.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-6.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-7.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-8.JPG",
+                    "src/assets/kurs-bilder/Motanka-engel/img-9.JPG"
                   ]`}
                 />
 
@@ -1391,9 +1391,9 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Nissefjes/img (1).JPG",
-                    "src/assets/kurs-bilder/Nissefjes/img (2).JPG",
-                    "src/assets/kurs-bilder/Nissefjes/img (3).JPG"
+                    "src/assets/kurs-bilder/Nissefjes/img-1.JPG",
+                    "src/assets/kurs-bilder/Nissefjes/img-2.JPG",
+                    "src/assets/kurs-bilder/Nissefjes/img-3.JPG"
                   ]`}
                 />
 
@@ -1509,13 +1509,13 @@ export default function Kurs() {
               <div
                 className="rectangle-2 carousel-preview"
                 data-images={`[
-                  "src/assets/kurs-bilder/Julepynt/img (1).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (2).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (3).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (4).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (5).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (6).JPG",
-                  "src/assets/kurs-bilder/Julepynt/img (7).JPG"
+                  "src/assets/kurs-bilder/Julepynt/img-1.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-2.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-3.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-4.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-5.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-6.JPG",
+                  "src/assets/kurs-bilder/Julepynt/img-7.JPG"
                 ]`}
               />
 
@@ -1631,13 +1631,13 @@ export default function Kurs() {
                 <div
                   className="rectangle-2 carousel-preview"
                   data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (1).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (2).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (3).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (4).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (5).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (6).jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (7).jpg"
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-1.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-2.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-3.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-4.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-5.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-6.jpg",
+                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-7.jpg"
                   ]`}
                 />
 
