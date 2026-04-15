@@ -9,7 +9,7 @@ import "../style/hva-skjer.css";
 import { init as initScrollAnimation } from "../js/scroll-animation";
 
 // polygons
-import polygon6 from "../assets/hva-skjer/Polygon-6.svg";
+const polygon6 = "/hva-skjer/Polygon-6.svg";
 
 export default function HvaSkjer() {
   const [events, setEvents] = useState([]);
@@ -71,7 +71,7 @@ export default function HvaSkjer() {
               </div>
               <div className="event-imgs-gallery">
                 {event.images.map((img, i) => (
-                  <img key={i} className="event-gallery-img" src={img} loading="lazy" alt="Event image" />
+                  <img key={i} src={img} loading="lazy" alt="" />
                 ))}
               </div>
             </div>
