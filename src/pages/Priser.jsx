@@ -5,6 +5,11 @@ import { useEffect } from 'react';
 import '../style/style.css';
 import '../style/priser.css';
 
+import frame64 from "../assets/Frame-64.svg";
+import sideTriangle from "../assets/side_element_trekant.svg";
+import rombeBlue from "../assets/rombe-blue.svg";
+import frame88 from "../assets/Frame-88.svg";
+
 // ── Component ──────────────────────────────────────────────────────
 export default function Priser() {
 
@@ -34,7 +39,7 @@ export default function Priser() {
       <div className="pricing-section">
         <div className="pricing-section-wrapper">
           <div className="pricing-header">
-            <img className="pricing-header-image" src="src/assets/Frame 64.svg" alt="" />
+            <img className="pricing-header-image" src={frame64} alt="" />
             <div className="pricing-header-text">
               <div className="pricing-title">PRISER</div>
               <div className="pricing-subtitle-wrapper">
@@ -54,7 +59,7 @@ export default function Priser() {
             <div className="workshop-intro-wrapper">
               <div className="workshop-intro-top">
                 <div className="workshop-intro-main scroll-animate">
-                  <img className="workshop-intro-decor-icon" src="src/assets/side_element_trekant.svg" alt="" />
+                  <img className="workshop-intro-decor-icon" src={sideTriangle} alt="" />
                   <div className="workshop-intro-title">
                     Opplev mestring, skaperglede og fellesskap!
                   </div>
@@ -92,7 +97,7 @@ export default function Priser() {
                         'Administrasjon og organisering',
                         'Trygg, støttende og inspirerende kursledelse'].map((feature, idx) => (
                           <div className="workshop-feature" key={idx}>
-                            <img className="workshop-feature-icon" src="src/assets/rombe-blue.svg" alt="" />
+                            <img className="workshop-feature-icon" src={rombeBlue} alt="" />
                             <p className="workshop-feature-title">{feature}</p>
                           </div>
                         ))}
@@ -197,7 +202,7 @@ export default function Priser() {
                 </div>
               </div>
               <div className="large-group-contact">
-                <img className="large-group-contact-image" src="src/assets/Frame 88.svg" alt="" />
+                <img className="large-group-contact-image" src={frame88} alt="" />
                 <div className="large-group-contact-text">
                   <a href="#contact-section-id" className="contact-main-text">
                     Ta kontakt for et skreddersydd opplegg
