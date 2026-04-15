@@ -14,6 +14,24 @@ import "../style/swiper.css";
 
 import { Pagination, Navigation } from "swiper/modules";
 
+// Sentralen images
+import rombRed from "../assets/prosjekter/rombs-red.svg";
+import img1751 from "../assets/prosjekter/Sentralen/IMG_1751.jpg";
+import glassgravering from "../assets/prosjekter/Sentralen/Glassgravering.PNG";
+import img1729 from "../assets/prosjekter/Sentralen/IMG_1729.jpg";
+import img1730 from "../assets/prosjekter/Sentralen/IMG_1730.jpg";
+import img1740 from "../assets/prosjekter/Sentralen/IMG_1740.jpg";
+import img1747 from "../assets/prosjekter/Sentralen/IMG_1747.jpg";
+import img1763 from "../assets/prosjekter/Sentralen/IMG_1763.jpg";
+
+// Frognerparken images
+import rombBlue from "../assets/prosjekter/rombs-blue.svg";
+import frogner1 from "../assets/prosjekter/Frognerparken-2025/img-1.jpg";
+import frogner3 from "../assets/prosjekter/Frognerparken-2025/img-3.jpg";
+import frogner4 from "../assets/prosjekter/Frognerparken-2025/img-4.jpg";
+import frogner5 from "../assets/prosjekter/Frognerparken-2025/img-5.jpg";
+import frogner6 from "../assets/prosjekter/Frognerparken-2025/img-6.jpg";
+
 export default function Prosjekter() {
   return (
     <div className="global-holder-container">
@@ -21,7 +39,7 @@ export default function Prosjekter() {
 
       <div className="project-section">
         <div className="project-container">
-          <img className="project-icon red" src="src/assets/prosjekter/rombs-red.svg" alt="Project icon" />
+          <img className="project-icon red" src={rombRed} alt="Project icon" />
           <div className="project-content">
 
             <div className="project-header">
@@ -32,7 +50,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src="src/assets/prosjekter/Sentralen/IMG_1751.jpg" alt="" />
+              <img className="project-image-placeholder" src={img1751} alt="" />
               
               <p className="project-descriptio">
                 <span>
@@ -68,25 +86,25 @@ export default function Prosjekter() {
 
             <SwiperSlide>
               <div className="slide-double">
-                <img src="src/assets/prosjekter/Sentralen/Glassgravering.PNG" alt="" />
-                <img src="src/assets/prosjekter/Sentralen/IMG_1729.jpg" alt="" />
+                <img src={glassgravering} alt="" />
+                <img src={img1729} alt="" />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1730.jpg" alt="" />
+              <img className="slide" src={img1730} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1740.jpg" alt="" />
+              <img className="slide" src={img1740} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1747.jpg" alt="" />
+              <img className="slide" src={img1747} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img className="slide" src="src/assets/prosjekter/Sentralen/IMG_1763.jpg" alt="" />
+              <img className="slide" src={img1763} alt="" />
             </SwiperSlide>
 
           </Swiper>
@@ -97,7 +115,7 @@ export default function Prosjekter() {
 
       <div className="project-section last">
         <div className="project-container">
-          <img className="project-icon blue" src="src/assets/prosjekter/rombs-blue.svg" alt="Project icon" />
+          <img className="project-icon blue" src={rombBlue} alt="Project icon" />
 
           <div className="project-content">
             <div className="project-header">
@@ -117,7 +135,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src="src/assets/prosjekter/Frognerparken-2025/img-1.jpg" alt="" />
+              <img className="project-image-placeholder" src={frogner1} alt="" />
 
               <p className="project-descriptio">
                 <span>
@@ -155,19 +173,19 @@ export default function Prosjekter() {
           >
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img-6.jpg" />
+              <img src={frogner6} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img-3.jpg" />
+              <img src={frogner3} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img-4.jpg" />
+              <img src={frogner4} alt="" />
             </SwiperSlide>
 
             <SwiperSlide>
-              <img src="src/assets/prosjekter/Frognerparken-2025/img-5.jpg" />
+              <img src={frogner5} alt="" />
             </SwiperSlide>
 
           </Swiper>
