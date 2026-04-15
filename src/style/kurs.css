@@ -337,7 +337,7 @@ html {
 }
 /* Default: desktop version shown, mobile hidden */
 .course-body.desktop {
-    display: block;
+    display: flex;
 }
 
 .course-body.mobile {
@@ -535,6 +535,12 @@ html {
 }
 #nissefjes-card-css {
   gap: 22px;
+}
+#nissefjes-age-group {
+  height: auto;
+}
+#julepynt-card-css {
+  gap: 150px;
 }
 
 .course-body-holder {
@@ -773,6 +779,9 @@ html {
 }
 #glassgravering-juleverksted-course-title-css {
   line-height: 100%;
+}
+#age-group-skjerf-css {
+  height: auto;
 }
 .course-summary-description.yellow {
   color: var(--yellow-color);
@@ -1184,6 +1193,12 @@ html {
 
 
 
+#nissefjes-item-css, #ulepynt-item-css {
+  height: 35px;
+}
+#julepynt-age-group, #glassgravering-juleverksted-age-group {
+  height: auto;
+}
 
 
 @media (max-width: 1800px) {
@@ -1274,7 +1289,7 @@ html {
     display: block;
   }
 
-  .course-card-accent, #motanka-engel-card-css, #nissefjes-card-css, .course-card-accent.red, #motanka-dukke-card-css {
+  .course-card-accent, #motanka-engel-card-css, #nissefjes-card-css, .course-card-accent.red, #motanka-dukke-card-css, #julepynt-card-css {
     gap: 20px;
   }
 
@@ -1305,7 +1320,7 @@ html {
   }
 
   .age-group {
-    width: auto;
+    width: auto; height: auto;
   }
 
   .course-card-accent {
