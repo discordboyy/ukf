@@ -9,6 +9,38 @@ import "../style/om-oss.css";
 import { init as initScrollAnimation } from "../js/scroll-animation";
 import { initKurs } from "../js/kurs"; // hvis du også trenger kurs-init
 
+// icons
+import aboutIcon from "../assets/omoss/Vector-2.svg";
+import rombRed from "../assets/rombe-red.svg";
+
+// board members
+import juliaImg from "../assets/omoss/Julia-Favoritova.png";
+import katyaImg from "../assets/omoss/Katya-Bukhantsova.png";
+import annaImg from "../assets/omoss/Anna-Lubchenko.jpg";
+
+// partner logos
+import logo1 from "../assets/omoss/logos/logo-1.svg";
+import logo2 from "../assets/omoss/logos/logo-2.svg";
+import logo3 from "../assets/omoss/logos/logo-3.svg";
+import logo4 from "../assets/omoss/logos/logo-4.svg";
+import logo5 from "../assets/omoss/logos/logo-5.svg";
+import logo6 from "../assets/omoss/logos/logo-6.svg";
+import logo7 from "../assets/omoss/logos/logo-7.svg";
+import logo8 from "../assets/omoss/logos/logo-8.svg";
+import logo9 from "../assets/omoss/logos/logo-9.svg";
+
+const logos = [
+  logo1,
+  logo2,
+  logo3,
+  logo4,
+  logo5,
+  logo6,
+  logo7,
+  logo8,
+  logo9,
+];
+
 export default function OmOss() {
   useEffect(() => {
     initKurs(); // bare hvis nødvendig, ellers fjern
@@ -31,7 +63,7 @@ export default function OmOss() {
               <div className="about-header scroll-animate">
                 <img
                   className="about-header-icon"
-                  src="src/assets/omoss/Vector-2.svg"
+                  src={aboutIcon}
                   alt="Om oss ikon"
                 />
                 <div className="om-oss">OM OSS</div>
@@ -67,7 +99,7 @@ export default function OmOss() {
               <div className="timeline-item-forening">
                 <img
                   className="timeline-icon"
-                  src="src/assets/rombe-red.svg"
+                  src={rombRed}
                   alt="Timeline ikon"
                 />
                 <div className="event-content-forening">
@@ -80,7 +112,7 @@ export default function OmOss() {
               <div className="timeline-item-forening">
                 <img
                   className="timeline-icon"
-                  src="src/assets/rombe-red.svg"
+                  src={rombRed}
                   alt="Timeline ikon"
                 />
                 <div className="event-content-forening">
@@ -141,7 +173,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Julia-Favoritova.png"
+              src={juliaImg}
               alt="Julia Favoritova"
             />
             <div className="board-member-content">
@@ -165,7 +197,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Katya-Bukhantsova.png"
+              src={katyaImg}
               alt="Katya Bukhantsova"
             />
             <div className="board-member-content">
@@ -192,7 +224,7 @@ export default function OmOss() {
           <div className="board-member-card">
             <img
               className="board-member-image"
-              src="src/assets/omoss/Anna-Lubchenko.jpg"
+              src={annaImg}
               alt="Anna Lubchenko"
             />
             <div className="board-member-content">
@@ -221,11 +253,11 @@ export default function OmOss() {
         <div className="frame-3">
           <div className="frame-2">
             <div className="frame-14">
-              {[...Array(9)].map((_, i) => (
+              {logos.map((logo, i) => (
                 <div key={i} className={`logo-${i + 1}`} id="logo-PARTNERE">
                   <img
                     className={`logo-${i + 1}-img`}
-                    src={`src/assets/omoss/logos/logo-${i + 1}.svg`}
+                    src={logo}
                     alt={`Logo ${i + 1}`}
                   />
                 </div>
