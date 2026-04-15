@@ -5,6 +5,11 @@ import { Link } from 'react-router-dom';
 // styles
 import "../style/style.css";
 import "../style/kurs.css";
+import "../style/new-kurs.css";
+
+// JS modules
+import Carousel from "../components/Carousel";
+import PriceLink from "../components/PriceLink";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
@@ -15,8 +20,9 @@ import vector1 from "../assets/kurs/Vector-1.svg";
 import romberKnapp from "../assets/kurs/romber_knapp.svg";
 import pileFullBla from "../assets/kurs/pile_full_bla.svg";
 import romberKnappRed from "../assets/kurs/romber_knapp-red.svg";
-import pileFullBla1 from "../assets/kurs/pile_full_bla.svg";
+import pileFullBla1 from "../assets/kurs/pile_full_bla-1.svg";
 import rombeRed from "../assets/rombe-red.svg";
+import emptyrombe from "../assets/kurs/rombe-empty.svg";
 import polygon from "../assets/Polygon-1-5.svg";
 import romberKnapp2 from "../assets/kurs/romber_knapp2-2.svg";
 import rombeBlue from "../assets/rombe-blue.svg";
@@ -72,6 +78,142 @@ const blokkImages = [
   imgBlokk2
 ];
 
+// Miniatyrby
+import mini1 from "../assets/kurs-bilder/Miniatyrby/bilde-1.jpg";
+import mini2 from "../assets/kurs-bilder/Miniatyrby/bilde-2.jpg";
+import mini3 from "../assets/kurs-bilder/Miniatyrby/bilde-3.jpg";
+import mini4 from "../assets/kurs-bilder/Miniatyrby/bilde-4.jpg";
+import mini5 from "../assets/kurs-bilder/Miniatyrby/bilde-5.jpg";
+import mini6 from "../assets/kurs-bilder/Miniatyrby/bilde-6.jpg";
+import mini7 from "../assets/kurs-bilder/Miniatyrby/bilde-7.jpg";
+
+const miniImages = [
+  mini1,
+  mini2,
+  mini3,
+  mini4,
+  mini5,
+  mini6,
+  mini7
+];
+
+// Glasslysholder
+import glass1 from "../assets/kurs-bilder/Glasslysholder/img-1.jpg";
+import glass2 from "../assets/kurs-bilder/Glasslysholder/img-2.jpg";
+import glass3 from "../assets/kurs-bilder/Glasslysholder/img-3.jpg";
+import glass4 from "../assets/kurs-bilder/Glasslysholder/img-4.jpg";
+import glass5 from "../assets/kurs-bilder/Glasslysholder/img-5.jpg";
+import glass6 from "../assets/kurs-bilder/Glasslysholder/img-6.jpg";
+
+const glassImages = [
+  glass1,
+  glass2,
+  glass3,
+  glass4,
+  glass5,
+  glass6
+];
+
+// Farsdag
+import fars1 from "../assets/kurs-bilder/Farsdag/img-1.JPG";
+import fars2 from "../assets/kurs-bilder/Farsdag/img-2.JPG";
+import fars3 from "../assets/kurs-bilder/Farsdag/img-3.JPG";
+import fars4 from "../assets/kurs-bilder/Farsdag/img-4.JPG";
+
+const farsdagImages = [
+  fars1,
+  fars2,
+  fars3,
+  fars4
+];
+
+// Glasslysholder Juleverksted
+import juleglass1 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-1.jpg";
+import juleglass2 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-2.jpg";
+import juleglass3 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-3.jpg";
+import juleglass4 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-4.jpg";
+import juleglass5 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-5.jpg";
+import juleglass6 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-6.jpg";
+import juleglass7 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-7.jpg";
+
+const juleGlassImages = [
+  juleglass1,
+  juleglass2,
+  juleglass3,
+  juleglass4,
+  juleglass5,
+  juleglass6,
+  juleglass7
+];
+
+// Motanka-engel
+import motanka1 from "../assets/kurs-bilder/Motanka-engel/img-1.JPG";
+import motanka2 from "../assets/kurs-bilder/Motanka-engel/img-2.JPG";
+import motanka3 from "../assets/kurs-bilder/Motanka-engel/img-3.JPG";
+import motanka4 from "../assets/kurs-bilder/Motanka-engel/img-4.JPG";
+import motanka5 from "../assets/kurs-bilder/Motanka-engel/img-5.JPG";
+import motanka6 from "../assets/kurs-bilder/Motanka-engel/img-6.JPG";
+import motanka7 from "../assets/kurs-bilder/Motanka-engel/img-7.JPG";
+import motanka8 from "../assets/kurs-bilder/Motanka-engel/img-8.JPG";
+import motanka9 from "../assets/kurs-bilder/Motanka-engel/img-9.JPG";
+
+const motankaImages = [
+  motanka1,
+  motanka2,
+  motanka3,
+  motanka4,
+  motanka5,
+  motanka6,
+  motanka7,
+  motanka8,
+  motanka9
+];
+
+// Nissefjes
+import nisse1 from "../assets/kurs-bilder/Nissefjes/img-1.JPG";
+import nisse2 from "../assets/kurs-bilder/Nissefjes/img-2.JPG";
+import nisse3 from "../assets/kurs-bilder/Nissefjes/img-3.JPG";
+
+const nisseImages = [
+  nisse1,
+  nisse2,
+  nisse3
+];
+
+// Julepynt
+import julepynt1 from "../assets/kurs-bilder/Julepynt/img-1.JPG";
+import julepynt2 from "../assets/kurs-bilder/Julepynt/img-2.JPG";
+import julepynt3 from "../assets/kurs-bilder/Julepynt/img-3.JPG";
+import julepynt4 from "../assets/kurs-bilder/Julepynt/img-4.JPG";
+import julepynt5 from "../assets/kurs-bilder/Julepynt/img-5.JPG";
+import julepynt6 from "../assets/kurs-bilder/Julepynt/img-6.JPG";
+import julepynt7 from "../assets/kurs-bilder/Julepynt/img-7.JPG";
+
+const julepyntImages = [
+  julepynt1,
+  julepynt2,
+  julepynt3,
+  julepynt4,
+  julepynt5,
+  julepynt6,
+  julepynt7
+];
+
+// Smykker
+import smykke1 from "../assets/kurs-bilder/Smykker/img-1.JPG";
+import smykke2 from "../assets/kurs-bilder/Smykker/img-2.JPG";
+import smykke3 from "../assets/kurs-bilder/Smykker/img-3.JPG";
+import smykke4 from "../assets/kurs-bilder/Smykker/img-4.JPG";
+import smykke5 from "../assets/kurs-bilder/Smykker/img-5.JPG";
+
+const smykkeImages = [
+  smykke1,
+  smykke2,
+  smykke3,
+  smykke4,
+  smykke5
+];
+
 export default function Kurs() {
 
   const $ = window.$;
@@ -82,8 +224,14 @@ export default function Kurs() {
   });
 
   useEffect(() => {
-    initKurs();
     initScrollAnimation();
+
+    // Small timeout to ensure DOM is fully painted
+    const timer = setTimeout(() => {
+      initKurs();
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -234,10 +382,8 @@ export default function Kurs() {
 
             <div className="course-card-accent red" id="motanka-dukke-card-css">
 
-              <div
-                className="rectangle-2 carousel-preview"
-                data-images={JSON.stringify(images)}
-              />
+              {/* Carousel вместо div с data-images */}
+              <Carousel images={images} />
 
               <div className="course-body desktop">
                 <div className="frame-101">
@@ -250,21 +396,10 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <Link to="/priser" className="price-href">
-                    <img
-                      className="romber-knapp-2-2-1"
-                      src={romberKnappRed}
-                      alt=""
-                    />
-                    <div className="frame-47">
-                      <div className="pris">PRIS</div>
-                      <img
-                        className="pile-full-bla-1"
-                        src={pileFullBla1}
-                        alt="Pil"
-                      />
-                    </div>
-                  </Link>
+                  <PriceLink 
+                    buttonImage={romberKnappRed} 
+                    arrowImage={pileFullBla1} 
+                  />
 
                 </div>
 
@@ -347,21 +482,10 @@ export default function Kurs() {
                     <div className="course-duration-value red">2 timer</div>
                   </div>
 
-                  <Link to="/priser" className="price-href">
-                    <img
-                      className="romber-knapp-2-2-1"
-                      src={romberKnappRed}
-                      alt=""
-                    />
-                    <div className="frame-47">
-                      <div className="pris">PRIS</div>
-                      <img
-                        className="pile-full-bla-1"
-                        src={pileFullBla1}
-                        alt="Pil"
-                      />
-                    </div>
-                  </Link>
+                  <PriceLink 
+                    buttonImage={romberKnappRed} 
+                    arrowImage={pileFullBla1} 
+                  />
 
                 </div>
               </div>
@@ -376,17 +500,9 @@ export default function Kurs() {
 
           <div className="course-card" data-category="visuell-kunst tre">
                 <div className="course-card-accent red">
-                    <div className="rectangle-2 carousel-preview"
-                        data-images='[
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-1.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-2.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-3.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-4.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-5.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-6.jpg",
-                            "src/assets/kurs-bilder/Miniatyrby/bilde-7.jpg"
-                        ]'>
-                    </div>
+                  
+                    <Carousel images={miniImages} />
+
                     <div className="course-body desktop">
                         <div className="frame-101">
                             <div className="course-includes">
@@ -395,20 +511,10 @@ export default function Kurs() {
                                     Alt nødvendig utstyr og materialer. Veiledning fra erfaren instruktør.
                                 </div>
                             </div>
-                            <Link to="/priser" className="price-href">
-                                <img
-                                    className="romber-knapp-2-2-1"
-                                    src="src/assets/kurs/romber_knapp red.svg"
-                                />
-                                <div className="frame-47">
-                                    <div className="pris">PRIS</div>
-                                    <img
-                                        className="pile-full-bla-1"
-                                        src={pileFullBla1}
-                                        alt="Pil"
-                                    />
-                                </div>
-                            </Link>
+                            <PriceLink 
+                              buttonImage={romberKnappRed} 
+                              arrowImage={pileFullBla1} 
+                            />
                         </div>
                         <div className="course-duration">
                             <div className="course-duration-label red">Anbefalt varighet</div>
@@ -477,19 +583,12 @@ export default function Kurs() {
                                 <div className="course-duration-label red">Anbefalt varighet</div>
                                 <div className="course-duration-value red">2–3 timer</div>
                             </div>
-                            <Link to="/priser" className="price-href">
-                                <img
-                                    className="romber-knapp-2-2-1"
-                                    src="src/assets/kurs/romber_knapp red.svg"
-                                />
-                                <div className="frame-47">
-                                    <div className="pris">PRIS</div>
-                                    <img
-                                        className="pile-full-bla-1"
-                                        src={pileFullBla1}
-                                    />
-                                </div>
-                            </Link>
+
+                            <PriceLink 
+                              buttonImage={romberKnappRed} 
+                              arrowImage={pileFullBla1} 
+                            />
+                            
                         </div>
                     </div>
 
@@ -502,15 +601,9 @@ export default function Kurs() {
 
             <div className="course-card" data-category="tekstil">
                 <div className="course-card-accent blue">
-                    <div className="rectangle-2 carousel-preview"
-                        data-images='[
-                            "src/assets/kurs-bilder/Smykker/img-1.JPG",
-                            "src/assets/kurs-bilder/Smykker/img-2.JPG",
-                            "src/assets/kurs-bilder/Smykker/img-3.JPG",
-                            "src/assets/kurs-bilder/Smykker/img-4.JPG",
-                            "src/assets/kurs-bilder/Smykker/img-5.JPG"
-                        ]'>
-                    </div>
+
+                    <Carousel images={smykkeImages} />
+
                     <div className="course-body desktop">
                         <div className="frame-101">
                             <div className="course-includes">
@@ -604,10 +697,7 @@ export default function Kurs() {
 
               <div className="course-card-accent blue" id="skjerf-card-css">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={JSON.stringify(skjerfImages)}
-                />
+                <Carousel images={skjerfImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -723,10 +813,7 @@ export default function Kurs() {
 
               <div className="course-card-accent blue" id="blokktrykk-card-css">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={JSON.stringify(blokkImages)}
-                />
+                <Carousel images={blokkImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -939,17 +1026,7 @@ export default function Kurs() {
 
               <div className="course-card-accent yellow">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder/img-1.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img-2.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img-3.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img-4.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img-5.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder/img-6.jpg"
-                  ]`}
-                />
+                <Carousel images={glassImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -1049,15 +1126,7 @@ export default function Kurs() {
 
               <div className="course-card-accent yellow" id="glasslysholder-card-css">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Farsdag/img-1.JPG",
-                    "src/assets/kurs-bilder/Farsdag/img-2.JPG",
-                    "src/assets/kurs-bilder/Farsdag/img-3.JPG",
-                    "src/assets/kurs-bilder/Farsdag/img-4.JPG"
-                  ]`}
-                />
+                <Carousel images={farsdagImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -1144,18 +1213,7 @@ export default function Kurs() {
 
               <div className="course-card-accent red">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-1.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-2.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-3.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-4.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-5.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img-6.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder Juleverksted/img (7).jpg"
-                  ]`}
-                />
+                <Carousel images={juleGlassImages} />
 
                 <div className="course-body desktop" id="glassgravering-juleverksted-course-body-css">
                   <div className="frame-101">
@@ -1166,88 +1224,16 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
 
                   <div className="course-duration">
                     <div className="course-duration-label red">Anbefalt varighet</div>
                     <div className="course-duration-value red">2 timer</div>
                   </div>
-                </div>
-
-              </div>
-
-              <div className="frame-542">
-
-                <div className="course-body-holder red">
-                  <div className="course-title red" id="glassgravering-juleverksted-course-title-css">
-                    GLASSGRAVERING JULEVERKSTED
-                  </div>
-                  <div className="course-summary-description red">
-                    Glassgravering er spennende! Glasslysholdere passer perfekt som julegave – spesielt kombinert med personlig glassgravering. Med et personlig, håndgravert glass kan du overraske noen du er glad i med en helt unik og minneverdig julegave. Det er eksklusivt å ha en personlig håndgravering på glass, utført med elektroverktøy og diamanttilbehør. <br /><br />
-                    Vi er opptatt av gjenbruk, så ta gjerne med deg et glass hjemmefra – farget eller klart, flasker eller gamle syltetøyglass.
-                  </div>
-                </div>
-
-                <div className="course-body red">
-                  <div className="skills">
-                    <div className="skills-title red">Hva lærer du</div>
-                    <div className="skills-list">
-                      <div className="skill-item red">
-                        <img className="rombe-item-red" src={rombeRed} alt="" />
-                        <div className="skill-item-text-red">Bruk av elektroverktøy og diamanttilbehør</div>
-                      </div>
-                      <div className="skill-item red">
-                        <img className="rombe-item-red" src={rombeRed} alt="" />
-                        <div className="skill-item-text-red">Glassgraveringsteknikk</div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="age-group">
-                    <div className="age-group-label red">Passer for</div>
-                    <div className="age-group-description red">
-                      Familier, barnegrupper, voksne og alle som ønsker en kreativ og meningsfull juleaktivitet.
-                    </div>
-                    <div className="course-duration-value red">
-                      Barn i alderen 6–10 år må ha følge av en voksen.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="course-body mobile" id="glassgravering-juleverksted-course-body-css">
-                  <div className="frame-101">
-                    <div className="course-includes">
-                      <div className="course-includes-title red">Hva er inkludert</div>
-                      <div className="course-includes-description red">
-                        Glass, verktøy og tilbehør. Bekledning og beskyttelsesbriller. Profesjonell veiledning og forberedelser. På slutten av verkstedet får du med deg det ferdige kunstprosjektet hjem.
-                      </div>
-                    </div>
-
-                    <div className="course-duration">
-                      <div className="course-duration-label red">Anbefalt varighet</div>
-                      <div className="course-duration-value red">2 timer</div>
-                    </div>
-
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="course-toggle">
-                  <div className="utvide red"></div>
-                  <img className="rombe" src={polygon} alt="" />
                 </div>
 
               </div>
@@ -1269,20 +1255,7 @@ export default function Kurs() {
 
               <div className="course-card-accent red" id="motanka-engel-card-css">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Motanka-engel/img-1.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-2.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-3.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-4.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-5.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-6.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-7.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-8.JPG",
-                    "src/assets/kurs-bilder/Motanka-engel/img-9.JPG"
-                  ]`}
-                />
+                <Carousel images={motankaImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -1293,13 +1266,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -1364,13 +1334,10 @@ export default function Kurs() {
                       <div className="course-duration-value red">2 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
                 </div>
 
@@ -1388,14 +1355,7 @@ export default function Kurs() {
 
               <div className="course-card-accent red" id="nissefjes-card-css">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Nissefjes/img-1.JPG",
-                    "src/assets/kurs-bilder/Nissefjes/img-2.JPG",
-                    "src/assets/kurs-bilder/Nissefjes/img-3.JPG"
-                  ]`}
-                />
+                <Carousel images={nisseImages} />
 
                 <div className="course-body desktop">
                   <div className="frame-101">
@@ -1406,13 +1366,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -1482,13 +1439,10 @@ export default function Kurs() {
                       <div className="course-duration-value red">2-3 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
                 </div>
 
@@ -1506,18 +1460,7 @@ export default function Kurs() {
 
             <div className="course-card-accent red" id="julepynt-card-css">
 
-              <div
-                className="rectangle-2 carousel-preview"
-                data-images={`[
-                  "src/assets/kurs-bilder/Julepynt/img-1.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-2.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-3.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-4.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-5.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-6.JPG",
-                  "src/assets/kurs-bilder/Julepynt/img-7.JPG"
-                ]`}
-              />
+              <Carousel images={julepyntImages} />
 
               <div className="course-body desktop">
                 <div className="frame-101">
@@ -1528,13 +1471,10 @@ export default function Kurs() {
                     </div>
                   </div>
 
-                  <Link to="/priser" className="price-href">
-                    <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                    <div className="frame-47">
-                      <div className="pris">PRIS</div>
-                      <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                    </div>
-                  </Link>
+                  <PriceLink 
+                    buttonImage={romberKnappRed} 
+                    arrowImage={pileFullBla1} 
+                  />
                 </div>
 
                 <div className="course-duration">
@@ -1604,13 +1544,10 @@ export default function Kurs() {
                     <div className="course-duration-value red">2-3 timer</div>
                   </div>
 
-                  <Link to="/priser" className="price-href">
-                    <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                    <div className="frame-47">
-                      <div className="pris">PRIS</div>
-                      <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                    </div>
-                  </Link>
+                  <PriceLink 
+                    buttonImage={romberKnappRed} 
+                    arrowImage={pileFullBla1} 
+                  />
                 </div>
               </div>
 
@@ -1628,18 +1565,7 @@ export default function Kurs() {
 
               <div className="course-card-accent red">
 
-                <div
-                  className="rectangle-2 carousel-preview"
-                  data-images={`[
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-1.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-2.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-3.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-4.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-5.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-6.jpg",
-                    "src/assets/kurs-bilder/Glasslysholder-Juleverksted/img-7.jpg"
-                  ]`}
-                />
+                <Carousel images={juleGlassImages} />
 
                 <div className="course-body desktop" id="glassgravering-juleverksted-course-body-css">
                   <div className="frame-101">
@@ -1650,13 +1576,10 @@ export default function Kurs() {
                       </div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
 
                   <div className="course-duration">
@@ -1719,13 +1642,10 @@ export default function Kurs() {
                       <div className="course-duration-value red">2 timer</div>
                     </div>
 
-                    <Link to="/priser" className="price-href">
-                      <img className="romber-knapp-2-2-1" src="src/assets/kurs/romber_knapp red.svg" alt="" />
-                      <div className="frame-47">
-                        <div className="pris">PRIS</div>
-                        <img className="pile-full-bla-1" src={pileFullBla1} alt="" />
-                      </div>
-                    </Link>
+                    <PriceLink 
+                      buttonImage={romberKnappRed} 
+                      arrowImage={pileFullBla1} 
+                    />
                   </div>
                 </div>
 
