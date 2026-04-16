@@ -1,6 +1,6 @@
 // src/pages/Kurs.jsx
 import { useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // styles
 import "../style/style.css";
@@ -234,6 +234,16 @@ export default function Kurs() {
     return () => clearTimeout(timer);
   }, []);
 
+  const navigate = useNavigate();
+
+  const scrollToContact = (e) => {
+    e.preventDefault(); // Forhindre standard oppførsel for lenken
+    const contactSection = document.getElementById("contact-section-id");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="global-holder-container">
 
@@ -273,7 +283,7 @@ export default function Kurs() {
             </div>
           </div>
 
-          <a href="#contact-section-id" className="course-contact">
+          <a href="#contact-section-id" className="course-contact" onClick={scrollToContact}>
             <img
               className="course-contact-icon"
               src={romberKnapp}

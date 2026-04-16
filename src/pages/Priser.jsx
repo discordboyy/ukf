@@ -1,5 +1,6 @@
 // src/pages/Priser.jsx
 import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 // ── Stylesheet imports ──────────────────────────────────────────────
 import '../style/style.css';
@@ -31,6 +32,16 @@ export default function Priser() {
 
     return () => window.removeEventListener('scroll', checkScrollBlocks);
   }, []);
+
+  const navigate = useNavigate();
+
+  const scrollToContact = (e) => {
+    e.preventDefault(); // Forhindre standard oppførsel for lenken
+    const contactSection = document.getElementById("contact-section-id");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   // ── JSX – identisk struktur til original HTML body ───────────────
   return (
@@ -204,7 +215,7 @@ export default function Priser() {
               <div className="large-group-contact">
                 <img className="large-group-contact-image" src={frame88} alt="" />
                 <div className="large-group-contact-text">
-                  <a href="#contact-section-id" className="contact-main-text">
+                  <a href="#contact-section-id" className="contact-main-text" onClick={scrollToContact}>
                     Ta kontakt for et skreddersydd opplegg
                   </a>
                   <div className="contact-additional-text-wrapper">
