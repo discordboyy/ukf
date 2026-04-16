@@ -1,0 +1,151 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal:not(.show) {
+  display: none;
+}
+
+/* =========================
+   IMAGE
+========================= */
+#modalImage {
+  max-width: 80%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  z-index: 10;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+.modal-close,
+#modalClose {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+  line-height: 1;
+}
+
+/* =========================
+   CLICK ZONES (ВАЖНО)
+   каждая зона = половина экрана
+========================= */
+.modal-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Standard syntax */
+}
+
+/* левая зона */
+.modal-zone.left {
+  left: 0;
+  justify-content: flex-start;
+  padding-left: 20vw;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Standard syntax */
+}
+
+/* правая зона */
+.modal-zone.right {
+  right: 0;
+  justify-content: flex-end;
+  padding-right: 20vw;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Standard syntax */
+}
+
+/* =========================
+   ARROWS
+========================= */
+.modal-zone img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  pointer-events: none; /* важно: кликается зона, не картинка */
+}
+
+.modal-zone:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* =========================
+   CLICK BEHAVIOR
+========================= */
+.modal-zone {
+  background: transparent;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Standard syntax */
+}
+
+/* чтобы клик по картинке не закрывал */
+#modalImage {
+  pointer-events: auto;
+  -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Standard syntax */
+max-width: 46vw;
+}
+
+@media (max-width: 1600px) {
+    #modalImage {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1100px) {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 620px) {
+    #modalImage {
+        max-width: 80%;
+    }
+}

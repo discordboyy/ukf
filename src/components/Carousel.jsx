@@ -1,6 +1,16 @@
 // src/components/Carousel.jsx
 import { useEffect, useRef, useState } from "react";
+
+// styles
+import "../style/style.css";
 import "../style/kurs.css";
+import "../style/new-kurs.css";
+import "../style/modal.css";
+import "../style/slick.css";
+
+// imports 
+import modalRight from "../assets/nav-right.svg";
+import modalLeft from "../assets/nav-left.svg";
 
 export default function Carousel({ images }) {
   const previewRef = useRef(null);
@@ -52,21 +62,50 @@ export default function Carousel({ images }) {
             <img src={src} alt={`Slide ${index}`} />
           </div>
         ))}
-        <button className="slick-prev" onClick={prevSlide}>‹</button>
-        <button className="slick-next" onClick={nextSlide}>›</button>
+        <button className="slick-prev" onClick={prevSlide}>
+          <img src={modalLeft} alt="Prev" />
+        </button>
+
+        <button className="slick-next" onClick={nextSlide}>
+          <img src={modalRight} alt="Next" />
+        </button>
       </div>
 
       {modalOpen && (
         <div id="imageModal" className="modal show" onClick={closeModal}>
-          <span id="modalClose" className="modal-close" onClick={closeModal}>×</span>
+
+          <span
+            id="modalClose"
+            className="modal-close"
+            onClick={closeModal}
+          >
+            ×
+          </span>
+
+          {/* LEFT ZONE */}
+          <div className="modal-zone left" onClick={(e) => {
+            e.stopPropagation();
+            prevSlide();
+          }}>
+            <img src={modalLeft} alt="Prev" />
+          </div>
+
+          {/* IMAGE */}
           <img
             id="modalImage"
             src={images[modalIndex]}
             alt={`Modal ${modalIndex}`}
             onClick={(e) => e.stopPropagation()}
           />
-          <button id="modalPrev" onClick={(e) => { e.stopPropagation(); prevSlide(); }}>‹</button>
-          <button id="modalNext" onClick={(e) => { e.stopPropagation(); nextSlide(); }}>›</button>
+
+          {/* RIGHT ZONE */}
+          <div className="modal-zone right" onClick={(e) => {
+            e.stopPropagation();
+            nextSlide();
+          }}>
+            <img src={modalRight} alt="Next" />
+          </div>
+
         </div>
       )}
     </>
