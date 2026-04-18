@@ -56,7 +56,23 @@ const chunkArray = (array, size) => {
   return result;
 };
 
+const barnasKunstklubbImages = Object.entries(
+  import.meta.glob("../assets/prosjekter/Barnas-Kunstklubb/*.jpg", {
+    eager: true,
+    import: "default",
+  })
+)
+  .sort((a, b) => {
+    const getNumber = (path) =>
+      parseInt(path.match(/img- ?\(?(\d+)\)?/)?.[1] || 0);
+
+    return getNumber(a[0]) - getNumber(b[0]);
+  })
+  .map(([, value]) => value);
+
 const sentralen2026Slides = chunkArray(sentralen2026Images, 2);
+
+const barnasSlides = chunkArray(barnasKunstklubbImages, 2);
 
 // Sentralen images
 import rombRed from "../assets/prosjekter/rombs-red.svg";
@@ -135,25 +151,20 @@ export default function Prosjekter() {
             loop={true}
             pagination={{ clickable: true, dynamicBullets: true }}
             navigation={true}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
           >
-
-            <SwiperSlide>
-              <img src={frogner6} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner3} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner4} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner5} alt="" />
-            </SwiperSlide>
-
+            {barnasSlides.map((pair, index) => (
+              <SwiperSlide key={index}>
+                {pair.length === 2 ? (
+                  <div className="slide-double">
+                    <img src={pair[0]} alt="" />
+                    <img src={pair[1]} alt="" />
+                  </div>
+                ) : (
+                  <img className="slide" src={pair[0]} alt="" />
+                )}
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
