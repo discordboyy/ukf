@@ -47,6 +47,9 @@ const sentralen2026Images = [
   sentralen2026_img14,
 ];
 
+// Barnas Kunstklubb i Bærum og Lørenskog
+import barnaskunstklubb from "../assets/prosjekter/Barnas-Kunstklubb/img-7.jpg";
+
 // разбивает массив на пары
 const chunkArray = (array, size) => {
   const result = [];
@@ -118,7 +121,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src={frogner1} alt="" />
+              <img className="project-image-placeholder" src={barnaskunstklubb} alt="" />
 
               <p className="project-descriptio">
                 <span>
@@ -182,7 +185,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src={img1751} alt="" />
+              <img className="project-image-placeholder" src={sentralen2026_img12} alt="" />
               
               <p className="project-descriptio">
                 <span>
