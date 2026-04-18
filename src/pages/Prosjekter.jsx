@@ -129,7 +129,7 @@ export default function Prosjekter() {
                   </span>
 
                   <span className="text-accent red">
-                    144 besøk
+                    144 besøk{" "}
                   </span>
 
                   <span className="text-highlight blue">
