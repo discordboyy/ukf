@@ -1,6 +1,7 @@
 // src/pages/Prosjekter.jsx
 import "../style/style.css";
 import "../style/prosjekter.css";
+import "../style/new-prosjekter.css";
 
 import { useEffect } from "react";
 
