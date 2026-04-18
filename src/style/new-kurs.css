@@ -37,3 +37,7 @@ html {
     object-position: center; /* центрируем изображение */
     display: block;          /* убираем лишние пробелы */
 }
+
+.slide-double {
+  overflow: hidden;
+}

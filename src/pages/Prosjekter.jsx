@@ -14,6 +14,51 @@ import "../style/swiper.css";
 
 import { Pagination, Navigation } from "swiper/modules";
 
+// Sentralen 2026 images
+import sentralen2026_img1 from "../assets/prosjekter/Sentralen-2026/img-1.jpg";
+import sentralen2026_img2 from "../assets/prosjekter/Sentralen-2026/img-2.jpg";
+import sentralen2026_img3 from "../assets/prosjekter/Sentralen-2026/img-3.jpg";
+import sentralen2026_img4 from "../assets/prosjekter/Sentralen-2026/img-4.jpg";
+import sentralen2026_img5 from "../assets/prosjekter/Sentralen-2026/img-5.jpg";
+import sentralen2026_img6 from "../assets/prosjekter/Sentralen-2026/img-6.jpg";
+import sentralen2026_img7 from "../assets/prosjekter/Sentralen-2026/img-7.jpg";
+import sentralen2026_img8 from "../assets/prosjekter/Sentralen-2026/img-8.jpg";
+import sentralen2026_img9 from "../assets/prosjekter/Sentralen-2026/img-9.jpg";
+import sentralen2026_img10 from "../assets/prosjekter/Sentralen-2026/img-10.jpg";
+import sentralen2026_img11 from "../assets/prosjekter/Sentralen-2026/img-11.jpg";
+import sentralen2026_img12 from "../assets/prosjekter/Sentralen-2026/img-12.jpg";
+import sentralen2026_img13 from "../assets/prosjekter/Sentralen-2026/img-13.jpg";
+import sentralen2026_img14 from "../assets/prosjekter/Sentralen-2026/img-14.jpg";
+
+// массив изображений
+const sentralen2026Images = [
+  sentralen2026_img1,
+  sentralen2026_img2,
+  sentralen2026_img3,
+  sentralen2026_img4,
+  sentralen2026_img5,
+  sentralen2026_img6,
+  sentralen2026_img7,
+  sentralen2026_img8,
+  sentralen2026_img9,
+  sentralen2026_img10,
+  sentralen2026_img11,
+  sentralen2026_img12,
+  sentralen2026_img13,
+  sentralen2026_img14,
+];
+
+// разбивает массив на пары
+const chunkArray = (array, size) => {
+  const result = [];
+  for (let i = 0; i < array.length; i += size) {
+    result.push(array.slice(i, i + size));
+  }
+  return result;
+};
+
+const sentralen2026Slides = chunkArray(sentralen2026Images, 2);
+
 // Sentralen images
 import rombRed from "../assets/prosjekter/rombs-red.svg";
 import img1751 from "../assets/prosjekter/Sentralen/IMG_1751.jpg";
@@ -35,7 +80,64 @@ import frogner6 from "../assets/prosjekter/Frognerparken-2025/img-6.jpg";
 export default function Prosjekter() {
   return (
     <div className="global-holder-container">
-      <div id="header"></div>
+
+      <div className="project-section">
+        <div className="project-container">
+          <img className="project-icon red" src={rombRed} alt="Project icon" />
+          <div className="project-content">
+
+            <div className="project-header">
+              <div className="project-meta red">
+                Mars 2026/Sentralen, Oslo
+              </div>
+              <h2 className="project-title red">ULLTOVING VERKSTED</h2>
+            </div>
+
+            <div className="project-description-block">
+              <img className="project-image-placeholder" src={img1751} alt="" />
+              
+              <p className="project-descriptio">
+                <span>
+                  <span className="text-highlight red">
+                    Under Håndverksdagen 2026 holdt vi et kreativt toveverksted med kardet ull for barn og voksne. 
+                    Av tovede fargerike ullkuler kunne deltakerne lage sin egen unike nøkkelring eller pynt til veske og sekk. 
+                    Verkstedet samlet mange familier med barn, vi har telt  
+                  </span>
+                  <span className="text-accent blue"> over 50 deltakere </span>
+                  <span className="text-highlight red">i ulike aldre.</span>
+                </span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="project-slider">
+          <Swiper
+            slidesPerView="auto"
+            spaceBetween={48}
+            centeredSlides={true}
+            loop={true}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {sentralen2026Slides.map((pair, index) => (
+              <SwiperSlide key={index}>
+                {pair.length === 2 ? (
+                  <div className="slide-double">
+                    <img src={pair[0]} alt="" />
+                    <img src={pair[1]} alt="" />
+                  </div>
+                ) : (
+                  <img className="slide" src={pair[0]} alt="" />
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
 
       <div className="project-section">
         <div className="project-container">
@@ -192,9 +294,6 @@ export default function Prosjekter() {
         </div>
 
       </div>
-
-      <div id="contact-root"></div>
-      <div id="about-root"></div>
     </div>
   );
 }
