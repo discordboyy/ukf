@@ -148,6 +148,7 @@ export default function Prosjekter() {
 
         <div className="project-slider">
           <Swiper
+            lazy={true}
             slidesPerView="auto"
             spaceBetween={48}
             centeredSlides={true}
@@ -205,6 +206,7 @@ export default function Prosjekter() {
 
         <div className="project-slider">
           <Swiper
+            lazy={true}
             slidesPerView="auto"
             spaceBetween={48}
             centeredSlides={true}
@@ -267,6 +269,7 @@ export default function Prosjekter() {
 
         <div className="project-slider">
           <Swiper
+            lazy={true}
             slidesPerView="auto"
             spaceBetween={48}
             centeredSlides={true}
@@ -355,6 +358,7 @@ export default function Prosjekter() {
 
         <div className="project-slider">
           <Swiper
+            lazy={true}
             slidesPerView="auto"
             spaceBetween={48}
             centeredSlides={true}
