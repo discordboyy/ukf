@@ -497,10 +497,10 @@ html {
   gap: 10px;
 }
 #motanka-dukke-card-css {
-  gap: 118px;
+  gap: 154px;
 }
 #motanka-engel-card-css {
-  gap: 194px;
+  gap: 228px;
 }
 #motanka-group-css, #age-group-smykker-css, #age-group-smykker-css, #glasslysholder-age-group-css {
   height: auto;
@@ -518,8 +518,8 @@ html {
 #skjerf-course-body-css {
   gap: 84px;
 }
-#glasslysholder-card-css {
-  gap: 126px;
+#farsdag-card-css {
+  gap: 162px;
 }
 #glasslysholder-course-body-css {
   gap: 58px;
@@ -534,13 +534,31 @@ html {
   gap: 120px;
 }
 #nissefjes-card-css {
-  gap: 22px;
+  gap: 52px;
 }
 #nissefjes-age-group {
   height: auto;
 }
 #julepynt-card-css {
-  gap: 150px;
+  gap: 172px;
+}
+#miniatyrby-card-css {
+  gap: 132px;
+}
+#smykker-card-css {
+  gap: 84px;
+}
+#skjerf-card-css {
+  gap: 84px;
+}
+#blokktrykk-card-css {
+  gap: 84px;
+}
+#akvarell-card-css {
+  gap: 84px;
+}
+#glasslysholder-card-css {
+  gap: 92px;
 }
 
 .course-body-holder {
@@ -845,7 +863,7 @@ html {
 }
 
 .course-card.is-open #glassgravering-juleverksted-course-body-css {
-  margin-top: 214px;
+  margin-top: 244px;
 }
 
 

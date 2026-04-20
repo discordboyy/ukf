@@ -509,7 +509,7 @@ export default function Kurs() {
           </div>
 
           <div className="course-card" data-category="visuell-kunst tre">
-                <div className="course-card-accent red">
+                <div className="course-card-accent red" id="miniatyrby-card-css">
                   
                     <Carousel images={miniImages} />
 
@@ -610,7 +610,7 @@ export default function Kurs() {
             </div>
 
             <div className="course-card" data-category="tekstil">
-                <div className="course-card-accent blue">
+                <div className="course-card-accent blue" id="smykker-card-css">
 
                     <Carousel images={smykkeImages} />
 
@@ -1010,7 +1010,7 @@ export default function Kurs() {
             {/* CARD 7 */}
             <div className="course-card" data-category="glass">
 
-              <div className="course-card-accent yellow">
+              <div className="course-card-accent yellow" id="glasslysholder-card-css">
 
                 <Carousel images={glassImages} />
 
@@ -1104,7 +1104,7 @@ export default function Kurs() {
             {/* CARD 8 */}
             <div className="course-card" data-category="glass">
 
-              <div className="course-card-accent yellow" id="glasslysholder-card-css">
+              <div className="course-card-accent yellow" id="farsdag-card-css">
 
                 <Carousel images={farsdagImages} />
 
@@ -1183,34 +1183,6 @@ export default function Kurs() {
                       buttonImage={romberKnappYellow}
                       arrowImage={pileFullBla1}
                     />
-                  </div>            <div className="course-card" data-category="visuell-kunst julverksted glass" id="glassgravering-juleverksted-card-css">
-
-              <div className="course-card-accent red">
-
-                <Carousel images={juleGlassImages} />
-
-                <div className="course-body desktop" id="glassgravering-juleverksted-course-body-css">
-                  <div className="frame-101">
-                    <div className="course-includes">
-                      <div className="course-includes-title red">Hva er inkludert</div>
-                      <div className="course-includes-description red">
-                        Glass, verktøy og tilbehør. Bekledning og beskyttelsesbriller. Profesjonell veiledning og forberedelser. På slutten av verkstedet får du med deg det ferdige kunstprosjektet hjem.
-                      </div>
-                    </div>
-
-                    <PriceLink 
-                      buttonImage={romberKnappRed} 
-                      arrowImage={pileFullBla1} 
-                    />
-                  </div>
-
-                  <div className="course-duration">
-                    <div className="course-duration-label red">Anbefalt varighet</div>
-                    <div className="course-duration-value red">2 timer</div>
-                  </div>
-                </div>
-
-              </div>
 
               </div>
                 </div>
