@@ -128,13 +128,13 @@ const farsdagImages = [
 ];
 
 // Glasslysholder Juleverksted
-import juleglass1 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-1.jpg";
-import juleglass2 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-2.jpg";
-import juleglass3 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-3.jpg";
-import juleglass4 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-4.jpg";
-import juleglass5 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-5.jpg";
-import juleglass6 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-6.jpg";
-import juleglass7 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-7.jpg";
+import juleglass1 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-1.avif";
+import juleglass2 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-2.avif";
+import juleglass3 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-3.avif";
+import juleglass4 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-4.avif";
+import juleglass5 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-5.avif";
+import juleglass6 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-6.avif";
+import juleglass7 from "../assets/kurs-bilder/Glasslysholder-Juleverksted/img-7.avif";
 
 const juleGlassImages = [
   juleglass1,
