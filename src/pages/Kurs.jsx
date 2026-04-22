@@ -216,22 +216,9 @@ const smykkeImages = [
 
 export default function Kurs() {
 
-  const $ = window.$;
-
-  $('.carousel-preview').slick({
-    dots: true,
-    arrows: true,
-  });
-
   useEffect(() => {
     initScrollAnimation();
-
-    // Small timeout to ensure DOM is fully painted
-    const timer = setTimeout(() => {
-      initKurs();
-    }, 100);
-
-    return () => clearTimeout(timer);
+    initKurs();
   }, []);
 
   const navigate = useNavigate();
