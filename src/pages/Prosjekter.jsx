@@ -276,7 +276,7 @@ export default function Prosjekter() {
             loop={true}
             pagination={{ clickable: true, dynamicBullets: true }}
             navigation={true}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
             className="mySwiper"
           >
 
@@ -365,7 +365,7 @@ export default function Prosjekter() {
             loop={true}
             pagination={{ clickable: true, dynamicBullets: true }}
             navigation={true}
-            modules={[Pagination]}
+            modules={[Pagination, Navigation]}
           >
 
             <SwiperSlide>

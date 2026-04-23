@@ -50,10 +50,12 @@
   overflow: visible;
 }
 
+/* 
 .swiper-button-prev,
 .swiper-button-next {
   display: none !important;
-}
+} 
+*/
 
 
 
@@ -93,4 +95,24 @@
   justify-content: center;
   gap: 8px;
   pointer-events: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* or your theme color */
+  z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.project-slider {
+  padding: 0 80px;
+}
+
+.project-slider {
+  --swiper-navigation-sides-offset: -120px;
 }
