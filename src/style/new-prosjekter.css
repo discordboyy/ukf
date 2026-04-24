@@ -12,3 +12,9 @@
 body {
   overflow-x: hidden;
 }
+
+.slide-double img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
