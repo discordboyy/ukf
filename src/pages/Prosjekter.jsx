@@ -21,7 +21,6 @@ import sentralen2026_img5 from "../assets/prosjekter-webp/Sentralen-2026/img-5.w
 import sentralen2026_img6 from "../assets/prosjekter-webp/Sentralen-2026/img-6.webp";
 import sentralen2026_img7 from "../assets/prosjekter-webp/Sentralen-2026/img-7.webp";
 import sentralen2026_img8 from "../assets/prosjekter-webp/Sentralen-2026/img-8.webp";
-import sentralen2026_img9 from "../assets/prosjekter-webp/Sentralen-2026/img-9.webp";
 import sentralen2026_img10 from "../assets/prosjekter-webp/Sentralen-2026/img-10.webp";
 import sentralen2026_img12 from "../assets/prosjekter-webp/Sentralen-2026/img-12.webp";
 import sentralen2026_img13 from "../assets/prosjekter-webp/Sentralen-2026/img-13.webp";
@@ -35,7 +34,6 @@ const sentralen2026Images = [
   sentralen2026_img6,
   sentralen2026_img7,
   sentralen2026_img8,
-  sentralen2026_img9,
   sentralen2026_img10,
   sentralen2026_img12,
   sentralen2026_img13,
