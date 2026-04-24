@@ -11,6 +11,12 @@ import "swiper/css/navigation";
 
 import "../style/swiper.css";
 
+import { lazy, Suspense } from "react";
+
+const ProjectSlider = lazy(() =>
+  import("../components/ProjectSlider")
+);
+
 import { Pagination, Navigation } from "swiper/modules";
 
 // Sentralen 2026 images
