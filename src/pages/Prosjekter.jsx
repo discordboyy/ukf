@@ -3,8 +3,6 @@ import "../style/style.css";
 import "../style/prosjekter.css";
 import "../style/new-prosjekter.css";
 
-import { useEffect } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -16,21 +14,20 @@ import "../style/swiper.css";
 import { Pagination, Navigation } from "swiper/modules";
 
 // Sentralen 2026 images
-import sentralen2026_img1 from "../assets/prosjekter/Sentralen-2026/img-1.jpg";
-import sentralen2026_img2 from "../assets/prosjekter/Sentralen-2026/img-2.jpg";
-import sentralen2026_img4 from "../assets/prosjekter/Sentralen-2026/img-4.jpg";
-import sentralen2026_img5 from "../assets/prosjekter/Sentralen-2026/img-5.jpg";
-import sentralen2026_img6 from "../assets/prosjekter/Sentralen-2026/img-6.jpg";
-import sentralen2026_img7 from "../assets/prosjekter/Sentralen-2026/img-7.jpg";
-import sentralen2026_img8 from "../assets/prosjekter/Sentralen-2026/img-8.jpg";
-import sentralen2026_img9 from "../assets/prosjekter/Sentralen-2026/img-9.jpg";
-import sentralen2026_img10 from "../assets/prosjekter/Sentralen-2026/img-10.jpg";
-import sentralen2026_img11 from "../assets/prosjekter/Sentralen-2026/img-11.jpg";
-import sentralen2026_img12 from "../assets/prosjekter/Sentralen-2026/img-12.jpg";
-import sentralen2026_img13 from "../assets/prosjekter/Sentralen-2026/img-13.jpg";
-import sentralen2026_img14 from "../assets/prosjekter/Sentralen-2026/img-14.jpg";
+import sentralen2026_img1 from "../assets/prosjekter-webp/Sentralen-2026/img-1.webp";
+import sentralen2026_img2 from "../assets/prosjekter-webp/Sentralen-2026/img-2.webp";
+import sentralen2026_img4 from "../assets/prosjekter-webp/Sentralen-2026/img-4.webp";
+import sentralen2026_img5 from "../assets/prosjekter-webp/Sentralen-2026/img-5.webp";
+import sentralen2026_img6 from "../assets/prosjekter-webp/Sentralen-2026/img-6.webp";
+import sentralen2026_img7 from "../assets/prosjekter-webp/Sentralen-2026/img-7.webp";
+import sentralen2026_img8 from "../assets/prosjekter-webp/Sentralen-2026/img-8.webp";
+import sentralen2026_img9 from "../assets/prosjekter-webp/Sentralen-2026/img-9.webp";
+import sentralen2026_img10 from "../assets/prosjekter-webp/Sentralen-2026/img-10.webp";
+import sentralen2026_img11 from "../assets/prosjekter-webp/Sentralen-2026/img-11.webp";
+import sentralen2026_img12 from "../assets/prosjekter-webp/Sentralen-2026/img-12.webp";
+import sentralen2026_img13 from "../assets/prosjekter-webp/Sentralen-2026/img-13.webp";
+import sentralen2026_img14 from "../assets/prosjekter-webp/Sentralen-2026/img-14.webp";
 
-// массив изображений
 const sentralen2026Images = [
   sentralen2026_img1,
   sentralen2026_img2,
@@ -47,10 +44,9 @@ const sentralen2026Images = [
   sentralen2026_img14,
 ];
 
-// Barnas Kunstklubb i Bærum og Lørenskog
-import barnaskunstklubb from "../assets/prosjekter/Barnas-Kunstklubb/img-7.jpg";
+// Barnas Kunstklubb
+import barnaskunstklubb from "../assets/prosjekter-webp/Barnas-Kunstklubb/img-7.webp";
 
-// разбивает массив на пары
 const chunkArray = (array, size) => {
   const result = [];
   for (let i = 0; i < array.length; i += size) {
@@ -60,42 +56,40 @@ const chunkArray = (array, size) => {
 };
 
 const barnasKunstklubbImages = Object.entries(
-  import.meta.glob("../assets/prosjekter/Barnas-Kunstklubb/*.jpg", {
+  import.meta.glob("../assets/prosjekter-webp/Barnas-Kunstklubb/*.webp", {
     eager: true,
     import: "default",
   })
 )
-  .sort((a, b) => {
-    const getNumber = (path) =>
-      parseInt(path.match(/img- ?\(?(\d+)\)?/)?.[1] || 0);
-
-    return getNumber(a[0]) - getNumber(b[0]);
-  })
+  .sort(([a], [b]) => a.localeCompare(b))
   .map(([, value]) => value);
 
 const sentralen2026Slides = chunkArray(sentralen2026Images, 2);
-
 const barnasSlides = chunkArray(barnasKunstklubbImages, 2);
 
-// Sentralen images
+// icons / images
 import rombRed from "../assets/prosjekter/rombs-red.svg";
-import img1751 from "../assets/prosjekter/Sentralen/IMG_1751.jpg";
-import glassgravering from "../assets/prosjekter/Sentralen/Glassgravering.PNG";
-import img1729 from "../assets/prosjekter/Sentralen/IMG_1729.jpg";
-import img1730 from "../assets/prosjekter/Sentralen/IMG_1730.jpg";
-import img1740 from "../assets/prosjekter/Sentralen/IMG_1740.jpg";
-import img1747 from "../assets/prosjekter/Sentralen/IMG_1747.jpg";
-import img1763 from "../assets/prosjekter/Sentralen/IMG_1763.jpg";
+import img1751 from "../assets/prosjekter-webp/Sentralen/IMG_1751.webp";
+import glassgravering from "../assets/prosjekter-webp/Sentralen/Glassgravering.webp";
+import img1729 from "../assets/prosjekter-webp/Sentralen/IMG_1729.webp";
+import img1730 from "../assets/prosjekter-webp/Sentralen/IMG_1730.webp";
+import img1740 from "../assets/prosjekter-webp/Sentralen/IMG_1740.webp";
+import img1747 from "../assets/prosjekter-webp/Sentralen/IMG_1747.webp";
+import img1763 from "../assets/prosjekter-webp/Sentralen/IMG_1763.webp";
 
-// Frognerparken images
 import rombBlue from "../assets/prosjekter/rombs-blue.svg";
-import frogner1 from "../assets/prosjekter/Frognerparken-2025/img-1.jpg";
-import frogner3 from "../assets/prosjekter/Frognerparken-2025/img-3.jpg";
-import frogner4 from "../assets/prosjekter/Frognerparken-2025/img-4.jpg";
-import frogner5 from "../assets/prosjekter/Frognerparken-2025/img-5.jpg";
-import frogner6 from "../assets/prosjekter/Frognerparken-2025/img-6.jpg";
+import frogner1 from "../assets/prosjekter-webp/Frognerparken-2025/img-1.webp";
+import frogner3 from "../assets/prosjekter-webp/Frognerparken-2025/img-3.webp";
+import frogner4 from "../assets/prosjekter-webp/Frognerparken-2025/img-4.webp";
+import frogner5 from "../assets/prosjekter-webp/Frognerparken-2025/img-5.webp";
+import frogner6 from "../assets/prosjekter-webp/Frognerparken-2025/img-6.webp";
 
 export default function Prosjekter() {
+  const showBarnas = true;
+  const showSentralen = true;
+  const showGlass = true;
+  const showFrogner = true;
+
   return (
     <div className="global-holder-container">
 
@@ -147,29 +141,36 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <Swiper
-            lazy={true}
-            slidesPerView="auto"
-            spaceBetween={48}
-            centeredSlides={true}
-            loop={true}
-            pagination={{ clickable: true, dynamicBullets: true }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-          >
-            {barnasSlides.map((pair, index) => (
-              <SwiperSlide key={index}>
-                {pair.length === 2 ? (
-                  <div className="slide-double">
-                    <img src={pair[0]} alt="" />
-                    <img src={pair[1]} alt="" />
-                  </div>
-                ) : (
-                  <img className="slide" src={pair[0]} alt="" />
-                )}
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          {showBarnas && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              {barnasSlides.map((pair, index) => (
+                <SwiperSlide key={index}>
+                  {pair?.length === 2 ? (
+                    <div className="slide-double">
+                      <img src={pair[0]} alt="" />
+                      <img src={pair[1]} alt="" />
+                    </div>
+                  ) : (
+                    <img src={pair?.[0]} alt="" />
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
         </div>
       </div>
 
@@ -205,30 +206,36 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <Swiper
-            lazy={true}
-            slidesPerView="auto"
-            spaceBetween={48}
-            centeredSlides={true}
-            loop={true}
-            pagination={{ clickable: true, dynamicBullets: true }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
-            {sentralen2026Slides.map((pair, index) => (
-              <SwiperSlide key={index}>
-                {pair.length === 2 ? (
-                  <div className="slide-double">
+          {showSentralen && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              {sentralen2026Slides.map((pair, index) => (
+                <SwiperSlide key={index}>
+                  {pair.length === 2 ? (
+                    <div className="slide-double">
+                      <img src={pair[0]} alt="" />
+                      <img src={pair[1]} alt="" />
+                    </div>
+                  ) : (
                     <img src={pair[0]} alt="" />
-                    <img src={pair[1]} alt="" />
-                  </div>
-                ) : (
-                  <img className="slide" src={pair[0]} alt="" />
-                )}
-              </SwiperSlide>
-            ))}
-          </Swiper>
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
         </div>
       </div>
 
@@ -268,42 +275,35 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <Swiper
-            lazy={true}
-            slidesPerView="auto"
-            spaceBetween={48}
-            centeredSlides={true}
-            loop={true}
-            pagination={{ clickable: true, dynamicBullets: true }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-          >
+          {showGlass && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              <SwiperSlide>
+                <div className="slide-double">
+                  {glassgravering && <img src={glassgravering} alt="" />}
+                  {img1729 && <img src={img1729} alt="" />}
+                </div>
+              </SwiperSlide>
 
-            <SwiperSlide>
-              <div className="slide-double">
-                <img src={glassgravering} alt="" />
-                <img src={img1729} alt="" />
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img className="slide" src={img1730} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img className="slide" src={img1740} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img className="slide" src={img1747} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img className="slide" src={img1763} alt="" />
-            </SwiperSlide>
-
-          </Swiper>
+              <SwiperSlide><img src={img1730} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={img1740} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={img1747} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={img1763} alt="" /></SwiperSlide>
+            </Swiper>
+          )}
         </div>
       </div>
 
@@ -330,7 +330,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src={frogner1} alt="" />
+              <img className="project-image-placeholder" src={frogner1} alt="" loading="eager" />
 
               <p className="project-descriptio">
                 <span>
@@ -357,34 +357,28 @@ export default function Prosjekter() {
         </div>
 
         <div className="project-slider">
-          <Swiper
-            lazy={true}
-            slidesPerView="auto"
-            spaceBetween={48}
-            centeredSlides={true}
-            loop={true}
-            pagination={{ clickable: true, dynamicBullets: true }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-          >
-
-            <SwiperSlide>
-              <img src={frogner6} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner3} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner4} alt="" />
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <img src={frogner5} alt="" />
-            </SwiperSlide>
-
-          </Swiper>
+          {showFrogner && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              <SwiperSlide><img src={frogner6} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={frogner3} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={frogner4} alt="" /></SwiperSlide>
+              <SwiperSlide><img src={frogner5} alt="" /></SwiperSlide>
+            </Swiper>
+          )}
         </div>
 
       </div>
