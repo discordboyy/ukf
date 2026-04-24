@@ -102,12 +102,20 @@ function Carousel({ images }) {
             style={{ display: i === index ? "block" : "none" }}
             onClick={() => openModal(i)}
           >
-            <img
-              src={src}
-              alt={`Slide ${i + 1}`}
-              loading={loadingAttr(i, index, total)}      // заменяет useEffect preload
-              decoding="async"
-            />
+            <picture>
+              <source
+                srcSet={src
+                  .replace("/kurs-bilder/", "/avif/")
+                  .replace(/\.(jpg|jpeg|png)$/i, ".avif")}
+                type="image/avif"
+              />
+              <img
+                src={src}
+                alt={`Slide ${i + 1}`}
+                loading={loadingAttr(i, index, total)}
+                decoding="async"
+              />
+            </picture>
           </div>
         ))}
 
@@ -134,14 +142,21 @@ function Carousel({ images }) {
           </div>
 
           {/* IMAGE */}
-          <img
-            id="modalImage"
-            src={images[modalIndex]}
-            alt={`Bilde ${modalIndex + 1}`}
-            decoding="async"
-            loading="eager"
-            onClick={(e) => e.stopPropagation()}
-          />
+          <picture>
+            <source
+              srcSet={images[modalIndex]
+                .replace("/kurs-bilder/", "/avif/")
+                .replace(/\.(jpg|jpeg|png)$/i, ".avif")}
+              type="image/avif"
+            />
+            <img
+              id="modalImage"
+              src={images[modalIndex]}
+              alt={`Bilde ${modalIndex + 1}`}
+              decoding="async"
+              loading="eager"
+            />
+          </picture>
 
           {/* RIGHT ZONE */}
           <div className="modal-zone right" onClick={nextModal}>
