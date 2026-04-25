@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
 
   // важно для GitHub Pages
-  base: "/ukf/",
+  base: "/",
 
   build: {
     rollupOptions: {
