@@ -3,19 +3,22 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+
+  // важно для GitHub Pages
+  base: "/ukf/",
 
   build: {
     rollupOptions: {
       output: {
         manualChunks(id) {
+          // отдельный чанк для swiper (он тяжелее остальных)
+          if (id.includes('swiper')) {
+            return 'swiper'
+          }
+
+          // всё остальное из node_modules — в vendor
           if (id.includes('node_modules')) {
-            if (id.includes('react-router-dom')) {
-              return 'vendor-router'
-            }
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'vendor-react'
-            }
+            return 'vendor'
           }
         },
       },
