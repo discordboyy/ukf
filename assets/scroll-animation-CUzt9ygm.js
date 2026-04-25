@@ -1,0 +1,1 @@
+function c(){const t=document.querySelectorAll(".scroll-animate");function n(){t.forEach(o=>{o.getBoundingClientRect().top<window.innerHeight*.75&&o.classList.add("show")})}window.addEventListener("scroll",n),n()}export{c as init};
