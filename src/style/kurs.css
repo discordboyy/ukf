@@ -667,7 +667,7 @@ html {
   height: auto;
 }
 .skill-item.yellow {
-  height: 57.75px;
+  
 }
 .rombe-item-blue, .rombe-item-red, .rombe-item-yellow {
   flex-shrink: 0;
@@ -706,7 +706,7 @@ html {
   position: relative;
 
   width: 290.25px;
-  height: 63px;
+  height: auto;
 }
 .age-group.nb {
   height: auto;
@@ -781,7 +781,7 @@ html {
   align-self: stretch;
 
   font-size: 37.6097889px;
-  line-height: 63.11%;
+  line-height: 70.11%;
 }
 .course-title.red {
   color: var(--red-color);
@@ -1143,7 +1143,9 @@ html {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-
+#skjerf-age-group-css {
+  height: auto;
+}
 
 
 

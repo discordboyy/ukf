@@ -363,7 +363,7 @@ export default function Kurs() {
                 <div className="skills">
                   <div className="skills-title blue">Hva lærer du</div>
                   <div className="skills-list">
-                    {["Grunnleggende håndgrep i hekling","Den første grunnmasken (luftmaske)","Materialkunnskap og trådvalg","Hvordan velge riktig heklenål"].map((t) => (
+                    {["Grunnleggende håndgrep i hekling","Materialkunnskap og trådvalg","Hvordan velge riktig heklenål", "Den første grunnmasken (luftmaske)"].map((t) => (
                       <div key={t} className="skill-item">
                         <img className="rombe-item-blue" src={UI.rombeBlue} alt="" width="12" height="12" />
                         <div className="skill-item-text-blue">{t}</div>
@@ -549,7 +549,7 @@ export default function Kurs() {
                 <div className="skills">
                   <div className="skills-title yellow">Hva lærer du</div>
                   <div className="skills-list">
-                    {["Bruk av elektroverktøy og diamanttilbehør","Glassgraveringsteknikk"].map((t) => (
+                    {["Glassgraveringsteknikk", "Bruk av elektroverktøy og diamanttilbehør"].map((t) => (
                       <div key={t} className="skill-item yellow">
                         <img className="rombe-item-yellow" src={UI.rombeYellow} alt="" width="12" height="12" />
                         <div className="skill-item-text-yellow">{t}</div>
@@ -612,7 +612,7 @@ export default function Kurs() {
                 <div className="skills">
                   <div className="skills-title yellow">Hva lærer du</div>
                   <div className="skills-list">
-                    {["Bruk av elektroverktøy og diamanttilbehør","Glassgraveringsteknikk"].map((t) => (
+                    {["Glassgraveringsteknikk", "Bruk av elektroverktøy og diamanttilbehør"].map((t) => (
                       <div key={t} className="skill-item yellow">
                         <img className="rombe-item-yellow" src={UI.rombeYellow} alt="" width="12" height="12" />
                         <div className="skill-item-text-yellow">{t}</div>
@@ -864,7 +864,7 @@ export default function Kurs() {
                 <div className="skills">
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
-                    {["Bruk av elektroverktøy og diamanttilbehør","Glassgraveringsteknikk"].map((t) => (
+                    {["Glassgraveringsteknikk", "Bruk av elektroverktøy og diamanttilbehør"].map((t) => (
                       <div key={t} className="skill-item red">
                         <img className="rombe-item-red" src={UI.rombeRed} alt="" width="12" height="12" />
                         <div className="skill-item-text-red">{t}</div>
