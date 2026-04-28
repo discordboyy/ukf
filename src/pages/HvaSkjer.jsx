@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 // styles
 import "../style/style.css";
 import "../style/hva-skjer.css";
+import "../style/new-hva-skjer.css";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
@@ -13,17 +14,24 @@ const polygon6 = "/hva-skjer/Polygon-6.svg";
 
 export default function HvaSkjer() {
   const [events, setEvents] = useState([]);
+  const [pastEvents, setPastEvents] = useState([]);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/events.json`)
       .then(res => res.json())
       .then(data => {
         const now = new Date();
-        // фильтруем только будущие события
+
         const upcomingEvents = data
           .filter(e => new Date(e.startDate) >= now)
           .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+
+        const pastEvents = data
+          .filter(e => new Date(e.startDate) < now)
+          .sort((a, b) => new Date(b.startDate) - new Date(a.startDate)); // последние сверху
+
         setEvents(upcomingEvents);
+        setPastEvents(pastEvents);
       })
       .catch(console.error);
   }, []);
@@ -72,6 +80,36 @@ export default function HvaSkjer() {
               <div className="event-imgs-gallery">
                 {event.images.map((img, i) => (
                   <img key={i} src={img} loading="lazy" alt="" />
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="past-events-section" id="past-events">
+        {/* <div className="archive-title">ARKIV</div> */}
+
+        <div id="past-events-container">
+          {pastEvents.map((event, idx) => (
+            <div className="event-content-holder archived" key={idx}>
+              <div className="event-content-section">
+                <img className="event-icon" src={event.icon} alt="" />
+
+                <div className="event-content">
+                  <div className="event-info-section">
+                    <div className="event-info-title">{event.title}</div>
+                    <div className="event-info-main">
+                      <div className="event-info-time">{event.date}</div>
+                      <div className="event-info-place">{event.place}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="event-imgs-gallery">
+                {event.images.map((img, i) => (
+                  <img key={i} src={img} alt="" />
                 ))}
               </div>
             </div>
