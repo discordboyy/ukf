@@ -496,11 +496,13 @@ html {
 #motanka-course-body-css {
   gap: 10px;
 }
+#motanka-course-body-css-red {
+}
 #motanka-dukke-card-css {
   gap: 154px;
 }
 #motanka-engel-card-css {
-  gap: 228px;
+  gap: 68px;
 }
 #motanka-group-css, #age-group-smykker-css, #age-group-smykker-css, #glasslysholder-age-group-css {
   height: auto;
@@ -513,13 +515,16 @@ html {
   margin-top: -20px;
 }
 #smykker-course-body-css {
-  gap: 84px;
+  gap: 124px;
 }
 #skjerf-course-body-css {
-  gap: 84px;
+  gap: 94px;
 }
 #farsdag-card-css {
   gap: 162px;
+}
+#farsdag-course-body-css-yellow {
+  gap: 234px;
 }
 #glasslysholder-course-body-css {
   gap: 58px;
@@ -527,11 +532,11 @@ html {
 #farsdag-course-body-css {
   gap: 40px;
 }
-#nissefjes-skill-item-css {
+#nissefjes-skill-item-css, #julepynt-item-css {
   height: 35px;
 }
 #nissefjes-course-body-css {
-  gap: 120px;
+  gap: 244px;
 }
 #nissefjes-card-css {
   gap: 52px;
@@ -540,7 +545,10 @@ html {
   height: auto;
 }
 #julepynt-card-css {
-  gap: 172px;
+  
+}
+#julepynt-course-body-css {
+  gap: 174px;
 }
 #miniatyrby-card-css {
   gap: 132px;

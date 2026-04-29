@@ -608,7 +608,7 @@ export default function Kurs() {
                   Gi pappa en unik og personlig gave til Farsdag! Lær å gravere glass med elektroverktøy og diamanttilbehør og lag en minneverdig gave som varer livet ut. Vi er opptatt av gjenbruk, så ta gjerne med deg et glass hjemmefra – farget eller klart, flasker eller gamle syltetøyglass.
                 </div>
               </div>
-              <div className="course-body yellow">
+              <div className="course-body yellow" id="farsdag-course-body-css-yellow">
                 <div className="skills">
                   <div className="skills-title yellow">Hva lærer du</div>
                   <div className="skills-list">
@@ -671,7 +671,7 @@ export default function Kurs() {
                   En motanka-engel er et vakkert håndverk laget av tekstil uten søm – kun ved snurring og knyting. Kurset er perfekt for de som ønsker å lage en unik håndlaget dekorasjon med dyp symbolikk og tradisjon.
                 </div>
               </div>
-              <div className="course-body red">
+              <div className="course-body red" id="motanka-course-body-css-red">
                 <div className="skills">
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
@@ -733,12 +733,12 @@ export default function Kurs() {
                   Lag et koselig nissefjes av tekstil! Perfekt juleaktivitet for barn og voksne. Enkelt, gøy og med et herlig julestemning-resultat.
                 </div>
               </div>
-              <div className="course-body red">
+              <div className="course-body red" id="nissefjes-course-body-css">
                 <div className="skills">
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
                     {["Enkel tekstilteknikk","Bruk av lim og dekorasjoner","Kreativ forming og pynt"].map((t) => (
-                      <div key={t} className="skill-item red">
+                      <div key={t} className="skill-item red" id="nissefjes-skill-item-css">
                         <img className="rombe-item-red" src={UI.rombeRed} alt="" width="12" height="12" />
                         <div className="skill-item-text-red">{t}</div>
                       </div>
@@ -865,7 +865,7 @@ export default function Kurs() {
                   <div className="skills-title red">Hva lærer du</div>
                   <div className="skills-list">
                     {["Glassgraveringsteknikk", "Bruk av elektroverktøy og diamanttilbehør"].map((t) => (
-                      <div key={t} className="skill-item red">
+                      <div key={t} className="skill-item red" id="julepynt-item-css">
                         <img className="rombe-item-red" src={UI.rombeRed} alt="" width="12" height="12" />
                         <div className="skill-item-text-red">{t}</div>
                       </div>
