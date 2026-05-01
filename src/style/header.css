@@ -177,3 +177,135 @@ header {
     zoom: 1.4;
   }
 }
+
+
+
+
+
+
+
+
+
+/* ═══════════════════════════════════════════════════════════════
+   BURGER MENU — append these rules to the END of header.css
+   Nothing above this comment is changed.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Wrapper: gives burger + panel an absolute-positioning context
+      that is NOT the scaled/clipped <header> ── */
+.header-wrapper {
+  position: relative; /* panel and button anchor here */
+}
+
+/* ── Burger button: hidden on desktop ── */
+.burger-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+/* ════════════════════════════════════════
+   MOBILE  ≤ 650px
+   (replaces the old .nav-items flex-wrap block)
+   ════════════════════════════════════════ */
+@media (max-width: 650px) {
+
+  /* 1. Hide the desktop nav — nothing else about .nav-items changes */
+  .nav-items {
+    display: none;
+  }
+
+  /* 2. Burger button */
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    /* Mirror the nav-bar's vertical position (top: 104.17px)
+       but sit at right: 40px as requested.
+       absolute → relative to .header-wrapper, unaffected by header's scale. */
+    position: absolute;
+    top: 104.17px;
+    right: 40px;
+
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .burger-line {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+    transform-origin: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Animate burger → ✕ */
+  .burger-btn--open .burger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .burger-btn--open .burger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .burger-btn--open .burger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* 3. Slide-in panel */
+  .mobile-menu {
+    position: fixed;   /* NOT fixed — anchors to .header-wrapper */
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100vh;
+    background-color: var(--blue-color);
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Start off-screen to the right */
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu--open {
+    transform: translateX(0);
+  }
+
+  /* 4. Links inside the panel */
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 0 32px;
+  }
+
+  .mobile-nav-item {
+    color: #ffffff;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item:focus {
+    color: var(--yellow-color);
+  }
+}
