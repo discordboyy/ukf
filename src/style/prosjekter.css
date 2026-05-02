@@ -270,6 +270,13 @@ body {
   .project-container {
     width: 80%;
   }
+
+  .project-icon.red {
+    margin-left: -12px;
+  }
+  .project-icon.blue {
+    margin-left: -22px;
+  }
 }
 
 @media (max-width: 440px) {
