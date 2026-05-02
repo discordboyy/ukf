@@ -228,7 +228,7 @@ header {
        but sit at right: 40px as requested.
        absolute → relative to .header-wrapper, unaffected by header's scale. */
     position: absolute;
-    top: 104.17px;
+    top: 54.17px;
     right: 40px;
 
     width: 44px;
