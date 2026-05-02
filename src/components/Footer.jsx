@@ -57,10 +57,10 @@ export default function Footer() {
           <div className="about-content">
             <div className="about-description">
               Formålet med foreningen er å samle og synliggjøre ukrainske kunstnere i Norge,
-              <br /> fremme deres virksomhet og bidra til økt <br /> offentlig engasjement i kunst og kultur
-              <br /><br />
+              <br /> fremme deres virksomhet og bidra til økt <br /> offentlig engasjement i kunst og kultur.
+              <br id="special-br" /><br />
               Ønsker du å motta nyheter om utstillinger, arrangementer og foreningens aktiviteter?
-              <br /><br />
+              <br id="special-br" /><br id="special-br"/>
               Abonner på nyhetsbrevet vårt: <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvf9KaLpu9c8vm1SbaFsmBnkkG9aRFt_7Rd7aD3ewpz_y8Fg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">Abonner på nyhetsbrevet</a>
             </div>
 

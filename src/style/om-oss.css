@@ -941,7 +941,7 @@ html {
   }
 
   .samarbeidspartner-title {
-    left: 50px;
+    
   }
 }
 
@@ -957,9 +957,6 @@ html {
 }
 
 @media (max-width: 400px) {
-  .samarbeidspartner-title {
-    left: 20px;
-  }
 
   .frame-2 {
     width: 550px;

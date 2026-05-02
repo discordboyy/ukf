@@ -1220,7 +1220,8 @@ body {
     padding: 0 40px;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    width: 40%;
+    margin-left: 10%;
   }
 
   .contact-link-name,
@@ -1253,6 +1254,12 @@ body {
 
   .membership-howto {
     width: 700px;
+  }
+
+
+  .contact-email.no-select {
+    user-select: none;
+    margin-left: -6px;
   }
 }
 
@@ -1426,6 +1433,10 @@ body {
     display: none;
   }
 
+  #special-br {
+    display: block;
+  }
+
   .home-holder-container  {
     margin-top: -720px;
   }
@@ -1476,6 +1487,10 @@ body {
 
   html {
     overflow-x: hidden;
+  }
+
+  .contact-links {
+    margin-left: 7%;
   }
 }
 
