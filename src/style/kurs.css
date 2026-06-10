@@ -521,10 +521,10 @@ html {
   gap: 94px;
 }
 #farsdag-card-css {
-  gap: 162px;
+  gap: 65px;
 }
 #farsdag-course-body-css-yellow {
-  gap: 234px;
+  /* gap: 234px; */
 }
 #glasslysholder-course-body-css {
   gap: 58px;
