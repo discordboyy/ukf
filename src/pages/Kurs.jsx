@@ -521,7 +521,7 @@ export default function Kurs() {
           </div>
 
           {/* CARD: Glasslysholder */}
-          <div className="course-card" data-category="visuell-kunst glass">
+          <div className="course-card" data-category="glass"> 
             <div className="course-card-accent yellow" id="glasslysholder-card-css">
               <Carousel images={GLASS} />
               <div className="course-body desktop">
@@ -584,7 +584,7 @@ export default function Kurs() {
           </div>
 
           {/* CARD: Farsdag */}
-          <div className="course-card" data-category="visuell-kunst glass">
+          <div className="course-card" data-category="glass">
             <div className="course-card-accent yellow" id="farsdag-card-css">
               <Carousel images={FARSDAG} />
               <div className="course-body desktop">
@@ -791,7 +791,7 @@ export default function Kurs() {
             </div>
             <div className="frame-542">
               <div className="course-body-holder red">
-                <div className="course-title red" id="julepynt-course-title-css">JULEPYNT I TRE</div>
+                <div className="course-title red" id="julepynt-course-title-css">Julepynt i tre</div>
                 <div className="course-summary-description red">
                   Lag din egen unike julepynt i tre! I dette verkstedet lærer du å bruke elektriske verktøy for å skjære, bore, pusse og dekorere treverk. Perfekt juleaktivitet for hele familien.
                 </div>
@@ -854,7 +854,7 @@ export default function Kurs() {
             </div>
             <div className="frame-542">
               <div className="course-body-holder red">
-                <div className="course-title red" id="glassgravering-juleverksted-course-title-css">GLASSGRAVERING JULEVERKSTED</div>
+                <div className="course-title red" id="glassgravering-juleverksted-course-title-css">Glassgravering juleverksted</div>
                 <div className="course-summary-description red">
                   Glassgravering er spennende! Glasslysholdere passer perfekt som julegave – spesielt kombinert med personlig glassgravering. Med et personlig, håndgravert glass kan du overraske noen du er glad i med en helt unik og minneverdig julegave. Det er eksklusivt å ha en personlig håndgravering på glass, utført med elektroverktøy og diamanttilbehør. <br /><br />
                   Vi er opptatt av gjenbruk, så ta gjerne med deg et glass hjemmefra – farget eller klart, flasker eller gamle syltetøyglass.
