@@ -496,8 +496,6 @@ html {
 #motanka-course-body-css {
   gap: 10px;
 }
-#motanka-course-body-css-red {
-}
 #motanka-dukke-card-css {
   gap: 154px;
 }
@@ -523,9 +521,6 @@ html {
 #farsdag-card-css {
   gap: 65px;
 }
-#farsdag-course-body-css-yellow {
-  /* gap: 234px; */
-}
 #glasslysholder-course-body-css {
   gap: 58px;
 }
@@ -543,9 +538,6 @@ html {
 }
 #nissefjes-age-group {
   height: auto;
-}
-#julepynt-card-css {
-  
 }
 #julepynt-course-body-css {
   gap: 174px;
@@ -673,9 +665,6 @@ html {
 }
 .skill-item.red2 {
   height: auto;
-}
-.skill-item.yellow {
-  
 }
 .rombe-item-blue, .rombe-item-red, .rombe-item-yellow {
   flex-shrink: 0;
