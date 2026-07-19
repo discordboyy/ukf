@@ -100,15 +100,15 @@
     "registrationText": "Drop-in"
   },
   {
-    "title": "Sommerakvarellkamp",
-    "date": "Dato og tidspunkt kommer",
-    "startDate": "",
-    "place": "Lørenskog Bibliotek",
+    "title": "Sommerakvarellcamp",
+    "date": "10.–14. august 2026, kl. 10:00–14:00",
+    "startDate": "2026-08-10T10:00:00",
+    "place": "Lørenskog",
     "price": "Gratis",
-    "description": "Vil du utforske ditt kreative potensial og kjenne på hvordan det er å være kunstner? Velkommen til et kreativt sommerkurs med fokus på akvarellteknikker. To profesjonelle kunstnere og pedagoger med mange års erfaring innen maleri, tegning, illustrasjon og grafisk design vil følge gruppen gjennom hele kurset med trygg og inspirerende veiledning. Du blir kjent med akvarellens magiske muligheter og andre kunstneriske teknikker. Vi drar ut i naturen for å hente inspirasjon gjennom observasjon, skisser og maleøvelser, og sammen skaper vi personlige kunstverk og et sommeralbum fylt med minner og skaperglede som du får med deg hjem.",
-    "icon": "/hva-skjer/icons/sommerakvarellkamp.png",
+    "description": "Kreativt sommerkurs i akvarell og kunst for ungdom 12–15 år. To profesjonelle kunstnere og pedagoger guider deltakerne gjennom en inspirerende uke med akvarellmaling, kreative øvelser og kunstneriske teknikker. Kurset inkluderer inspirasjonsturer i naturen med skisser og maling utendørs, nye vennskap og et kreativt fellesskap. Deltakerne lager et personlig sommeralbum og avslutter uken med en utstilling av arbeidene sine. Alle materialer og alt nødvendig utstyr er inkludert. Enkel servering av snacks tilbys, men ta gjerne med egen matpakke og drikke.",
+    "icon": "/hva-skjer/icons/sommerakvarellcamp.png",
     "images": [],
-    "readMoreLink": "",
-    "registrationLink": ""
+    "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/271202922",
+    "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/271202922"
   }
 ]
