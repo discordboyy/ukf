@@ -237,11 +237,7 @@ export default function OmOss() {
                 </div>
               </div>
               <div className="board-member-description board-member-description--blue board-member-description--narrow">
-                Kunstner og grafisk designer fra Ukraina, bosatt i Norge siden 2022.
-                Hun er utdannet ved Kunstakademiet i Kyiv og arbeider med
-                akvarellmaling, tekstilkunst og redesign. Anna er medlem av National
-                Union of Artists of Ukraine (NUAU). For tiden tar hun praktisk
-                pedagogisk utdanning i kunst og håndverk ved Høgskolen i Østfold.
+                Anna er kunstner og grafisk designer fra Ukraina, bosatt i Norge siden 2022. Hun er utdannet ved Kunstakademiet i Kyiv og har fullført praktisk-pedagogisk utdanning i kunst og håndverk ved Høgskolen i Østfold. Hun arbeider med akvarell, tekstilkunst og redesign, og er medlem av National Union of Artists of Ukraine (NUAU).
               </div>
             </div>
           </div>
