@@ -98,5 +98,17 @@
     "readMoreLink": "https://fb.me/e/7gSXjYpls",
     "registrationLink": "https://fb.me/e/7gSXjYpls",
     "registrationText": "Drop-in"
+  },
+  {
+    "title": "Sommerakvarellkamp",
+    "date": "Dato og tidspunkt kommer",
+    "startDate": "",
+    "place": "Lørenskog Bibliotek",
+    "price": "Gratis",
+    "description": "Vil du utforske ditt kreative potensial og kjenne på hvordan det er å være kunstner? Velkommen til et kreativt sommerkurs med fokus på akvarellteknikker. To profesjonelle kunstnere og pedagoger med mange års erfaring innen maleri, tegning, illustrasjon og grafisk design vil følge gruppen gjennom hele kurset med trygg og inspirerende veiledning. Du blir kjent med akvarellens magiske muligheter og andre kunstneriske teknikker. Vi drar ut i naturen for å hente inspirasjon gjennom observasjon, skisser og maleøvelser, og sammen skaper vi personlige kunstverk og et sommeralbum fylt med minner og skaperglede som du får med deg hjem.",
+    "icon": "/hva-skjer/icons/sommerakvarellkamp.png",
+    "images": [],
+    "readMoreLink": "",
+    "registrationLink": ""
   }
 ]
