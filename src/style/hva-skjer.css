@@ -142,7 +142,7 @@ html {
   max-width: 930px;
   margin: auto;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .event-content-holder {
   display: flex;
