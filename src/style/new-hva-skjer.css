@@ -146,6 +146,12 @@
   .past-events-section .event-info-section {
     width: 78%;
   }
+
+  .event-info-links {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 430px) {
@@ -171,11 +177,25 @@
   .event-content-holder.archived {
     margin-left: 20px;
   }
+
+  .event-info-time,
+  .event-info-place,
+  .event-info-title {
+    overflow-wrap: break-word;
+    word-break: break-word; /* поддержка */
+    hyphens: auto;
+  }
 }
 
 @media (max-width: 410px) {
   .event-content-holder.archived {
     margin-left: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .event-info-section {
+    width: 480px;
   }
 }
 
