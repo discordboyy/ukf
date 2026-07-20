@@ -564,7 +564,52 @@ body {
   transform: translateY(0);
 }
 
+.event-link {
+  padding: 11.35px 9.73px;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8.11px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  font-family: "Funnel Sans", sans-serif;
+  font-size: 20px;
 
+  /* анимация */
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.event-link:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.event-link:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.95);
+}
+
+.event-link.blue {
+  background: var(--blue-color);
+  color: #fff;
+}
+
+.event-link.red {
+  background: var(--red-color);
+  color: #fff;
+}
+
+.event-link.yellow {
+  background: var(--yellow-color);
+  color: #fff;
+}
 
 
 
