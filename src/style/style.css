@@ -591,6 +591,10 @@ body {
   cursor: pointer;
 }
 
+.event-link {
+  zoom: 1.1;
+}
+
 .event-link:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
@@ -1499,6 +1503,10 @@ body {
 
   .home-holder-container  {
     margin-top: -720px;
+  }
+
+  .home-holder-container:has(.event-card.is-open) {
+    margin-top: -750px;
   }
 }
 
