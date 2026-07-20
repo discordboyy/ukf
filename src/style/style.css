@@ -543,7 +543,7 @@ body {
 
 /* BODY когда открыта карточка */
 .event-card.is-open .event-body {
-  max-height: 400px;
+  max-height: 530px;
   transition: max-height 0.6s cubic-bezier(.22,1,.36,1);
 }
 

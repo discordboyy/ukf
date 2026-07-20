@@ -110,6 +110,13 @@ export default function Home() {
                       <div className={`event-title ${color}`}>{event.title}</div>
                       <div className="event-body">
                         <div className="event-description">{event.description}</div>
+                        <Link
+                          to="/hva-skjer"
+                          className={`event-link ${color}`}
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Gå til arrangement
+                        </Link>
                       </div>
                     </div>
                   </div>
