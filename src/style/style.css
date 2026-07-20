@@ -446,14 +446,21 @@ body {
 .event-date {
   width: auto;
   max-width: 175.938px;
+
   display: flex;
   flex-direction: column;
+
   font-family: "Funnel Sans", sans-serif;
   font-size: 43.45px;
   letter-spacing: -0.07em;
   font-weight: 600;
   line-height: 85%;
+
+  overflow-wrap: break-word;
+  word-break: break-word; /* поддержка */
+  hyphens: auto;
 }
+
 
 /* --- EVENT DATE --- */
 .event-date.red,
