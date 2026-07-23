@@ -2,6 +2,7 @@
 import "../style/style.css";
 import "../style/prosjekter.css";
 import "../style/new-prosjekter.css";
+import "../style/scroll-anim.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +12,7 @@ import "swiper/css/navigation";
 
 import "../style/swiper.css";
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 const ProjectSlider = lazy(() =>
   import("../components/ProjectSlider")
@@ -147,6 +148,31 @@ export default function Prosjekter() {
   const showSentralen = true;
   const showGlass = true;
   const showFrogner = true;
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".project-section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      {
+        threshold: 0,
+        rootMargin: "0px 0px -25% 0px",
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
 
   return (
     <div className="global-holder-container">
