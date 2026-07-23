@@ -429,6 +429,8 @@ export default function Prosjekter() {
                     340 deltakere
                   </span>
 
+                  {" "}
+
                   <span className="text-highlight blue">
                     i verkstedene. <br /><br />
                     Prosjektet var støttet av Kulturetaten i Oslo kommune.
