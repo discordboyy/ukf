@@ -80,11 +80,67 @@ import img1747 from "../assets/prosjekter-webp/Sentralen/IMG_1747.webp";
 import img1763 from "../assets/prosjekter-webp/Sentralen/IMG_1763.webp";
 
 import rombBlue from "../assets/prosjekter/rombs-blue.svg";
-import frogner1 from "../assets/prosjekter-webp/Frognerparken-2025/img-1.webp";
-import frogner3 from "../assets/prosjekter-webp/Frognerparken-2025/img-3.webp";
-import frogner4 from "../assets/prosjekter-webp/Frognerparken-2025/img-4.webp";
-import frogner5 from "../assets/prosjekter-webp/Frognerparken-2025/img-5.webp";
-import frogner6 from "../assets/prosjekter-webp/Frognerparken-2025/img-6.webp";
+import frogner1 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-01.webp";
+import frogner2 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-02.webp";
+import frogner3 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-03.webp";
+import frogner4 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-04.webp";
+import frogner5 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-05.webp";
+import frogner6 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-06.webp";
+import frogner7 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-07.webp";
+import frogner8 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-08.webp";
+import frogner9 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-09.webp";
+import frogner10 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-10.webp";
+import frogner11 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-11.webp";
+import frogner12 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-12.webp";
+import frogner13 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-13.webp";
+import frogner14 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-14.webp";
+import frogner15 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-15.webp";
+import frogner16 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-16.webp";
+import frogner17 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-17.webp";
+import frogner18 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-18.webp";
+import frogner19 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-19.webp";
+import frogner20 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-20.webp";
+import frogner21 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-21.webp";
+import frogner22 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-22.webp";
+import frogner23 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-23.webp";
+import frogner24 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-24.webp";
+import frogner25 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-25.webp";
+import frogner26 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-26.webp";
+import frogner27 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-27.webp";
+import frogner28 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-28.webp";
+import frogner29 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-29.webp";
+
+const frognerSlides = [
+  [frogner1, frogner2], // пара
+
+  [frogner3, frogner8], // объединенные одиночные
+
+  [frogner4, frogner5], // пара
+
+  [frogner6, frogner7], // пара
+
+  [frogner9, frogner10], // пара
+
+  [frogner11, frogner12], // пара
+
+  [frogner18, frogner28], // объединенные одиночные
+
+  [frogner14, frogner15], // пара
+
+  [frogner16, frogner17], // пара
+
+  [frogner19, frogner20], // пара
+
+  [frogner21, frogner22], // пара
+
+  [frogner23, frogner24], // пара
+
+  [frogner25, frogner13], // остался один (так как нечётное количество одиночных)
+
+  [frogner26, frogner27], // пара
+
+  [frogner29], // пара
+];
 
 export default function Prosjekter() {
   const showBarnas = true;
@@ -332,7 +388,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src={frogner1} alt="" loading="eager" />
+              <img className="project-image-placeholder" src={frogner29} alt="" loading="eager" />
 
               <p className="project-descriptio">
                 <span>
@@ -375,10 +431,18 @@ export default function Prosjekter() {
               navigation
               modules={[Pagination, Navigation]}
             >
-              <SwiperSlide><img src={frogner6} alt="" /></SwiperSlide>
-              <SwiperSlide><img src={frogner3} alt="" /></SwiperSlide>
-              <SwiperSlide><img src={frogner4} alt="" /></SwiperSlide>
-              <SwiperSlide><img src={frogner5} alt="" /></SwiperSlide>
+              {frognerSlides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                  {slide.length === 2 ? (
+                    <div className="slide-double">
+                      <img src={slide[0]} alt="" />
+                      <img src={slide[1]} alt="" />
+                    </div>
+                  ) : (
+                    <img src={slide[0]} alt="" />
+                  )}
+                </SwiperSlide>
+              ))}
             </Swiper>
           )}
         </div>
