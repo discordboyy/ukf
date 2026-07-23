@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import "../style/style.css";
 import "../style/hva-skjer.css";
 import "../style/new-hva-skjer.css";
+import "../style/scroll-anim.css";
 
 // JS modules
 import { init as initScrollAnimation } from "../js/scroll-animation";
@@ -35,6 +36,30 @@ export default function HvaSkjer() {
       })
       .catch(console.error);
   }, []);
+
+  useEffect(() => {
+    const sections = document.querySelectorAll(".event-content-section");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "0px 0px -25% 0px"
+      }
+    );
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => observer.disconnect();
+
+  }, [events, pastEvents]);
 
   useEffect(() => {
     initScrollAnimation();

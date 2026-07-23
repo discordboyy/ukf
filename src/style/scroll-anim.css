@@ -8,3 +8,14 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.event-content-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.event-content-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
