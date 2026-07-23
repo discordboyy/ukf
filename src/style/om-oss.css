@@ -308,6 +308,9 @@ html {
   max-width: 1210px;
   margin-bottom: 221.1px;
 }
+#styre-board-section {
+  margin-bottom: 100px;
+}
 
 .board-title {
   color: var(--red-color);

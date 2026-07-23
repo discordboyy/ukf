@@ -17,6 +17,7 @@ import rombRed from "../assets/rombe-red.svg";
 import juliaImg from "../assets/omoss/Julia-Favoritova.png";
 import katyaImg from "../assets/omoss/Katya-Bukhantsova.png";
 import annaImg from "../assets/omoss/Anna-Lubchenko.jpg";
+import katyaImg2 from "../assets/omoss/Katya-Poziumska.jpg";
 
 // partner logos
 import logo1 from "../assets/omoss/logos/logo-1.svg";
@@ -167,7 +168,7 @@ export default function OmOss() {
         </div>
       </div>
 
-      <div className="board-section">
+      <div className="board-section" id="styre-board-section">
         <div className="board-title">STYRET</div>
         <div className="board-members">
           <div className="board-member-card">
@@ -238,6 +239,32 @@ export default function OmOss() {
               </div>
               <div className="board-member-description board-member-description--blue board-member-description--narrow">
                 Anna er kunstner og grafisk designer fra Ukraina, bosatt i Norge siden 2022. Hun er utdannet ved Kunstakademiet i Kyiv og har fullført praktisk-pedagogisk utdanning i kunst og håndverk ved Høgskolen i Østfold. Hun arbeider med akvarell, tekstilkunst og redesign, og er medlem av National Union of Artists of Ukraine (NUAU).
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="board-section">
+        <div className="board-title">MEDLEMMER</div>
+        <div className="board-members">
+          <div className="board-member-card">
+            <img
+              className="board-member-image"
+              src={katyaImg2}
+              alt="Katya Bukhantsova"
+            />
+            <div className="board-member-content">
+              <div className="board-member-header">
+                <div className="board-member-name board-member-name--red">
+                  Katya Bukhantsova
+                </div>
+                <div className="board-member-role board-member-role--red">
+                  Medlem
+                </div>
+              </div>
+              <div className="board-member-description board-member-description--red board-member-description--wide">
+                Katya Poziumska er en frilansillustratør. Hun har en mastergrad i bokgrafikk fra Kunstakademiet i Kyiv. Hun lager illustrasjoner for bøker, artikler, merkevarer og private bestillinger. Hun holder kreative kurs og verksteder for barn og voksne. Siden 2023 har hun jobbet med ulike illustrasjonsoppdrag for forlaget Cappelen Damm.
               </div>
             </div>
           </div>
