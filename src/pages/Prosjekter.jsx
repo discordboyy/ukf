@@ -109,7 +109,6 @@ import frogner25 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparke
 import frogner26 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-26.webp";
 import frogner27 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-27.webp";
 import frogner28 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-28.webp";
-import frogner29 from "../assets/prosjekter-webp/Frognerparken-2025/frognerparken-29.webp";
 
 const frognerSlides = [
   [frogner1, frogner2], // пара
@@ -139,8 +138,6 @@ const frognerSlides = [
   [frogner25, frogner13], // остался один (так как нечётное количество одиночных)
 
   [frogner26, frogner27], // пара
-
-  [frogner29], // пара
 ];
 
 export default function Prosjekter() {
@@ -414,7 +411,7 @@ export default function Prosjekter() {
             </div>
 
             <div className="project-description-block">
-              <img className="project-image-placeholder" src={frogner29} alt="" loading="eager" />
+              <img className="project-image-placeholder" src={frogner18} alt="" loading="eager" />
 
               <p className="project-descriptio">
                 <span>
