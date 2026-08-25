@@ -1516,6 +1516,29 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .home-holder-container  {
+    margin-top: -870px;
+  }
+
+  .home-holder-container:has(.event-card.is-open) {
+    margin-top: -850px;
+  }
+
+  .events-list-wrapper {
+    margin-top: 40px;
+  }
+
+  /* --- EVENT TITLE --- */
+  .event-card.blue, .event-card.yellow {
+    margin-top: 40px;
+  }
+
+  .samarbeidspartner-section {
+    margin-top: -800px;
+  }
+}
+
 @media (max-width: 530px) {
   .events-title {
     width: 80%;
@@ -1559,6 +1582,10 @@ body {
 
   .contact-links {
     margin-left: 7%;
+  }
+
+  .home-holder-container:has(.event-card.is-open) {
+    margin-top: -890px;
   }
 }
 
