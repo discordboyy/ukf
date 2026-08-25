@@ -110,5 +110,42 @@
     "images": [],
     "readMoreLink": "https://www.facebook.com/events/1667278531012401",
     "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/271202922"
+  },
+  {
+    "title": "Kurs i akvarellmaling for voksne",
+    "date": "19. september–28. november 2026, kl. 15:00–17:00",
+    "startDate": "2026-09-19T15:00:00",
+    "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
+    "price": "Egenandel 220 kr",
+    "description": "Bli med på et kurs i akvarellteknikker for voksne! Vi møtes 10 ganger på Nabolagsfabrikken Skøyen og utforsker teknikker innen akvarellmaling. Kurset ledes av Anna Liubchenko som er utdannet kunstner og pedagog. Kursrekke avsluttes med en elevutstilling i Nabolagsfabrikken sine lokaler.\n\nKurset går over disse lørdagene: 19. september, 26. september, 10. oktober, 17. oktober, 24. oktober, 31. oktober, 7. november, 14. november, 21. november og 28. november kl. 15:00–17:00 alle ganger.\n\nPåmelding er bindende. Prisen gjelder hele perioden.",
+    "icon": "",
+    "images": [],
+    "readMoreLink": "https://den-ukrainske-kunstforening.hoopla.no/event/864646089",
+    "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/event/864646089"
+  },
+  {
+    "title": "Akvarellkurs for barn",
+    "date": "19. september–28. november 2026",
+    "startDate": "2026-09-19T00:00:00",
+    "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
+    "price": "Ikke oppgitt",
+    "description": "Akvarellkurs for barn på Nabolagsfabrikken Skøyen. Kurset går i perioden 19. september–28. november, med unntak av høstferien. Dag og tidspunkt er ikke fastsatt ennå. Mer informasjon og beskrivelse kommer.",
+    "icon": "",
+    "images": [],
+    "readMoreLink": "",
+    "registrationLink": ""
+  },
+  {
+    "title": "Familiekunstklubb – drop-in",
+    "date": "26. september–28. november 2026",
+    "startDate": "2026-09-26T00:00:00",
+    "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
+    "price": "Ikke oppgitt",
+    "description": "Velkommen til familiekunstklubb på Nabolagsfabrikken Skøyen! Familiekunstklubben er et drop-in-tilbud og arrangeres på følgende lørdager: 26. september, 17. oktober, 31. oktober, 14. november og 28. november.",
+    "icon": "",
+    "images": [],
+    "readMoreLink": "",
+    "registrationLink": "",
+    "registrationText": "Drop-in"
   }
 ]
