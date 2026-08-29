@@ -1349,11 +1349,15 @@ body {
   }
 
   .about-description, .about-details-content, .kontonummer, .contact-email {
-    text-align: center;
+    text-align: left;
   }
 
   .about-description, .about-details, .about-logo {
     margin: auto;
+  }
+
+  .about-description {
+    width: 533.147px;
   }
 
   .hero-content {
@@ -1362,6 +1366,14 @@ body {
 
   .hero-accent {
     margin-left: -120px;
+  }
+
+  .about-details {
+    align-items: flex-start;
+  }
+
+  #contact-email-id-special {
+
   }
 }
 
@@ -1507,6 +1519,10 @@ body {
 
   .home-holder-container:has(.event-card.is-open) {
     margin-top: -750px;
+  }
+
+  .about-description {
+    margin-left: 0px;
   }
 }
 
