@@ -252,12 +252,12 @@ export default function OmOss() {
             <img
               className="board-member-image"
               src={katyaImg2}
-              alt="Katya Bukhantsova"
+              alt="Katya Poziumska"
             />
             <div className="board-member-content">
               <div className="board-member-header">
                 <div className="board-member-name board-member-name--red">
-                  Katya Bukhantsova
+                  Katya Poziumska
                 </div>
                 <div className="board-member-role board-member-role--red">
                   Medlem
