@@ -1289,6 +1289,14 @@ body {
   .global-holder-container {
     margin-top: -330px;
   }
+
+  .contact-links {
+    width: 93%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1307,13 +1315,10 @@ body {
   }
 
   .contact-links {
-    width: 100%;
-    max-width: 90%;
+    max-width: 88%;
     padding: 0 40px;
     flex-wrap: wrap;
     gap: 30px;
-    width: 40%;
-    margin-left: 10%;
   }
 
   .contact-link-name,
@@ -1403,6 +1408,10 @@ body {
   #contact-email-id-special {
 
   }
+
+  .contact-links {
+    width: 373.188px;
+  }
 }
 
 @media (max-width: 768px) { /* планшеты и телефоны */
@@ -1484,7 +1493,7 @@ body {
   .hero-content {
     zoom: 1.1;
     margin-left: 100px;    /* 800 × 0.9 */
-    margin-top: 5vw;     /* -100 × 0.9 */
+    margin-top: 10vw;     /* -100 × 0.9 */
   }
 
   .membership-fee-text {
@@ -1507,7 +1516,7 @@ body {
   }
 
   .samarbeidspartner-section {
-    margin-top: -700px;
+    margin-top: -800px;
   }
 
   .samarbeidspartner-title-home {
@@ -1551,6 +1560,16 @@ body {
 
   .about-description {
     margin-left: 0px;
+  }
+
+  .contact-links {
+    width: 600.797px;
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  .contact-title {
+    margin-left: 87px;
   }
 }
 
