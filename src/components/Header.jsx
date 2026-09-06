@@ -69,6 +69,15 @@ export default function Header() {
         <span className="burger-line" />
       </button>
 
+      {/* Overlay — закрывает меню при клике вне панели */}
+      {menuOpen && (
+        <div
+          className={`mobile-menu-overlay${menuOpen ? " mobile-menu-overlay--open" : ""}`}
+          onClick={() => setMenuOpen(false)}
+          aria-hidden={!menuOpen}
+        />
+      )}
+
       {/* ── Slide-in panel — sibling of header, outside scale/clip ── */}
       <div
         className={`mobile-menu${menuOpen ? " mobile-menu--open" : ""}`}

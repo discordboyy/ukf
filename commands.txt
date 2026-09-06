@@ -1,1 +1,5 @@
 npm run build
+cd dist
+git add .
+git commit
+git push -f origin gh-pages
