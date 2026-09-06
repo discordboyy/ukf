@@ -1659,6 +1659,7 @@ body {
 @media (max-width: 500px) {
   .contact-title {
     zoom: 0.6;
+    margin-left: 10%;
   }
 
   .global-holder-container {
@@ -1718,10 +1719,14 @@ body {
     width: 86%;
     padding: 0px;
   }
+
+  .contact-title {
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 390px) {
   .hero-content {
-    margin-top: 2px;
+    margin-left: 58px;
   }
 }
