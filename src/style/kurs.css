@@ -513,10 +513,10 @@ html {
   margin-top: -20px;
 }
 #smykker-course-body-css {
-  gap: 124px;
+  gap: 90px;
 }
 #skjerf-course-body-css {
-  gap: 94px;
+  gap: 54px;
 }
 #farsdag-card-css {
   gap: 65px;
@@ -543,13 +543,13 @@ html {
   gap: 174px;
 }
 #miniatyrby-card-css {
-  gap: 132px;
+  gap: 36px;
 }
 #smykker-card-css {
-  gap: 84px;
+  gap: 58px;
 }
 #skjerf-card-css {
-  gap: 84px;
+  gap: 50px;
 }
 #blokktrykk-card-css {
   gap: 84px;
@@ -599,7 +599,7 @@ html {
 }
 
 .course-body.red2 {
-  gap: 200px;
+  gap: 100px;
 }
 
 .course-body.yellow {

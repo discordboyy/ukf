@@ -787,12 +787,15 @@ html {
   }
 
   .board-section {
-    width: 90%;
+    width: 80%;
+  }
+
+  .board-members {
+    align-items: flex-start;
   }
 
   .board-member-card {
-    zoom: 2;
-    margin: auto;
+    zoom: 2.5;
   }
 
   .about-section-forening, .about-timeline, .about-intro-text-container {
@@ -879,6 +882,13 @@ html {
   .global-holder-container {
     top: -500px;
   }
+
+  .board-section {
+    width: 88%;
+  }
+  .board-member-card {
+    zoom: 2.2;
+  }
 }
 
 @media (max-width: 452px) {
@@ -957,11 +967,28 @@ html {
   .frame-14 {
     width: 560px;
   }
+
+  .board-section {
+    width: 84%;
+  }
+  .board-member-card {
+    zoom: 1.9;
+  }
 }
 
 @media (max-width: 400px) {
 
   .frame-2 {
     width: 550px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .board-section {
+    width: 84%;
+  }
+  .board-member-card {
+    zoom: 1.6;
   }
 }
