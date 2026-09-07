@@ -149,8 +149,7 @@ header {
   }
 }
 
-@media (max-width: 1000px) {
-
+@media (max-width: 820px) {
   header {
     transform: scale(0.4);
     transform-origin: top left;
@@ -177,9 +176,6 @@ header {
     zoom: 1.4;
   }
 }
-
-
-
 
 
 
