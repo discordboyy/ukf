@@ -53,7 +53,7 @@ export default function Home() {
         const upcoming = data
           .filter(event => new Date(event.startDate) >= now)
           .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-          .slice(0, 3); // максимум 3
+          .slice(0, 4); // максимум 3
         setEvents(upcoming);
       })
       .catch(console.error);

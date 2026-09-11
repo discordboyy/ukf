@@ -147,5 +147,30 @@
     "readMoreLink": "",
     "registrationLink": "",
     "registrationText": "Drop-in"
+  },
+  {
+    "title": "Kunstverksted - Art & Sip: Tekstil Edition",
+    "date": "2. mai 2026, kl. 14:00–16:30",
+    "startDate": "2026-05-02T14:00:00",
+    "place": "Telemark kunstverksted Porsgrunn, Storgata 148",
+    "price": "250 kr per person",
+    "description": "Kunstverkstedet Art & Sip: Tekstil Edition på Telemark kunstverksted i Porsgrunn. Deltakelse koster 250 kr per person. Påmelding er nødvendig.",
+    "icon": "",
+    "images": [],
+    "readMoreLink": "https://www.facebook.com/events/944771848348134",
+    "registrationLink": "https://den-ukrainske-kunstforening.hoopla.no/"
+  },
+  {
+    "title": "Vytynanka - kunstverksted for hele familien",
+    "date": "26. september 2026, kl. 12:00–15:00",
+    "startDate": "2026-09-26T12:00:00",
+    "place": "Veitvet Senter, Veitvetveien 8, Oslo",
+    "price": "Gratis",
+    "description": "Kunstverksted for hele familien med vytynanka. Arrangementet er gratis og fungerer som drop-in.",
+    "icon": "/hva-skjer/icons/Vytynanka.png",
+    "images": [],
+    "readMoreLink": "https://fb.me/e/24IBbovzUk",
+    "registrationLink": "https://fb.me/e/24IBbovzUk",
+    "registrationText": "Drop-in"
   }
 ]
