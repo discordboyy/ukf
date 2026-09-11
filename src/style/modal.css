@@ -145,7 +145,16 @@ max-width: 46vw;
 }
 
 @media (max-width: 620px) {
-    #modalImage {
-        max-width: 80%;
-    }
+  #modalImage {
+    max-width: 70%;    
+    margin: 0 auto;
+  }
+
+  .modal-zone.right {
+    padding-right: 7vw;
+  }
+
+  .modal-zone.left {
+    padding-left: 7vw;
+  }
 }
