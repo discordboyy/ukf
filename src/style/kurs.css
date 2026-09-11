@@ -531,7 +531,10 @@ html {
   height: 35px;
 }
 #nissefjes-course-body-css {
-  gap: 244px;
+  gap: 174px;
+}
+#nisse-card-css {
+  gap: 40px;
 }
 #nissefjes-card-css {
   gap: 52px;
@@ -540,7 +543,10 @@ html {
   height: auto;
 }
 #julepynt-course-body-css {
-  gap: 174px;
+  gap: 124px;
+}
+#julepynt-card-css {
+  gap: 58px;
 }
 #miniatyrby-card-css {
   gap: 36px;
@@ -1291,6 +1297,14 @@ html {
 @media (max-width: 620px) {
   .kurs-section-container {
     padding: 0 50px;
+  }
+
+  #miniatyrby-course-body-css-mobile {
+    margin-top: -40px;
+  }
+
+  #nissefjes-course-body-css {
+    gap: 50px;
   }
 
   .course-card {

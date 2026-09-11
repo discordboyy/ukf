@@ -314,7 +314,7 @@ export default function Kurs() {
                   <div className="course-duration-value red">Barn i alderen 6–10 år må ha følge av en voksen.</div>
                 </div>
               </div>
-              <div className="course-body mobile">
+              <div className="course-body mobile" id="miniatyrby-course-body-css-mobile">
                 <div className="frame-101">
                   <div className="course-includes">
                     <div className="course-includes-title red">Hva er inkludert</div>
