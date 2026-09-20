@@ -1757,6 +1757,10 @@ body {
   .contact-links {
     padding: 0;
   }
+
+  .home-holder-container  {
+    margin-top: -820px;
+  }
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
