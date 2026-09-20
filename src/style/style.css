@@ -1640,7 +1640,7 @@ body {
 
 @media (max-width: 600px) {
   .home-holder-container  {
-    margin-top: -870px;
+    margin-top: -770px;
   }
 
   .home-holder-container:has(.event-card.is-open) {
