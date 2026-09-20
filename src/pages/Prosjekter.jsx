@@ -172,7 +172,7 @@ export default function Prosjekter() {
 
 
   return (
-    <div className="global-holder-container">
+    <div className="global-holder-container" id="prosjekter-global-holder-container">
 
       <div className="project-section last">
         <div className="project-container">

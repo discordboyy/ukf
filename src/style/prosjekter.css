@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+#prosjekter-global-holder-container {
+  margin-bottom: 100px;
+}
+
 .project-section {
   display: flex;
   flex-direction: column;

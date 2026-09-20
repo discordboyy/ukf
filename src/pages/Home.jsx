@@ -184,14 +184,14 @@ export default function Home() {
               <br />
               og fremmer ukrainske kunstnere i Norge
             </div>
-            <img className="hero-accent" src={polygonMain} alt="" />
+            {/* <img className="hero-accent" src={polygonMain} alt="" /> */}
           </div>
         </div>
       </div>
 
       {/* ── Testimonials ── */}
       <div className="frame-20">
-        <div className="testimonials-title">TILBAKEMELDINGER</div>
+        <div className="testimonials-title" id='testimonials-title-home'>TILBAKEMELDINGER</div>
         <div className="testimonials-list">
           <img
             className="frame-149"
