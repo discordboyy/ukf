@@ -4,42 +4,32 @@
 }
 
 .archive-title {
-  font-size: 32px;
+  font-size: 10vw;
+  margin: auto;
+  color: #103279;
   margin-bottom: 40px;
-  opacity: 0.6;
+  opacity: 0.93;
+  width: 900px;
 }
 
 /* главный эффект архива */
 .event-content-holder.archived {
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: 0.3s ease;
+  filter: grayscale(30%);
+  opacity: 0.9;
 }
 
 /* чуть оживает при ховере */
-.event-content-holder.archived:hover {
-  filter: grayscale(40%);
-  opacity: 0.85;
-}
-
-/* затемняем текст */
-.event-content-holder.archived .event-info-title,
-.event-content-holder.archived .event-info-time,
-.event-content-holder.archived .event-info-place {
-  color: #777;
-}
-
-.event-content-holder.archived {
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-
 .event-content-holder.archived:hover {
   filter: grayscale(30%);
   opacity: 0.9;
 }
 
+/* затемняем текст */
+/* .event-content-holder.archived .event-info-title,
+.event-content-holder.archived .event-info-time,
+.event-content-holder.archived .event-info-place {
+  color: #777;
+} */
 
 
 
@@ -102,6 +92,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .archive-title {
+    font-size: 20vw;
+  }
+}
+
 @media (max-width: 680px) {
   /* .upcoming-events-section,
   .past-events-section {
@@ -126,6 +122,10 @@
   .past-events-section {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .archive-title {
+    width: 800px;
   }
 }
 

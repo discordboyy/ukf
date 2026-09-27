@@ -1274,7 +1274,7 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -540px;
+    margin-top: -440px;  /*  margin-top: -440px; если ничего нету */
   }
 
   .home-holder-container {
@@ -1572,7 +1572,7 @@ body {
   }
 
   .samarbeidspartner-section {
-    margin-top: -760px;
+    margin-top: -660px;
   }
 
   .samarbeidspartner-title-home {
@@ -1605,7 +1605,7 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -720px;
+    margin-top: -620px; /* margin-top: -620px; если ничего нету */
   }
 
   .home-holder-container:has(.event-card.is-open) {
@@ -1640,7 +1640,7 @@ body {
 
 @media (max-width: 600px) {
   .home-holder-container  {
-    margin-top: -770px;
+    margin-top: -670px; /* margin-top: -670px; если ничего нету */
   }
 
   .home-holder-container:has(.event-card.is-open) {
@@ -1657,7 +1657,7 @@ body {
   }
 
   .samarbeidspartner-section {
-    margin-top: -800px;
+    margin-top: -650px;
   }
 
   .header-wrapper {
@@ -1759,7 +1759,7 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -820px;
+    margin-top: -720px; /* margin-top: -720px; если ничего нету */
   }
 }
 

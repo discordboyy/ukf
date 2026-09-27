@@ -113,9 +113,8 @@ export default function HvaSkjer() {
       </section>
 
       <section className="past-events-section" id="past-events">
-        {/* <div className="archive-title">ARKIV</div> */}
-
         <div id="past-events-container">
+          <div className="archive-title">ARKIV</div>
           {pastEvents.map((event, idx) => (
             <div className="event-content-holder archived" key={idx}>
               <div className="event-content-section">
