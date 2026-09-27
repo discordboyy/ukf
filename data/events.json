@@ -114,6 +114,19 @@
   {
     "title": "Kurs i akvarellmaling for voksne",
     "date": "19. september–28. november 2026, kl. 15:00–17:00",
+    "dates": [
+      "2026-09-19T15:00:00",
+      "2026-09-26T15:00:00",
+      "2026-10-03T15:00:00",
+      "2026-10-10T15:00:00",
+      "2026-10-17T15:00:00",
+      "2026-10-24T15:00:00",
+      "2026-10-31T15:00:00",
+      "2026-11-07T15:00:00",
+      "2026-11-14T15:00:00",
+      "2026-11-21T15:00:00",
+      "2026-11-28T15:00:00"
+    ],
     "startDate": "2026-09-19T15:00:00",
     "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
     "price": "Egenandel 220 kr",
@@ -125,11 +138,24 @@
   },
   {
     "title": "Akvarellkurs for barn",
-    "date": "19. september–28. november 2026",
+    "date": "19. september–28. november 2026, hver lørdag",
+    "dates": [
+      "2026-09-19T00:00:00",
+      "2026-09-26T00:00:00",
+      "2026-10-03T00:00:00",
+      "2026-10-10T00:00:00",
+      "2026-10-17T00:00:00",
+      "2026-10-24T00:00:00",
+      "2026-10-31T00:00:00",
+      "2026-11-07T00:00:00",
+      "2026-11-14T00:00:00",
+      "2026-11-21T00:00:00",
+      "2026-11-28T00:00:00"
+    ],
     "startDate": "2026-09-19T00:00:00",
-    "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
+    "place": "Nabolagsfabrikken Skøyen, Harbitzalléen 2B, 0275 Oslo",
     "price": "Gratis",
-    "description": "Akvarellkurs for barn på Nabolagsfabrikken Skøyen. Kurset går i perioden 19. september–28. november, med unntak av høstferien. Dag og tidspunkt er ikke fastsatt ennå. Mer informasjon og beskrivelse kommer.",
+    "description": "Akvarellkurs for barn på Nabolagsfabrikken Skøyen. Kurset arrangeres hver lørdag fra 19. september til 28. november, med unntak av høstferien. Tidspunkt for kurset kommer senere.",
     "icon": "",
     "images": [],
     "readMoreLink": "",
@@ -139,6 +165,13 @@
   {
     "title": "Familiekunstklubb",
     "date": "26. september–28. november 2026",
+    "dates": [
+      "2026-09-26T00:00:00",
+      "2026-10-17T00:00:00",
+      "2026-10-31T00:00:00",
+      "2026-11-14T00:00:00",
+      "2026-11-28T00:00:00"
+    ],
     "startDate": "2026-09-26T00:00:00",
     "place": "Nabolagsfabrikken Skøyen, Harbitzaleen 2B, 0257 Oslo",
     "price": "Gratis",
