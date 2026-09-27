@@ -44,16 +44,45 @@ export default function Home() {
   const [events, setEvents] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
 
+  const getNextEventDate = (event, now = new Date()) => {
+    // Если есть несколько дат
+    if (Array.isArray(event.dates) && event.dates.length > 0) {
+      const upcomingDates = event.dates
+        .map(date => new Date(date))
+        .filter(date => date >= now)
+        .sort((a, b) => a - b);
+
+      return upcomingDates[0] || null;
+    }
+
+    // Обычное мероприятие с одной датой
+    const date = new Date(event.startDate);
+
+    return date >= now ? date : null;
+  };
+
   // ── Fetch upcoming events (max 3) ──
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/events.json`)
       .then(res => res.json())
       .then(data => {
         const now = new Date();
+
         const upcoming = data
-          .filter(event => new Date(event.startDate) >= now)
-          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate))
-          .slice(0, 4); // максимум 3
+          .map(event => {
+            const nextDate = getNextEventDate(event, now);
+
+            if (!nextDate) return null;
+
+            return {
+              ...event,
+              nextDate
+            };
+          })
+          .filter(Boolean)
+          .sort((a, b) => a.nextDate - b.nextDate)
+          .slice(0, 4);
+
         setEvents(upcoming);
       })
       .catch(console.error);
@@ -89,7 +118,7 @@ export default function Home() {
             {events.map((event, index) => {
               const color = COLORS[index % COLORS.length];
               const polygon = POLYGONS[index % POLYGONS.length];
-              const dateObj = new Date(event.startDate);
+              const dateObj = event.nextDate || new Date(event.startDate);
               const dateFormatted = dateObj.toLocaleDateString("no-NO").replace(/\./g, "/");
               const city = event.place.split(",")[0].toUpperCase();
               const isOpen = openIndex === index;

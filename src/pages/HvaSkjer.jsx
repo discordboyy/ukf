@@ -13,6 +13,33 @@ import { init as initScrollAnimation } from "../js/scroll-animation";
 // polygons
 const polygon6 = "/hva-skjer/Polygon-6.svg";
 
+const getNextEventDate = (event, now = new Date()) => {
+  // Event с несколькими конкретными датами
+  if (Array.isArray(event.dates) && event.dates.length > 0) {
+    const upcomingDates = event.dates
+      .map(date => new Date(date))
+      .filter(date => date >= now)
+      .sort((a, b) => a - b);
+
+    return upcomingDates[0] || null;
+  }
+
+  // Обычный event с одной датой
+  const startDate = new Date(event.startDate);
+
+  return startDate >= now ? startDate : null;
+};
+
+const getLastEventDate = (event) => {
+  if (Array.isArray(event.dates) && event.dates.length > 0) {
+    return event.dates
+      .map(date => new Date(date))
+      .sort((a, b) => b - a)[0];
+  }
+
+  return new Date(event.startDate);
+};
+
 export default function HvaSkjer() {
   const [events, setEvents] = useState([]);
   const [pastEvents, setPastEvents] = useState([]);
@@ -24,15 +51,23 @@ export default function HvaSkjer() {
         const now = new Date();
 
         const upcomingEvents = data
-          .filter(e => new Date(e.startDate) >= now)
-          .sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+          .map(event => ({
+            ...event,
+            nextDate: getNextEventDate(event, now)
+          }))
+          .filter(event => event.nextDate !== null)
+          .sort((a, b) => a.nextDate - b.nextDate);
 
-        const pastEvents = data
-          .filter(e => new Date(e.startDate) < now)
-          .sort((a, b) => new Date(b.startDate) - new Date(a.startDate)); // последние сверху
+        const archivedEvents = data
+          .map(event => ({
+            ...event,
+            lastDate: getLastEventDate(event)
+          }))
+          .filter(event => event.lastDate < now)
+          .sort((a, b) => b.lastDate - a.lastDate);
 
         setEvents(upcomingEvents);
-        setPastEvents(pastEvents);
+        setPastEvents(archivedEvents);
       })
       .catch(console.error);
   }, []);

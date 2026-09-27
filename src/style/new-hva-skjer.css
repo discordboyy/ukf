@@ -16,12 +16,14 @@
 .event-content-holder.archived {
   filter: grayscale(30%);
   opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
 /* чуть оживает при ховере */
 .event-content-holder.archived:hover {
-  filter: grayscale(30%);
-  opacity: 0.9;
+  filter: grayscale(10%);
+  opacity: 1;
+  /* zoom: 1.05; */
 }
 
 /* затемняем текст */

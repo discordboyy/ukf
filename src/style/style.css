@@ -1274,7 +1274,7 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -440px;  /*  margin-top: -440px; если ничего нету */
+    margin-top: -540px;  /*  margin-top: -440px; если ничего нету */
   }
 
   .home-holder-container {
@@ -1458,7 +1458,16 @@ body {
   }
 
   .contact-links {
-    width: 373.188px;
+    width: auto;
+    max-width: 98%;
+  }
+
+  .about-description, .about-details {
+    margin-left: 0px;
+  }
+
+  .about-container {
+    width: 90%;
   }
 
   .contact-title {
@@ -1471,6 +1480,14 @@ body {
     width: auto;
     height: 600px;
     margin-left: 80px;
+  }
+
+  .contact-links {
+    max-width: 80%;
+  }
+
+  .about-container {
+    width: 80%;
   }
 
   .membership-title {
@@ -1605,7 +1622,7 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -620px; /* margin-top: -620px; если ничего нету */
+    margin-top: -740px; /* margin-top: -620px; если ничего нету */
   }
 
   .home-holder-container:has(.event-card.is-open) {
@@ -1640,7 +1657,7 @@ body {
 
 @media (max-width: 600px) {
   .home-holder-container  {
-    margin-top: -670px; /* margin-top: -670px; если ничего нету */
+    margin-top: -780px; /* margin-top: -670px; если ничего нету */
   }
 
   .home-holder-container:has(.event-card.is-open) {
@@ -1759,13 +1776,17 @@ body {
   }
 
   .home-holder-container  {
-    margin-top: -720px; /* margin-top: -720px; если ничего нету */
+    margin-top: -840px; /* margin-top: -720px; если ничего нету */
   }
 }
 
 @media (max-width: 400px) { /* маленькие телефоны */
   .membership-howto, .hero-content {
     margin-left: 50px;
+  }
+
+  .contact-links {
+    max-width: 90%;
   }
 
   .page-membership {
