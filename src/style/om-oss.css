@@ -325,7 +325,8 @@ html {
 .board-members {
   display: flex;
   flex-direction: row;
-  gap: 121.4px;
+  flex-wrap: wrap;
+  gap: 48px;
   align-items: flex-start;
   justify-content: flex-start;
   align-self: stretch;
@@ -341,23 +342,14 @@ html {
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  width: 360px;
 }
 
 .board-member-image {
+  object-fit: cover;
   flex-shrink: 0;
   width: 308.7px;
   height: 308.7px;
-  position: relative;
-}
-
-.board-member-content {
-  display: flex;
-  flex-direction: column;
-  gap: 18.5px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
   position: relative;
 }
 
@@ -421,12 +413,23 @@ html {
   color: var(--blue-color);
 }
 
+.board-member-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18.5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+}
+
 .board-member-description--wide {
-  width: 340.1px;
+  width: 100%;
 }
 
 .board-member-description--narrow {
-  width: 319.2px;
+  width: 100%;
 }
 
 
@@ -666,6 +669,12 @@ html {
   }
 }
 
+@media (max-width: 1160px) {
+  .frame-2 {
+    margin-left: 60px;
+  }
+}
+
 @media (max-width: 1100px) {
   .frame-15,
   .board-section,
@@ -744,11 +753,46 @@ html {
     margin-left: 100px;
     margin-top: 50px;
   }
+
+  .board-section {
+    padding-left: 50px;
+  }
+
+  .board-members {
+    gap: 40px;
+  }
 }
 
 @media (max-width: 700px) {
-  .board-members {
+  /* .board-members {
     gap: 110px;
+  } */
+  .board-member-content {
+    display: flex;
+    flex-direction: column;
+    gap: 18.5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    max-width: 330px;
+  }
+
+  .board-member-card {
+    width: auto;
+  }
+  
+  .board-member-description--narrow {
+    width: 319.2px;;
+  }
+
+  .board-member-description--wide {
+    width: 340.1px;
+  }
+
+  .board-members {
+    gap: 48px;
   }
 }
 
@@ -775,7 +819,9 @@ html {
 
   .board-section {
     width: 90%;
+    padding-left: 0px;
   }
+  
 }
 
 @media (max-width: 600px) {

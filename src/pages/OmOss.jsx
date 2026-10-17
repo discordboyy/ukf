@@ -1,6 +1,9 @@
 // src/pages/OmOss.jsx
 import { useEffect } from "react";
 
+import PersonCard from "../components/about/PersonCard";
+import { boardMembers } from "../data/boardMembers";
+
 // styles
 import "../style/style.css";
 import "../style/om-oss.css";
@@ -12,12 +15,6 @@ import { initKurs } from "../js/kurs"; // hvis du også trenger kurs-init
 // icons
 import aboutIcon from "../assets/omoss/Vector-2.svg";
 import rombRed from "../assets/rombe-red.svg";
-
-// board members
-import juliaImg from "../assets/omoss/Julia-Favoritova.png";
-import katyaImg from "../assets/omoss/Katya-Bukhantsova.png";
-import annaImg from "../assets/omoss/Anna-Lubchenko.jpg";
-import katyaImg2 from "../assets/omoss/Katya-Poziumska.jpg";
 
 // partner logos
 import logo1 from "../assets/omoss/logos/logo-1.svg";
@@ -170,104 +167,38 @@ export default function OmOss() {
 
       <div className="board-section" id="styre-board-section">
         <div className="board-title">STYRET</div>
+
         <div className="board-members">
-          <div className="board-member-card">
-            <img
-              className="board-member-image"
-              src={juliaImg}
-              alt="Julia Favoritova"
-            />
-            <div className="board-member-content">
-              <div className="board-member-header">
-                <div className="board-member-name board-member-name--red">
-                  Julia Favoritova
-                </div>
-                <div className="board-member-role board-member-role--red">
-                  Styreleder
-                </div>
-              </div>
-              <div className="board-member-description board-member-description--red board-member-description--wide">
-                Kunstner, entreprenør og kulturprosjektleder som kom til Norge fra
-                Ukraina i 2022. Hun er prosjektleder for sitt eget initiativ, Favoritt
-                Art Workshop, hvor hun leder kurs i trearbeid og glassgravering for
-                deltakere fra 6 til 99 år. Prosjektet forener og inspirerer mennesker
-                gjennom kreativ og teknisk utvikling.
-              </div>
-            </div>
-          </div>
-          <div className="board-member-card">
-            <img
-              className="board-member-image"
-              src={katyaImg}
-              alt="Katya Bukhantsova"
-            />
-            <div className="board-member-content">
-              <div className="board-member-header">
-                <div className="board-member-name board-member-name--blue">
-                  Katya Bukhantsova
-                </div>
-                <div className="board-member-role board-member-role--blue">
-                  Nestleder
-                </div>
-              </div>
-              <div className="board-member-description board-member-description--blue board-member-description--narrow">
-                Kunsthåndverker og designer fra
-                <br />
-                Ukraina med spesialisering i mixed media-teknikker innen tekstilkunst,
-                inkludert kunsthekling, gjenbruk, redesign og broderi. Hun formidler
-                ukrainske håndverkstradisjoner i Norge og underviser i kreative fag. I
-                tillegg har hun solid erfaring i prosjektelese og er daglig leder og
-                pådriver i organisasjoen RELOVE som arrangerer gratis aktiviteter for
-                barn og unge i Oslo.
-              </div>
-            </div>
-          </div>
-          <div className="board-member-card">
-            <img
-              className="board-member-image"
-              src={annaImg}
-              alt="Anna Lubchenko"
-            />
-            <div className="board-member-content">
-              <div className="board-member-header">
-                <div className="board-member-name board-member-name--blue">
-                  Anna Lubchenko
-                </div>
-                <div className="board-member-role board-member-role--blue">
-                  Kunstnerisk ansvarlig
-                </div>
-              </div>
-              <div className="board-member-description board-member-description--blue board-member-description--narrow">
-                Anna er kunstner og grafisk designer fra Ukraina, bosatt i Norge siden 2022. Hun er utdannet ved Kunstakademiet i Kyiv og har fullført praktisk-pedagogisk utdanning i kunst og håndverk ved Høgskolen i Østfold. Hun arbeider med akvarell, tekstilkunst og redesign, og er medlem av National Union of Artists of Ukraine (NUAU).
-              </div>
-            </div>
-          </div>
+          {boardMembers
+            .filter((member) => member.group === "styret")
+            .map((member) => (
+              <PersonCard
+                key={member.id}
+                {...member}
+                descriptionWidth={
+                  member.id === "katya-bukhantsova" ||
+                  member.id === "anna-lubchenko"
+                    ? "narrow"
+                    : "wide"
+                }
+              />
+            ))}
         </div>
       </div>
 
-      <div className="board-section">
+      <div className="board-section" id="members-section">
         <div className="board-title">MEDLEMMER</div>
+
         <div className="board-members">
-          <div className="board-member-card">
-            <img
-              className="board-member-image"
-              src={katyaImg2}
-              alt="Katya Poziumska"
-            />
-            <div className="board-member-content">
-              <div className="board-member-header">
-                <div className="board-member-name board-member-name--red">
-                  Katya Poziumska
-                </div>
-                <div className="board-member-role board-member-role--red">
-                  Medlem
-                </div>
-              </div>
-              <div className="board-member-description board-member-description--red board-member-description--wide">
-                Katya Poziumska er en frilansillustratør. Hun har en mastergrad i bokgrafikk fra Kunstakademiet i Kyiv. Hun lager illustrasjoner for bøker, artikler, merkevarer og private bestillinger. Hun holder kreative kurs og verksteder for barn og voksne. Siden 2023 har hun jobbet med ulike illustrasjonsoppdrag for forlaget Cappelen Damm.
-              </div>
-            </div>
-          </div>
+          {boardMembers
+            .filter((member) => member.group === "medlemmer")
+            .map((member) => (
+              <PersonCard
+                key={member.id}
+                {...member}
+                descriptionWidth="wide"
+              />
+            ))}
         </div>
       </div>
 
