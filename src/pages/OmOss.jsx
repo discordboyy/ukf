@@ -74,11 +74,14 @@ export default function OmOss() {
                 </div>
                 <div className="about-activities">
                   <span>
-                    <span className="about-activities-part">UKF arrangerer</span>
+                    <span className="about-activities-part">
+                      UKF arrangerer{" "}
+                    </span>
+
                     <span className="about-activities-part about-activities-part--highlight">
                       utstillinger, kurs og kreative prosjekter
                     </span>
-                    <span className="about-activities-part">
+                    <span className="about-activities-part about-activities-part--last">
                       innen maleri, fotografi, design, redesign og gjenbruk av
                       tekstil, tre, glass og andre materialer.
                     </span>

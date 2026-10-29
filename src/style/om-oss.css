@@ -131,6 +131,9 @@ html {
   font-family: "Funnel Sans", sans-serif;
   font-style: italic;
 }
+.about-activities-part--last {
+  margin-left: 6px;
+}
 .about-timeline {
   display: flex;
   flex-direction: column;
