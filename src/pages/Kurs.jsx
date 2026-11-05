@@ -673,8 +673,10 @@ export default function Kurs() {
               </div>
               <div className="course-body red" id="motanka-course-body-css-red">
                 <div className="skills">
-                  <div className="skills-title red">Hva lærer du</div>
-                  <div className="skills-list">
+                  <div className="skills-title red" id="motanka-skills-title">
+                    Hva lærer du
+                  </div>
+                  <div className="skills-list" id="motanka-skills-list">
                     {["Materialkunnskap og bruk av tekstiler","Revers-tenkning som kreativ metode","Ulike teknikker for knuter og sammenføyning"].map((t) => (
                       <div key={t} className="skill-item red">
                         <img className="rombe-item-red" src={UI.rombeRed} alt="" width="12" height="12" />

@@ -1299,6 +1299,14 @@ html {
     gap: 8px;
   }
 
+  #farsdag-course-body-css-yellow {
+    gap: 70px;
+  }
+
+  #motanka-course-body-css {
+    gap: 32px;
+  }
+
   /* #miniatyrby-course-body-css-mobile {
     margin-top: -40px;
   } */
@@ -1384,7 +1392,15 @@ html {
   }
 
   .course-body.yellow {
-    gap: 50px;
+    gap: 80px;
+  }
+
+  #motanka-skills-title-css {
+    margin-bottom: -40px;
+  }
+
+  #motanka-skills-list {
+    margin-top: -12px;
   }
 
   /* .course-body.red2 {

@@ -421,6 +421,15 @@ html {
   .upcoming-events-section {
     width: 70%;
   }
+
+  .link-find-out-more, .link-registration, .event-price {
+    zoom: 1.4;
+  }
+
+  .event-info-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 550px) {
@@ -453,11 +462,15 @@ html {
   .event-info-links {
     zoom: 1.1;
   }
+
+  .link-find-out-more, .link-registration, .event-price {
+    zoom: 1.19;
+  }
 }
 
 @media (max-width: 430px) {
   .upcoming-events-section {
-    zoom: 0.45;
+    zoom: 0.43;
   }
 }
 @media (max-width: 400px) {
@@ -469,5 +482,9 @@ html {
 @media (max-width: 390px) {
   .upcoming-events-section {
     zoom: 0.43;
+  }
+
+  .link-find-out-more, .link-registration, .event-price {
+    zoom: 1.1;
   }
 }
