@@ -352,7 +352,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="smykker-css-frame">
               <div className="course-body-holder blue">
                 <div className="course-title blue">Smykker</div>
                 <div className="course-summary-description blue">
@@ -476,7 +476,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="blokktrykk-css-frame">
               <div className="course-body-holder yellow">
                 <div className="course-title yellow">Blokktrykk og broderi</div>
                 <div className="course-summary-description yellow">
@@ -538,7 +538,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="glasslysholder-css-frame">
               <div className="course-body-holder yellow">
                 <div className="course-title yellow">Glasslysholder</div>
                 <div className="course-summary-description yellow">
@@ -601,7 +601,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="farsdag-css-frame">
               <div className="course-body-holder yellow">
                 <div className="course-title yellow">Glassgravering Farsdag</div>
                 <div className="course-summary-description yellow">
@@ -664,7 +664,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="motanka-engel-css-frame">
               <div className="course-body-holder red">
                 <div className="course-title red">Motanka-engel</div>
                 <div className="course-summary-description red">
@@ -726,7 +726,7 @@ export default function Kurs() {
                 </div>
               </div>
             </div>
-            <div className="frame-542">
+            <div className="frame-542" id="nissefjes-css-frame">
               <div className="course-body-holder red">
                 <div className="course-title red">Nissefjes</div>
                 <div className="course-summary-description red">

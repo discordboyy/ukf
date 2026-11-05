@@ -3,13 +3,9 @@
 :root {
   --red-color: #f1262c;
   --blue-color: #103279;
-  --yellow-color: #f3b910;
+  --yellow-color: #836303;
 
   --navbuttons-space: 10vw;
-}
-
-:root {
-  --yellow-color: #f2b80c;
 }
 
 /* Общие настройки */
@@ -1299,12 +1295,23 @@ html {
     padding: 0 50px;
   }
 
-  #miniatyrby-course-body-css-mobile {
-    margin-top: -40px;
+  #motanka-dukke-css {
+    gap: 8px;
   }
+
+  /* #miniatyrby-course-body-css-mobile {
+    margin-top: -40px;
+  } */
 
   #nissefjes-course-body-css {
     gap: 50px;
+  }
+
+  /* --- Открытые блоки --- */
+  .course-card.is-open .course-body,
+  .course-card.is-open .course-body2 {
+    max-height: 1000px;           /* достаточно для всего контента */
+    padding: 10px 0;              /* паддинг при открытии */
   }
 
   .course-card {
@@ -1334,6 +1341,11 @@ html {
 
   .frame-542 {
     width: 526.498px;
+    gap: 8px;
+  }
+
+  #julepynt-course-body-css {
+    gap: 100px;
   }
 
   .frame-542 {
@@ -1375,8 +1387,12 @@ html {
     gap: 50px;
   }
 
-  .course-body.red2 {
+  /* .course-body.red2 {
     gap: 130px;
+  } */
+
+  .course-summary-description.red {
+    padding-bottom: 10px;
   }
 }
 
