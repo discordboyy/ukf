@@ -219,7 +219,7 @@ export default function Home() {
       </div>
 
       {/* ── Testimonials ── */}
-      <div className="frame-20">
+      <div className="testimonials-frame">
         <div className="testimonials-title" id='testimonials-title-home'>TILBAKEMELDINGER</div>
         <div className="testimonials-list">
           <img

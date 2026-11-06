@@ -1576,9 +1576,9 @@ body {
 
   }
 
-  .frame-20 {
+  /* .testimonials-frame {
     display: none;
-  }
+  } */
 
   .hero-description {
     width: auto;
@@ -1589,7 +1589,7 @@ body {
   }
 
   .samarbeidspartner-section {
-    margin-top: -660px;
+    margin-top: 0px;
   }
 
   .samarbeidspartner-title-home {
@@ -1640,7 +1640,7 @@ body {
   }
 
   .contact-title {
-    width: 80%;
+    width: 85%;
   }
 
   .samarbeidspartner-title-home{
@@ -1673,9 +1673,9 @@ body {
     margin-top: 40px;
   }
 
-  .samarbeidspartner-section {
+  /* .samarbeidspartner-section {
     margin-top: -650px;
-  }
+  } */
 
   .header-wrapper {
     height: auto;
@@ -1739,6 +1739,10 @@ body {
   .global-holder-container {
     top: -500px;
   }
+
+  .membership-howto {
+    margin-left: 100px;
+  }
 }
 
 @media (max-width: 480px) { /* телефоны */
@@ -1777,6 +1781,14 @@ body {
 
   .home-holder-container  {
     margin-top: -840px; /* margin-top: -720px; если ничего нету */
+  }
+
+  .membership-howto {
+    margin-left: 80px;
+  }
+
+  .hero-content {
+    margin-left: 88px;
   }
 }
 

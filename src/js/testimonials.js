@@ -1,7 +1,9 @@
+
 // src/js/testimonials.js
 
 export function init() {
 
+  // ── Event cards ──
   document.querySelectorAll('.event-card').forEach(card => {
     card.addEventListener('click', () => {
       document
@@ -14,6 +16,7 @@ export function init() {
     });
   });
 
+  // ── Testimonials data ──
   const testimonials = [
     {
       left: {
@@ -53,9 +56,8 @@ export function init() {
     }
   ];
 
-  let currentIndex = 0;
-
   const reviews = document.querySelectorAll(".review");
+
   if (reviews.length < 2) return;
 
   const leftReview = reviews[0];
@@ -72,12 +74,49 @@ export function init() {
   const leftArrow = document.querySelector(".polygon-arrow-left");
   const rightArrow = document.querySelector(".polygon-arrow-right");
 
-  function showTestimonials(index, direction) {
+  // ── State ──
+  let currentIndex = 0;
+  let mobileIndex = 0;
+  let isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  let mobileTimer = null;
+  let animationTimer = null;
+
+  const MOBILE_INTERVAL = 7000;
+
+  // ── Update left review ──
+  function updateLeftReview(data) {
+    leftText.textContent = data.text;
+    leftAuthor.textContent = data.author;
+  }
+
+  // ── Update right review ──
+  function updateRightReview(data) {
+    rightText.childNodes[0].nodeValue = data.text + " ";
+
+    if (rightSignature) {
+      rightSignature.textContent = data.signature || "";
+    }
+
+    if (rightAuthor) {
+      rightAuthor.textContent = data.author;
+    }
+
+    if (rightSlogan) {
+      rightSlogan.textContent = data.slogan || "";
+    }
+  }
+
+  // ── Desktop testimonials ──
+  function showTestimonials(index, direction = "right") {
 
     const elements = [
-      leftText, leftAuthor,
-      rightText, rightSignature,
-      rightAuthor, rightSlogan
+      leftText,
+      leftAuthor,
+      rightText,
+      rightSignature,
+      rightAuthor,
+      rightSlogan
     ].filter(Boolean);
 
     elements.forEach(el => {
@@ -91,27 +130,15 @@ export function init() {
       card.style.transform = `translateX(${offset}px)`;
     });
 
-    setTimeout(() => {
+    clearTimeout(animationTimer);
 
-      // LEFT
-      leftText.textContent = testimonials[index].left.text;
-      leftAuthor.textContent = testimonials[index].left.author;
+    animationTimer = setTimeout(() => {
 
-      // RIGHT
-      rightText.childNodes[0].nodeValue =
-        testimonials[index].right.text + " ";
-
-      if (rightSignature)
-        rightSignature.textContent = testimonials[index].right.signature;
-
-      if (rightAuthor)
-        rightAuthor.textContent = testimonials[index].right.author;
-
-      if (rightSlogan)
-        rightSlogan.textContent = testimonials[index].right.slogan;
+      updateLeftReview(testimonials[index].left);
+      updateRightReview(testimonials[index].right);
 
       reviews.forEach(card => {
-        card.style.transform = `translateX(0)`;
+        card.style.transform = "translateX(0)";
       });
 
       elements.forEach(el => {
@@ -122,21 +149,117 @@ export function init() {
     }, 250);
   }
 
-  // init
-  showTestimonials(currentIndex, "right");
+  // ── Mobile testimonials ──
+  function showMobileTestimonial(index) {
 
+    const testimonialIndex = Math.floor(index / 2);
+    const showLeft = index % 2 === 0;
+
+    const activeReview = showLeft ? leftReview : rightReview;
+    const inactiveReview = showLeft ? rightReview : leftReview;
+
+    // Fade out current review
+    reviews.forEach(card => {
+      card.classList.remove("mobile-active");
+    });
+
+    clearTimeout(animationTimer);
+
+    animationTimer = setTimeout(() => {
+
+      // Update only the review that will be displayed
+      if (showLeft) {
+        updateLeftReview(testimonials[testimonialIndex].left);
+      } else {
+        updateRightReview(testimonials[testimonialIndex].right);
+      }
+
+      // Hide inactive review
+      inactiveReview.classList.remove("mobile-active");
+
+      // Show active review
+      activeReview.classList.add("mobile-active");
+
+    }, 400);
+  }
+
+  // ── Start mobile autoplay ──
+  function startMobileTimer() {
+
+    clearInterval(mobileTimer);
+
+    showMobileTestimonial(mobileIndex);
+
+    mobileTimer = setInterval(() => {
+
+      mobileIndex = (mobileIndex + 1) % (testimonials.length * 2);
+
+      showMobileTestimonial(mobileIndex);
+
+    }, MOBILE_INTERVAL);
+  }
+
+  // ── Stop mobile autoplay ──
+  function stopMobileTimer() {
+    clearInterval(mobileTimer);
+    mobileTimer = null;
+    clearTimeout(animationTimer);
+  }
+
+  // ── Initial setup ──
+  if (isMobile) {
+    startMobileTimer();
+  } else {
+    showTestimonials(currentIndex, "right");
+  }
+
+  // ── Arrow navigation (desktop) ──
   if (leftArrow) {
     leftArrow.addEventListener("click", () => {
-      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+
+      if (isMobile) return;
+
+      currentIndex =
+        (currentIndex - 1 + testimonials.length) % testimonials.length;
+
       showTestimonials(currentIndex, "left");
     });
   }
 
   if (rightArrow) {
     rightArrow.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % testimonials.length;
+
+      if (isMobile) return;
+
+      currentIndex =
+        (currentIndex + 1) % testimonials.length;
+
       showTestimonials(currentIndex, "right");
     });
   }
 
+  // ── Handle screen resize ──
+  const mediaQuery = window.matchMedia("(max-width: 768px)");
+
+  function handleResize(event) {
+
+    if (event.matches === isMobile) return;
+
+    isMobile = event.matches;
+
+    if (isMobile) {
+      startMobileTimer();
+    } else {
+      stopMobileTimer();
+
+      reviews.forEach(card => {
+        card.classList.remove("mobile-active");
+        card.style.transform = "";
+      });
+
+      showTestimonials(currentIndex, "right");
+    }
+  }
+
+  mediaQuery.addEventListener("change", handleResize);
 }
