@@ -291,7 +291,7 @@ export default function Prosjekter() {
       </div>
       
       {/* SOMMERAKVARELLKAMP */}
-      <div className="project-section last">
+      <div className="project-section last" id="sommerakvarellkamp">
         <div className="project-container">
           <img className="project-icon blue" src={rombBlue} alt="Project icon" />
 
