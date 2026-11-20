@@ -47,6 +47,38 @@ const sentralen2026Images = [
   sentralen2026_img14,
 ];
 
+import Sommerakvarellimg1 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-1.webp";
+import Sommerakvarellimg2 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-2.webp";
+import Sommerakvarellimg3 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-3.webp";
+import Sommerakvarellimg4 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-4.webp";
+import Sommerakvarellimg5 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-5.webp";
+import Sommerakvarellimg6 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-6.webp";
+import Sommerakvarellimg7 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-7.webp";
+import Sommerakvarellimg8 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-8.webp";
+import Sommerakvarellimg9 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-9.webp";
+import Sommerakvarellimg10 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-10.webp";
+import Sommerakvarellimg11 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-11.webp";
+import Sommerakvarellimg12 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-12.webp";
+import Sommerakvarellimg13 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-13.webp";
+import Sommerakvarellimg14 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-14.webp";
+
+const sommerakvarellImages = [
+  Sommerakvarellimg1,
+  Sommerakvarellimg2,
+  Sommerakvarellimg3,
+  Sommerakvarellimg4,
+  Sommerakvarellimg5,
+  Sommerakvarellimg6,
+  Sommerakvarellimg7,
+  Sommerakvarellimg8,
+  Sommerakvarellimg9,
+  Sommerakvarellimg10,
+  Sommerakvarellimg11,
+  Sommerakvarellimg12,
+  Sommerakvarellimg13,
+  Sommerakvarellimg14,
+];
+
 // Barnas Kunstklubb
 import barnaskunstklubb from "../assets/prosjekter-webp/Barnas-Kunstklubb/img-7.webp";
 
