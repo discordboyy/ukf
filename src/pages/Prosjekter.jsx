@@ -102,6 +102,8 @@ const barnasKunstklubbImages = Object.entries(
 const sentralen2026Slides = chunkArray(sentralen2026Images, 2);
 const barnasSlides = chunkArray(barnasKunstklubbImages, 2);
 
+const sommerakvarellSlides = chunkArray(sommerakvarellImages, 2);
+
 // icons / images
 import rombRed from "../assets/prosjekter/rombs-red.svg";
 import img1751 from "../assets/prosjekter-webp/Sentralen/IMG_1751.webp";
@@ -177,6 +179,7 @@ export default function Prosjekter() {
   const showSentralen = true;
   const showGlass = true;
   const showFrogner = true;
+  const showSommerakvarell = true;
 
   useEffect(() => {
     const sections = document.querySelectorAll(".project-section");
@@ -279,6 +282,100 @@ export default function Prosjekter() {
                     </div>
                   ) : (
                     <img src={pair?.[0]} alt="" />
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+        </div>
+      </div>
+      
+      {/* SOMMERAKVARELLKAMP */}
+      <div className="project-section last">
+        <div className="project-container">
+          <img className="project-icon blue" src={rombBlue} alt="Project icon" />
+
+          <div className="project-content">
+            <div className="project-header">
+
+              <div className="project-meta blue">
+                10.–15. august
+              </div>
+
+              <div className="project-meta blue">
+                Nabolagsfabrikken, Skøyen, Oslo
+              </div>
+
+              <h2 className="project-title blue" style={{ textTransform: "uppercase" }}>
+                SOMMERAKVARELLKAMP
+              </h2>
+
+            </div>
+
+            <div className="project-description-block">
+              <img
+                className="project-image-placeholder"
+                src={Sommerakvarellimg1}
+                alt=""
+              />
+
+              <p className="project-descriptio">
+                <span>
+                  <span className="text-highlight blue">
+                    Kreativt og morsomt sommerkurs med varierte kunstteknikker på
+                    Nabolagsfabrikken Skøyen. Fra 10. til 15. august arrangerte vi{" "}
+                    <strong>Sommerakvarellkamp</strong> for skolebarn, i den siste uken av sommerferien.
+                    Dette var et aktivt sommerkurs med ulike kunstneriske teknikker,
+                    eksperimentering, utendørs maling og tegning (plein air) og
+                    kreativt fellesskap. Gjennom uken laget deltakerne sine egne
+                    album med minner, inntrykk og skisser fra sommerdagene.
+                    Kurset ble avsluttet med en liten vernissage, der barna stilte
+                    ut arbeidene sine for familie og venner. Til sammen samlet
+                    kurset og utstillingen{" "}
+                  </span>
+
+                  <span className="text-accent red">
+                    over 20 deltakere
+                  </span>
+
+                  <span className="text-highlight blue">
+                    , inkludert foreldre.
+                    <br /><br />
+                    <strong>Støttet av Kulturetaten i Oslo kommune.</strong>
+                  </span>
+                </span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="project-slider">
+          {showSommerakvarell && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              {sommerakvarellSlides.map((pair, index) => (
+                <SwiperSlide key={index}>
+                  {pair.length === 2 ? (
+                    <div className="slide-double">
+                      <img src={pair[0]} alt="" />
+                      <img src={pair[1]} alt="" />
+                    </div>
+                  ) : (
+                    <img src={pair[0]} alt="" />
                   )}
                 </SwiperSlide>
               ))}
