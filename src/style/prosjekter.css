@@ -239,9 +239,9 @@ body {
     display: none;
   }
 
-  .project-slider {
+  /* .project-slider {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 678px) {
