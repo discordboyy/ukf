@@ -61,13 +61,14 @@ import Sommerakvarellimg11 from "../assets/prosjekter-webp/Sommerakvarellkamp/im
 import Sommerakvarellimg12 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-12.webp";
 import Sommerakvarellimg13 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-13.webp";
 import Sommerakvarellimg14 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-14.webp";
+import Sommerakvarellimg15 from "../assets/prosjekter-webp/Sommerakvarellkamp/img-15.webp";
 
 const sommerakvarellImages = [
+  Sommerakvarellimg5,
   Sommerakvarellimg1,
   Sommerakvarellimg2,
   Sommerakvarellimg3,
   Sommerakvarellimg4,
-  Sommerakvarellimg5,
   Sommerakvarellimg6,
   Sommerakvarellimg7,
   Sommerakvarellimg8,
@@ -102,7 +103,17 @@ const barnasKunstklubbImages = Object.entries(
 const sentralen2026Slides = chunkArray(sentralen2026Images, 2);
 const barnasSlides = chunkArray(barnasKunstklubbImages, 2);
 
-const sommerakvarellSlides = chunkArray(sommerakvarellImages, 2);
+const sommerakvarellSlides = [
+  [Sommerakvarellimg5, Sommerakvarellimg1],
+  [Sommerakvarellimg2, Sommerakvarellimg3],
+  [Sommerakvarellimg4, Sommerakvarellimg6],
+  [Sommerakvarellimg7, Sommerakvarellimg8],
+  [Sommerakvarellimg9, Sommerakvarellimg10],
+  [Sommerakvarellimg11, Sommerakvarellimg13],
+  [Sommerakvarellimg12],
+  [Sommerakvarellimg14],
+  [Sommerakvarellimg15],
+];
 
 // icons / images
 import rombRed from "../assets/prosjekter/rombs-red.svg";
