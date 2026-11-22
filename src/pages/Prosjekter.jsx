@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 import "../style/swiper.css";
 
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 
 const ProjectSlider = lazy(() =>
   import("../components/ProjectSlider")
@@ -216,6 +216,23 @@ export default function Prosjekter() {
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 650px)").matches
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 650px)");
+
+    const handleChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
 
   return (
     <div className="global-holder-container" id="prosjekter-global-holder-container">
