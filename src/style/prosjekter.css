@@ -326,6 +326,17 @@ body {
   }
 }
 
+@media (max-width: 540px) {
+  .project-slider {
+    width: 720px !important;
+    height: 1000px !important;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    zoom: 1.8;
+  }
+}
+
 @media (max-width: 440px) {
   .project-slider {
     width: 400px !important;
