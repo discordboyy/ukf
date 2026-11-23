@@ -301,15 +301,22 @@ export default function Prosjekter() {
               navigation
               modules={[Pagination, Navigation]}
             >
-              {barnasSlides.map((pair, index) => (
+              {(isMobile
+                ? barnasSlides.flat()
+                : barnasSlides
+              ).map((item, index) => (
                 <SwiperSlide key={index}>
-                  {pair?.length === 2 ? (
-                    <div className="slide-double">
-                      <img src={pair[0]} alt="" />
-                      <img src={pair[1]} alt="" />
-                    </div>
+                  {isMobile ? (
+                    <img src={item} alt="" />
                   ) : (
-                    <img src={pair?.[0]} alt="" />
+                    item?.length === 2 ? (
+                      <div className="slide-double">
+                        <img src={item[0]} alt="" />
+                        <img src={item[1]} alt="" />
+                      </div>
+                    ) : (
+                      <img src={item?.[0]} alt="" />
+                    )
                   )}
                 </SwiperSlide>
               ))}
@@ -395,9 +402,14 @@ export default function Prosjekter() {
               navigation
               modules={[Pagination, Navigation]}
             >
-              {sommerakvarellSlides.map((pair, index) => (
+              {(isMobile
+                ? sommerakvarellSlides.flat()
+                : sommerakvarellSlides
+              ).map((pair, index) => (
                 <SwiperSlide key={index}>
-                  {pair.length === 2 ? (
+                  {isMobile ? (
+                    <img src={pair} alt="" />
+                  ) : pair.length === 2 ? (
                     <div className="slide-double">
                       <img src={pair[0]} alt="" />
                       <img src={pair[1]} alt="" />
