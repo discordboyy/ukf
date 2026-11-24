@@ -237,94 +237,6 @@ export default function Prosjekter() {
   return (
     <div className="global-holder-container" id="prosjekter-global-holder-container">
 
-      <div className="project-section last">
-        <div className="project-container">
-          <img className="project-icon blue" src={rombBlue} alt="Project icon" />
-
-          <div className="project-content">
-            <div className="project-header">
-
-              <div className="project-meta blue">
-                Desember 2025 – mars 2026
-              </div>
-
-              <div className="project-meta blue">
-                Barnas Kunstklubb i Bærum og Lørenskog
-              </div>
-
-              <h2 className="project-title blue" style={{ textTransform: "uppercase" }}>
-                Barnas Kunstklubb: kreative verksteder for barn og familier
-              </h2>
-
-            </div>
-
-            <div className="project-description-block">
-              <img className="project-image-placeholder" src={barnaskunstklubb} alt="" />
-
-              <p className="project-descriptio">
-                <span>
-                  <span className="text-highlight blue">
-                    I løpet av 4 måneder har vi arrangert samlinger for barn og deres familier på Lørenskog Bibliotek og Bærum Frivilligsentral. 
-                    Samlingene var organisert som workshops i ulike teknikker innen kunst og håndverk. 
-                    Vi har hatt 13 samlinger hvert sted, og har dokumentert{" "}
-                  </span>
-
-                  <span className="text-accent red">
-                    144 besøk{" "}
-                  </span>
-
-                  <span className="text-highlight blue">
-                    av en mangfoldig gruppe deltakere. <br /><br />
-                    Prosjektet var støttet av Akershus fylkeskommune.
-                  </span>
-                </span>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <div className="project-slider">
-          {showBarnas && (
-            <Swiper
-              preloadImages={false}
-              watchSlidesProgress={true}
-              lazy={{
-                loadPrevNext: true,
-                loadPrevNextAmount: 2
-              }}
-              slidesPerView="auto"
-              spaceBetween={48}
-              centeredSlides
-              loop
-              pagination={{ clickable: true, dynamicBullets: true }}
-              navigation
-              modules={[Pagination, Navigation]}
-            >
-              {(isMobile
-                ? barnasSlides.flat()
-                : barnasSlides
-              ).map((item, index) => (
-                <SwiperSlide key={index}>
-                  {isMobile ? (
-                    <img src={item} alt="" />
-                  ) : (
-                    item?.length === 2 ? (
-                      <div className="slide-double">
-                        <img src={item[0]} alt="" />
-                        <img src={item[1]} alt="" />
-                      </div>
-                    ) : (
-                      <img src={item?.[0]} alt="" />
-                    )
-                  )}
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
-        </div>
-      </div>
-      
       {/* SOMMERAKVARELLKAMP */}
       <div className="project-section last" id="sommerakvarellkamp">
         <div className="project-container">
@@ -481,6 +393,94 @@ export default function Prosjekter() {
                     </div>
                   ) : (
                     <img src={pair[0]} alt="" />
+                  )}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
+        </div>
+      </div>
+
+      <div className="project-section last">
+        <div className="project-container">
+          <img className="project-icon blue" src={rombBlue} alt="Project icon" />
+
+          <div className="project-content">
+            <div className="project-header">
+
+              <div className="project-meta blue">
+                Desember 2025 – mars 2026
+              </div>
+
+              <div className="project-meta blue">
+                Barnas Kunstklubb i Bærum og Lørenskog
+              </div>
+
+              <h2 className="project-title blue" style={{ textTransform: "uppercase" }}>
+                Barnas Kunstklubb: kreative verksteder for barn og familier
+              </h2>
+
+            </div>
+
+            <div className="project-description-block">
+              <img className="project-image-placeholder" src={barnaskunstklubb} alt="" />
+
+              <p className="project-descriptio">
+                <span>
+                  <span className="text-highlight blue">
+                    I løpet av 4 måneder har vi arrangert samlinger for barn og deres familier på Lørenskog Bibliotek og Bærum Frivilligsentral. 
+                    Samlingene var organisert som workshops i ulike teknikker innen kunst og håndverk. 
+                    Vi har hatt 13 samlinger hvert sted, og har dokumentert{" "}
+                  </span>
+
+                  <span className="text-accent red">
+                    144 besøk{" "}
+                  </span>
+
+                  <span className="text-highlight blue">
+                    av en mangfoldig gruppe deltakere. <br /><br />
+                    Prosjektet var støttet av Akershus fylkeskommune.
+                  </span>
+                </span>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div className="project-slider">
+          {showBarnas && (
+            <Swiper
+              preloadImages={false}
+              watchSlidesProgress={true}
+              lazy={{
+                loadPrevNext: true,
+                loadPrevNextAmount: 2
+              }}
+              slidesPerView="auto"
+              spaceBetween={48}
+              centeredSlides
+              loop
+              pagination={{ clickable: true, dynamicBullets: true }}
+              navigation
+              modules={[Pagination, Navigation]}
+            >
+              {(isMobile
+                ? barnasSlides.flat()
+                : barnasSlides
+              ).map((item, index) => (
+                <SwiperSlide key={index}>
+                  {isMobile ? (
+                    <img src={item} alt="" />
+                  ) : (
+                    item?.length === 2 ? (
+                      <div className="slide-double">
+                        <img src={item[0]} alt="" />
+                        <img src={item[1]} alt="" />
+                      </div>
+                    ) : (
+                      <img src={item?.[0]} alt="" />
+                    )
                   )}
                 </SwiperSlide>
               ))}
