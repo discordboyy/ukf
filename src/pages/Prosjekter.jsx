@@ -262,7 +262,7 @@ export default function Prosjekter() {
             <div className="project-description-block">
               <img
                 className="project-image-placeholder"
-                src={Sommerakvarellimg1}
+                src={Sommerakvarellimg5}
                 alt=""
               />
 
